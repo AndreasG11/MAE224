@@ -64,4 +64,21 @@ int avg = 1000;
 int ptap1 = A0;
 ```
 In this program we name 4 variables: `voltage`, `strTemp`, `avg`, `ptap1`.  We make a variable `voltage` of type double which we will post to the cloud through the Particle server. `strTemp` is a string that we create in the event that we want to monitor the Serial output.  We also create an integer `avg` which will be the number of samples that we will average over. Finally, we specify the pin that we wish to monitor as `ptap1`.
-__
+
+###Setup:
+```c
+void setup()
+{
+  Serial.begin(9600);
+    Particle.variable("pressure", voltage);
+    pinMode(ptap1, INPUT);
+}
+```
+
+The setup will run once and (as the name implies) initialize things that the program only wants to do once. We first write `Serial.begin(9600);`This initialized a serial output, but is unnecessary as we will be utilizing pithy for gathering our data.
+
+The next line is very important. 
+`Particle.variable("pressure", voltage);`
+This line is responsible for posting the information from voltage to the cloud. We need only state this line once and it will tell the Particle Photon to post the voltage, which is a double to the cloud as the parameter called “`pressure`”.  Consequently every program outside the Particle Photon will only read the information as “`pressure`” and won’t know that it was ever called voltage.  The webpage with the information updates every loop of the Photon. Note that this line changes if you are using a Spark Core (the predecessor to the Photon).
+
+We also need to initiate a pin to take data from using pinMode(ptap1, INPUT);. This sets the pin saved in ptap1 (here, A0) as an analog input to read the pressure data from.
