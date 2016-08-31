@@ -46,8 +46,7 @@ void loop() {
   delay(1000);               // Wait for 1 second in off mode
 }
 ```
-1)	On the upper left-hand side, click the check mark button to verify/compile the code. There should be a small note on the bottom of the screen that says, “Code verified! Great work.”
-2)	Press the lightning bolt button on the top left of the page, which will then “flash” the code to your unit. You should see the LED start blinking magenta to signal that it is uploading.
-a.	It will likely blink green afterwards to signal that it is re-connecting to the internet, so give it a moment to finish this cycle. If successful, the LED will go back to the slow cyan pulse.
-3)	If you see the onboard LED (a different LED than the one mentioned previously), blinking blue, you WIN! 
-4)	Go find a TA, preferably Cody, to verify that you completed this simple task.
+1.	On the upper left-hand side, click the check mark button to verify/compile the code. There should be a small note on the bottom of the screen that says, “Code verified! Great work.”
+2.	Press the lightning bolt button on the top left of the page, which will then “flash” the code to your unit. You should see the LED start blinking magenta to signal that it is uploading. It will likely blink green afterwards to signal that it is re-connecting to the internet, so give it a moment to finish this cycle. If successful, the LED will go back to the slow cyan pulse.
+3.	If you see the onboard LED (a different LED than the one mentioned previously), blinking blue, you WIN! 
+4.	Go find a TA, preferably Cody, to verify that you completed this simple task.
