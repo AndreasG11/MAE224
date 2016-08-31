@@ -81,4 +81,36 @@ The next line is very important.
 `Particle.variable("pressure", voltage);`
 This line is responsible for posting the information from voltage to the cloud. We need only state this line once and it will tell the Particle Photon to post the voltage, which is a double to the cloud as the parameter called “`pressure`”.  Consequently every program outside the Particle Photon will only read the information as “`pressure`” and won’t know that it was ever called voltage.  The webpage with the information updates every loop of the Photon. Note that this line changes if you are using a Spark Core (the predecessor to the Photon).
 
-We also need to initiate a pin to take data from using pinMode(ptap1, INPUT);. This sets the pin saved in ptap1 (here, A0) as an analog input to read the pressure data from.
+We also need to initiate a pin to take data from using `pinMode(ptap1, INPUT);`. This sets the pin saved in `ptap1` (here, A0) as an analog input to read the pressure data from.
+
+###Loop
+```c
+void loop()
+{
+ voltage = 0;
+  for(int n = 0;n<avg;n+=1)
+  {
+  voltage += analogRead(ptap1);
+  }
+  sprintf(strTemp,"%f",voltage);
+  Serial.println(strTemp);
+  voltage = ((voltage/avg)/4095)*3.3;
+}
+```
+This outer loop will cycle ad infinitum until you unplug the spark core.  We begin by reinitializing `voltage = 0;` at the start of each loop. We then sum together several consecutive analog voltage measurements with a for-loop given by:
+
+```c
+  for(int n = 0;n<avg;n+=1)
+  {
+  voltage += analogRead(ptap1);
+  }
+```
+
+The first line sets a variable integer n which will run for as long as n is less than `avg` and will increment up by 1 after every loop iteration.  Inside the loop we will add the current value of A0 to the value reading `voltage += analogRead(ptap1);`. Note that the output of `analogRead(A0)` is a 12 bit value from 0-4095.  `voltage = ((voltage/avg)/4095)*3.3;` converts the voltage reading from a 12 bit voltage to a value on the scale from 0 - 3.3V.   We can the format a string using the following two lines and print them the serial output.
+
+```c
+sprintf(strTemp,"%f",voltage);
+  Serial.println(strTemp);
+```
+
+##Python
