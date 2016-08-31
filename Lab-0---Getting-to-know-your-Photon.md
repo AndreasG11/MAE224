@@ -164,6 +164,57 @@ The next few lines are used to create a spark core object. We begin by making a 
 ac = "YOURACCESSTOKENHERE"
  Create a string for the Photon name with
 name = “YOURPHOTONNAMEHERE”
-We next create a new particle object which takes two arguments: the name or id of the particle photon and the access token. This will give you full access to the particle class that we made.  It can be called like this g = particle(name,ac). Note: replace your own photon’s access token and name.  2nd NOTE that the name is case sensitive and goes through http parsing which means that you need to enter it exactly as you would see it in a browser. The fetch function will help you see what you need to enter in the name spot. Next we create a file where we want to save our data. This creates file foobar.txt with the timestamp attached.
+We next create a new particle object which takes two arguments: the name or id of the particle photon and the access token. This will give you full access to the particle class that we made.  It can be called like this `g = particle(name,ac)`. Note: replace your own photon’s access token and name.  2nd NOTE that the name is case sensitive and goes through http parsing which means that you need to enter it exactly as you would see it in a browser. The fetch function will help you see what you need to enter in the name spot. Next we create a file where we want to save our data. This creates file foobar.txt with the timestamp attached.
 `filename = "files/foobar%i.txt" %int(time.time())`
+
+The next few lines are samples of output from some of the functions:
+
+```python
+print g.getDevices()
+print g.getFunctions()
+print g.getVariables()
+v= []
+t = []
+```
+
+`getDevices()` print out the devices that are attached to your account, `getFunctions() `shows functions attached to your Photon with that particular name and `getVariables()`  shows the particular variables that you can fetch. The last two lines simply creates an empty array to fill with data.
+
+Next we begin our for-loop in the following way with python
+`for i in range(1,20):`
+
+Note that in python we do not need curly braces{}, but need tab delineations. Thus everything inside the for loop must be indented.  To get the data and store the values we use the next two lines:
+
+```python
+    data = g.getResult("flow");
+    v.append(data)
+    t.append(i)
+```
+The first line retrieves the data from the variable named flow from the Particle cloud server and saves it to data. Notice how we do not need to say what the data type is! This is one nice part about python.  The second line appends the data to the array `v`, and the third appends a sample number to the array` t`. The following 5 lines plot the data using some pithy magic.  
+
+```python
+    plot(v)
+    title("Sample Data")
+    ylabel("psi")
+    xlabel("Sample")
+    showme(“pic”,kind = "")
+    clf()
+```
+
+The first line creates a plot, and the following three lines create labels and titles for the axes. The last two lines allow pithy to show the plot and refresh at each iteration of the for loop.
+
+The next line calls the time module in python and tells the code to pause for 1 second. Why in the world would we want to do this? Mostly there is an inherent delay in the rate at which the Photon updates the webpage. We slow the down the python script a tad to make sure that we do not grab the same data twice.
+
+The next three lines are used to append the data to the text file that we created. 
+   `f = open(filename, "a")`  opens the text file that we named and puts it into append mode
+   `f.write("%f\n" %data)` writes the data to a line in the text file
+   `f.close() `we then close the file so we don’t leave it open
+
+The last two lines just print the output with some string formatting.
+
+print "mean = %0.4f" %mean(v)
+print "Std Dev = %0.8f" %std(v)
+
+Using the above, you should now be familiar with:
+Writing a script that reads a voltage (just one of the 6 pins is fine), plotting it over time, updating the plot periodically, and outputting the data to a txt file. Output files can be found at http://mae-j209-server:80##/files/
+Hints:
 
