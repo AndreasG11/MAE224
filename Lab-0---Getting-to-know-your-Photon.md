@@ -215,8 +215,10 @@ The last two lines just print the output with some string formatting.
 print "mean = %0.4f" %mean(v)
 print "Std Dev = %0.8f" %std(v)
 ```
+
 Using the above, you should now be familiar with:
 Writing a script that reads a voltage (just one of the 6 pins is fine), plotting it over time, updating the plot periodically, and outputting the data to a txt file. Output files can be found at http://mae-j209-server:80##/files/
+
 Hints:
 
 1. See http://mae-j209-server:80##/python_basics for a refresher on Python and pithy
