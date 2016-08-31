@@ -205,9 +205,9 @@ The first line creates a plot, and the following three lines create labels and t
 The next line calls the time module in python and tells the code to pause for 1 second. Why in the world would we want to do this? Mostly there is an inherent delay in the rate at which the Photon updates the webpage. We slow the down the python script a tad to make sure that we do not grab the same data twice.
 
 The next three lines are used to append the data to the text file that we created. 
-   `f = open(filename, "a")`  opens the text file that we named and puts it into append mode
-   `f.write("%f\n" %data)` writes the data to a line in the text file
-   `f.close() `we then close the file so we don’t leave it open
+*    `f = open(filename, "a")`  opens the text file that we named and puts it into append mode
+*    `f.write("%f\n" %data)` writes the data to a line in the text file
+*    `f.close() `we then close the file so we don’t leave it open
 
 The last two lines just print the output with some string formatting.
 
