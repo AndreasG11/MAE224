@@ -13,3 +13,43 @@ Given your experience with Photons (and the wealth of documentation available on
 ## Writing a sketch to continuously read data
 
 You will code a sketch to read data from the your Photon’s analog input pins and then upload it to the api.particle.io server. Note that all data is written in JSON (JavaScript Object Notation) and you will need to parse this when you process in the information in pithy or matlab. In this format, data is represented as objects containing key-value pairs. In our case, we get objects that look like:
+
+{"A0":234,"A1":12,"A2":258,"A3":738,"A4":513,"A5":1010}
+
+“A0” - “A5” are the 6 analog pins, and each value is written together with the corresponding pin. Each value is between 0 and 4095 - corresponding to the range 0 V to 3.3 V - as the Particle Photon data has 12 bit resolution (max value 4095). With nothing plugged in, the values will float around due to noise.
+
+Simply import the json library into pithy or use the provided code in Matlab to do the parsing for you.
+
+Now is also a good time to be familiar with the pin-outs of your Photon, we will be using many of these, including PWM control for the servos in the following labs.
+
+![](https://community.particle.io/uploads/default/original/b/0/b034c15ddff602da98496b171cccc522aac9fcc8.png)
+
+Your next task is to write a program that correctly uploads data measured by the Photon to the cloud, then this data will be read by a pithy code to the user (you!). Consult your lab TA for help, but hopefully when you combine the following outline with what you already know about the Photons and Python should be sufficient.
+
+##Sample Particle Photon Code
+Below is an example of code that will work for the first lab. 
+```c
+double voltage = 0;
+char strTemp[20] = "Hello, World";
+int avg = 1000;
+int ptap1 = A0;
+
+void setup()
+{
+Serial.begin(9600);
+    Particle.variable("pressure", voltage);
+    pinMode(ptap1, INPUT);
+}
+
+void loop()
+{
+voltage = 0;
+  for(int n = 0;n<avg;n+=1)
+  {
+  voltage += analogRead(ptap1);
+  }
+  sprintf(strTemp,"%f",voltage);
+  Serial.println(strTemp);
+  voltage = ((voltage/avg)/4095)*3.3;
+}
+```
