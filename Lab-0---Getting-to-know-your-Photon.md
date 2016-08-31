@@ -1,4 +1,4 @@
-#Lab 0
+#Basics of Particle
 This guide is geared towards students who have very little programming experience. Hopefully after last semester you are at least familiar with many of the pithy commands outlined in the second section. This is simply an outline of the code you will be using throughout lab one and in the following labs. Note Well: Do not forget to use semicolons and state the data type of all variables.
 
 
