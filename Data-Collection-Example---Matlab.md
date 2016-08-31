@@ -1,3 +1,4 @@
+Paste the following Matlab code into a new script. Make sure that the folder containing Photon.m is contained within your file path.
 Matlab code: 
 
     %% Read Data Example
