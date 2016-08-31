@@ -53,3 +53,15 @@ voltage = 0;
   voltage = ((voltage/avg)/4095)*3.3;
 }
 ```
+
+Let us break this program into smaller sections and dissect what each line does
+
+###Instantiate Global Variables:
+```c
+double voltage = 0;
+char strTemp[20] = "Hello, World";
+int avg = 1000;
+int ptap1 = A0;
+```
+In this program we name 4 variables: `voltage`, _strTemp_, _avg_, ptap1.  We make a variable voltage of type double which we will post to the cloud through the Particle server. strTemp is a string that we create in the event that we want to monitor the Serial output.  We also create an integer avg which will be the number of samples that we will average over. Finally, we specify the pin that we wish to monitor as ptap1.
+__
