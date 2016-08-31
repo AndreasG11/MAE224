@@ -5,7 +5,7 @@ Matlab code:
 
 ```matlab
     %% Read Data Example
-    %Enter access token below. This can be found from the settings of your Particle Account
+    %Enter access token below. This can be found in the settings of your Particle Account
     atoken = 'abc123'; #YOUR ACCESS TOKEN HERE
 
     %Enter the core ID
