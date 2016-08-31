@@ -10,3 +10,8 @@ You can make a serial connection to the unit through the USB cable. The followin
 5.	Set the Baudrate to 9600, data bits to 8, parity to none, stop bits to 1. 
 6.	Click ok, which will close the popup window.
 7.	Click the “Connect” button at the top of the program.  You should see a connection timer begin at the bottom of the program.
+
+If everything has worked up to now, you will be able to communicate with your unit through the serial terminal!
+
+1.	Press the “i” key (i as in India) on your keyboard to obtain the Particle Photon ID. Write this down; you will connect your lab team’s Particle account to it so you can access the unit wirelessly. It should be a hex string that looks like: 42ff60063478505467883424. 
+2.	Close the Connection to the computer and click the RESET button on your Particle Photon. Make sure Particle breathes cyan.
