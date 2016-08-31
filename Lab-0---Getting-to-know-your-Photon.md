@@ -113,4 +113,10 @@ sprintf(strTemp,"%f",voltage);
   Serial.println(strTemp);
 ```
 
-##Python
+#Python Code
+Here's the part that should be more familiar. Last semester, you were provided with a Python script that reads a voltage, displays its current value and plots it over time. Now, you'll write that script yourselves as a refresher.
+
+Each group will be assigned a unique group number and password, giving your group sole access to the Python code and output files you generate.
+
+To access the pithy environment and write your script, open a browser and go to: http://mae-j209-server:80##/NEWFILENAME. Replace “##” with your group number. Your username will be “group##” and your password will be the one that we have given to you. NEWFILENAME can be anything you choose to name your coding environment.
+Remember that only your lab group has access to the code you write. Do not give the password to anyone outside your group. 
