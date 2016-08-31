@@ -26,10 +26,10 @@ Now we will write a quick programs. The first will blink the onboard LED of your
 16.	Create a new app, which you can name something like “Get the LED out.” Be sure to hit enter. Copy and paste the following code into the editing window:
 
 1)	Copy and paste the following code into the editing window:
+```c
 // Define the pins we're going to call pinMode on
 int led = D7;  // You'll need to wire an LED to this one to see it blink.
 
-```c
 // This routine runs only once upon reset
 void setup() {
   // Initialize D7 pin as output
