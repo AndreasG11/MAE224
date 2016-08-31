@@ -220,7 +220,7 @@ Using the above, you should now be familiar with:
 Writing a script that reads a voltage (just one of the 6 pins is fine), plotting it over time, updating the plot periodically, and outputting the data to a txt file. Output files can be found at http://mae-j209-server:80##/files/
 Hints:
 1. See http://mae-j209-server:80##/python_basics for a refresher on Python and pithy
-1. Take a look at the photon module that we created for you to learn how to interface with the Particle Photon.
-1. Be sure to pause in your loop with time.sleep so you don’t crash the server
-1. You can get information on any python function by putting the line help(functionName) in your script
+2. Take a look at the photon module that we created for you to learn how to interface with the Particle Photon.
+3. Be sure to pause in your loop with time.sleep so you don’t crash the server
+4. You can get information on any python function by putting the line help(functionName) in your script
 
