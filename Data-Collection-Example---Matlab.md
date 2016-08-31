@@ -1,12 +1,12 @@
 Paste the following Matlab code into a new script. Make sure that the folder containing Photon.m is contained within your file path.
-Matlab code: 
+Matlab code:
 
     %% Read Data Example
     %Enter access token below. This can be found from the settings of your Particle Account
-    atoken = 'abc123';
+    atoken = 'abc123'; #YOUR ACCESS TOKEN HERE
 
     %Enter the core ID
-    core =  'class1';
+    core =  'class1'; #YOUR PHOTON ID OR NAME HERE
 
     %Instantiates a new Photon object
     g = Photon(core,atoken);
@@ -34,4 +34,3 @@ Matlab code:
     end
 
     plot(time,data)
-
