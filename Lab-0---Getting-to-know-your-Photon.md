@@ -120,3 +120,50 @@ Each group will be assigned a unique group number and password, giving your grou
 
 To access the pithy environment and write your script, open a browser and go to: http://mae-j209-server:80##/NEWFILENAME. Replace “##” with your group number. Your username will be “group##” and your password will be the one that we have given to you. NEWFILENAME can be anything you choose to name your coding environment.
 Remember that only your lab group has access to the code you write. Do not give the password to anyone outside your group. 
+
+Let us now consider the pithy code. 
+
+```python
+from pithy import *
+from Photon import Photon
+import time
+
+ac = "YOURACCESSTOKENHERE"
+name = “YOURPHOTONNAMEHERE”
+g = Photon(name,ac)
+filename = "files/foobar%i.txt" %int(time.time())
+
+
+print g.getDevices()
+print g.getFunctions()
+print g.getVariables()
+v= []
+t= []
+
+for i in range(1,20):
+    data = g.fetch("pressure");
+    v.append(data)
+    t.append(i)
+    plot(v)
+    title("Sample Data")
+    ylabel("psi")
+    xlabel("Sample")
+    showme(“pic”,kind = "")
+    clf()
+    time.sleep(1)
+    f = open(filename, "a")
+    f.write("%f\n" %data)
+    f.close()
+print "mean = %0.4f" %mean(v)
+print "Std Dev = %0.8f" %std(v)
+```
+
+Wow that's a lot of code. To start we import several modules. The first line `from pithy import *` imports all of the normal python commands for our convenience. The next import relies on having the code from blackboard `from Photon import Photon` .  You need to make sure that there is a file called particle with the class called particle. This will allow us to use the class functions that we made. The import imports all of the standard time functions: `import time`
+
+The next few lines are used to create a spark core object. We begin by making a string out of your access token.
+ac = "YOURACCESSTOKENHERE"
+ Create a string for the Photon name with
+name = “YOURPHOTONNAMEHERE”
+We next create a new particle object which takes two arguments: the name or id of the particle photon and the access token. This will give you full access to the particle class that we made.  It can be called like this g = particle(name,ac). Note: replace your own photon’s access token and name.  2nd NOTE that the name is case sensitive and goes through http parsing which means that you need to enter it exactly as you would see it in a browser. The fetch function will help you see what you need to enter in the name spot. Next we create a file where we want to save our data. This creates file foobar.txt with the timestamp attached.
+`filename = "files/foobar%i.txt" %int(time.time())`
+
