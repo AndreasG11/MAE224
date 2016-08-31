@@ -1,3 +1,14 @@
+Download the [Source](https://github.com/mkfu/MAE224/tree/master/Source%20Files) files.
+
+These files provide a generic Particle Photon script that will enable you to access the pin modification functions from either Python or Matlab. You can then use the respective class files to create Photon objects to interact with the actual Photon.
+
+Below are some examples of data taking. You will notice that instead of setting the `pinMode` in the Particle IDE, you are setting the `pinMode` in the data collection code. Note that when you want to change the mode of a pin that you have previously set, you need to tap the RESET button the physical Photon. Otherwise, all you need to do is
+
+1.    Create a Photon object
+2.    Set the pin to read or write
+3.    Interact with the data
+
+
 #MATLAB
 Paste the following Matlab code into a new script. Make sure that the folder containing Photon.m is contained within your file path.
 
