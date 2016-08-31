@@ -1,5 +1,6 @@
 Paste the following text into a new Python script.
 
+```python
     from Photon import *
     atoken = "abc123"                   #Change this to your access token
     name = "class1"                     #Change this to your photons name
@@ -11,3 +12,4 @@ Paste the following text into a new Python script.
     print g.setFreq(500)
     print g.setInput('A0')
     print g.analogRead('A0')
+```
