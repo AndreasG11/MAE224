@@ -99,7 +99,8 @@ Put your measurements in this form and plot u/U as a function of ![](http://late
 ##Suggested Lab Write Up  
 Your report is expected to include:  
 ###Abstract:  
-- A short paragraph summarizing your work, including the task and the results. 
+- A short paragraph summarizing your work, including the task and the results.   
+
 ###Introduction:   
 - Clearly state lab objective  
 - Physics of boundary layers  
