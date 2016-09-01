@@ -79,5 +79,58 @@ _Returns_
 *  The value returned by the function  
 
 ***
+```python
+flash(file=String filepath)
+```  
+Requires the `requests` module. Compiles and uploads a local file to the Particle Photon.   
+_Arguments_ 
+*  `String filepath` - File path to the file(s) that you want to flash as the Photon sketch  
 
-  
+_Returns_  
+* None
+
+***
+```python
+attachServo(String pin)
+```  
+Each Photon can support a single servo attachment. Attaches a servo object to the Photon at the given pin.  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to the servo signal input.  
+
+_Returns_  
+* None  
+
+***
+```python
+move(Int position)
+```  
+Moves an attached servo object to the position  
+_Arguments_ 
+*  `Integer position` - Numerical position where the servo will move  
+
+_Returns_  
+* If successful returns the new position.  
+
+***
+```python
+detachServo()
+```  
+Detaches a servo object, if one is attached.  
+_Arguments_ 
+*  None  
+
+_Returns_  
+* None
+
+***
+```python
+getPin(String pin)
+```  
+Converts the name of the string to the integer value associated with that pin.  
+_Arguments_ 
+*  None  
+
+_Returns_  
+* None
+
+***
