@@ -68,6 +68,24 @@ If we replace the authorization token and name of the Photon correctly, we will 
 
 ![](https://github.com/mkfu/MAE224/blob/master/images/ex1result.png)
 
+##Lets break down what the code mean
+```matlab
+%% Read Data Example
+%Enter access token below. This can be found in the settings of your Particle Account
+atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
+
+%Enter the core ID
+core =  'class1'; %YOUR PHOTON ID OR NAME HERE
+
+%Instantiates a new Photon object
+g = Photon(core,atoken);
+g.getConnectedDevices()'
+```
+
+
+
+
+
 #Python
 Similarly, we can make very similar function calls in Python to read and write data. Paste the following text into a new Python script.
 
