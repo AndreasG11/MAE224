@@ -10,6 +10,9 @@ Below are some examples of data taking. You will notice that instead of setting 
 
 
 #MATLAB
+For this example connect the A3 and A4 analog pins together. Also connect the D7 and D3 pins together.
+
+![](https://github.com/mkfu/MAE224/blob/master/images/example1circuit.png)
 Paste the following Matlab code into a new script. Make sure that the folder containing Photon.m is contained within your file path.
 
 Matlab code:
@@ -61,7 +64,7 @@ legend('Analog','Digital','location','southeast')
 
 If we replace the authorization token and name of the Photon correctly, we will get the following result.
 
-![](https://github.com/mkfu/MAE224/blob/master/Source%20Files/MATLAB%20v1/ex1result.png)
+![](https://github.com/mkfu/MAE224/blob/master/images/ex1result.png)
 
 #Python
 Similarly, we can make very similar function calls in Python to read and write data. Paste the following text into a new Python script.
