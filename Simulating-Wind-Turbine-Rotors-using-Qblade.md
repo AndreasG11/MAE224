@@ -19,5 +19,9 @@ There are a few basic non-dimensional parameters which are typically used in the
 
 **Parameter** | **Definition** | **Explanation**
 --- | --- | ---
-![](http://latex2png.com/output//latex_1b2d3c9fd227c094b587db81f208f580.png)| `renders` | **nicely**
-1 | 2 | 3
+![](http://latex2png.com/output//latex_b9440a2a1a27b86fb6f24967d749de96.png)| `renders` | **nicely**
+![](http://latex2png.com/output//latex_101adfd42181c796410d2904aa18823a.png) | 2 | 3  
+![](http://latex2png.com/output//latex_865ddaf133b432b351d4abd96524cfda.png) | 2 | 3
+![](http://latex2png.com/output//latex_b8d2bebd6fcf01865d26e7f6f9e06590.png) | 2 | 3
+![](http://latex2png.com/output//latex_f2bc3c4d8a306214b976baa8a6c40afa.png) | 2 | 3
+![](http://latex2png.com/output//latex_b8d2bebd6fcf01865d26e7f6f9e06590.png) | 2 | 3
