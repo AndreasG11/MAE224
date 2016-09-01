@@ -10,9 +10,11 @@ Below are some examples of data taking. You will notice that instead of setting 
 
 
 #MATLAB
-For this example connect the A3 and A4 analog pins together. Also connect the D7 and D3 pins together.
+For this example connect the A3 and A4 analog pins together. Also connect the D7 and D3 pins together.  
+<p align="center">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/example1circuit.png" width="300">  
+</p>   
 
-![](https://github.com/mkfu/MAE224/blob/master/images/example1circuit.png)
 Paste the following Matlab code into a new script. Make sure that the folder containing Photon.m is contained within your file path.
 
 Matlab code:
