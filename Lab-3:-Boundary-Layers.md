@@ -92,7 +92,13 @@ How does the measured boundary layer thickness change with wind tunnel velocity?
 Can you perceive a difference in the shape of your boundary layer profile between the different wind tunnel velocities? Should you be able to? Why or why don’t you see a difference?  
 
 ##Extra Credit  
-The laminar boundary layer solution is self-similar (or a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](http://latex2png.com/output//latex_e97d2997444f7582238348dcab434cef.png), which in this case is ![](http://latex2png.com/output//latex_b4c340f3e31c7239814d7edce82858fa.png) The similarity solution is then ![](http://latex2png.com/output//latex_a90b32855e3591f6bd8915c4b6449f11.png).
+The laminar boundary layer solution is self-similar (or a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](http://latex2png.com/output//latex_e97d2997444f7582238348dcab434cef.png), which in this case is ![](http://latex2png.com/output//latex_b4c340f3e31c7239814d7edce82858fa.png) The similarity solution is then ![](http://latex2png.com/output//latex_a90b32855e3591f6bd8915c4b6449f11.png).  
 
-Put your measurements in this form and plot  as a function of , with all 3 data sets on the same plot. How well do your data sets collapse with each other? How well do they agree with the numerical solution? Explain why you may see differences.
+Put your measurements in this form and plot u/U as a function of ![](http://latex2png.com/output//latex_e97d2997444f7582238348dcab434cef.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? How well do they agree with the numerical solution? Explain why you may see differences.  
+
+##Suggested Lab Write Up  
+###Abstract
+###
+
+
 
