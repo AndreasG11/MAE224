@@ -36,8 +36,7 @@ time = zeros(1,N);
 %the digital write between 1 and 0.  Connect A3 to A4 and D3 to D7.
 tic
 for i = 1:N
-    round(255/N)*i
-    g.analogWrite('A4',round(255/N)*i);
+    g.analogWrite('A4',floor(255/N)*i);
     g.digitalWrite('D7',mod(i,2));
     data(i)  = g.analogRead('A3')/4095*3.3;
     data2(i)  = g.digitalRead('D3')*3.3;
