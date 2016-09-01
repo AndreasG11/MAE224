@@ -40,6 +40,7 @@ Quick tutorial on how use a servo with the Photon class and read a PWM signal
 attachServo()
 move()
 getTone()
+detachServo()
 ```
 
 ##[Technical Report Guidelines](https://github.com/mkfu/MAE224/wiki/Technical-Report-Guidelines)
