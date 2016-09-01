@@ -17,10 +17,10 @@ Matlab code:
 ```matlab
     %% Read Data Example
     %Enter access token below. This can be found in the settings of your Particle Account
-    atoken = 'abc123'; #YOUR ACCESS TOKEN HERE
+    atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
 
     %Enter the core ID
-    core =  'class1'; #YOUR PHOTON ID OR NAME HERE
+    core =  'class1'; %YOUR PHOTON ID OR NAME HERE
 
     %Instantiates a new Photon object
     g = Photon(core,atoken);
@@ -34,11 +34,11 @@ Matlab code:
 
     tic
     for i = 1:N
-        i;
+        i
         g.analogWrite('A4',10*i);
         g.digitalWrite('D4',mod(i,2));
-        data(i)  = g.analogRead('A3')/4095*3.3
-        data2(i)  = g.digitalRead('D3')
+        data(i)  = g.analogRead('A3')/4095*3.3;
+        data2(i)  = g.digitalRead('D3');
         time(i) = toc;
     end
 
