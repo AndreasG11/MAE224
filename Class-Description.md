@@ -254,4 +254,28 @@ _Arguments_
 _Returns_  
 * 1 if successful, -1 if already designated as an input/output  
 
+## Variables
+###position
+```python
+position
+```  
+Current position of the connected servo
+***  
+###frequency
+```python
+frequency
+```  
+Frequency of the analogWrite and PWM sigmals
+***  
+###String
+```python
+String
+```  
+String record of the sampled data from every pin. Numerial positions corresponds to integer value of the pins.  
+***  
+###String2
+```python
+String2
+```  
+String record of which pins are input, output, servo, or undesigncated  
 ***  
