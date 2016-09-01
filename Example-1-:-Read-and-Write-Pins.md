@@ -32,12 +32,7 @@ Matlab code:
     data2 = zeros(1,N);
     time = zeros(1,N);
 
-    g.setFreq(500);
     tic
-
-    g.analogWrite('A4',0);
-    g.attachServo('A5');
-    pause(1)
     for i = 1:N
         i;
         g.analogWrite('A4',10*i);
