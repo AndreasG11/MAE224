@@ -4,7 +4,9 @@
 ## Background
 As you are by now aware (or will be as of Monday, depending on when you’re reading this), the pressure in a fluid system varies with depth.  This is why scuba divers get the bends when they rise too quickly, and why wooden submarines never really caught on.  The governing relationship for pressure with depth is generally:
 
-![](http://latex2png.com/output//latex_216b6246eb545de4dd03616add3e99e2.png)
+<p align="center">
+<img src="http://latex2png.com/output//latex_216b6246eb545de4dd03616add3e99e2.png" width="100">  
+</p>  
 
 This relationship allows us to relate pressure of the fluid at one position in a control volume to the pressure at another position.  This principle is why mmHg is a unit of pressure measurement: we can construct a device which can accurately measure pressure from a column of mercury.  Such a device is known as a barometer, and it looks like this:  
 
