@@ -97,8 +97,29 @@ The laminar boundary layer solution is self-similar (or a similarity solution) w
 Put your measurements in this form and plot u/U as a function of ![](http://latex2png.com/output//latex_e97d2997444f7582238348dcab434cef.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? How well do they agree with the numerical solution? Explain why you may see differences.  
 
 ##Suggested Lab Write Up  
-###Abstract
-###
+Your report is expected to include:  
+###Abstract:  
+- A short paragraph summarizing your work, including the task and the results. 
+###Introduction:   
+- Clearly state lab objective  
+- Physics of boundary layers  
+o	Why do they exist?  
+o	What do you expect the boundary layer to look like in the channel?  
 
+###Experimental procedure  
+- Physics of pitot tubes  
+o	Why were able to apply Bernoulli’s equation in the channel flow?  
+- Explain why (and how) you made each of your measurements  
+
+### Results  
+- Clearly (and logically) present your boundary layer data  
+
+##Discussion
+- Explain if your results were what you expected  
+- Can you think of other ways that velocity can be measured at a point in a flow?  
+- What are the sources of error, and how do they contribute to making the measurements either higher, or lower, than expected?  
+
+###Conclusion  
+- Summarize your **findings** (don’t just state what you did!)  
 
 
