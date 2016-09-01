@@ -33,6 +33,14 @@ This brings us back to the word small. The opening in the pitot tube is so small
 
 Using Bernoulli’s equation, and thinking about the boundary conditions at point 2 on the pitot probe: derive an expression for P2-P1  in the channel flow.  
 
-Given the definitions we have provided, what is  and what is 
+Given the definitions we have provided, what is P1 and what is P2?
 
 Check with your TA to make sure your equations are correct before proceeding. 
+
+##Boundary Layers  
+In order to satisfy the no-slip condition at solid boundaries in flows at high Reynolds numbers, a thin boundary layer forms in which the velocity changes from 0 at the wall to the free-stream value U at some distance away. The boundary layer thickness ![](http://latex2png.com/output//latex_3e4fad6a2688dcc380cecf2cac4b23b5.png) is typically defined as the distance from the wall at which the velocity reaches . For laminar flow over a flat plate, one can show that the boundary layer thickness ![](http://latex2png.com/output//latex_3e4fad6a2688dcc380cecf2cac4b23b5.png) grows as ![](http://latex2png.com/output//latex_7660921e414637f0081244f70e2640b3.png). Use dimensional analysis together with the fact that ![](http://latex2png.com/output//latex_3e4fad6a2688dcc380cecf2cac4b23b5.png) ~ ![](http://latex2png.com/output//latex_7660921e414637f0081244f70e2640b3.png) to figure out the functional form for ![](http://latex2png.com/output//latex_3e4fad6a2688dcc380cecf2cac4b23b5.png). That is, consider the dimensions of the other important variables (U and ![](http://latex2png.com/output//latex_d9249c7511ea478d3b7ae13acd736ed7.png)) to see how they can fit together with ![](http://latex2png.com/output//latex_7660921e414637f0081244f70e2640b3.png) to form a length scale. This will be correct up to a numerical prefactor, which turns out to be about 4.91.
+
+<p align="center">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/BL1.png" width="600">  
+</p>  
+
