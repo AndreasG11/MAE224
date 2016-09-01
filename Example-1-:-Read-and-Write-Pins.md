@@ -59,8 +59,12 @@ ylabel('Voltage')
 legend('Analog','Digital','location','southeast')
 ```
 
+If we replace the authorization token and name of the Photon correctly, we will get the following result.
+
+![](https://github.com/mkfu/MAE224/blob/master/Source%20Files/MATLAB%20v1/ex1result.png)
+
 #Python
-Paste the following text into a new Python script.
+Similarly, we can make very similar function calls in Python to read and write data. Paste the following text into a new Python script.
 
 ```python
     from Photon import *
