@@ -182,3 +182,52 @@ _Returns_
 * None     
 
 ***  
+###digitalRead
+```python
+digitalRead(String pin)
+```  
+Sample the bit value of an digital pin.  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to sample.  
+
+_Returns_  
+* The bit value at that pin. Takes value of 0 for LOW and 1 for HIGH  
+
+***    
+###digitalWrite
+```python
+digitalWrite(String pin, Int Value)
+```  
+Writes a bit value to an analog pin.  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to sample.  
+*  `Int value` - The bit value to write. Takes a value of 0 or 1 corresponding to HIGH or LOW.    
+
+_Returns_  
+* None     
+
+***  
+###setInput
+```python
+setInput(String pin)
+```  
+Designates a pin to be an input pin  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to sample.  
+
+_Returns_  
+* 1 if successful, -1 if already designated as an input/output  
+
+***  
+###setOutput
+```python
+setOutput(String pin)
+```  
+Designates a pin to be an output pin  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to sample.  
+
+_Returns_  
+* 1 if successful, -1 if already designated as an input/output  
+
+***  
