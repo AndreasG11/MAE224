@@ -89,8 +89,8 @@ The setup you’re working with involves two pipes with different inner diameter
 
 - U = Flow Velocity
 - d = Pipe Diameter
-- rho = Fluid Density
-- mu = Dynamics Viscosity  
+- <img src="http://latex2png.com/output//latex_72ae82ce3f23b9b246253faf5978e321.png" width="10">   = Fluid Density
+- <img src="http://latex2png.com/output//latex_246adeb2d18fa79d8c0172817a7ebc90.png" width="10"> = Dynamics Viscosity  
 
 In terms of the flow rate, the Reynolds number can be expressed by:
 
@@ -107,4 +107,54 @@ A Moody diagram is a graph in non-dimensional form that relates the “head loss
 <p align="center">
 <img src="http://latex2png.com/output//latex_78c0eb90c107d61dad726dd43b81e329.png" width="200">  
 </p>  
+
+- l = distance between pressure taps  
+- f = Darcy friction factor  
+
+Turbulent and laminar flows show different curves on a Moody diagram. The turbulent curve is sensitive to the properties of the pipe, mainly roughness, while the laminar plot admits a simple analytical solution of the governing equations given by:  
+
+<p align="center">
+<img src="http://latex2png.com/output//latex_ed7fb59f47c8e34ec2af7bb5af2ec981.png" width="100">  
+</p> 
+
+Remember that the flow rate that you are reading is the total flow rate going through the pump.   
+
+Think how you can isolate each pipe and get the right flow rate. Please note that the flow meter is not sensitive enough to measure the flow rate for the small pipe. Therefore, by having the expression for the laminar flow, you can calculate the flow rate/velocity for each pressure drop reading. In that sense, you will need to provide a relation between the input to the pump and the velocity in the small pipe.   
+
+In this experiment, the quality of the data contributes to your grade so make sure you take enough data points and also make sure you’re waiting enough time for the setup to stabilize when you change the flow rate.   
+
+#Extra Credit 
+-  Think of alternative ways by which you can estimate the flow rate in the small pipe and try to implement them in order to verify the relation for laminar flow.   
+
+-  Try to construct the Moody diagram by starting with a high Re and going to low Re (without stopping the pump) and then going from low Re to high Re. To get the extra-credit, you will have to present both measurements, discuss the difference (if observed) and explain when this difference is expected to be significant.  
+
+-  Successfully reduce drag in a novel, meaningful and verifiable way. If you succeed, please see let your TA know so they can help you write the journal article.  
+
+#Guidelines for the report  
+Your report is expected to include:  
+###Abstract:  
+###Introduction:   
+- Discuss the scientific concept of the lab 
+- Effectively present the objectives and purpose of the lab  
+- Reynolds number is one of the most important numbers in fluids mechanics. Explain the physical significance of this number and give some examples of high and low Reynolds number flows around you.  
+- Commercial airplanes fly at Reynolds number of the order of few millions. Think how you can construct an experiment to get such high Reynolds number without building a facility the size of a commercial airplane.  
+
+###Experimental procedure
+- Give enough details of the procedure and the scientific concept behind them  
+
+### Results  
+- Detailed findings  
+- Moody diagram plot for laminar and turbulent flows  
+
+##Discussion
+-	Analysis of the results
+-	Compare with Moody diagram in textbooks
+-	Do your findings correspond? Why or why not?
+-	Provide sufficient explanation of the findings and relate to concepts presented in the introduction
+-	Error analysis
+
+###Conclusion  
+- Summarize findings  
+
+
 
