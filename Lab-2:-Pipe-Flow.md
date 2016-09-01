@@ -133,6 +133,7 @@ In this experiment, the quality of the data contributes to your grade so make su
 #Guidelines for the report  
 Your report is expected to include:  
 ###Abstract:  
+- A short paragraph summarizing your work, including the task and the results. 
 ###Introduction:   
 - Discuss the scientific concept of the lab 
 - Effectively present the objectives and purpose of the lab  
