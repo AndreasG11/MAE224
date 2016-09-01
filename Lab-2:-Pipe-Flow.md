@@ -8,7 +8,7 @@ The Particle Photon cannot output the correct voltage or current needed to drive
 The MOSFET component is the Darlington pair transistor.  It has a gate (g), drain (d) and source (s) are in almost alphabetical order when looking at this component.  The base will be taking the analog output signal from your Particle Photon and will be what controls the output to the motor. The external 12V+ power will come into the motor, then out of it into the collector.  Across the power leads to and from the motor, there is a diode to prevent any back EMF from damaging the motor. The emitter will receive the black wire from the external power supply, which should be referenced to ground.  
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Motor%20Diagram.png?raw=true" width="800">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Motor%20Diagram.png?raw=true" width="800">  
 </p>
 
 The pressure drop in the pipe can be recorded manually by a manometer setup, or by using the pressure transducer and the code that you wrote in the previous lab. It’s a good idea to start using the manometer just because we took all the trouble to make it and it works really well, but as an addendum to the lab you can double check the pressure with the transducer that you just calibrated!  
