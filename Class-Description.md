@@ -12,6 +12,7 @@ _Returns_
 *  A Photon object that knows how to access the following functions and methods  
     
 ## Functions
+### getDevices
 ```python
 getDevices()
 ```
@@ -23,6 +24,7 @@ _Returns_
 * None  
 
 ***
+###getConnection
 ```python
 getConnection()
 ```
@@ -34,6 +36,7 @@ _Returns_
 *  Returns `True` if the device associated with the Photon's name is connected the internet and `False` if the device is not.  
 
 ***  
+###getFunctions
 ```python
 getFunctions()
 ```
@@ -45,6 +48,7 @@ _Returns_
 * None  
 
 ***
+###getVariables
 ```python
 getVariables()
 ```  
@@ -56,6 +60,7 @@ _Returns_
 * None  
 
 ***
+###fetch
 ```python
 fetch(String variable)
 ```  
@@ -67,6 +72,7 @@ _Returns_
 *  The value associated with that variable  
 
 ***
+###push
 ```python
 push(String functions, String value)
 ```  
@@ -79,6 +85,7 @@ _Returns_
 *  The value returned by the function  
 
 ***
+###flash
 ```python
 flash(file=String filepath)
 ```  
@@ -90,6 +97,7 @@ _Returns_
 * None
 
 ***
+###attachServo
 ```python
 attachServo(String pin)
 ```  
@@ -101,6 +109,7 @@ _Returns_
 * None  
 
 ***
+###move
 ```python
 move(Int position)
 ```  
@@ -112,6 +121,7 @@ _Returns_
 * If successful returns the new position.  
 
 ***
+###detachServo
 ```python
 detachServo()
 ```  
@@ -123,14 +133,52 @@ _Returns_
 * None
 
 ***
+###getPin
 ```python
 getPin(String pin)
 ```  
 Converts the name of the string to the integer value associated with that pin.  
 _Arguments_ 
-*  None  
+*  `String pin` - The name of the pin connected to get the integer value of.  
 
 _Returns_  
 * None
 
 ***
+###getPinMode
+```python
+getPinMode(String pin)
+```  
+Prints whether a pin is an input or output pin  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to get the mode of.  
+
+_Returns_  
+* None  
+
+***   
+###analogRead
+```python
+analogRead(String pin)
+```  
+Sample the bit value of an analog pin.  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to sample.  
+
+_Returns_  
+* The integer value at that pin. Takes value from 0-4095 corresponding to 0-3.33V  
+
+***    
+###analogWrite
+```python
+analogWrite(String pin, Int Value)
+```  
+Writes a bit value to an analog pin.  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to sample.  
+*  `Int value` - The bit value to write. Takes a value between 0-255 corresponding to 0-3.33V.    
+
+_Returns_  
+* None     
+
+***  
