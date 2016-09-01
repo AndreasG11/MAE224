@@ -26,8 +26,19 @@ Description of the functions and variables in the Photon class and how to access
 ##[Example 1 - Read and Write](https://github.com/mkfu/MAE224/wiki/Example-1-:-Read-and-Write-Pins)
 Quick tutorial on how to use the Photon class to read and write data with analog pins
 
+```
+analogRead()
+analogWrite()
+```
+
 ##[Example 2 - Servos and PWMs](https://github.com/mkfu/MAE224/wiki/Example-2-:-Servos-and-PWMs)
 Quick tutorial on how use a servo with the Photon class and read a PWM signal 
+
+```
+attachServo()
+move()
+getTone()
+```
 
 ##[Technical Report Guidelines](https://github.com/mkfu/MAE224/wiki/Technical-Report-Guidelines)
 Expectations from technical reports
