@@ -1,10 +1,9 @@
 #Designing Wind Turbine Rotors using Qblade
-
 In lab 5, you will be tasked with designing a wind turbine. This will make use of your knowledge of aerodynamics and airfoil theory from lecture and lab 4. There are many variables available in the design space of a wind turbine, and deciding how to alter your rotor shape to maximize power output will be your primary task. Using the Qblade tool, and your knowledge of airfoils, you will attempt to produce the most power possible with your design. Once your rotor is designed in Qblade, you will be exporting the geometry into Creo and then 3-D printing the rotors to test in the wind tunnel (covered in a separate tutorial).  This guide covers some of the basics of wind turbine design as well as how to test your design in Qblade. 
 In the most general terms, wind turbine rotors are constructed using various airfoils stacked vertically to create a rotor blade. The type, thickness, chord, twist and radial position of the airfoils are chosen by the designer to optimize the blade shape for a set of input conditions. See figure 1 for an example rotor blade. 
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/BEM.png" width="800">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/BEM.png" width="800">
 </p>  
 Figure 1:Example wind turbine blade, note that z is the radial direction out from the rotor hub.  
 
@@ -15,7 +14,7 @@ The induced velocity arises from the vortex system trailing the wind turbine, an
 The method by which we solve for the induced velocity is an iterative procedure known as Blade Element Momentum (or BEM) and combines the forces produced by each individual blade element (or section as in figure 2) and places them on a global momentum balance of the rotor disk. This must be solved iteratively until the solution converges. You will not need to be familiar with the theory behind BEM for the lab, but if you are interested there are many resources available such as the book by Martin O.L. Hansen, “Aerodynamics of Wind Turbines”. Qblade has a BEM solver built in which will take your rotor geometry, along with the Cl and Cd vs α curves you generated for each airfoil section and return the power output of a turbine (along with many other useful data points). 
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/Vectors.png" width="600"> 
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Vectors.png" width="600"> 
 </p>   
 Figure 2: Airfoil section velocity triangle  
 
@@ -51,13 +50,13 @@ This section picks up where the previous Qblade tutorial left off, by now you sh
 The first step when creating a wind turbine blade is to take our 2-D airfoil data and extrapolate the angle of attack range using a curve fit. Why do we need to do this? The answer is essentially twofold, the first reason is that unlike airplane designs, wind turbines occasionally operate in what is known as deep stall, or very high angles of attack. This may occur during high wind conditions or if the rotor is parked. The second reason is that the BEM solver used will occasionally need to iterate over various values of α which are outside the -10 to 20 degrees or so that we actually simulated. Obviously we would prefer to simulate the entire 360 degrees of α, but unfortunately no one has yet developed an accurate enough method to quickly simulate the flow at very high/very low angles of attack.
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/QB1.png" width="1000">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB1.png" width="1000">
 </p>
 
 The first step is to click on the 360° tab in Qblade. In the first drop-down, select the 2412 airfoil if it is not already selected. Now click New to start the extrapolation procedure. The window should refresh and look similar to the following:
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/QB2.png" width="1000">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB2.png" width="1000">
 </p>  
 
 Notice in the top graph is our simulated Cl vs α curve, and the fitted curve overlaying it. You can adjust the sliders to the left to try and match the two. Also keep an eye on your Cd vs α fit at the bottom, note especially how much of the curve we have to fit. Do you think this could cause any issues with our predictions later?  
@@ -65,7 +64,7 @@ Notice in the top graph is our simulated Cl vs α curve, and the fitted curve ov
 After you are satisfied with your fit, click save. Notice the final curve is a composite of the simulated data and the curve fit data. Now move on to the rotor tab by clicking the button next to the 360° one.  
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/QB3.png" width="1000">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB3.png" width="1000">
 </p>  
 
 Here we will be actually filling out the geometry of our rotor shape. The Qblade_starter file has been created with the diamond shaped hub to assist with importing the rotor into Creo later in this tutorial. Click Edit at the bottom left to add new airfoil sections to the rotor. 
@@ -73,8 +72,8 @@ Here we will be actually filling out the geometry of our rotor shape. The Qblade
 A table will open up on the left side and you will be able to add new rotor sections using the “Insert after section ##” command. Click on section 2 (second row) in the table and then click “Insert after section 2” to put in a new airfoil, then click row 3 that was just created and insert another section after that for a total of 4. Note in the following figure we are going to use our 2412 airfoil from before for all new sections for now. Later you may wish to choose more aerodynamically efficient airfoils, this is up to you. For now keep all sections 2412. 
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/QB4.png" width="300">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/QB5.png" width="300">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB4.png" width="300">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB5.png" width="300">
 </p>  
 
 ou will need to select the 2412 airfoil from the 3rd column, and leave the first two rows alone.
@@ -89,10 +88,10 @@ Then click save and your rotor should look like the following (tip: click show r
 Now click the next tab to the right of the rotor design and enter the BEM simulation module. This module will solve the BEM equations for us and output the results in exportable graphs. Click “Define Simulation” on the right to begin.
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/QB6.png" width="1000">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB6.png" width="1000">  
 </p>  
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/QB7.png" width="300">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB7.png" width="300">  
 </p>  
 
 
@@ -101,7 +100,7 @@ A new window will pop up where you can enter the parameters for the BEM run. The
 Now three blank graphs will appear, and to the right we must set the range of Tip Speed Ratios we expect to run at (you will need to calculate these for your blade, use the Radius and a guess at the rotation rate to get close). We will go from 0.5 to 3 for now at a wind speed of 20 m/s since that is the wind tunnel velocity we will be using.  
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/Final%20Project/QB8.png" width="300">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB8.png" width="300">  
 </p>  
 
 Our output is Cp and Ct as a function of TSR in the top two graphs, the bottom graph shows some other variables as a function of radius, double click to change what is displayed on any of the graphs. 
