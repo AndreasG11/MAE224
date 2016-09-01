@@ -231,3 +231,27 @@ _Returns_
 * 1 if successful, -1 if already designated as an input/output  
 
 ***  
+###setFreq
+```python
+setFreq(Int frequency)
+```  
+Designates the frequency at which analogWrite/PWM outputs a signal 
+_Arguments_ 
+*  `Int frequency` - The frequency in Hz that analogWrit will output a signal  
+
+_Returns_  
+* 1 if successful, -1 if already designated as an input/output  
+
+***  
+###getTone
+```python
+getTone(String pin)
+```  
+Returns the frequency of a square wave from a given pin, passed by String argument pin  
+_Arguments_ 
+*  `String pin` - The name of the pin connected to sample.  
+
+_Returns_  
+* The frequency of the pulsed signal
+
+***
