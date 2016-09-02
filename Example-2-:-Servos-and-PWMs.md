@@ -1,16 +1,14 @@
-Download the [Source](https://github.com/mkfu/MAE224/tree/master/Source%20Files) files.
+Download the [Source](https://github.com/mkfu/MAE224/tree/master/Source%20Files) files if you have not already.
 
-These files provide a generic Particle Photon script that will enable you to access the pin modification functions from either Python or Matlab. You can then use the respective class files to create Photon objects to interact with the actual Photon.
-
-Below are some examples of data taking. You will notice that instead of setting the `pinMode` in the Particle IDE, you are setting the `pinMode` in the data collection code. Note that when you want to change the mode of a pin that you have previously set, you need to tap the RESET button the physical Photon. Otherwise, all you need to do is
-
-1.    Create a Photon object
-2.    Set the pin to read or write
-3.    Interact with the data
-
+In this tutorial, we will use the lessons from Example 1 to learn how to turn a servo and (independently) read the frequency of a PWM signal fed into a pin.
 
 #MATLAB
-For this example connect the A3 and A4 analog pins together. Also connect the D7 and D3 pins together.  We are going to use pins A3 and D3 to measure the outputs of A4 and D7, respectively.
+For this example connect the A1 and A5 analog pins together. We will also need to connect a servo to the Photon. A standard servo has 3 wires that need to be connected. Typically, these wires are red, black, and white.  These colors correspond to
+| **Wire Color** | Electrical | Pin |
+| --- | --- | --- |
+| Red | +5V | VIN |
+| Black | Ground | GND |
+
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/example1circuit.png" width="300">  
 </p>   
