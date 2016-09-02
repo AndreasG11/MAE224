@@ -57,8 +57,6 @@ g.setFreq(3400)
 %Write to A5
 g.analogWrite('A5',100)
 g.analogRead('A1')
-g.analogRead('A1')
-
 g.getTone('A1')
 ```
 
