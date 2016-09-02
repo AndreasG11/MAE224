@@ -112,3 +112,16 @@ Finally, we detach the servo with the `detachServo()` functions
 g.detachServo()
 ```
 ## Reading in a PWM
+The last few lines are quite simple. The purpose of these lines are to demonstrates how to read the frequency of a PWM signal. Because the `analogWrite()` uses a PWM signal as a proxy for a true analog signal, we can use this to test the `getTone` function. We first can set the frequency of the writing with `setFreq` and then write an output.
+
+```matlab
+g.setFreq(3400)
+g.analogWrite('A5',100)
+```
+Finally, we can see that we can both read in the analog value of the signal and we can read in the frequency of that signal.
+
+```matlab
+g.analogRead('A1')
+g.getTone('A1')
+```
+This function is of particular use when reading in turbin/hall-sensor flow meters.
