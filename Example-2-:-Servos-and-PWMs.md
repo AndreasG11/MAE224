@@ -11,7 +11,7 @@ For this example connect the A1 and A5 analog pins together. We will also need t
  Black | Ground | GND   
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/example1circuit.png" width="300">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/example2circuit.png" width="300">  
 </p>   
 
 Paste the following Matlab code into a new script. Make sure that the folder containing Photon.m is contained within your file path.
