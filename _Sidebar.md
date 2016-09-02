@@ -10,7 +10,7 @@
 ##Labs  
 - [Lab 0 - Programming Basics](https://github.com/mkfu/MAE224/wiki/Lab-0:-Python-to-Particle-Communication)   
 - [Lab 1 - Hydrostatics](https://github.com/mkfu/MAE224/wiki/Lab-1:--Hydrostatics)    
-- [Lab 2 - Pipe flow](https://github.com/mkfu/MAE224/wiki/Lab-0:-Python-to-Particle-Communication)  
+- [Lab 2 - Pipe flow](https://github.com/mkfu/MAE224/wiki/Lab-2:-Pipe-Flow)  
 - [Lab 3 - Boundary Layer](https://github.com/mkfu/MAE224/wiki/Lab-3:-Boundary-Layers)    
 - [Lab 4 - Lift & Drag](https://github.com/mkfu/MAE224/wiki/Lab-4:-Lift-and-Drag)  
 
