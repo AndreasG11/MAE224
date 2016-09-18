@@ -8,6 +8,6 @@ Once everything is installed and all of the licenses have cleared, you can load 
 Much of this is quite straightforward. There are 4 distinct areas within the window, but you can customize the layout to suit your tastes and needs. Starting from the upperleft and moving clockwise, we have the
 
 * _Current Folder_ - This displays the current working directory and the files/folders contained within. You can utilize and interact directly with *files* in the current working directory but not the folders. If you want to use a file located in an embedded folder you need to add it to the path or change the working directory to the child directory. You can tell if the folder is added to your path because it will be a normal text color, while directories not added will be transparent.
-* _Editor_ 
-* _Command Window_
-* _Workspace_
+* _Editor_ - This is not typically loaded in the default window layout, but you can either click *New Script* from the *Home* banner at the top of the MATLAB window to create the window or add it manually from the *Layout* dropdown in the *Home* banner. Here you can write functions and scripts. 
+* _Command Window_ - This is is where you can execute one-off commands and see all output from your commands.
+* _Workspace_ - This is the space where all of the working memory is collected. You can click the different variables and see what is contained in each of them and interact with the cells much in the same way you would in excel.
