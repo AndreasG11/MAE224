@@ -1,3 +1,6 @@
 # MATLAB Basics
-Data processing with Matlab is quite straightforward. You can find the installation directions from Princeton OIT [here](https://www.princeton.edu/software/licenses/software/matlab/)
+Data processing with Matlab is quite straightforward. You can find the installation directions from Princeton OIT [here](https://www.princeton.edu/software/licenses/software/matlab/). Allocate anywhere from 30 minutes to a few hours to complete the installation depending on your network connection, computer speed and technical prowess. For those of you running a flavor of Linux will have a bit more difficulty than your peers, and will experience some known bugs. These will not prohibit you from using Matlab, but they will make your life more interesting (e.g. problems w/ horizontal scrolling).
+
+Once everything is installed and all of the licenses have cleared, you can load Matlab and it will look something like this.
+
 ![](https://github.com/mkfu/MAE224/blob/master/images/MATLAB_empty.PNG)
