@@ -3,7 +3,7 @@
 ##Tutorials  
 - [Setup a Photon](https://github.com/mkfu/MAE224/wiki/A-Quick-Setup-of-Particle-Photon)   
 - [Example 1 - Read and Write](https://github.com/mkfu/MAE224/wiki/Example-1-:-Read-and-Write-Pins)    
-- [Example 2 - RServos and PWM](https://github.com/mkfu/MAE224/wiki/Example-2-:-Servos-and-PWMs)  
+- [Example 2 - Servos and PWM](https://github.com/mkfu/MAE224/wiki/Example-2-:-Servos-and-PWMs)  
 
 ###[Technical Report Guidelines](https://github.com/mkfu/MAE224/wiki/Technical-Report-Guidelines)    
 
