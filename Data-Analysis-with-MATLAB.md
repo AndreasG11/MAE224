@@ -11,3 +11,10 @@ Much of this is quite straightforward. There are 4 distinct areas within the win
 * _Editor_ - This is not typically loaded in the default window layout, but you can either click *New Script* from the *Home* banner at the top of the MATLAB window to create the window or add it manually from the *Layout* dropdown in the *Home* banner. Here you can write functions and scripts. 
 * _Command Window_ - This is is where you can execute one-off commands and see all output from your commands.
 * _Workspace_ - This is the space where all of the working memory is collected. You can click the different variables and see what is contained in each of them and interact with the cells much in the same way you would in excel.
+
+#Useful commands
+##Navigation and Environment
+* _clc_ - clears the Command Window of text 
+* _clear all_ - clears all variables and more from the Matlab memory. Use with *caution*
+* _close all_ - close all
+* _addPath(String directory)_ - adds a directory path to the working directory execution path
