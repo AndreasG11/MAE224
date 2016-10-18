@@ -1,5 +1,5 @@
 # Introduction
-MAE 224 is the Integrate Science Lab...
+MAE 224 is the Integrated Science Lab.
 
 ##Prequisites
 
@@ -17,8 +17,8 @@ into the terminal
 The Matlab code has been designed to utilize the latest version of Matlab (currently 2016a). Matlab does not support HTML PUT requests. Currently, Matlab will call cURL from a unix terminal to upload local code. This functionality will be added in later editions.  
 ***
 #Tutorials & Documentations
-## [Setup a Photon ](https://github.com/mkfu/MAE224/wiki/A-Quick-Setup-of-Particle-Photon)  
-Quickly setup your new Photon on the lab computers
+## [Set up a Photon ](https://github.com/mkfu/MAE224/wiki/A-Quick-Setup-of-Particle-Photon)  
+Quickly perform the setup of your new Photon on the lab computers
 
 ## [Class Description](https://github.com/mkfu/MAE224/wiki/Class-Description-:-Functions-and-Variables)
 Description of the functions and variables in the Photon class and how to access them from Python
