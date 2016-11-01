@@ -89,7 +89,7 @@ That's it! Now all you need is an open Matlab session, and have your Photon's na
 
 1.    Open up Matlab and copy the following code into a new script file:
 
-```m
+```matlab
      %Enter your photon name%
      name = 'myphoton';
      %Enter the unique access token for your photon%
@@ -105,11 +105,11 @@ That's it! Now all you need is an open Matlab session, and have your Photon's na
     % Check if device is connected %
     if g.getConnection
        
- 
         g.digitalWrite(dpin,1); %Set digital pin hi
         pause(1)                %Wait 1 second
         g.digitalWrite(dpin,0); %Set digital pin low
         pause(1)
+
     end
 ```
 
