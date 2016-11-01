@@ -3,9 +3,9 @@ MAE 224 is the Integrated Science Lab. This Wiki and associated github cover the
 
 ##Prequisites
 
-This lab is designed for those with little to no programming experience. The primary language we will use is Matlab and by the end of this course you should have gained the basic skills of reading, analyzing, and plotting/saving data using Matlab functions.  
+This lab is designed for those with little to no programming experience. The primary language we will use is Matlab and by the end of this course you should have gained the basic skills of acquiring, processing, and plotting/saving data using Matlab functions.  
 
-[Programming Requirements](https://github.com/d008/MAE224/wiki/Programming-Requirements)
+###[Programming Requirements](https://github.com/d008/MAE224/wiki/Programming-Requirements)
 
 ***
 #Tutorials & Documentation
@@ -13,7 +13,7 @@ This lab is designed for those with little to no programming experience. The pri
 Quickly perform the setup of your new Photon on the lab computers
 
 ## [Class Description](https://github.com/mkfu/MAE224/wiki/Class-Description-:-Functions-and-Variables)
-Description of the functions and variables in the Photon class and how to access them from Python
+Description of the functions and variables in the Photon class and how to access them from Matlab
 
 ##[Example 1 - Read and Write](https://github.com/mkfu/MAE224/wiki/Example-1-:-Read-and-Write-Pins)
 Quick tutorial on how to use the Photon class to read and write data with analog pins
