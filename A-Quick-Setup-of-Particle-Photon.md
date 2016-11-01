@@ -71,7 +71,7 @@ Now we will write a quick programs. The first will blink the onboard LED of your
 
 # Programming the Photon via Matlab
 
-During the course of the lab you will _not_ be programming the particle photon directly. Instead, your friendly neighborhood TAs have created a class file which works with Matlab to control the Photon via your web connection. For this to work, you must upload some code to your Particle Photon (which you should have just set up).
+During the course of the lab you will _**not**_ be programming the particle photon directly. Instead, your friendly neighborhood TAs have created a class file which works with Matlab to control the Photon via your web connection. For this to work, you must upload some code to your Particle Photon (which you should have just set up).
 
 1.    Go back to the code window in your browser at https://build.particle.io/build (the one with the <> symbol) and click on "Create a New App". Delete all the pre-packaged code in the right-most window.
 
