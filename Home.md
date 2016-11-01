@@ -9,7 +9,7 @@ This lab is designed for those with little to no programming experience. The pri
 
 ***
 #Tutorials & Documentation
-## [Set up a Photon ](https://github.com/mkfu/MAE224/wiki/A-Quick-Setup-of-Particle-Photon)  
+## [Set up a Photon ](https://github.com/d008/MAE224/wiki/Setting-Up-a-Particle-Photon)  
 Quickly perform the setup of your new Photon on the lab computers
 
 ## [Class Description](https://github.com/mkfu/MAE224/wiki/Class-Description-:-Functions-and-Variables)
