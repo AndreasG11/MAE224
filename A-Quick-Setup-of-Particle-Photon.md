@@ -65,6 +65,51 @@ Now we will write a quick programs. The first will blink the onboard LED of your
 
 19.	Press the lightning bolt button on the top left of the page, which will then “flash” the code to your unit. You should see the LED start blinking magenta to signal that it is uploading. It will likely blink green afterwards to signal that it is re-connecting to the internet, so give it a moment to finish this cycle. If successful, the LED will go back to the slow cyan pulse.
 
-20.	If you see the onboard LED (a different LED than the one mentioned previously), blinking blue, you WIN! 
+20.	If you see the onboard LED (connected to pin D7), blinking blue, you WIN! 
 
 21.	Go find a TA, preferably Cody, to verify that you completed this simple task.
+
+# Programming the Photon via Matlab
+
+During the course of the lab you will _not_ be programming the particle photon directly. Instead, your friendly neighborhood TAs have created a class file which works with Matlab to control the Photon via your web connection. For this to work, you must upload some code to your Particle Photon (which you should have just set up).
+
+1.    Go back to the code window in your browser at https://build.particle.io/build (the one with the <> symbol)
+
+2.    In a second browser window/tab open the following link [Photon Lab Code](MAE224/Source Files/Particle/PhotonCode.ino)
+
+3.    Copy the entire block of code from the window in (2) to the code window in (1)
+
+4.    Save and flash this code to your particle photon.
+
+That's it! Now all you need is an open Matlab session, and have your Photon's name and access token ready. Now you can read and write data via your photon from anywhere using a single programming language. Cool right? The final step in setting up your Photon is a short tutorial to blink an LED just as we did earlier, but now we will not program the Photon directly but instead address it via the Matlab class file.
+
+1.    Open up Matlab and copy the following code into a new script file:
+
+```m
+     %Enter your photon name%
+     name = 'myphoton';
+     %Enter the unique access token for your photon%
+     atoken = 'abc123';
+     %Set the digital pin for the LED%
+     dpin = 'D7';
+
+    % Create a new Photon Object %
+    g = Photon(name,atoken);
+    % Display some info on your connected photon, Make Sure it is powered on!! %
+    g.getConnectedDevices()
+
+    % Check if device is connected %
+    if g.getConnection
+       
+ 
+        g.digitalWrite(dpin,1); %Set digital pin hi
+        pause(1)                %Wait 1 second
+        g.digitalWrite(dpin,0); %Set digital pin low
+        pause(1)
+    end
+```
+
+Now run this code in the Matlab command window and you should see your particle photon LED blink once then turn off. Have your TA verify this behavior before completing this portion of the lab.
+
+
+
