@@ -1,20 +1,12 @@
 # Introduction
-MAE 224 is the Integrated Science Lab.
+MAE 224 is the Integrated Science Lab. This Wiki and associated github cover the Fluids portion of the 224 Lab. All lab manuals and documentation can be found here.
 
 ##Prequisites
 
-### Python
-If you want to run the Python code make sure that you have the most up-to-date version of Python 2.7.x.
-Furthermore, if you wish to be able to flash local code to the Particle Photon, you will need to install the requests module.
-This can be done by simply entering
+This lab is designed for those with little to no programming experience. The primary language we will use is Matlab and by the end of this course you should have gained the basic skills of reading, analyzing, and plotting/saving data using Matlab functions.  
 
-```
-pip install requests
-```
-into the terminal
+[Programming Requirements](https://github.com/d008/MAE224/wiki/Programming-Requirements)
 
-###Matlab
-The Matlab code has been designed to utilize the latest version of Matlab (currently 2016a). Matlab does not support HTML PUT requests. Currently, Matlab will call cURL from a unix terminal to upload local code. This functionality will be added in later editions.  
 ***
 #Tutorials & Documentation
 ## [Set up a Photon ](https://github.com/mkfu/MAE224/wiki/A-Quick-Setup-of-Particle-Photon)  
