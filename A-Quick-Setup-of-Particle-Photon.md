@@ -73,15 +73,19 @@ Now we will write a quick programs. The first will blink the onboard LED of your
 
 During the course of the lab you will _not_ be programming the particle photon directly. Instead, your friendly neighborhood TAs have created a class file which works with Matlab to control the Photon via your web connection. For this to work, you must upload some code to your Particle Photon (which you should have just set up).
 
-1.    Go back to the code window in your browser at https://build.particle.io/build (the one with the <> symbol)
+1.    Go back to the code window in your browser at https://build.particle.io/build (the one with the <> symbol) and click on "Create a New App". Delete all the pre-packaged code in the right-most window.
 
-2.    In a second browser window/tab open the following link [Photon Lab Code](MAE224/Source Files/Particle/PhotonCode.ino)
+2.    In a second browser window/tab open the following link [Photon Lab Code](https://github.com/d008/MAE224/blob/master/Source%20Files/Particle/PhotonCode.ino)
 
-3.    Copy the entire block of code from the window in (2) to the code window in (1)
+3.    Now copy the entire block of code from the window in (2) to the code window in (1)
 
 4.    Save and flash this code to your particle photon.
 
-That's it! Now all you need is an open Matlab session, and have your Photon's name and access token ready. Now you can read and write data via your photon from anywhere using a single programming language. Cool right? The final step in setting up your Photon is a short tutorial to blink an LED just as we did earlier, but now we will not program the Photon directly but instead address it via the Matlab class file.
+5.    Now that your Photon is running its new code, you must also download the Matlab class file into your computer's Matlab directory. Typically the Matlab default directory is My Documents/Matlab (on PCs), so you can use that folder location for the following step or use a new folder and then adding it to the current Matlab path (using the Set Path command in the GUI).
+
+6.    Download the Matlab class file here [Photon.m](https://github.com/d008/MAE224/blob/master/Source%20Files/MATLAB%20v1/Photon.m) to the folder location in step (5).
+
+That's it! Now all you need is an open Matlab session, and have your Photon's name and access token ready. You can read and write data via your photon from anywhere using a single programming language. Cool right? The final step in setting up your Photon is to work through a short tutorial to blink an LED just as we did earlier. However, we will not program the Photon directly but instead address it via the Matlab class file.
 
 1.    Open up Matlab and copy the following code into a new script file:
 
