@@ -1,7 +1,7 @@
 #[MAE 224 Home](https://d008.github.io/MAE224/)  
 ##[Documentation](https://github.com/mkfu/MAE224/wiki/Class-Description-:-Functions-and-Variables)  
 ##Tutorials  
-- [Setting Up a Photon](https://github.com/mkfu/MAE224/wiki/A-Quick-Setup-of-Particle-Photon)   
+- [Setting Up a Photon](https://github.com/d008/MAE224/wiki/Setting-Up-a-Particle-Photon)   
 - [Example 1 - Read and Write](https://github.com/mkfu/MAE224/wiki/Example-1-:-Read-and-Write-Pins)    
 - [Example 2 - Servos and PWM](https://github.com/mkfu/MAE224/wiki/Example-2-:-Servos-and-PWMs)  
 
