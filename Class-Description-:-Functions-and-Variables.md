@@ -1,4 +1,9 @@
 #Photon Class - Python
+On this page you will find a description of the Matlab class file used to access the Particle Photon. For examples on how to use this class see:
+[Setting Up a Particle Photon](https://github.com/d008/MAE224/wiki/Setting-Up-a-Particle-Photon)
+[Example 1: Read and Write Pins](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins)
+[Example 2: Servos and PWMs](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins)
+To download the class file follow this link [Photon.m](https://github.com/d008/MAE224/blob/master/Source%20Files/MATLAB%20v1/Photon.m)
 
 ##Constructor
 ```python
