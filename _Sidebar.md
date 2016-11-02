@@ -8,7 +8,6 @@
 ###[Technical Report Guidelines](https://github.com/mkfu/MAE224/wiki/Technical-Report-Guidelines)    
 
 ##Labs  
-- [Lab 0 - Programming Basics](https://github.com/mkfu/MAE224/wiki/Lab-0:-Python-to-Particle-Communication)   
 - [Lab 1 Part 1 - Lab Equipment Basics](https://github.com/d008/MAE224/wiki/Lab-1,-Part-1:-Lab-Equipment-Basics)
 - [Lab 1 Part 2 - Hydrostatics](https://github.com/mkfu/MAE224/wiki/Lab-1:--Hydrostatics)    
 - [Lab 2 - Pipe flow](https://github.com/mkfu/MAE224/wiki/Lab-2:-Pipe-Flow)  
