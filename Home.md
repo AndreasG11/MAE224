@@ -45,6 +45,7 @@ Expectations from technical reports
 Quick tutorial on how the Particle Photon communicates with the Python script
 
 ##[Lab 1 Part 1 - Lab Equipment Basics](https://github.com/d008/MAE224/wiki/Lab-1,-Part-1:-Lab-Equipment-Basics)
+Get familiar with all the tools you will be using this semester.
 
 ##[Lab 1 Part 2 - Hydrostatics](https://github.com/mkfu/MAE224/wiki/Lab-1:--Hydrostatics)
 Special topics in hydrostatics.
