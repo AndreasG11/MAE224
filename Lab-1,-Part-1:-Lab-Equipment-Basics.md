@@ -1,5 +1,5 @@
-Lab 1 consists of two parts:
-- The first section will introduce you to the lab equipment used throughout this semester and teach you some of the basic measurement methods and debugging concepts used for any experiment (covered in this manual)
+Lab 1 is broken down into two parts:
+- The first part will introduce you to the lab equipment used throughout this semester and teach you some of the basic measurement methods and debugging concepts used for any experiment (covered in this manual)
 - In the second part of the lab you will be performing an experiment on fluid hydrostatics (covered _INSERT_LINK_)
 
 ## Introduction
