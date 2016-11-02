@@ -41,13 +41,11 @@ detachServo()
 Expectations from technical reports
 ***
 #Labs
-##[Lab 0 - Particle to Python Communications](https://github.com/mkfu/MAE224/wiki/Lab-0:-Python-to-Particle-Communication)
-Quick tutorial on how the Particle Photon communicates with the Python script
 
-##[Lab 1 Part 1 - Lab Equipment Basics](https://github.com/d008/MAE224/wiki/Lab-1,-Part-1:-Lab-Equipment-Basics)
+##[Lab 1, Part 1 - Lab Equipment Basics](https://github.com/d008/MAE224/wiki/Lab-1,-Part-1:-Lab-Equipment-Basics)
 Get familiar with all the tools you will be using this semester.
 
-##[Lab 1 Part 2 - Hydrostatics](https://github.com/mkfu/MAE224/wiki/Lab-1:--Hydrostatics)
+##[Lab 1, Part 2 - Hydrostatics](https://github.com/mkfu/MAE224/wiki/Lab-1:--Hydrostatics)
 Special topics in hydrostatics.
 
 ##[Lab 2 - Pipe Flow](https://github.com/mkfu/MAE224/wiki/Lab-2:-Pipe-Flow)
