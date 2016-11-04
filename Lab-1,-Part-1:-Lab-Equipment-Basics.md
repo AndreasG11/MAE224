@@ -15,13 +15,13 @@ The first step of this lab is to set up your Particle Photon. Follow the tutoria
 Now, with your Particle Photon unplugged and powered off, insert it into the breadboard as shown below.
 
 <p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/images/breadboard.png?raw=true" width="800">  
+<img src="https://github.com/d008/MAE224/blob/master/images/breadboard.png?raw=true" width="600">  
 </p>
 
 The breadboard or prototyping board will allow you to easily try out new circuits. Some important things to note:
 
 1. The two columns on each side of the board are for the power supply rails (a 3.3 or 5.0V connection, for example) and the column pins are connected only in the vertical direction. 
-2. The lettered rows in the middle of the board are connected horizontally in two groups. Pins a-e are connected and pins f-j are connected. In the middle section of the board is a small valley to remind you that pins a-e and f-j are not connected to each other. This allows you to branch off from each side of the Photon independently (useful if you don't always want pin A1 going to D1 for example).
+2. The lettered rows in the middle of the board are connected horizontally in two groups. Pins a-e are connected and pins f-j are connected. Directly in the middle is a small valley to remind you that pins a-e and f-j are not connected to each other. This allows you to branch off from each side of the Photon independently (useful if you don't always want pin A1 going to D1 for example).
 
 You are now prepared to do the first example on how to read/write with your Photon: [Example 1: Read and Write Pins](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins). **Once you have completed the tutorial, show your Matlab plot to the TA before continuing.**
 
