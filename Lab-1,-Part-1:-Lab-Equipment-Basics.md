@@ -10,20 +10,54 @@ At certain points in the lab your lab group will be required to demonstrate the 
 
 ## Laboratory Tools and Equipment
 
-The first step of this lab is to set up your Particle Photon. Follow the tutorial [here](https://github.com/d008/MAE224/wiki/Setting-Up-a-Particle-Photon). Make sure to verify with the TA that your LED is blinking!
+The first step of this lab is to set up your Particle Photon. Follow the tutorial [here](https://github.com/d008/MAE224/wiki/Setting-Up-a-Particle-Photon). **Make sure to verify with the TA that your LED is blinking!**
 
-Now on to some of the other electronic equipment in the lab, first is the power supply:
+Now, with your Particle Photon unplugged and powered off, insert it into the breadboard as shown below.
+
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/images/breadboard.png?raw=true" width="800">  
+</p>
+
+The breadboard or prototyping board will allow you to easily try out new circuits. Some important things to note:
+
+1. The two columns on each side of the board are for the power supply rails (a 3.3 or 5.0V connection, for example) and the column pins are connected only in the vertical direction. 
+2. The lettered rows in the middle of the board are connected horizontally in two groups. Pins a-e are connected and pins f-j are connected. In the middle section of the board is a small valley to remind you that pins a-e and f-j are not connected to each other. This allows you to branch off from each side of the Photon independently (useful if you don't always want pin A1 going to D1 for example).
+
+You are now prepared to do the first example on how to read/write with your Photon: [Example 1: Read and Write Pins](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins). **Once you have completed the tutorial, show your Matlab plot to the TA before continuing.**
+
+Now on to some of the other electronic equipment in the lab, first is the Direct Current (D.C.) power supply:
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/images/Power_Supply.png?raw=true" width="800">  
 </p>
 
-The power supplies we use in the lab have 3 outputs. Channel 1 and 2 have adjustable voltage outputs and current limits, channel 3 is fixed at 5 volts (the small connectors at the bottom right). Two modes can be run, constant voltage (C.V.) and constant current (C.C.), with the limits of these two modes being set by the two dials. In C.V. mode, the supply will give out as much current as the connected circuit will accept (up to the current limit point) to maintain the output voltage. C.C. mode is similar, however the supply now adjusts the voltage (up to the voltage limit point) to maintain a constant current. The mode currently running is indicated by the two LEDs below each channel. 
+The power supplies we use in the lab have 3 outputs. Channels 1 and 2 have adjustable voltage outputs and current limits, channel 3 is fixed at 5 volts (it is the small connectors at the bottom right). Two modes are available, constant voltage (C.V.) and constant current (C.C.), with the limits of these two modes being set by the two dials. In C.V. mode, the supply will give out as much current as the connected circuit will accept (up to the current limit point) to maintain the output voltage. C.C. mode is similar, however the supply now adjusts the voltage (up to the voltage limit point) to maintain a constant current. The mode being used is indicated by the LEDs below each channel. 
 
-You may have also noticed that there are 3 connections for channels 1 and 2: Ground, V-, and V+. Ground is the building ground, and you can shunt or jumper either V- or V+ with ground to force one side of the power supply low. This is handy if, for example, your circuit requires a supply which is -15V to 0V (you would jumper V+ to ground).
+You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, and V+. Ground is the building ground, and you can shunt or jumper either V- or V+ with ground to force one side of the power supply low. This is handy if, for example, your circuit requires a supply which is -15V to 0V (you would jumper V+ to ground).
 
-Using the image above, turn on your power supply and set the output to be 1.0 Volts with a current limit of 0.05 Amps. 
+Using the image above, turn on your power supply and set the output to be +1.0 Volts with a current limit of 0.05 Amps. Now with what you learned in  [Example 1](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins), read the voltage of the power supply into Matlab to verify the power supply display.
 
+The Particle Photon is a surprisingly useful little tool, and you will find it can replicate the functions of almost all the electronic tools we will talk about in the next few paragraphs. This also means you can use the lab tools to check if your Photon (and Matlab code!) is working as expected. In future labs, you will be asked to verify the Photon's readings using these devices, so be prepared!
+
+The next two tools are known as Digital Multi-Meters (DMMs) and are the swiss-army knife of anyone working with electronics (i.e. they work good if you are in a bind or need something quick, but better tools are available). The first of these is the Fluke 73, and is the simplest of the two.
+
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/images/Fluke_73.png?raw=true" width="800">  
+</p>
+
+We will mainly be reading D.C. voltages and currents in this lab. The meter is also capable or reading the average and root-mean-square Alternating Current (A.C.) voltages (and a few other things). Note we can easily measure resistance and check the polarity of diodes with this tool as well. With the leads connected to the proper terminals, check the voltage output from your power supply and compare that value with the one you obtained with the Photon.
+
+The second DMM available to you is the Keithley.
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/images/Keithley.png?raw=true" width="800">  
+</p>
+
+This unit has more functionality than the Fluke 73, as you might have guessed. Also notice the number of decimal places in the display, what does this tell you about the accuracy of the measurements? Try taking a reading of the DC voltage again with the Keithley.
+
+Finally we come to what could be considered the most useful tool available to you, the Techtronix Oscilloscope. An oscilloscope is perhaps the only tool which allows you to "see" electricity, more specifically electric signals in the time domain. 
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/images/oscilloscope.png?raw=true" width="800">  
+</p>
 
 
 
