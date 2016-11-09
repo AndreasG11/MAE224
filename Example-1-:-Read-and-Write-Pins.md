@@ -1,6 +1,6 @@
 Download the [Source](https://github.com/mkfu/MAE224/tree/master/Source%20Files) files.
 
-These files provide a generic Particle Photon script that will enable you to access the pin modification functions from either Python or Matlab. You can then use the respective class files to create Photon objects to interact with the actual Photon.
+These files provide a generic Particle Photon script that will enable you to access the pin modification functions from Matlab. You can then use the respective class files to create Photon objects to interact with the actual Photon.
 
 Below are some examples of data taking. You will notice that instead of setting the `pinMode` in the Particle IDE, you are setting the `pinMode` in the data collection code. Note that when you want to change the mode of a pin that you have previously set, you need to tap the RESET button the physical Photon. Otherwise, all you need to do is
 
@@ -68,7 +68,7 @@ If we replace the authorization token and name of the Photon correctly, we will 
 
 ![](https://github.com/mkfu/MAE224/blob/master/images/ex1result.png)
 
-##Lets break down what the code mean
+##Lets break down what the code means
 The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the authorization token and the name of the Photon.
 ```matlab
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
@@ -79,7 +79,7 @@ g = Photon(core,atoken);
 
 Replace the strings in the above code with your Particle account authorization token and photon name.  Lastly, we will make a new object and pass those arguments via the constructor.
 
-We can check that everything is working by trying a function calls
+We can check that everything is working by trying a function call
 ```matlab
 g.getConnectedDevices()'
 ```
@@ -122,7 +122,7 @@ legend('Analog','Digital','location','southeast')
 ```
 
 
-#Python
+#Python (Not Required)
 Similarly, we can make very similar function calls in Python to read and write data. Paste the following text into a new Python script.
 
 ```python
