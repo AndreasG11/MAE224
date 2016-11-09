@@ -60,6 +60,8 @@
 
 ## Lab 4: Airfoil and Cylinder
 
+- Check range of airfoil tunnel Pitot transducer, might be to low at 0.1PSID
+
 - **_Add pressure transducer to cylinder and multiplex new inputs_**
 
 - Determine range of new pressure transducers pronto!
