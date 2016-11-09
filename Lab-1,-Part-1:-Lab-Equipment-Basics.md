@@ -55,11 +55,18 @@ The second DMM available to you is the Keithley.
 This unit has more functionality than the Fluke 73, as you might have guessed. Also notice the number of decimal places in the display, what does this tell you about the accuracy of the measurements? Try taking a reading of the DC voltage again with the Keithley.
 
 Finally we come to what could be considered the most useful tool available to you, the Techtronix Oscilloscope. An oscilloscope is perhaps the only tool which allows you to "see" electricity, more specifically electric signals in the time domain. 
+
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/images/oscilloscope.png?raw=true" width="800">  
 </p>
 
+There are a variety of measurements that can be made with the oscilloscope, including signal frequency, voltage (mean, peak-to-peak, RMS), rise/fall time, etc. This tool will be essential in diagnosing and debugging your experimental setups. A screen shot of the oscilloscope display is shown below.
 
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/images/oscilloscope%20screen.png?raw=true" width="500">  
+</p>
+
+On the rightmost side is the measurement display (you can access this menu by pressing the "measurement" button) a variety of options are available for each channel. Note that there are 4 windows available for measurement display on this screen. Along the bottom of the screen is the information regarding the X and Y axis divisions. For instance, Channel 1 is reading a square wave and the division between each horizontal dashed line is 5 Volts. 
 
 
 
