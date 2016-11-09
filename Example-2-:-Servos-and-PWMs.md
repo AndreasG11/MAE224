@@ -62,7 +62,7 @@ g.getTone('A1')
 
 The first few lines should look exactly like example 1. Remember that we need to replace the authorization token and name of the Photon correctly. The end result is that the servo should rotate
 
-##Lets break down what the code mean
+##Lets break down what the code means
 The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the authorization token and the name of the Photon.
 ```matlab
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
@@ -73,7 +73,7 @@ g = Photon(core,atoken);
 
 Replace the strings in the above code with your Particle account authorization token and photon name.  Lastly, we will make a new object and pass those arguments via the constructor.
 
-We can check that everything is working by trying a function calls
+We can check that everything is working by trying a function call
 ```matlab
 g.getConnectedDevices()'
 ```
@@ -84,7 +84,7 @@ Next, we will tell the Photon that we want to attach a servo to a given pin, nam
 ```matlab
 g.attachServo('D0');
 ```
-Note that at this moment, while the Physical photon can support many, many servo simultaneously, the Photon class which you are utilizing can only support attaching a single Photon. Moving the servo is as simple as using the move command. Here, we simply have the servo rotate clockwise 180 degrees and then counter-clockwise 180 degress. In this instance the servo takes a value from ~10 - 180. This applies to some linear actuators as well. This is more a function of the servo library which is utilized on the Photon side more than anything else.  
+Note that at this moment, while the Physical photon can support many, many servos simultaneously, the Photon class which you are utilizing can only support attaching a single Photon. Moving the servo is as simple as using the move command. Here, we simply have the servo rotate clockwise 180 degrees and then counter-clockwise 180 degress. In this instance the servo takes a value from ~10 - 180. This applies to some linear actuators as well. This is more a function of the servo library which is utilized on the Photon side more than anything else.  
 
 We first check to make sure that the Photon is connected to the internet.
 ```matlab
@@ -124,4 +124,4 @@ Finally, we can see that we can both read in the analog value of the signal and 
 g.analogRead('A1')
 g.getTone('A1')
 ```
-This function is of particular use when reading in turbin/hall-sensor flow meters.
+This function is of particular use when reading in turbine/hall-sensor flow meters.
