@@ -1,6 +1,6 @@
 Lab 1 is broken down into two parts:
 - The first part will introduce you to the lab equipment used throughout this semester and teach you some of the basic measurement methods and debugging concepts used for any experiment (covered in this manual)
-- In the second part of the lab you will be performing an experiment on fluid hydrostatics (covered _INSERT_LINK_)
+- In the second part of the lab you will be performing an experiment on fluid hydrostatics (covered [here](https://github.com/d008/MAE224/wiki/Lab-1:--Hydrostatics))
 
 ## Introduction
 
@@ -39,6 +39,8 @@ Using the image above, turn on your power supply and set the output to be +1.0 V
 
 The Particle Photon is a surprisingly useful little tool, and you will find it can replicate the functions of almost all the electronic tools we will talk about in the next few paragraphs. This also means you can use the lab tools to check if your Photon (and Matlab code!) is working as expected. In future labs, you will be asked to verify the Photon's readings using these devices, so be prepared!
 
+### Digital Multi-Meters
+
 The next two tools are known as Digital Multi-Meters (DMMs) and are the swiss-army knife of anyone working with electronics (i.e. they work good if you are in a bind or need something quick, but better tools are available). The first of these is the Fluke 73, and is the simplest of the two.
 
 <p align="center">
@@ -54,6 +56,8 @@ The second DMM available to you is the Keithley.
 
 This unit has more functionality than the Fluke 73, as you might have guessed. Also notice the number of decimal places in the display, what does this tell you about the accuracy of the measurements? Try taking a reading of the DC voltage again with the Keithley.
 
+### Oscilloscope
+
 Finally we come to what could be considered the most useful tool available to you, the Techtronix Oscilloscope. An oscilloscope is perhaps the only tool which allows you to "see" electricity, more specifically electric signals in the time domain. 
 
 <p align="center">
@@ -67,6 +71,7 @@ There are a variety of measurements that can be made with the oscilloscope, incl
 </p>
 
 On the rightmost side is the measurement display (you can access this menu by pressing the "measurement" button) a variety of options are available for each channel. Note that there are 4 windows available for measurement display on this screen. Along the bottom of the screen is the information regarding the X and Y axis divisions. For instance, Channel 1 is reading a square wave and the division between each horizontal dashed line is 5 Volts. 
+
 
 
 
