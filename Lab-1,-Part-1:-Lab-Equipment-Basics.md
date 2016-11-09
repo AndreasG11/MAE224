@@ -63,7 +63,7 @@ Finally we come to what could be considered the most useful tool available to yo
 There are a variety of measurements that can be made with the oscilloscope, including signal frequency, voltage (mean, peak-to-peak, RMS), rise/fall time, etc. This tool will be essential in diagnosing and debugging your experimental setups. A screen shot of the oscilloscope display is shown below.
 
 <p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/images/oscilloscope%20screen.png?raw=true" width="500">  
+<img src="https://github.com/d008/MAE224/blob/master/images/oscilloscope%20screen.png?raw=true" width="600">  
 </p>
 
 On the rightmost side is the measurement display (you can access this menu by pressing the "measurement" button) a variety of options are available for each channel. Note that there are 4 windows available for measurement display on this screen. Along the bottom of the screen is the information regarding the X and Y axis divisions. For instance, Channel 1 is reading a square wave and the division between each horizontal dashed line is 5 Volts. 
