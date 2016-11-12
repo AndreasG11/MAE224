@@ -13,32 +13,7 @@ The MOSFET component is the Darlington pair transistor.  It has a gate (g), drai
 
 The pressure drop in the pipe can be recorded manually by a manometer setup, or by using the pressure transducer and the code that you wrote in the previous lab. It’s a good idea to start using the manometer just because we took all the trouble to make it and it works really well, but as an addendum to the lab you can double check the pressure with the transducer that you just calibrated!  
 
-You are provided with a Matlab code outline that you need to modify in order to control the pump and by that, control the flow rate in the pipe. You are also provided with a code to read the flow rate from either flowmeter (small, white plastic one and larger brass one) on the setup. You should familiarize yourself with the code and make sure you understand exactly what is happening. You will be required to add in a minimal amount of code, otherwise it will not work.  From last week you should now be completely familiar with how to get data from the Photon using the cloud and how to save the data to a file. If not, ask your partner(s) or your TA for help in understanding. This week we are going to learn how to send data to the Photon.
-If you recall getting data was as simple as making a global variable in the Photon, say:  
-
-```c
-int myVar = 0;
-```  
-and putting the following line in the setup of your code  
-```c
-Particle.variable(“PithyName”, myVar);
-```  
-This allowed you to call the function `fetch(“PithyName”)` from pithy to get the value of `myVar` whenever you wanted.  Now we are going to push data using a similar syntax. To tell the Particle Photon to run some code, we will put the following command in our setup
-
-```c
-Particle.function(“FunctionCall”,execute);
-```  
-
-Some of you might have guessed something like this. What this is actually saying is that when someone from the outside world tries to access the webpage of `FunctionCall` associated with your Particle Photon, the Particle Photon will run a function called execute. This function could look something like this, written outside of both setup and loop.
-
-```c
-int execute(String arg){
-//Somethings desirable like say turn a motor
-return 1;
-}
-```  
-
-NOTE: The names of commands and function (i.e. `FunctionCall` and execute) are limited to 12 characters and you can only make 4 functions. So be thrifty with your functions  
+You are provided with a Matlab code outline that you need to modify in order to control the pump and by that, control the flow rate in the pipe. You are also provided with a code to read the flow rate from either flowmeter (small, white plastic one and larger brass one) on the setup. You should familiarize yourself with the code and make sure you understand exactly what is happening. You will be required to add in a minimal amount of code, otherwise it will not work.  From last week you should now be completely familiar with how to get data from the Photon using Matlab and how to save the data to a file. If not, ask your partner(s) or your TA for help in understanding. 
 
 We will be using this code to adjust the rpm of the motor by changing the duty cycle of a pwm signal. 
 
