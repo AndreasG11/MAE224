@@ -1,4 +1,7 @@
 #Designing Wind Turbine Rotors using Qblade
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/images/tumblr_inline_ncvqpnnT1k1sfsefv.gif" width="600">
+</p>
 In lab 5, you will be tasked with designing a wind turbine. This will make use of your knowledge of aerodynamics and airfoil theory from lecture and lab 4. There are many variables available in the design space of a wind turbine, and deciding how to alter your rotor shape to maximize power output will be your primary task. Using the Qblade tool, and your knowledge of airfoils, you will attempt to produce the most power possible with your design. Once your rotor is designed in Qblade, you will be exporting the geometry into Creo and then 3-D printing the rotors to test in the wind tunnel (covered in a separate tutorial).  This guide covers some of the basics of wind turbine design as well as how to test your design in Qblade. 
 In the most general terms, wind turbine rotors are constructed using various airfoils stacked vertically to create a rotor blade. The type, thickness, chord, twist and radial position of the airfoils are chosen by the designer to optimize the blade shape for a set of input conditions. See figure 1 for an example rotor blade. 
 
