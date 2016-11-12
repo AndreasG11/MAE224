@@ -25,22 +25,22 @@ _Returns_
 ```python
 analogRead(String pin)
 ```  
-Sample the bit value of an analog pin.  
+Sample the voltage of an analog pin.  
 _Arguments_ 
 *  `String pin` - The name of the pin connected to sample.  
 
 _Returns_  
-* The integer value at that pin. Takes value from 0-4095 corresponding to 0-3.33V  
+* A value corresponding to 0-3.33V  
 
 ***    
 ###analogWrite
 ```python
 analogWrite(String pin, Int Value)
 ```  
-Writes a bit value to an analog pin.  
+Writes a voltage value to an analog pin.  
 _Arguments_ 
 *  `String pin` - The name of the pin connected to sample.  
-*  `Int value` - The bit value to write. Takes a value between 0-255 corresponding to 0-3.33V.    
+*  `Int value` - The bit value to write. Takes a value between 0-3.33V.    
 
 _Returns_  
 * None     
