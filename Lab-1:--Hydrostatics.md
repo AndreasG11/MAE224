@@ -35,7 +35,7 @@ You have several tools and materials at your disposal to complete the lab. This 
 - Graduated Cylinders  
 - Hand-pumping-ball  
 - Fresh Princeton water 
-- Ruler (optional) 
+- Ruler
 - [Code](https://github.com/mkfu/MAE224/tree/master/Lab%201%20Shells)  * * * 
 
 ##Build a manometer
