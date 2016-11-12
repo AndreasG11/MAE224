@@ -63,34 +63,18 @@ To connect the pressure sensor to the Particle Photon:
 N.B. Some of you aspiring fluid mechanicians might notice that the sensors provided are supposed to work on 5V. Fear Not! The sensor will still be sensitive to the changes in pressure, but you will probably develop a new calibration curve.  
 
 ##Test your setup with the fluid
-Your goal is to calibrate the pressure sensor given to you using the manometer and the Particle Photon.  By pressurizing the system, you are changing the manometer height, and you should have a relationship between pressure, fluid density, and height by this time. By taking the appropriate data, you will be able to construct a calibration curve relating the pressure applied to the sensor to the voltage output.
-
- 
-Photon
-
-To connect the pressure sensor to the Particle Photon:
-1.	Plug the pressure sensor into your breadboard.  
-
-2.	Look at the data sheet for the pressure sensor and find out what each pin of the pressure sensor should connect to (data sheet is on Blackboard).  
-
-3.	Connect the pressure sensor pins to the corresponding pins on the Particle Photon (be careful not to switch the pins for +3.3 V and ground).  
-
-##Test your setup with the fluid
 By pressurizing the system, you are changing the manometer height, and you should be able to relate some measured height of the fluid column to the pressure it is applying to the transducer. By taking the appropriate data, you will be able to construct a calibration curve relating the pressure applied to the sensor to the voltage output.
 
 1.	The calibration curve should give you a pressure if you give it a voltage (p(V)).    
 
-2.	What kind of curve-fit makes the most sense?   
+2.	What kind of curve-fit makes the most sense?  
 
-##Test your setup with water
-Fill your manometer with water and use your calibration curve. See how you can control the heights of the columns by changing the pressure.  
+3.	Look at how pressure changes in time (live) as you pressurize it. Explain this behavior (can you figure out a way to reduce unwanted behavior?). 
 
-1.	Look at how pressure changes in time (live) as you pressurize it. Explain this behavior (can you figure out a way to reduce unwanted behavior?).  
-
-2.	Plot pressure versus the difference in heights between the water columns. Use at least 10 data points, and think about how you want to measure the height.  
+4.	Plot pressure versus the difference in heights between the water columns. Use at least 10 data points, and think about how you want to measure the height.       
 
 ##Ain’t No Mountain High Enough...:
-As you should have noticed by now, there appears to be a relationship between heights and pressures (Ever considered why pressure sometimes is measured in mmHg or inH2O? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
+As you should have noticed by now, there appears to be a relationship between heights and pressures (Ever considered why pressure sometimes is measured in millimeters of Mercury or inches of water? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
 
 ##Other questions for write-up:  
 
