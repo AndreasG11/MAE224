@@ -26,16 +26,16 @@ Now, we can use the principle of hydrostatics to measure a pressure difference b
 ## Tools and Materials
 You have several tools and materials at your disposal to complete the lab. This includes but is not necessarily limited to:  
 - Particle Photon w/ Breadboard + USB  
-- MATLAB  
+- MATLAB 
+- Computer   
 - Flexible Tubing  
 - Large PVC Tube  
-- Pressure Transducers  
+- Pressure Transducer  
 - Electrical doodads of various types  
 - Graduated Cylinders  
-- Mass Scale  
 - Hand-pumping-ball  
-- Computer  
-- Fresh Princeton water  
+- Fresh Princeton water 
+- Ruler (optional) 
 - [Code](https://github.com/mkfu/MAE224/tree/master/Lab%201%20Shells)  * * * 
 
 ##Build a manometer
@@ -56,7 +56,7 @@ To connect the pressure sensor to the Particle Photon:
 
 1.	Plug the pressure sensor into your breadboard.  
 
-2.	Look at the data sheet for the pressure sensor and find out what each pin of the pressure sensor should connect to (data sheet is on Blackboard).   
+2.	Look at the data sheet for the pressure sensor and find out what each pin of the pressure sensor should connect to (data sheet is on Blackboard).  **Data sheet link here!** 
 
 3.	Connect the pressure sensor pins to the corresponding pins on the Particle Photon (be careful not to switch the pins for +3.3 V and ground).  
 
@@ -67,11 +67,15 @@ By pressurizing the system, you are changing the manometer height, and you shoul
 
 1.	The calibration curve should give you a pressure if you give it a voltage (p(V)).    
 
-2.	What kind of curve-fit makes the most sense?  
+2.    Decide how you want to measure the height; you can either use a ruler or the graduated cylinder markings.
 
-3.	Look at how pressure changes in time (live) as you pressurize it. Explain this behavior (can you figure out a way to reduce unwanted behavior?). 
+3.    Look at how pressure changes in time (live) as you pressurize it. Explain this behavior (can you figure out a way to reduce unwanted behavior?).
 
-4.	Plot pressure versus the difference in heights between the water columns. Use at least 10 data points, and think about how you want to measure the height.       
+4.    Using Matlab, and the analogWrite() command, capture at least 10 data points and record the corresponding heights.
+
+5.    Plot pressure versus the difference in heights between the water columns in Matlab.
+
+6.	What kind of curve-fit makes the most sense?  
 
 ##Ain’t No Mountain High Enough...:
 As you should have noticed by now, there appears to be a relationship between heights and pressures (Ever considered why pressure sometimes is measured in millimeters of Mercury or inches of water? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
@@ -97,7 +101,11 @@ Your report is expected to include (remember maximum 5 pages):
 - Provide some details about the experiment and methodology and why you chose your particular setup  
 
 ###Results
-- Provide plots and pictures to illustrate your results  
+- Provide plots and pictures to illustrate your results. You are free to use whatever plotting program you wish, but your TA's recommend using Matlab. 
+- Make sure to label all axes.
+- Use appropriate font sizes for the labels (it should match your report font size).
+- Include legends if necessary.
+- Make sure the data points are large enough to see clearly.
 
 ###Discussion
 -  Outline sources of error and perhaps answer any of the questions brought up in the lab manual
