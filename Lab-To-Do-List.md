@@ -47,6 +47,8 @@
 
 - Check motor controller circuit
 
+- Matlab/Photon `getTone()` function is acting weird, investigate!
+
 - **_Terminal Block for all circuit connections (motor, flowmeters, etc)_**
 
 ## Lab3: Boundary Layers
