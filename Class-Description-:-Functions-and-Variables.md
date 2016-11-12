@@ -86,7 +86,7 @@ _Returns_
 ```python
 digitalWrite(String pin, Int Value)
 ```  
-Writes a bit value to an analog pin.  
+Writes a bit value to a digital pin.  
 _Arguments_ 
 *  `String pin` - The name of the pin connected to sample.  
 *  `Int value` - The bit value to write. Takes a value of 0 or 1 corresponding to HIGH or LOW.    
