@@ -67,9 +67,11 @@
 
 ## Lab 5: Wind Turbine
 
-- Repair/upgrade 3-D Printers pronto!
+- ~~Repair/upgrade 3-D Printers pronto!~~
 
 - **_Adjust range and calibrate Torque sensor_**
+
+- ~~Add a sweet .gif to the lab manual~~
 
 - Clean up measurement station
 
