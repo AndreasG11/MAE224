@@ -77,6 +77,28 @@ By pressurizing the system, you are changing the manometer height, and you shoul
 
 6.	What kind of curve-fit makes the most sense?  
 
+7.    Save your data to a text file using the Matlab command snippet below:
+
+Add this code snippet to the end of your .m file to save data as a delimited text file.
+```matlab
+%Enter your folder name%
+folder = 'C:\Users\your_username_here\Documents\';
+%Enter a unique and descriptive filename%
+fname = 'lab1_p2_hydrostatics.txt'; 
+%Manually enter your recorded heights for each pressure measurement%
+heights = [0 0.02 0.05 0.08 0.1 0.12 0.14 0.16 0.18 0.20];
+
+hdr = {'Heights (m)','Pressure Transducer (V)'}; %Labels for the columns (check units)
+fmt = '%s\t %s\r\n'; %Create a formatting string for the file header 
+fid = fopen([folder fname],'w'); %Open the file to write the header
+fprintf(fid,fmt,hdr{:}); %Write the header
+fclose(fid);
+dlmwrite([folder fname],[heights' volts],'\t'); %Write the actual data to file
+```
+There is a lot going on here, but the function is relatively simple. We first create a cell array of strings for the header (so later we will know what data we saved). The next few lines write the header to the file, and the final call to `dlmread()` writes the actual data. Note that you will need to manually enter your height data into the `heights` variable, and don't forget to change the folder location and filename as well!
+
+__Remember__ You can get information on any function in Matlab by typing `help function_name` and hitting enter in the command window.
+
 ##Ain’t No Mountain High Enough...:
 As you should have noticed by now, there appears to be a relationship between heights and pressures (Ever considered why pressure sometimes is measured in millimeters of Mercury or inches of water? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
 
