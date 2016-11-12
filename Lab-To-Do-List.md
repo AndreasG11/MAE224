@@ -10,13 +10,15 @@
 
     * Testing all changes on each lab
 
+- COMPLETED tasks are shown with ~~strikethrough~~
+
 ## Lab Schedule
 
 ### Lab 1, Week 1: Introduction to lab equipment and experimental methods
 
-- Photon: initial setup and output/read signals
+- ~~Photon: initial setup and output/read signals~~
 
-    * Analog read/write: Example 1
+    * ~~Analog read/write: Example 1~~
 
 - Oscilloscope: observe Photon signals and compare
 
@@ -24,19 +26,16 @@
 
 - Difference between analog and digital signals
 
-    * PWM: Example 2
-
-- Matlab Introduction
-
 - Manual written for lab 1, part 1
 
 ## Lab 1, Week 2: Hydrostatics
 
 - Add oscilloscope step for manual measurement/debug of transducer signal
 
-- Update manual for use with Matlab (same goes for all labs)
+- ~~Update manual for use with Matlab (same goes for all labs)~~
+- ~~Add Matlab code for data writing~~
 
-- Correct calibration curves for all pressure transducers
+- Upload calibration curves for all pressure transducers and link in lab manual
 
 ## Lab 2: Pipe Flow
 
