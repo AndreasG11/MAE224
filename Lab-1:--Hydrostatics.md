@@ -26,7 +26,7 @@ Now, we can use the principle of hydrostatics to measure a pressure difference b
 ## Tools and Materials
 You have several tools and materials at your disposal to complete the lab. This includes but is not necessarily limited to:  
 - Particle Photon w/ Breadboard + USB  
-- pithy/MATLAB  
+- MATLAB  
 - Flexible Tubing  
 - Large PVC Tube  
 - Pressure Transducers  
@@ -35,11 +35,11 @@ You have several tools and materials at your disposal to complete the lab. This 
 - Mass Scale  
 - Hand-pumping-ball  
 - Computer  
--  Fresh Princeton water  
+- Fresh Princeton water  
 - [Code](https://github.com/mkfu/MAE224/tree/master/Lab%201%20Shells)  * * * 
 
 ##Build a manometer
-The goal of this lab is to calibrate the pressure sensor given to you using the manometer and the Particle Photon. You should build a device that allows you to do so and record the data with your Photon. 
+The goal of this lab is to calibrate the pressure sensor given to you using the manometer and the Particle Photon. To do this, you will need to have control over the applied pressure while recording the data with your Photon. 
 At this point, you should derive an expression relating the pressure to the column height. Follow, these steps in your derivation:  
 
 1.    In a manometer, if one end is open to the air, the pressure difference is the difference between the atmospheric pressure at the open end, P0, and the pressure established by the hand pump at the closed end, P1.  
@@ -67,8 +67,7 @@ Your goal is to calibrate the pressure sensor given to you using the manometer a
 
  
 Photon
-Pressure sensors can measure pressure in a multitude of ways - the ones we have use the change in electrical resistivity of silicon due to strain (piezoresistive effect) to detect pressure.
-You will use your Particle Photon to measure the voltage signal from the pressure sensor.
+
 To connect the pressure sensor to the Particle Photon:
 1.	Plug the pressure sensor into your breadboard.  
 
@@ -76,11 +75,8 @@ To connect the pressure sensor to the Particle Photon:
 
 3.	Connect the pressure sensor pins to the corresponding pins on the Particle Photon (be careful not to switch the pins for +3.3 V and ground).  
 
-
-N.B. Some of you aspiring fluid mechanicians might notice that the sensors provided are supposed to work on 5V. Fear Not! The sensor will still be sensitive to the changes in pressure, but you will probably develop a new calibration curve.
-
 ##Test your setup with the fluid
-Your goal is to calibrate the pressure sensor given to you using the manometer and the Particle Photon.  By pressurizing the system, you are changing the manometer height, and you should have a relationship between pressure, fluid density, and height by this time. By taking the appropriate data, you will be able to construct a calibration curve relating the pressure applied to the sensor to the voltage output.
+By pressurizing the system, you are changing the manometer height, and you should be able to relate some measured height of the fluid column to the pressure it is applying to the transducer. By taking the appropriate data, you will be able to construct a calibration curve relating the pressure applied to the sensor to the voltage output.
 
 1.	The calibration curve should give you a pressure if you give it a voltage (p(V)).    
 
