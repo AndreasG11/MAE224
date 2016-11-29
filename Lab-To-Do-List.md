@@ -35,7 +35,8 @@
 - ~~Update manual for use with Matlab (same goes for all labs)~~
 - ~~Add Matlab code for data writing~~
 
-- Upload calibration curves for all pressure transducers and link in lab manual
+- ~~Upload calibration curves for all pressure transducers and link in lab manual~~
+- Functions in Matlab class file for reading pressure transducers, output is in Pascals (specific to each transducer).
 
 ## Lab 2: Pipe Flow
 
@@ -59,6 +60,8 @@
 
 - Update lab manual accordingly
 
+- PCB for stepper motor/pressure transducer. Photon plugs directly into powered board.
+
 ## Lab 4: Airfoil and Cylinder
 
 - Check range of airfoil tunnel Pitot transducer, might be to low at 0.1PSID
@@ -66,6 +69,10 @@
 - **_Add pressure transducer to cylinder and multiplex new inputs_**
 
 - Determine range of new pressure transducers pronto!
+
+- Make sure Matlab code works with cylinder and airfoil.
+
+    * Specific code needed for on-board photons, make sure to test!
 
 ## Lab 5: Wind Turbine
 
