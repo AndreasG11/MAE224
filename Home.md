@@ -25,7 +25,7 @@ Quick tutorial on how to use the Photon class to read and write data with analog
 
 ##Example 2
 
-##[Example 3 - Servos and PWMs](https://github.com/mkfu/MAE224/wiki/Example-2-:-Servos-and-PWMs)
+##[Example 3 - Servos and PWMs](https://github.com/mkfu/MAE224/wiki/Example-3-:-Servos)
 Quick tutorial on how use a servo with the Photon class and read a PWM signal 
 
 ```
