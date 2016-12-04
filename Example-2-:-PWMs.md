@@ -34,7 +34,7 @@ g.getConnectedDevices()
 
 if g.getConnection %Only run code if Photon is connected
     g.setFreq(freq) %Set the PWM writing frequency
-    g.analogWrite(apin,3); %Output a 3 Volt analog voltage
+    g.analogWrite(apin,vout); %Output an analog voltage
 
     f1v = g.getTone(readpin); %Read frequency at pin A5
     disp(['Frequency at pin ' readpin ' is ' num2str(f1v) ' Hz. '])
