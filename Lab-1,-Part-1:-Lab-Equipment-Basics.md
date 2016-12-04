@@ -72,6 +72,11 @@ There are a variety of measurements that can be made with the oscilloscope, incl
 
 On the rightmost side is the measurement display (you can access this menu by pressing the "measurement" button) a variety of options are available for each channel. Note that there are 4 windows available for measurement display on this screen. Along the bottom of the screen is the information regarding the X and Y axis divisions. For instance, Channel 1 is reading a square wave and the division between each horizontal dashed line is 5 Volts. 
 
+## Read a PWM with the Oscilloscope and Particle Photon
+Follow this example: [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs). Make sure to show your TA the output from the Photon on the oscilloscope at the end! 
+
+When you have completed the above and feel comfortable with all the lab equipment, you have finished the first week of required lab material. If not, please ask for assistance and experiment outputting various signals with your Particle Photon the TA's and Mike are here to help!
+
 
 
 
