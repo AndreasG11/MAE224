@@ -14,6 +14,38 @@ The digital output is shown in black. Notice how for each signal, the amount of 
 PWM itself is very powerful, in fact you can also use it to re-create time-varying analog signals. All we need is to be able to control the duty cycle as a function of time. We will not be doing this with the particle photon during the lab, but it is possible with the right programming. 
 
 ##PWM Example
-Here you will be outputting a PWM signal with your Particle Photon and reading it with both the oscilloscope and the Photon itself. 
+Here you will be outputting a PWM signal with your Particle Photon and reading it with both the oscilloscope and the Photon itself. Use a blank breadboard and jumper pins A4 and A5 (or whichever two pins you use for input/output of the signals)
+
+```matlab
+% INPUTS %
+photon = 'your_photon_name'; %Put your specific Photon name here
+atoken = 'abc123';           %Access token
+apin = 'A4';    %Analog pin for PWM output, note that only specific Photon pins are PWM capable
+readpin = 'A5'; %Pin to read in analog frequency
+vout = 3;       %PWM Voltage out
+freq = 3000;    %Frequency for analog PWM
 
 
+%% MAIN PROGRAM %%
+%Create a new photon object%
+g = Photon(photon,atoken);
+%Display the connected devices
+g.getConnectedDevices()
+
+if g.getConnection %Only run code if Photon is connected
+    g.setFreq(freq) %Set the PWM writing frequency
+    g.analogWrite(apin,3); %Output a 3 Volt analog voltage
+
+    f1v = g.getTone(readpin); %Read frequency at pin A5
+    disp(['Frequency at pin ' readpin ' is ' num2str(f1v) ' Hz. '])
+
+end
+```
+After setting up your Photon and connecting USB power, use some jumper wire and clip leads to connect ground and the signal pin to the Oscilloscope (signal always goes to red, black to ground). Get your oscilloscope up and running, then run the above matlab code. You should see a square wave similar to the one in the earlier image.
+
+Here are some to-dos before moving on:
+1. Read the signal frequency on the oscilloscope and compare it to the `freq` value set above
+2. Change `freq` and measure it with the Photon and the oscilloscope (re-run the Matlab code)
+3. Change the output voltage `vout`. What happens to the duty cycle? What are the units of the duty cycle?
+
+**show your TA the PWM signal on your oscilloscope** and you are finished with this tutorial.
