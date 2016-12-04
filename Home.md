@@ -20,6 +20,10 @@ Quick reference diagram of the pin locations on the Particle Photon
 ## [Class Description](https://github.com/mkfu/MAE224/wiki/Class-Description-:-Functions-and-Variables)
 Description of the functions and variables in the Photon class and how to access them from Matlab
 
+##[Technical Report Guidelines](https://github.com/mkfu/MAE224/wiki/Technical-Report-Guidelines)
+Expectations from technical reports
+
+#Examples
 ##[Example 1 - Read and Write](https://github.com/mkfu/MAE224/wiki/Example-1-:-Read-and-Write-Pins)
 Quick tutorial on how to use the Photon class to read and write data with analog pins
 
@@ -29,8 +33,6 @@ Overview of Analog and Digital Signals as well as tutorial on using the Pulse Wi
 ##[Example 3 - Servos and PWMs](https://github.com/mkfu/MAE224/wiki/Example-3-:-Servos)
 Quick tutorial on how use a servo with the Photon class and read a PWM signal 
 
-##[Technical Report Guidelines](https://github.com/mkfu/MAE224/wiki/Technical-Report-Guidelines)
-Expectations from technical reports
 ***
 #Labs
 
