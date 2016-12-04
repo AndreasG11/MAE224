@@ -5,7 +5,7 @@
 - [Photon Pinout Diagram](https://github.com/d008/MAE224/wiki/Particle-Photon-Pinout-Diagram)
 - [Example 1 - Read and Write](https://github.com/mkfu/MAE224/wiki/Example-1-:-Read-and-Write-Pins)  
 - [Example 2 - PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) 
-- [Example 3 - Servos and PWM](https://github.com/mkfu/MAE224/wiki/Example-3-:-Servos)  
+- [Example 3 - Servos](https://github.com/mkfu/MAE224/wiki/Example-3-:-Servos)  
 
 ###[Technical Report Guidelines](https://github.com/mkfu/MAE224/wiki/Technical-Report-Guidelines)    
 
