@@ -49,4 +49,4 @@ Here are some to-dos before moving on:
 2. Change `freq` and measure it with the Photon and the oscilloscope (re-run the Matlab code)
 3. Change the output voltage `vout`. What happens to the duty cycle? What are the units of the duty cycle?
 
-**show your TA the PWM signal on your oscilloscope** and you are finished with this tutorial.
+**Show your TA the PWM signal on the oscilloscope** and you are finished with this tutorial.
