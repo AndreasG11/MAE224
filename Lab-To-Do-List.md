@@ -35,20 +35,20 @@
 - ~~Update manual for use with Matlab (same goes for all labs)~~
 - ~~Add Matlab code for data writing~~
 
-- ~~Upload calibration curves for all pressure transducers and link in lab manual~~
+- Upload calibration curves for all pressure transducers and link in lab manual
 - Functions in Matlab class file for reading pressure transducers, output is in Pascals (specific to each transducer).
 
 ## Lab 2: Pipe Flow
 
 - Streamline/update lab manual
 
-- Flowmeters/counters are robust and interface easily
+- ~~Flowmeters/counters are robust and interface easily~~
 
 - Add step for oscilloscope reading of flow meters
 
 - Check motor controller circuit
 
-- Matlab/Photon `getTone()` function is acting weird, investigate!
+- ~~Matlab/Photon `getTone()` function is acting weird, investigate!~~
 
 - **_Terminal Block for all circuit connections (motor, flowmeters, etc)_**
 
