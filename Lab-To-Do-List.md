@@ -46,7 +46,9 @@
 
 - Add step for oscilloscope reading of flow meters
 
-- Check motor controller circuit
+- ~~Check motor controller circuit~~
+
+- Add picture with labels of the Motor Driver PCB to Lab Manual
 
 - ~~Matlab/Photon `getTone()` function is acting weird, investigate!~~
 
