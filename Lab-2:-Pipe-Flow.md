@@ -1,28 +1,24 @@
 The objective of this lab is to investigate laminar and turbulent flow, and the difference between them, in a pipe flow by creating a Moody diagram.   
 In this experiment you will have to relate the pressure drop in the pipe to the Reynolds number.  
 #Control the Experiment with Particle Photon  
-In this experiment you will use a flow meter, electric pump and an optional pressure transducer. With your Matlab-programmed Particle Photon, and circuitry knowledge you can control and measure all of these things from the comfort of your own computer. 
+In this experiment you will use two flow meters, an electric pump and an optional pressure transducer. With your Matlab-programmed Particle Photon, and circuitry knowledge you can control and measure all of these things from the comfort of your own computer. 
 To run the experiment, you will need the ability to set the pump to a known flow rate and then record the pressure drop in the pipe. 
-The Particle Photon cannot output the correct voltage or current needed to drive the pump, but it can output a PWM (pulse width modulation) signal! Therefore we will be using a transistor setup known as a MOSFET which will allow you to use an external power source to power the motor, but utilize the Particle Photon to control the motor output.  For those of you who like analogies, using a transistor is like controlling the flow of a firehose with a squirt gun.  The Particle Photon outputs a small square wave which tells the transistor to let a large amount of current flow through the motor.  The real working is a bit more complicated than that and involves quite a bit more applied physics knowledge, band gap theory, and understanding of NPN and PNP transistors, all of which Mike knows a lot about if you are interested in learning more. You can also look at this handy resource [Wikipedia](https://en.wikipedia.org/wiki/MOSFET) or if you are brave [Caltech APh9](http://nanofab.caltech.edu/images/stories/classes/aph9/lecture11.pdf).  All you need to know is that we can now control the motor with a Particle Photon.  Below is a diagram for wiring up the motor control.  
+The Particle Photon cannot output the correct voltage or current needed to drive the pump, but it can output a PWM (pulse width modulation) signal! Therefore we will be using a transistor setup known as a MOSFET which will allow you to use an external power source to power the motor, but utilize the Particle Photon to control the motor output.  For those of you who like analogies, using a transistor is like controlling the flow of a firehose with a squirt gun.  The Particle Photon outputs a small square wave which tells the transistor to let a large amount of current flow through the motor.  The real working is a bit more complicated than that and involves quite a bit more applied physics knowledge, band gap theory, and understanding of NPN and PNP transistors, all of which Mike knows a lot about if you are interested in learning more. You can also look at this handy resource [Wikipedia](https://en.wikipedia.org/wiki/MOSFET) or if you are brave [Caltech APh9](http://nanofab.caltech.edu/images/stories/classes/aph9/lecture11.pdf).  All you need to know is that we can now control the motor with a Particle Photon.  Below is an image of the motor control board with details of each part.  
 
-The MOSFET component is the Darlington pair transistor.  It has a gate (g), drain (d) and source (s) are in almost alphabetical order when looking at this component.  The base will be taking the analog output signal from your Particle Photon and will be what controls the output to the motor. The external 12V+ power will come into the motor, then out of it into the collector.  Across the power leads to and from the motor, there is a diode to prevent any back EMF from damaging the motor. The emitter will receive the black wire from the external power supply, which should be referenced to ground.  
+The MOSFET has three pins which correspond to gate (g), drain (d) and source (s) when looking at this component from the front.  The gate is controlled via the IDX-609 chip which is what is known as a driver chip, it converts the square-wave signal from the Photon to a higher voltage need to drive the MOSFET efficiently. There are some other, ancillary components as well which assist in providing the necessary power to the pump.
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Motor%20Diagram.png?raw=true" width="800">  
 </p>
 
-The pressure drop in the pipe can be recorded manually by a manometer setup, or by using the pressure transducer and the code that you wrote in the previous lab. It’s a good idea to start using the manometer just because we took all the trouble to make it and it works really well, but as an addendum to the lab you can double check the pressure with the transducer that you just calibrated!  
+The pressure drop in the pipe can be recorded manually by a manometer setup, or by using the pressure transducer and the code that you wrote in the previous lab. It’s a good idea to start using the manometer just because we took all the trouble to make it and it works really well, but as an addendum to the lab you can double check the pressure with the transducer that you just calibrated! To do this you will need to place the pressure transducer on a separate breadboard and connect the power/signal/ground pins to the Particle Photon.
 
-You are provided with a Matlab code outline that you need to modify in order to control the pump and by that, control the flow rate in the pipe. You are also provided with a code to read the flow rate from either flowmeter (small, white plastic one and larger brass one) on the setup. You should familiarize yourself with the code and make sure you understand exactly what is happening. You will be required to add in a minimal amount of code, otherwise it will not work.  From last week you should now be completely familiar with how to get data from the Photon using Matlab and how to save the data to a file. If not, ask your partner(s) or your TA for help in understanding. 
+The Printed Circuit Board (PCB) for this lab has a few other connections you may have noticed. These are for the two flow-meters attached to the experiment. The larger brass meter is the **Total Flow Rate** through the pipe and the smaller plastic meter measures the **Laminar Flow Rate**. Because the flow meter works by measuring the rpm on an internal impeller, the digital output is simply a square wave signal where each step corresponds to some volume of fluid moving past the impeller. In other words, the code will be reading the frequency of the rotor (giving you the time or **rate** component) and each pulse corresponds to a volume of fluid (typically in milli-Liters). In order to read the signal you will need to use the `getTone(apin)` command from the class file. This command measures the time between two pulses and returns the frequency (or 1 / dt) of the pulse. You can then convert this frequency to a flow rate using the following:
 
-We will be using this code to adjust the rpm of the motor by changing the duty cycle of a pwm signal. 
+**Total Flow Rate** = (frequency + 3) / 8.1
+**Laminar Flow Rate** = frequency / 26
 
-Your programming goal is to combine all these codes together and create a python script that will allow you to control the pump, record the flow rate and pressure and write the values to a CSV file. You will need to calibrate the duty cycle ([Wikipedia](https://en.wikipedia.org/wiki/Duty_cycle)) of the pwm going to the pump so that you know the flow rate for a certain duty cycle.  
-
-Because the flow meter works by measuring the rpm on an internal impeller, the digital output is simply a square wave signal where each step corresponds to 2 milliliters of fluid past the impeller. In other words, the code will be reading the frequency of the rotor and you will need to use the following links ([Adafruit](https://www.adafruit.com/product/833)) to relate this frequency to the flow rate in each pipe.  
-
-In the above link for the flow meter, pay attention to the description of the wires. You will need to provide power to the flow meter and read the pulses with your Particle Photon in addition to powering and controlling the pump. 
-In you pithy accounts you will find Lab2Shell.py for some initial code to work from. You’ll add some missing code to 1) read data into pithy, 2) write a value to a spark function to control the pump, and 3) append collected data to given arrays and plot accordingly.   
+Your programming goal is to combine all of this into a Matlab script which will allow you to control the pump, record the flow rate and pressure (either manually or with a transducer) and then write those values to a file. You will need to calibrate the PWM signal going to the pump so that you know the flow rate for a given duty cycle. Check the [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) if you need a refresher. 
 
 #How to measure pressure drop  
 
@@ -47,7 +43,7 @@ A simple analysis of the Navier Stokes equation for flow within the pipe readily
 </p>
 If we assume that our flow is fully developed (for our experiment, this means we are sufficiently far away from the entrance of the pipe), we can readily analyze this equation.  Since the pressure gradient is constant, the velocity profile can analytically be found to be parabolic (see figure 1(a)). This is one of the few analytical results in fluid mechanics but unfortunately does not occur very often in the real world. Real world applications, like oil pipelines, or water pipes, typically require high flow rates which facilitate the growth of instabilities in the flow making the flow turbulent.  
 ##Turbulent Pipe Flow  
-Turbulence adds random (chaotic like) fluctuations to flow field, and we lose the nice parabolic velocity profile seen in figure 1(a). In a turbulent flow, the velocity profile is fuller (figure 1(b)) and there is a higher viscous stress at the wall. This in turn works to cause a greater pressure drop in turbulent flow, since there is a balance between pressure drop and shear stress. There is no nice analytical expression for turbulent pipe flow like there is for laminar flow, so we are required to conduct experiments to understand this type of flow.  
+Turbulence adds random (chaotic like) fluctuations to the flow field, and we lose the nice parabolic velocity profile seen in figure 1(a). In a turbulent flow, the velocity profile is fuller (figure 1(b)) and there is a higher viscous stress at the wall. This in turn works to cause a greater pressure drop in turbulent flow, since there is a balance between pressure drop and shear stress. There is no nice analytical expression for turbulent pipe flow like there is for laminar flow, so we are required to conduct experiments to understand this type of flow.  
 
 #Moody Diagram  
 Instead of analyzing the equations of motion for the different flow regimes, you will build what is called a “Moody diagram.” This is an empirical relation between the frictional forces in the pipe and the Reynolds number of the pipe flow.   
@@ -92,18 +88,16 @@ Turbulent and laminar flows show different curves on a Moody diagram. The turbul
 <img src="http://latex2png.com/output//latex_ed7fb59f47c8e34ec2af7bb5af2ec981.png" width="100">  
 </p> 
 
-Remember that the flow rate that you are reading is the total flow rate going through the pump.   
+Remember that you only know the flow rate at two locations and make sure you are using the correct one! Think of how you can isolate each pipe and get the right flow rate.   
 
-Think how you can isolate each pipe and get the right flow rate. Please note that the flow meter is not sensitive enough to measure the flow rate for the small pipe. Therefore, by having the expression for the laminar flow, you can calculate the flow rate/velocity for each pressure drop reading. In that sense, you will need to provide a relation between the input to the pump and the velocity in the small pipe.   
-
-In this experiment, the quality of the data contributes to your grade so make sure you take enough data points and also make sure you’re waiting enough time for the setup to stabilize when you change the flow rate.   
+In this experiment, the quality of the data contributes to your grade so make sure you take enough data points and also make sure you’re waiting enough time for the setup to stabilize when you change the flow rate (this may take upwards of 40 seconds).  
 
 #Extra Credit 
 -  Think of alternative ways by which you can estimate the flow rate in the small pipe and try to implement them in order to verify the relation for laminar flow.   
 
 -  Try to construct the Moody diagram by starting with a high Re and going to low Re (without stopping the pump) and then going from low Re to high Re. To get the extra-credit, you will have to present both measurements, discuss the difference (if observed) and explain when this difference is expected to be significant.  
 
--  Successfully reduce drag in a novel, meaningful and verifiable way. If you succeed, please see let your TA know so they can help you write the journal article.  
+-  Successfully reduce drag in a novel, meaningful and verifiable way. If you succeed, please see let your TA know so they can help you write a journal article.  
 
 #Guidelines for the report  
 Your report is expected to include:  
@@ -113,8 +107,8 @@ Your report is expected to include:
 ###Introduction:   
 - Discuss the scientific concept of the lab 
 - Effectively present the objectives and purpose of the lab  
-- Reynolds number is one of the most important numbers in fluids mechanics. Explain the physical significance of this number and give some examples of high and low Reynolds number flows around you.  
-- Commercial airplanes fly at Reynolds number of the order of few millions. Think how you can construct an experiment to get such high Reynolds number without building a facility the size of a commercial airplane.  
+- Reynolds number is one of the most important parameters in fluids mechanics. Explain the physical significance of this number and give some examples of high and low Reynolds number flows around you.  
+- Commercial airplanes fly at Reynolds numbers one the order of several million. Think about how you can construct an experiment to get such high Reynolds number without building a facility the size of a commercial airplane.  
 
 ###Experimental procedure
 - Give enough details of the procedure and the scientific concept behind them  
