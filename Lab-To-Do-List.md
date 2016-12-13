@@ -40,7 +40,7 @@
 
 ## Lab 2: Pipe Flow
 
-- Streamline/update lab manual
+- ~~Streamline/update lab manual~~
 
 - ~~Flowmeters/counters are robust and interface easily~~
 
@@ -60,7 +60,7 @@
 
 - Add a pre-test with TA/Mike approval before going into wind tunnel
 
-- Update lab manual accordingly
+- ~~Update lab manual accordingly~~
 
 - PCB for stepper motor/pressure transducer. Photon plugs directly into powered board.
 
@@ -70,7 +70,7 @@
 
 - **_Add pressure transducer to cylinder and multiplex new inputs_**
 
-- Determine range of new pressure transducers pronto!
+- ~~Determine range of new pressure transducers pronto!~~
 
 - Make sure Matlab code works with cylinder and airfoil.
 
