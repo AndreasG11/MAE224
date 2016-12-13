@@ -9,7 +9,8 @@ For this example connect the A1 and A5 analog pins together. We will also need t
  **Wire Color** | Electrical | Pin   
  --- | --- | ---   
  Red | +5V | VIN   
- Black | Ground | GND   
+ Black | Ground | GND 
+Signal | White | SIG  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/example2circuit.png" width="600">  
@@ -24,8 +25,8 @@ Matlab code:
 %Enter access token below. This can be found in the settings of your Particle Account
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
 
-%Enter the core ID
-core =  'class1'; %YOUR PHOTON ID OR NAME HERE
+%Enter the Photon ID
+core =  'my_photon'; %YOUR PHOTON ID OR NAME HERE
 
 %Instantiates a new Photon object
 g = Photon(core,atoken);
@@ -43,7 +44,7 @@ if g.getConnection
         g.move(i);
         pause(1)
     end
-%Rotate a half roration counter-clockwise    
+%Rotate a half rotation counter-clockwise    
     for i = 180:-10:10
         g.move(i);
         pause(1)
@@ -112,3 +113,4 @@ Finally, we detach the servo with the `detachServo()` functions
 g.detachServo()
 ```
 
+You should now be able to modify this code and use it to control servo motors attached to your Photon. Note that some servos have limitations on their range of motion, make sure to not go outside this range or you will damage the servo!
