@@ -62,25 +62,28 @@ For the linear actuator, there are three wires. The red and black ones should be
 
 Now try to challenge yourself. You need to write out all your codes. 
 
-**For Python/Matlab:**  
-You will use pithy codes to push a certain value to the Photon, in order to control the vertical position of the linear actuator. At the same time, you will also use pithy codes to read the data from the pressure sensor. The value should be from 60 to approximately 115. If you go out of the range, you will damage the actuator. Larger value means that the actuator moves closer to the bottom wall.  
+**For Matlab:**  
+You will use the class of Matlab commands provided to move the servo-mounted pitot tube to a location in the tunnel and then record the output of the pressure transducer. The servo should only be set to values from 60 to approximately 115. If you go out of the range, you will damage the actuator. Larger value means that the actuator moves closer to the bottom wall.  
 
 _In order to check that your code is moving the actuator as desired and safely, we'll have webcams set up so that one or two members of your group can be at the wind tunnel and talk to the remainder of the group back at the lab computer._  
  
 To prepare for taking measurements, complete the following steps:
 
-1.	Test that you can move your actuator with your pithy codes.   
+1.	Test that you can move your actuator with your Matlab codes *BEFORE* going into the tunnel.   
 2.	Find the input value for the actuator that corresponds to your “0 point” at which the pitot tube just touches (or almost touches) the wall without bending. Be careful as you do this! A suggested range is from 60 to 115.  
 NOTE: An input of 60 corresponds to a fully retracted actuator. An input of 115 corresponds to an actuator that fully extends to the wall. The setup is such that the actuator cannot fully retract, so don’t set the input below 60. Since the flow is symmetric, you just need to go from the bottom wall to the middle height of the channel. The input will be somewhere between these two values.   
 3.	Calibrate the distance corresponding to one tick of the actuator based on linear interpolation. The value should be around 1 mm/tick.  
-4.	Remember that the Particle only measures the values in bits which ranges from 0~4095. This corresponds to -1~1 psi. You can interpolate linearly in between. You can then use the Bernoulli equation to convert the pressure into the velocity. Write pithy code to give you a live, continuously updating plot of measured velocity versus time. Check that you see velocity decrease as you move closer to the wall and that the velocity approaches a constant value (which is close to the wind speed measured by the anemometer) far enough from the wall.  
-5.	Write pithy code to setup a loop to measure velocity as a function of distance from the wall, traversing through wall distances. This should be similar to the “for” loop in lab 2. Make sure to wait an appropriate time to allow enough pressure measurements at each location. Once you have enough points, you can have the actuator move the pitot tube to its next position. (You can use your live plot to see how long you should wait.)  
+4.	Remember that the Photon only outputs voltages from the `analogRead()` command. You will need to convert this using the calibration equations **INSERT CHARTS OR LINK HERE** to actual pressures. You can then use the Bernoulli equation to convert the pressure into the velocity. 
+5.     Write a simple Matlab script to give you a live, continuously updating plot of measured velocity versus time. Check that you see velocity decrease as you move closer to the wall and that the velocity approaches a constant value (which is close to the wind speed measured by the anemometer) far enough from the wall. Use this script to debug your setup!  
+6.	Write another Matlab code to measure velocity as a function of distance from the wall, traversing through wall distances. This should be in the format of a "for" loop where each iteration measures the velocity at a new wall distance. You should take several measurements at each location and average the values to reduce error.
+
+**NOTE** Make sure to wait an enough time between measurements for the pressure to stabilize, several seconds using `pause()` is recommended. Once you have enough points, you can have the actuator move the pitot tube to its next position. (You can use your live plot to see how long you should wait.)  
 
 #Week 2
 ##Take your measurements  
-Run your pithy code to traverse the cross section. You can choose the way you like to record the data, such as saving data to a csv file while plotting the velocity profile.  
+Run your Matlab code to traverse the cross section. You can choose the way you like to record the data, such as saving data to a csv file while plotting the velocity profile.  
 
-There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x=594 mm and the second position of the probe is around x=1495 mm.  
+There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x = 594 (mm) and the second position of the probe is around x = 1495 (mm).  
 
 You need to put your actuator at these two positions and generate plots with 3 wind tunnel velocities for each. Use the knob on the side of the wind tunnel, setting it to 10, 7, and 4, and make sure you coordinate with other groups that are trying to take data.  
 
@@ -109,7 +112,7 @@ o	What do you expect the boundary layer to look like in the channel?
 
 ###Experimental procedure  
 - Physics of pitot tubes  
-o	Why were able to apply Bernoulli’s equation in the channel flow?  
+o	Why were we able to apply Bernoulli’s equation in the channel flow?  
 - Explain why (and how) you made each of your measurements  
 
 ### Results  
