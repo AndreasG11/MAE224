@@ -10,6 +10,8 @@
 
     * Testing all changes on each lab
 
+    * ~~Unclaim and update all Particle Photons~~
+
 - COMPLETED tasks are shown with ~~strikethrough~~
 
 ## Lab Schedule
