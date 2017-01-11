@@ -18,7 +18,7 @@ You are already familiar with measuring pressure in a flow. We often talk about 
 
 In class you learned Bernoulli’s equation,   
 <p align="center">
-<img src="http://latex2png.com/output//latex_665364246603e6ec8d88768dc02e5d6d.png" width="600">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab3%201.png">  
 </p>   
 
 **Be sure you understand why we can apply Bernoulli’s equation in our channel flow. **  
@@ -38,7 +38,7 @@ Given the definitions we have provided, what is P1 and what is P2?
 Check with your TA to make sure your equations are correct before proceeding. 
 
 ###Boundary Layers  
-In order to satisfy the no-slip condition at solid boundaries in flows at high Reynolds numbers, a thin boundary layer forms in which the velocity changes from 0 at the wall to the free-stream value U at some distance away. The boundary layer thickness ![](http://latex2png.com/output//latex_3e4fad6a2688dcc380cecf2cac4b23b5.png) is typically defined as the distance from the wall at which the velocity reaches the free-stream value, U. For laminar flow over a flat plate, one can show that the boundary layer thickness ![](http://latex2png.com/output//latex_3e4fad6a2688dcc380cecf2cac4b23b5.png) grows as ![](http://latex2png.com/output//latex_7660921e414637f0081244f70e2640b3.png). Use dimensional analysis together with the fact that ![](http://latex2png.com/output//latex_3e4fad6a2688dcc380cecf2cac4b23b5.png) ~ ![](http://latex2png.com/output//latex_7660921e414637f0081244f70e2640b3.png) to figure out the functional form for ![](http://latex2png.com/output//latex_3e4fad6a2688dcc380cecf2cac4b23b5.png). That is, consider the dimensions of the other important variables (U and ![](http://latex2png.com/output//latex_d9249c7511ea478d3b7ae13acd736ed7.png)) to see how they can fit together with ![](http://latex2png.com/output//latex_7660921e414637f0081244f70e2640b3.png) to form a length scale. This will be correct up to a numerical prefactor, which turns out to be about 4.91.
+In order to satisfy the no-slip condition at solid boundaries in flows at high Reynolds numbers, a thin boundary layer forms in which the velocity changes from 0 at the wall to the free-stream value U at some distance away. The boundary layer thickness ![](https://github.com/d008/MAE224/blob/master/equations/delta.png) is typically defined as the distance from the wall at which the velocity reaches the free-stream value, U. For laminar flow over a flat plate, one can show that the boundary layer thickness ![](https://github.com/d008/MAE224/blob/master/equations/delta.png) grows as ![](https://github.com/d008/MAE224/blob/master/equations/sqrtx.png). Use dimensional analysis together with the fact that ![](https://github.com/d008/MAE224/blob/master/equations/deltasimx.png) to figure out the functional form for ![](https://github.com/d008/MAE224/blob/master/equations/delta.png). That is, consider the dimensions of the other important variables (U and ![](https://github.com/d008/MAE224/blob/master/equations/nu.png)) to see how they can fit together with ![](https://github.com/d008/MAE224/blob/master/equations/sqrtx.png) to form a length scale. This will be correct up to a numerical prefactor, which turns out to be about 4.91.
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/BL1.png" width="600">  
@@ -50,7 +50,7 @@ Check with a TA to make sure you arrive at the correct equations before proceedi
 
 Finally, let's plug in some numbers to see what to expect. For air flowing past a flat plate at 10 m/s, how thick should the boundary layer be 50 cm from the leading edge? 
 
-Boundary layers eventually become turbulent far enough down a plate, typically at ![](http://latex2png.com/output//latex_96df214ddaa05183fd7698067f531a5e.png), where ![](http://latex2png.com/output//latex_1785bf37b5a8d9072198077ba2514dc7.png) is the Reynolds number based on distance x. What is the value of ![](http://latex2png.com/output//latex_eb08e03f418e282c0487e8dca255de60.png) in the previous example? At roughly what distance  do we expect the boundary layer to become turbulent?  
+Boundary layers eventually become turbulent far enough down a plate, typically at ![](https://github.com/d008/MAE224/blob/master/equations/lab3%202.png), where ![](https://github.com/d008/MAE224/blob/master/equations/lab3%203.png) is the Reynolds number based on distance x. What is the value of ![](https://github.com/d008/MAE224/blob/master/equations/Rex.png) in the previous example? At roughly what distance x do we expect the boundary layer to become turbulent?  
 
 ##Check out the anemometer in the tunnel  
 Go next door to the wind tunnel lab and see the anemometer in action. The rate of spin of the cups is proportional to the velocity in the tunnel. The instrument was calibrated to output the velocity reading you see. We will use this value as a sanity check when we are looking at the pitot tube readings.   
@@ -95,7 +95,7 @@ How does the measured boundary layer thickness change with wind tunnel velocity?
 Can you perceive a difference in the shape of your boundary layer profile between the different wind tunnel velocities? Should you be able to? Why or why don’t you see a difference?  
 
 ##Extra Credit  
-The laminar boundary layer solution is self-similar (or a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](http://latex2png.com/output//latex_e97d2997444f7582238348dcab434cef.png), which in this case is ![](http://latex2png.com/output//latex_b4c340f3e31c7239814d7edce82858fa.png) The similarity solution is then ![](http://latex2png.com/output//latex_a90b32855e3591f6bd8915c4b6449f11.png).  
+The laminar boundary layer solution is self-similar (or a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](http://latex2png.com/output//latex_e97d2997444f7582238348dcab434cef.png), which in this case is ![](https://github.com/d008/MAE224/blob/master/equations/lab3%204.png) The similarity solution is then ![](https://github.com/d008/MAE224/blob/master/equations/lab3%205.png).  
 
 Put your measurements in this form and plot u/U as a function of ![](http://latex2png.com/output//latex_e97d2997444f7582238348dcab434cef.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? How well do they agree with the numerical solution? Explain why you may see differences.  
 
