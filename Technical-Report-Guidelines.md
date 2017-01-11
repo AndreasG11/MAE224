@@ -26,13 +26,13 @@ This is by far the most important section. This section should cover the bulk of
 The discussion is the perfect place to include a rigorous error analysis. This includes both quantitative and qualitative. Be sure to list the largest and dominant sources of error and use the equations which Marcus when over in class to quantify their effects. These values can then be included in your error bars in the previous section  
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_a97e54136df944d66a46056f8fa9104f.png" width="400">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/tech_rep_error1.png">  
 </p>
 
 We are primarily interested in finding out which parameters to which we are most sensitive. In an abstract sense, we can think of our measurement as an approximation of the actual value we hope to measure. We can approximate our value with a Taylor series as 
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_ec175be35aef941ece73b562c5a88053.png" width="400">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/tech_rep_error2.png" >  
 </p>
 
 While we might want to measure the true value $f_k$, we might actually have measured $f_k^0$. In this linearized system, the variance and error in our measurements will generate some distance from the actual value we want and the value we read. We simply quantify this distance by taking the mean square of all of the component which contribute to the error. This analysis is nontrivial when analytic relations between parameters is unknown or not straightforward. Simple estimation of the error can tell you whether or not your measurements are reasonable.\\
