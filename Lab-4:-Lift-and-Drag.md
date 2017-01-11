@@ -43,18 +43,20 @@ For a given airfoil and flow conditions, a typical plot of lift coefficient vers
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil3.png" width="200"> 
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil4.png" width="200">
-</p> Figure 3: Lift coefficient versus angle of attack and the flow separation. Note the top right has zero angle of attack, and the bottom right is a stalled airfoil.  
+</p> 
 
-In addition to the lift (which often is the reason we use an airfoil), we need to worry about the drag force. The drag on an airfoil can be decomposed into two main sources – viscous and pressure:   
+Figure 3: Lift coefficient versus angle of attack and the flow separation. Note the top right has zero angle of attack, and the bottom right is a stalled airfoil.  
 
-Viscous drag comes from “fluid friction” between the fluid and the surfaces due to the effect of viscosity (no-slip at the wall). This friction is associated with the development of boundary layers, and depends on the Reynolds number.   
+In addition to the lift (which often is the reason we use an airfoil), we need to worry about the drag force. The drag on an airfoil can be decomposed into two main sources – viscous and pressure: 
 
-Form drag or pressure drag results from the pressure difference between the forward and rearward-facing  areas of the airfoil. This drag is responsible for the significant increase in drag around stall as the flow separates from the airfoil, resulting in an unbalanced pressure distribution.  
+* Viscous drag comes from “fluid friction” between the fluid and the surfaces due to the effect of viscosity (no-slip at the wall). This friction is associated with the development of boundary layers, and depends on the Reynolds number.   
 
-Similarly to the lift coefficient, drag can be expressed in terms of the “drag coefficient” given by  
+* Form drag or pressure drag results from the pressure difference between the forward and rearward-facing  areas of the airfoil. This drag is responsible for the significant increase in drag around stall as the flow separates from the airfoil, resulting in an unbalanced pressure distribution.  
+
+Similar to the lift coefficient, drag can be expressed in terms of the “drag coefficient” given by  
 
 <p align="center">
-<https://github.com/d008/MAE224/blob/master/equations/lab4%205.png">  
+<img src = "https://github.com/d008/MAE224/blob/master/equations/lab4%205.png">  
 </p>
 
 where D is the drag force. A typical plot of drag coefficient versus angle of attack can be seen in Figure 4.  
@@ -69,7 +71,7 @@ To calculate the lift and drag coefficient to study airfoils, one is interested 
 This lab will occur in three different parts, and groups will rotate between the different activities at different times to ensure that everyone gets a crack at the wind tunnel (oh yeah!).  The three components are a simulation of the airfoil in the tunnel, measurements of the airfoil in the wind tunnel, and measurements of a cylinder in the wind tunnel.  You will be comparing the three different components to see the effects of shape on a pressure distribution and the difference between a real experiment and a simulation.  
 
 ##Airfoil Simulations: 
-The first component of the lab is to simulate the airfoil you’ll be using in Qblade.  You will find a Qblade tutorial on Blackboard to assist you with modeling and determining aspects of the airfoil.  You should follow the tutorial to determine the lift and drag coefficients for the configuration used in the lab, specifically the NACA 0018 airfoil.  Make sure that you include plots of pressure coefficient (![](https://github.com/d008/MAE224/blob/master/equations/Cp.png)) as well as ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) vs. ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) in your lab report.  
+The first component of the lab is to simulate the airfoil you’ll be using in Qblade.  You will find a Qblade tutorial on Blackboard to assist you with modeling and determining aspects of the airfoil.  You should follow the tutorial to determine the lift and drag coefficients for the configuration used in the lab, specifically the NACA 0018 airfoil.  Make sure that you include plots of pressure coefficient ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png) as well as ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) vs. ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) in your lab report.  
 
 ###Questions
 Questions:  
