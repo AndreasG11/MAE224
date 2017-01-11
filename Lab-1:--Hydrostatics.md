@@ -36,7 +36,6 @@ You have several tools and materials at your disposal to complete the lab. This 
 - Hand-pumping-ball  
 - Fresh Princeton water 
 - Ruler
-- [Code](https://github.com/mkfu/MAE224/tree/master/Lab%201%20Shells)  * * * 
 
 ##Build a manometer
 The goal of this lab is to calibrate the pressure sensor given to you using the manometer and the Particle Photon. To do this, you will need to have control over the applied pressure while recording the data with your Photon. 
