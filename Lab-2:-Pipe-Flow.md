@@ -40,7 +40,7 @@ Pipe flow can be analyzed through the Navier-Stokes equations. The details of th
 A simple analysis of the Navier Stokes equation for flow within the pipe readily yields the above assertion that the viscous drag from the wall is balanced by the imposed pressure gradient:  
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_f379384ea7e3961126fae14f057d9ba1.png" width="200">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_1.png" width="100">  
 </p>
 If we assume that our flow is fully developed (for our experiment, this means we are sufficiently far away from the entrance of the pipe), we can readily analyze this equation.  Since the pressure gradient is constant, the velocity profile can analytically be found to be parabolic (see figure 1(a)). This is one of the few analytical results in fluid mechanics but unfortunately does not occur very often in the real world. Real world applications, like oil pipelines, or water pipes, typically require high flow rates which facilitate the growth of instabilities in the flow making the flow turbulent.  
 ##Turbulent Pipe Flow  
@@ -56,7 +56,7 @@ Instead of analyzing the equations of motion for the different flow regimes, you
 The setup you’re working with involves two pipes with different inner diameters (0.195” and 0.625”) producing laminar and turbulent flows. Whether the flow is turbulent or laminar can be determined by looking at your pressure data (or by calculating the Reynolds number). The Reynolds number, Re, is a dimensionless quantity defined as the ratio of inertia forces to viscous forces and is given by:
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_30ccb3956bfc357d71cdcd6530ac3527.png" width="200">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_2.png" width="100">  
 </p>  
 
 - U = Flow Velocity
@@ -67,7 +67,7 @@ The setup you’re working with involves two pipes with different inner diameter
 In terms of the flow rate, the Reynolds number can be expressed by:
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_e0f9cf22290ad76d7bc1596aab0ce6da.png" width="200">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2%203.png" width="100">  
 </p>  
 
 - Q = Volumetric Flow Rate
@@ -77,7 +77,7 @@ The flow in a pipe is regarded as laminar when Re < 2300. Above 2300 it can tran
 A Moody diagram is a graph in non-dimensional form that relates the “head loss” (pressure drop) in a pipe to Reynolds number (or flow rate). As was explained in section 3, the pressure drop in the pipe is balanced by the frictional forces in the pipe. **Therefore, to construct your Moody diagram, you will need to know the flow rate and the pressure drop.** The Moody diagram is typically a plot of the friction factor versus Reynolds number. The friction factor can be related to the pressure drop by:  
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_78c0eb90c107d61dad726dd43b81e329.png" width="200">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2%204.png" width="100">  
 </p>  
 
 - l = distance between pressure taps  
