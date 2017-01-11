@@ -12,8 +12,8 @@ Figure 1 - Airfoil
 -	The **trailing edge** is the back of the airfoil.  
 -	The **chord line** is an imaginary straight line drawn through the airfoil from its leading edge to its trailing edge.   
 -	The **camber line** is the characteristic curve of its upper or lower surface. The **max camber ratio** is the ratio of the maximum distance between the camber and chord line to the chord length.  
--	The **angle of attack** is the angle formed by the chord line and the flow direction.  
--	The **thickness** is the maximum distance between the upper and lower surfaces. The **max thickness ratio** is the ratio of the maximum thickness to the chord length.  
+-	The **angle of attack** or ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) is the angle formed by the chord line and the flow direction.  
+-	The **thickness** is the maximum distance between the upper and lower surfaces. The **thickness ratio** is the ratio of the maximum thickness to the chord length.  
 
 ##Theory
 The aerodynamic force on an airfoil is the result of a redirecting fluid momentum. For example, a typical airfoil in flow (Figure 2) will exert a force, redirecting the incoming flow downward. Consequently, the flow will exert and equal and opposite force on the airfoil which we can decompose into tangential and perpendicular components relative to the incoming flow. The tangential component of the aerodynamic force is called Drag, and the tangential is called Lift.   
@@ -27,12 +27,18 @@ Streamlines deflected over the top of the airfoil experience a higher velocity t
 Lift is typically expressed in terms of the “lift coefficient”. This is a non-dimensional parameter, similar to the friction factor in last week’s lab. The “lift coefficient” is defined as:  
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_a68258b9b44211125f58acc55af1aa1a.png" width="200">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab4%201.png">  
 </p>
 
-Where L is the lift force per unit span (the length into the page),![](http://latex2png.com/output//latex_685b0db7aecbeca0e7ba39ecfd36dc30.png)  is the density, U is the freestream velocity and c is the chord length. 
+Where L is the total lift force,![](https://github.com/d008/MAE224/blob/master/equations/rho.png) is the density, U is the freestream velocity, c is the chord length, and s is the span of the airfoil. The lift coefficient is related to but separate from the "section lift coefficient"
 
-For a given airfoil and flow conditions, a typical plot of lift coefficient versus angle can be seen in Figure 3. For thin profiles at low angles of attack, the coefficient predicted by potential flow theory is approximately ![](http://latex2png.com/output//latex_ca0071e8bf8d773d7b2607f6c50c1cb3.png).This slope (![](http://latex2png.com/output//latex_bcc5f7fec5fdce9aef1571f320cb0631.png)) is a very good approximation. The major difference between potential flow theory and real life flows is the effect of viscosity, characterized by Reynolds number, which you know from the second lab. As can be seen, lift increases with angle of attack until a maximum point beyond which a dramatic decrease is observed due to a phenomenon known as stall (or separation). Physically, stall is flow separation caused by the inability of the flow to withstand the adverse pressure gradient along the top of the airfoil (see Figure 3).  
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab4%202.png">  
+</p>
+
+which is given for an infinite (or 2-D) airfoil. If we assume that our 3-D, real life airfoil acts like a 2-D airfoil then ![](https://github.com/d008/MAE224/blob/master/equations/lab4%203.png). Without delving too far into the theory, a 3-D airfoil is influenced by having a finite span where tip vortices form and cause the velocity distribution along the wing to deviate from the 2-D case. **Be careful which lift coefficient you are using, most simulations output the section lift coefficient since the solver is set up for 2-D airfoils!**
+
+For a given airfoil and flow conditions, a typical plot of lift coefficient versus angle of attack can be seen in Figure 3. For thin profiles at low angles of attack, the section lift coefficient predicted by potential flow theory is approximately ![](https://github.com/d008/MAE224/blob/master/equations/lab4%204.png).This slope (![](https://github.com/d008/MAE224/blob/master/equations/2pi.png)) is a very good approximation. The major difference between potential flow theory and real life flows is the effect of viscosity, characterized by Reynolds number, which you know from the second lab. As can be seen, lift increases with angle of attack until a maximum point beyond which a dramatic decrease is observed due to a phenomenon known as stall (or separation). Physically, stall is flow separation caused by the inability of the flow to withstand the adverse pressure gradient along the top of the airfoil (see Figure 3).  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil3.png" width="200"> 
@@ -45,13 +51,13 @@ Viscous drag comes from “fluid friction” between the fluid and the surfaces 
 
 Form drag or pressure drag results from the pressure difference between the forward and rearward-facing  areas of the airfoil. This drag is responsible for the significant increase in drag around stall as the flow separates from the airfoil, resulting in an unbalanced pressure distribution.  
 
-Similarly, drag can be expressed in terms of the “drag coefficient” given by  
+Similarly to the lift coefficient, drag can be expressed in terms of the “drag coefficient” given by  
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_cfeb053ba76a3075e80939610aa28a9e.png" width="200">  
+<https://github.com/d008/MAE224/blob/master/equations/lab4%205.png">  
 </p>
 
-Where ![](http://latex2png.com/output//latex_f681cb4e34e279ca78f2f2924b376b65.png) is the drag force per unit span (the length into the page),![](http://latex2png.com/output//latex_685b0db7aecbeca0e7ba39ecfd36dc30.png)  is the density, U is the freestream velocity and c is the chord length. A typical plot of drag coefficient versus angle of attack can be seen in Figure 4.  
+where D is the drag force. A typical plot of drag coefficient versus angle of attack can be seen in Figure 4.  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/ClCd1.png" width="300">  
@@ -63,7 +69,7 @@ To calculate the lift and drag coefficient to study airfoils, one is interested 
 This lab will occur in three different parts, and groups will rotate between the different activities at different times to ensure that everyone gets a crack at the wind tunnel (oh yeah!).  The three components are a simulation of the airfoil in the tunnel, measurements of the airfoil in the wind tunnel, and measurements of a cylinder in the wind tunnel.  You will be comparing the three different components to see the effects of shape on a pressure distribution and the difference between a real experiment and a simulation.  
 
 ##Airfoil Simulations: 
-The first component of the lab is to simulate the airfoil you’ll be using in Qblade.  You will find a Qblade tutorial on Blackboard to assist you with modeling and determining aspects of the airfoil.  You should follow the tutorial to determine the lift and drag coefficients for the configuration used in the lab, specifically the NACA 0018 airfoil.  Make sure that you include plots of pressure coefficient (![](http://latex2png.com/output//latex_b85506e982d5e3cb67d76e057a39ff4c.png)) as well as ![](http://latex2png.com/output//latex_c82e65bbf37b2f47a371932817eb105e.png) and ![](http://latex2png.com/output//latex_1dd428313457da8064fb91ce2038bbf1.png) vs. angle of attack in your lab report.  
+The first component of the lab is to simulate the airfoil you’ll be using in Qblade.  You will find a Qblade tutorial on Blackboard to assist you with modeling and determining aspects of the airfoil.  You should follow the tutorial to determine the lift and drag coefficients for the configuration used in the lab, specifically the NACA 0018 airfoil.  Make sure that you include plots of pressure coefficient (![](https://github.com/d008/MAE224/blob/master/equations/Cp.png)) as well as ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) vs. ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) in your lab report.  
 
 ###Questions
 Questions:  
@@ -86,9 +92,18 @@ Questions:
 
 You will note that an airfoil has been mounted into a large wind tunnel, which forms the second portion of this lab.  The airfoil is hollow and contains 30 pressure taps along the center of the body completely encircling it.  Using these pressure taps, you can determine the coefficient of lift and drag around the body.  To find the drag and lift coefficients, you will require the forces on the body.  Can you think of a way to determine the forces based on the pressures measured via the taps?  If not, you should definitely ask your TA.  Direct force measurements are also taken via the LabVIEW setup on the adjacent computer.
 
-For the airfoil in the wind tunnel, you should take sets of data for, at minimum, three different wind speeds and a large number of angles of attack, sufficient to trace out a relatively good plot of lift coefficient vs. angle of attack.  To determine the speed of the tunnel, you will need to use the digital pitot probe read out on the wind tunnel and calculate the freestream velocity (Note: do **not** go above 20 m/s in the wind tunnel.  This could result in damage to the equipment).  For all runs, you should have successfully collected pressure data, angle of attack as measured by the Photon, and the forces measured by the force balance in the wind tunnel.  You should, in your report, make a comparison between ![](http://latex2png.com/output//latex_1dd428313457da8064fb91ce2038bbf1.png), ![](http://latex2png.com/output//latex_b85506e982d5e3cb67d76e057a39ff4c.png) and ![](http://latex2png.com/output//latex_c82e65bbf37b2f47a371932817eb105e.png) the  curves for the simulation, the direct force measurements, and the determinations made from the pressure taps.  
+For the airfoil in the wind tunnel, you should take sets of data for, at minimum, three different wind speeds and a large number of angles of attack, sufficient to trace out a relatively good plot of lift coefficient vs. angle of attack.  To determine the speed of the tunnel, you will need to use the digital pitot probe read out on the wind tunnel and calculate the freestream velocity (Note: do **not** go above 20 m/s in the wind tunnel.  This could result in damage to the equipment).  For all runs, you should have successfully collected pressure data, angle of attack as measured by the Photon, and the forces measured by the force balance in the wind tunnel.  You should, in your report, make a comparison between ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png), ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) the curves for the simulation, the direct force measurements, and the determinations made from the pressure taps.  
 
-##Experiment: Cylidner  
+###Questions:
+1.  For both the experiment and simulation, what happens to the lift at zero angle of attack? Why?
+2.  The lift appears to decrease at a certain angle of attack, why do you think this is the case?
+3.  The drag increases sharply also, why is this? Are these two phenomena related?
+4.  Given the above, why is a plot of the lift and drag coefficients useful?
+5.  Where do you suppose most aircraft operate in terms of angle of attack?
+6.  Stunt planes are capable of flying upside down. How is this possible?
+7.  How do your experimental results compare with the simulations? Comment on any differences and explain them.
+
+##Experiment: Cylinder  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/cylinderexp.png" width="600">  
