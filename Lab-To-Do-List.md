@@ -22,17 +22,17 @@
 
     * ~~Analog read/write: Example 1~~
 
-- Oscilloscope: observe Photon signals and compare
+- ~~Oscilloscope: observe Photon signals and compare~~
 
-- DMM: Use multimeter to read mean and RMS of signals
+- ~~DMM: Use multimeter to read mean and RMS of signals~~
 
-- Difference between analog and digital signals
+- ~~Difference between analog and digital signals~~
 
-- Manual written for lab 1, part 1
+- ~~Manual written for lab 1, part 1~~
 
 ## Lab 1, Week 2: Hydrostatics
 
-- Add oscilloscope step for manual measurement/debug of transducer signal
+- ~~Add oscilloscope step for manual measurement/debug of transducer signal~~
 
 - ~~Update manual for use with Matlab (same goes for all labs)~~
 - ~~Add Matlab code for data writing~~
@@ -54,29 +54,27 @@
 
 - ~~Matlab/Photon `getTone()` function is acting weird, investigate!~~
 
-- **_Terminal Block for all circuit connections (motor, flowmeters, etc)_**
+- ~~Terminal Block for all circuit connections (motor, flowmeters, etc)~~
 
 ## Lab3: Boundary Layers
 
-- Pick final pressure transducers and order them pronto!
+- Do we have enough pressure transducers of the right range?
 
-- Add a pre-test with TA/Mike approval before going into wind tunnel
+- ~~Add a pre-test with TA/Mike approval before going into wind tunnel~~
 
 - ~~Update lab manual accordingly~~
 
-- PCB for stepper motor/pressure transducer. Photon plugs directly into powered board.
-
 ## Lab 4: Airfoil and Cylinder
 
-- Check range of airfoil tunnel Pitot transducer, might be to low at 0.1PSID
+- ~~Check range of airfoil tunnel Pitot transducer, might be to low at 0.1PSID~~
 
-- **_Add pressure transducer to cylinder and multiplex new inputs_**
+- ~~Add pressure transducer to cylinder and multiplex new inputs~~
 
 - ~~Determine range of new pressure transducers pronto!~~
 
-- Make sure Matlab code works with cylinder and airfoil.
+- ~~Photon code for measuring pressures/AoA~~
 
-    * Specific code needed for on-board photons, make sure to test!
+- Matlab code to output surface normal positions needed!
 
 ## Lab 5: Wind Turbine
 
