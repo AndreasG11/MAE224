@@ -141,8 +141,8 @@ cpress = g.mrcylinder;
 Here `cpress` is again a matrix, with the first column corresponding to the top of the cylinder and the value in position (1,1) is the pressure tap closest to the leading edge. The second column is simply the pressure taps along the cylinder bottom. All values have units of Pascals (Pa).
 
 ###Questions:
-1.  If there were pressure taps along the other side of the cylinder, would you expect to see a lift force?  Why or why not?  
-2.  Compare the results between the cases which utilize the tripwire.  Do the results look different?  What is physical phenomenon underlies this?  
+1.  Does the pressure along the upper and lower surface of the cylinder match?  Should it?  
+2.  Compare the results between the cases which utilize the tripwire.  Do the results look different?  What is physical phenomena that underlies this?  
 
 ##Suggested Lab Write Up  
 Your report is expected to include:  
