@@ -95,8 +95,10 @@ Questions:
 You will note that an airfoil has been mounted into a large wind tunnel, which forms the second portion of this lab.  The airfoil is hollow and contains 30 pressure taps along the center of the body completely encircling it.  Using these pressure taps, you can determine the coefficient of lift and drag around the body.  To measure the surface pressure you will need to use the Matlab function `mrsairfoil`. This function returns two variables which you can access using the following:
 
 ```matlab
-name = 'mrsairfoil'; %Name of the photon inside the airfoil
-atoken = 'abc123'; %Replace abc123 with the access token given to you by the TA for mrsairfoil
+%Name of the photon inside the airfoil
+name = 'mrsairfoil'; 
+%Replace abc123 with the access token given to you by the TA for mrsairfoil
+atoken = 'abc123'; 
 
 g = Photon(name,atoken);
 
@@ -127,14 +129,16 @@ For the airfoil, you should take data sets for, at minimum, three different wind
 The third task of this lab is to measure the pressure distribution around a cylinder.  In another wind tunnel, there is a medium-sized cylinder with holes evenly distributed along both sides.  The holes are connected to pressure sensors.  Similar to the airfoil tests, you can determine drag coefficient for the cylinder using the pressure distribution around the cylinder.  You should take measurements at two different speeds.  Additionally, you should take sets of measurements with and without the tripwire set up in the tunnel. The Matlab code to access the cylinder pressure data is similar to the airfoil:
 
 ```matlab
-name = 'mrcylinder'; %Name of the photon inside the airfoil
-atoken = 'abc123'; %Replace abc123 with the access token given to you by the TA for mrcylinder
+%Name of the photon inside the cylinder
+name = 'mrcylinder'; 
+%Replace abc123 with the access token given to you by the TA for mrcylinder
+atoken = 'abc123'; 
 
 g = Photon(name,atoken);
 
 cpress = g.mrcylinder;
 ```
-Here `cpress` is again a matrix, with the first column corresponding to the top of the cylinder and the value in position (1,1) is the tap closest to the leading edge. The second column is simply the pressure taps along the cylinder bottom.
+Here `cpress` is again a matrix, with the first column corresponding to the top of the cylinder and the value in position (1,1) is the pressure tap closest to the leading edge. The second column is simply the pressure taps along the cylinder bottom.
 
 ###Questions:
 1.  If there were pressure taps along the other side of the cylinder, would you expect to see a lift force?  Why or why not?  
