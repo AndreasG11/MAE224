@@ -105,7 +105,7 @@ g = Photon(name,atoken);
 [cpress,aoa] = g.mrsairfoil;
 
 ```
-The output of the matlab function `mrsairfoil` will give you two variables, in the above example we have called these `cpress` and `aoa` but you may name them whatever you like. The variable `cpress` is a matrix with the first column corresponding to pressure taps on the top of the airfoil, with position (1,1) being the tap closest to the leading edge. The second column contains measurements of the pressure taps on the bottom of the airfoil, same deal with ordering. Pressure output is in Pascals (Pa). The other variable, `aoa`, is the angle of attack measured by an accelerometer located inside the airfoil. It has a resolution of +/- 1 degree for this setup.
+The output of the matlab function `mrsairfoil` will give you two variables, in the above example we have called these `cpress` and `aoa` but you may name them whatever you like. The variable `cpress` is a matrix with the first column corresponding to pressure taps on the top of the airfoil, with position (1,1) being the tap closest to the leading edge. The second column contains measurements of the pressure taps on the bottom of the airfoil, same deal with ordering. Pressure output is in Pascals (Pa). The other variable, `aoa`, is the angle of attack measured by an accelerometer located inside the airfoil, the corresponding units are degrees. It has a resolution of +/- 1 degree for this setup.
 
 To find the drag and lift coefficients, you will require the forces on the body.  Can you think of a way to determine the forces based on the pressures measured via the taps?  If not, you should definitely ask your TA.  Direct force measurements are also taken via the LabVIEW setup on the adjacent computer and should be recorded for use in your lab report.
 
@@ -138,7 +138,7 @@ g = Photon(name,atoken);
 
 cpress = g.mrcylinder;
 ```
-Here `cpress` is again a matrix, with the first column corresponding to the top of the cylinder and the value in position (1,1) is the pressure tap closest to the leading edge. The second column is simply the pressure taps along the cylinder bottom.
+Here `cpress` is again a matrix, with the first column corresponding to the top of the cylinder and the value in position (1,1) is the pressure tap closest to the leading edge. The second column is simply the pressure taps along the cylinder bottom. All values have units of Pascals (Pa).
 
 ###Questions:
 1.  If there were pressure taps along the other side of the cylinder, would you expect to see a lift force?  Why or why not?  
