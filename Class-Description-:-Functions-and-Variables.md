@@ -263,6 +263,34 @@ _Arguments_
 _Returns_  
 * 1 if successful, -1 if already designated as an input/output  
 
+***  
+###mrcylinder
+```python
+mrcylinder
+```  
+Requests pressure data for the cylinder from the Particle Photon cloud. Need specific access token for the cylinder photon (provided securely during course of lab). Note that the update time for the function is slower due to the multiplexing of all 18+ inputs.
+
+_Arguments_ 
+*  none
+
+_Returns_  
+*  cpress: a matrix with column 1 and 2 corresponding to the upper and lower surface of the cylinder, respectively.
+
+***  
+###mrsairfoil
+```python
+mrsairfoil
+```  
+Requests pressure data and current angle of attack from the Particle Photon cloud. Need specific access token for the airfoil photon (provided securely during course of lab). Note that the update time for the function is slower due to the multiplexing of all 30+ inputs.
+
+_Arguments_ 
+*  none
+
+_Returns_ 
+*  [cpress,aoa] output is the form of two variables, cpress and aoa
+    - cpress: a matrix with columns 1 and 2 corresponding to the upper and lower surface of the airfoil, respectively.
+    - aoa: a double-precision variable containing the current angle of attack.
+
 ## Variables
 ###position
 ```python
