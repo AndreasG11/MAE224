@@ -45,9 +45,9 @@ if g.getConnection
     tic
     for i = 1:N
         i
-        g.analogWrite('A4',floor(255/N)*i);
+        g.analogWrite('A4',(3.33/N)*i);
         g.digitalWrite('D7',mod(i,2));
-        data(i)  = g.analogRead('A3')/4095*3.3;
+        data(i)  = g.analogRead('A3');
         data2(i)  = g.digitalRead('D3')*3.3;
         time(i) = toc;
     end
@@ -98,9 +98,9 @@ if g.getConnection
     tic
     for i = 1:N
         i
-        g.analogWrite('A4',floor(255/N)*i);
+        g.analogWrite('A4',(3.33/N)*i);
         g.digitalWrite('D7',mod(i,2));
-        data(i)  = g.analogRead('A3')/4095*3.3;
+        data(i)  = g.analogRead('A3');
         data2(i)  = g.digitalRead('D3')*3.3;
         time(i) = toc;
     end
@@ -120,6 +120,8 @@ xlabel('Time(s)')
 ylabel('Voltage')
 legend('Analog','Digital','location','southeast')
 ```
+
+Once you have generated your Matlab plots, this example is complete.
 
 
 #Python (Not Required)
