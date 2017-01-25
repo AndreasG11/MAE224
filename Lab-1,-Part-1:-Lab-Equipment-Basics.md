@@ -1,10 +1,10 @@
 Lab 1 is broken down into two parts:
-- The first part will introduce you to the lab equipment used throughout this semester and teach you some of the basic measurement methods and debugging concepts used for any experiment (covered in this manual)
+- The first part (one you are currently reading) will introduce you to the lab equipment used throughout this semester and teach you some of the basic measurement methods and debugging concepts used for any experiment.
 - In the second part of the lab you will be performing an experiment on fluid hydrostatics (covered [here](https://github.com/d008/MAE224/wiki/Lab-1:--Hydrostatics))
 
 ## Introduction
 
-This course begins by quickly leading you through the basics of the equipment used in the lab and the basics of some simple measurements. You are expected to be familiar with the concepts of voltage, current, resistance, and Ohm's law; although these will be reviewed briefly in this guide.
+This course begins by quickly leading you through the basics of the equipment used in the lab and some simple measurements. You are expected to be familiar with the concepts of voltage, current, resistance, and Ohm's law; although these will be reviewed briefly in this guide.
 
 At certain points in the lab your lab group will be required to demonstrate the successful completion of an activity to either the TA or Mike. **These points will be indicated in boldface type** and must be completed before moving on to the next section of the lab manual
 
@@ -20,7 +20,7 @@ Now, with your Particle Photon unplugged and powered off, insert it into the bre
 
 The breadboard or prototyping board will allow you to easily try out new circuits. Some important things to note:
 
-1. The two columns on each side of the board are for the power supply rails (a 3.3 or 5.0V connection, for example) and the column pins are connected only in the vertical direction. 
+1. The two columns on each side of the board are for the power supply rails (a 3.3 or 5.0V connection, for example) and the column pins are connected only in the vertical direction. Use these rails by jumping over (with a section of wire) the 3.3V or GND output from the Photon to the corresponding rail you wish to power. Be very careful to get these connections right!
 2. The lettered rows in the middle of the board are connected horizontally in two groups. Pins a-e are connected and pins f-j are connected. Directly in the middle is a small valley to remind you that pins a-e and f-j are not connected to each other. This allows you to branch off from each side of the Photon independently (useful if you don't always want pin A1 going to D1 for example).
 
 You are now prepared to do the first example on how to read/write with your Photon: [Example 1: Read and Write Pins](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins). **Once you have completed the tutorial, show your Matlab plot to the TA before continuing.**
