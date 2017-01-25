@@ -1,9 +1,9 @@
 #Introduction
 
 ##Setting up your new Photon
-This tutorial is to set up and initialize your Particle Photon unit. You will get the unit connected to the internet and your own lab group account. Then, a test programs will be loaded on your unit to verify communication between the online account and the Particle Photon.
+This tutorial is to set up and initialize your Particle Photon unit. You will get the unit connected to the internet and your own lab group account. Then, a test program will be loaded on your unit to verify communication between the online account and the Particle Photon.
 
-You can make a serial connection to the unit through the USB cable. The following steps will open up that connection to allow you to communicate with the unit. (The lab computers should have the drivers in them, and it will take a moment to install.  If there are issues, or you wish to do the update at home, the drivers can be found at https://s3.amazonaws.com/spark-website/Particle.zip).
+You can make a serial connection to the unit through the USB cable. The following steps will open up that connection to allow you to communicate with the unit. (The lab computers should have the drivers on them, and it will take a moment to install.  If there are issues, or you wish to do the update at home, the drivers can be found at https://s3.amazonaws.com/spark-website/Particle.zip).
 
 1.	Start by saving (“save as” on the desktop) and unzip the CoolTerm program to the desktop (we did this for you! (Lucky you)): http://freeware.the-meiers.org/CoolTermWin.zip
 
@@ -29,12 +29,12 @@ You can make a serial connection to the unit through the USB cable. The followin
 
 11.	You will now need to create an account for your lab group.  Pick an unlucky group member to make a Particle account with their email of choice. Perhaps, more preferably, create a neutral email account to which all of you can access the credentials. This will allow you to access the code interface for modifying your Particle Photon.
 
-12.	On the bottom left of the page, click the target looking button (2nd from the bottom) that’s called “Particle Devices.” Then click the “Add New Device” button. Copy/paste in your core’s unit ID that you got from the terminal. (I hope you saved it)
+12.	On the bottom left of the page, click the target looking button (2nd from the bottom) that’s called “Particle Devices.” Then click the “Add New Device” button. Copy/paste in your core’s unit ID that you got from the terminal. (I hope you saved it!)
 
-13.	Now you get to name your core. Make sure it’s an awesome name that will bring pride to your group (and fear to your enemies). NOTE-DO NOT HAVE ANY SPACES OR SPECIAL CHARACTERS. These cause much grief for your TAs.
+13.	Now you get to name your core. Make sure it’s an awesome name that will bring pride to your group (and fear to your enemies). NOTE--DO NOT HAVE ANY SPACES OR SPECIAL CHARACTERS--these cause much grief for your TAs.
 
 14.	Congratulations, you now can control and edit your Particle Photon!
-Now we will write a quick programs. The first will blink the onboard LED of your Particle Photon. The second program will be a simple example of a blinking LED on your unit. This is just to expose you to the language and options of the Particle Photon.
+Now we will write a quick program. The first will blink the onboard LED of your Particle Photon. This is just to expose you to the language and options of the Particle Photon.
 
 15.	Moving back to the Particle editing webpage, click on the “Code” button, which looks like: < >
 
@@ -81,7 +81,7 @@ During the course of the lab you will _**not**_ be programming the particle phot
 
 4.    Save and flash this code to your particle photon.
 
-5.    Now that your Photon is running its new code, you must also download the Matlab class file into your computer's Matlab directory. Typically the Matlab default directory is My Documents/Matlab (on PCs), so you can use that folder location for the following step or use a new folder and then adding it to the current Matlab path (using the Set Path command in the GUI).
+5.    Now that your Photon is running its new code, you must also download the Matlab class file into your computer's Matlab directory. Typically the Matlab default directory is My Documents/Matlab (on PCs), so you can use that folder location for the following step or use a new folder and then adding it to the current Matlab path (using the Set Path command in the Matlab GUI).
 
 6.    Download the Matlab class file here [Photon.m](https://github.com/d008/MAE224/blob/master/Source%20Files/MATLAB%20v1/Photon.m) to the folder location in step (5).
 
@@ -113,7 +113,7 @@ That's it! Now all you need is an open Matlab session, and have your Photon's na
     end
 ```
 
-Now run this code in the Matlab command window and you should see your particle photon LED blink once then turn off. Have your TA verify this behavior before completing this portion of the lab.
+Now run this code in the Matlab command window and you should see your particle photon LED blink once then turn off. Have your TA (preferably Cody) verify this behavior before completing this portion of the lab.
 
 
 
