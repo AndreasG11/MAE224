@@ -5,6 +5,8 @@ In this experiment you will use two flow meters, an electric pump and an optiona
 To run the experiment, you will need the ability to set the pump to a known flow rate and then record the pressure drop in the pipe. 
 The Particle Photon cannot output the correct voltage or current needed to drive the pump, but it can output a PWM (pulse width modulation) signal! Therefore we will be using a transistor setup known as a MOSFET which will allow you to use an external power source to power the motor, but utilize the Particle Photon to control the motor output.  For those of you who like analogies, using a transistor is like controlling the flow of a firehose with a squirt gun.  The Particle Photon outputs a small square wave which tells the transistor to let a large amount of current flow through the motor.  The real working is a bit more complicated than that and involves quite a bit more applied physics knowledge, band gap theory, and understanding of NPN and PNP transistors, all of which Mike knows a lot about if you are interested in learning more. You can also look at this handy resource [Wikipedia](https://en.wikipedia.org/wiki/MOSFET) or if you are brave [Caltech APh9](http://nanofab.caltech.edu/images/stories/classes/aph9/lecture11.pdf).  All you need to know is that we can now control the motor with a Particle Photon.  Below is an image of the motor control board with details of each part.  
 
+__Note from Mark: This circuit diagram will be updated soon!__
+
 The MOSFET has three pins which correspond to gate (g), drain (d) and source (s) when looking at this component from the front.  The gate is controlled via the IDX-609 chip which is what is known as a driver chip, it converts the square-wave signal from the Photon to a higher voltage need to drive the MOSFET efficiently. There are some other, ancillary components as well which assist in providing the necessary power to the pump.
 
 <p align="center">
@@ -13,11 +15,11 @@ The MOSFET has three pins which correspond to gate (g), drain (d) and source (s)
 
 The pressure drop in the pipe can be recorded manually by a manometer setup, or by using the pressure transducer and the code that you wrote in the previous lab. It’s a good idea to start using the manometer just because we took all the trouble to make it and it works really well, but as an addendum to the lab you can double check the pressure with the transducer that you just calibrated! To do this you will need to place the pressure transducer on a separate breadboard and connect the power/signal/ground pins to the Particle Photon.
 
-The Printed Circuit Board (PCB) for this lab has a few other connections you may have noticed. These are for the two flow-meters attached to the experiment. The larger brass meter is the **Total Flow Rate** through the pipe and the smaller plastic meter measures the **Laminar Flow Rate**. Because the flow meter works by measuring the rpm on an internal impeller, the digital output is simply a square wave signal where each step corresponds to some volume of fluid moving past the impeller. In other words, the code will be reading the frequency of the rotor (giving you the time or **rate** component) and each pulse corresponds to a volume of fluid (typically in milli-Liters). In order to read the signal you will need to use the `getTone(apin)` command from the class file. This command measures the time between two pulses and returns the frequency (or 1 / dt) of the pulse. You can then convert this frequency to a flow rate using the following:
+The Printed Circuit Board (PCB) for this lab has a few other connections you may have noticed. These are for the two flow-meters attached to the experiment. The larger brass meter is the _Total Flow Rate_ through the pipe and the smaller plastic meter measures the _Laminar Flow Rate_. Because the flow meter works by measuring the rpm on an internal impeller, the digital output is simply a square wave signal where each step corresponds to some volume of fluid moving past the impeller. In other words, the code will be reading the frequency of the rotor (giving you the time or _rate_ component) and each pulse corresponds to a volume of fluid (typically a few milli-Liters). In order to read the signal you will need to use the `getTone(apin)` command from the class file. This command measures the time between two pulses and returns the frequency (or 1 / dt) of the pulse. You can then convert this frequency to a flow rate using the following:
 
-- **Total Flow Rate** = (frequency + 3) / 8.1
+- _Total Flow Rate_ (Liters/min) = (frequency + 3) / 8.1
 
-- **Laminar Flow Rate** = frequency / 26
+- _Laminar Flow Rate_ (L/min) = frequency / 26
 
 Your programming goal is to combine all of this into a Matlab script which will allow you to control the pump, record the flow rate and pressure (either manually or with a transducer) and then write those values to a file. You will need to calibrate the PWM signal going to the pump so that you know the flow rate for a given duty cycle. Check the [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) if you need a refresher. 
 
@@ -34,7 +36,9 @@ Pipe flow can be analyzed through the Navier-Stokes equations. The details of th
 
 <p align="center">
 <img src="http://me.queensu.ca/People/Sellens/images/Profiles.jpg" width="500">  
-</p>Figure 1 - (a) laminar velocity profile and (b) turbulent velocity profile. http://me.queensu.ca/People/Sellens/PowerLaw.html  
+</p>
+Figure 1 - (a) laminar velocity profile and (b) turbulent velocity profile. 
+Source: <http://me.queensu.ca/People/Sellens/PowerLaw.html>  
 
 #Laminar Pipe Flow
 A simple analysis of the Navier Stokes equation for flow within the pipe readily yields the above assertion that the viscous drag from the wall is balanced by the imposed pressure gradient:  
@@ -51,7 +55,8 @@ Instead of analyzing the equations of motion for the different flow regimes, you
 
 <p align="center">
 <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Moody_diagram.jpg" width="800">  
-</p>  Source: https://upload.wikimedia.org/wikipedia/commons/8/80/Moody_diagram.jpg  
+</p>  
+Source: <https://upload.wikimedia.org/wikipedia/commons/8/80/Moody_diagram.jpg>
 
 The setup you’re working with involves two pipes with different inner diameters (0.195” and 0.625”) producing laminar and turbulent flows. Whether the flow is turbulent or laminar can be determined by looking at your pressure data (or by calculating the Reynolds number). The Reynolds number, Re, is a dimensionless quantity defined as the ratio of inertia forces to viscous forces and is given by:
 
@@ -86,7 +91,7 @@ A Moody diagram is a graph in non-dimensional form that relates the “head loss
 Turbulent and laminar flows show different curves on a Moody diagram. The turbulent curve is sensitive to the properties of the pipe, mainly roughness, while the laminar plot admits a simple analytical solution of the governing equations given by:  
 
 <p align="center">
-<img src="http://latex2png.com/output//latex_ed7fb59f47c8e34ec2af7bb5af2ec981.png" width="100">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab%202%205.png">  
 </p> 
 
 Remember that you only know the flow rate at two locations and make sure you are using the correct one! Think of how you can isolate each pipe and get the right flow rate.   
