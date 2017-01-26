@@ -31,7 +31,7 @@ atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
 
 %Instantiates a new Photon object
 g = Photon(photon,atoken);
-g.getConnectedDevices()'
+g.getConnectedDevices()
 
 %% Move a servo
 
