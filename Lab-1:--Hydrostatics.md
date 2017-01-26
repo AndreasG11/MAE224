@@ -2,7 +2,7 @@
 **Your mission, should you choose to accept it, involves calibrating a pressure transducer.**
 
 ## Background
-As you are by now aware (or will be as of Monday, depending on when you’re reading this), the pressure in a fluid system varies with depth.  This is why scuba divers get the bends when they rise too quickly, and why wooden submarines never really caught on.  The governing relationship for pressure with depth is generally:
+The pressure in a fluid system varies with depth.  This is why scuba divers get the bends when they rise too quickly, and why wooden submarines never really caught on.  The governing relationship for pressure with depth is generally:
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab1_1.png" width="100">  
