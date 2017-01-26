@@ -41,7 +41,7 @@ The Particle Photon is a surprisingly useful little tool, and you will find it c
 
 ### Digital Multi-Meters
 
-The next two tools are known as Digital Multi-Meters (DMMs) and are the swiss-army knife of anyone working with electronics (i.e. they work good if you are in a bind or need something quick, but better tools are available). The first of these is the Fluke 73, and is the simplest of the two.
+The next two tools are known as Digital Multi-Meters (DMMs) and are the swiss-army knife of anyone working with electronics (i.e. they work well if you are in a bind or need something quick, but better tools are available). The first of these is the Fluke 73, and is the simplest of the two.
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/images/Fluke_73.png?raw=true" width="800">  
