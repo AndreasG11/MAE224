@@ -74,7 +74,7 @@ _Returns_
 ```python
 digitalRead(String pin)
 ```  
-Sample the bit value of an digital pin.  
+Sample the bit value of a digital pin.  
 _Arguments_ 
 *  `String pin` - The name of the pin connected to sample.  
 
