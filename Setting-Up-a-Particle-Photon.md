@@ -38,7 +38,7 @@ Now we will write a quick program. The first will blink the onboard LED of your 
 
 15.	Moving back to the Particle editing webpage, click on the “Code” button, which looks like: < >
 
-16.	Create a new app, which you can name something like “Get the LED out.” Be sure to hit enter. 
+16.	Create a new app, which you can name something like “Get_the_LED_out.” Be sure to hit enter. 
 
 17.	Copy and paste the following code into the editing window: 
     ```c
@@ -79,7 +79,7 @@ During the course of the lab you will _**not**_ be programming the particle phot
 
 3.    Now copy the entire block of code from the window in (2) to the code window in (1)
 
-4.    Save and flash this code to your particle photon.
+4.    Name your code something clever, like Lab_Code, then save and flash it to your Particle Photon.
 
 5.    Now that your Photon is running its new code, you must also download the Matlab class file into your computer's Matlab directory. Typically the Matlab default directory is My Documents/Matlab (on PCs), so you can use that folder location for the following step or use a new folder and then adding it to the current Matlab path (using the Set Path command in the Matlab GUI).
 
