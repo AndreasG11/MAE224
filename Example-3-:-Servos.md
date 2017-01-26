@@ -21,15 +21,16 @@ Paste the following Matlab code into a new script. Make sure that the folder con
 Matlab code:
 
 ```matlab
-%% Read Data Example
+%% Move Servo Example %%
+
+%Enter the Photon ID
+photon =  'my_photon'; %YOUR PHOTON ID OR NAME HERE
 %Enter access token below. This can be found in the settings of your Particle Account
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
 
-%Enter the Photon ID
-core =  'my_photon'; %YOUR PHOTON ID OR NAME HERE
 
 %Instantiates a new Photon object
-g = Photon(core,atoken);
+g = Photon(photon,atoken);
 g.getConnectedDevices()'
 
 %% Move a servo
@@ -38,8 +39,8 @@ g.getConnectedDevices()'
 g.attachServo('D0');
 
 %Check if the device is connected
-if g.getConnection
-%Rotate a half roration clockwise
+if g.getConnection()
+%Rotate a half rotation clockwise
     for i = 10:10:180
         g.move(i);
         pause(1)
