@@ -1,4 +1,4 @@
-In this lab course you will be dealing with both analog and digital signals, it is important that you know the distinction between the two. **Signals** in general are time varying quantities which give us some sort of information. Electronic signals can come in the form of current or voltage values (the two are related via Ohms law: V = IR, for some resistance, R). This example is only meant as a brief refresher and general overview from your Physics class and the thermodynamics lab. 
+In this lab course you will be dealing with both analog and digital signals, it is important that you know the distinction between the two. **Signals** in general are time varying quantities which give us some sort of information. Electronic signals can come in the form of current or voltage values (the two are related via Ohm's law: V = IR, for some resistance, R). This example is only meant as a brief refresher and general overview from your Physics class and the thermodynamics lab. 
 
 ## Analog vs. Digital Signals
 
