@@ -219,7 +219,7 @@ _Returns_
 ```python
 push(String functions, String value)
 ```  
-Executes a Photon function and sends it a values  
+Executes a Photon function and sends it a value  
 _Arguments_ 
 *  `String functions` - Name of the function that you want to execute
 *  `String value` - Value/parameter to send to the function   
