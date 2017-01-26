@@ -29,7 +29,7 @@ You can make a serial connection to the unit through the USB cable. The followin
 
 11.	You will now need to create an account for your lab group.  Pick an unlucky group member to make a Particle account with their email of choice. Perhaps, more preferably, create a neutral email account to which all of you can access the credentials. This will allow you to access the code interface for modifying your Particle Photon.
 
-12.	On the bottom left of the page, click the target looking button (2nd from the bottom) that’s called “Particle Devices.” Then click the “Add New Device” button. Copy/paste in your core’s unit ID that you got from the terminal. (I hope you saved it!)
+12.	On the bottom left of the page, click the target looking button (3rd from the bottom) that’s called “Particle Devices.” Then click the “Add New Device” button. Copy/paste in your core’s unit ID that you got from the terminal. (I hope you saved it!)
 
 13.	Now you get to name your core. Make sure it’s an awesome name that will bring pride to your group (and fear to your enemies). NOTE--DO NOT HAVE ANY SPACES OR SPECIAL CHARACTERS--these cause much grief for your TAs.
 
