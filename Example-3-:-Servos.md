@@ -4,7 +4,7 @@ In this tutorial, we will use the lessons from Example 1 to learn how to turn a 
 
 #MATLAB
 ##Servo
-For this example connect the A1 and A5 analog pins together. We will also need to connect a servo to the Photon. A standard servo has 3 wires that need to be connected. Typically, these wires are red, black, and white.  These colors correspond to  
+For this example we need to connect a servo to the Photon. A standard servo has 3 wires that need to be connected. Typically, these wires are red, black, and white.  These colors correspond to  
 
  **Wire Color** | Electrical | Pin   
  --- | --- | ---   
