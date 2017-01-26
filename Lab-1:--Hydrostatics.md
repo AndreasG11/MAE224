@@ -95,7 +95,7 @@ fclose(fid);
 %Append the actual data to your new file%
 dlmwrite([folder fname],[heights' volts],'-append','delimiter','\t'); 
 ```
-There is a lot going on here, but the functionality is relatively simple. We first create a cell array of strings for the header (so later we will know what data we saved). The next few lines write the header to the file, and the final call to `dlmread()` writes the actual data. Note that you will need to manually enter your height data into the `heights` variable, and don't forget to change the folder location and filename as well!
+There is a lot going on here, but the functionality is relatively simple. We first create a cell array of strings for the header (so later we will know what data we saved). The next few lines write the header to the file, and the final call to `dlmwrite()` writes the actual data. Note that you will need to manually enter your height data into the `heights` variable, and don't forget to change the folder location and filename as well!
 
 _Remember_ You can get information on any function in Matlab by typing `help function_name` and hitting enter in the command window.
 
