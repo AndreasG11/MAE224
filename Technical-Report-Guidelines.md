@@ -4,7 +4,7 @@ Do you remember the scientific method? A technical report is simply a written lo
 The abstract should serve as a brief summary of the lab. Think of this section as the most elemental summary you can give of your activities in the lab. It should be a single paragraph that allows anyone to read it and get the general gist of the lab start to finish. Busy scientists have precious little time, so they often read the abstract to determine whether the paper is worth reading in full or not. The TA should be able to understand the 1) the main point of the lab 2) main setup of the lab and 3) main conclusions of the lab all from the abstract.  
 
 #Introduction
-**What are we observing and why does this phenomena occur?**
+**What are we observing and why does this phenomenon occur?**
 The introduction is the first foray into the scientific subject. This section serves two main purpose.
 
 - Explain the purpose of the lab
