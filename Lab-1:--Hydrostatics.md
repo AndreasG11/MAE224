@@ -21,7 +21,7 @@ This device is used to measure atmospheric pressure through the hydrostatic prin
 <img src="https://2.bp.blogspot.com/-TDRlZhhKwFk/U4ryRq532PI/AAAAAAAAAh4/AWs0TZNXncY/s1600/U-tubes.jpg" width="400">  
 </p>Source: https://2.bp.blogspot.com/-TDRlZhhKwFk/U4ryRq532PI/AAAAAAAAAh4/AWs0TZNXncY/s1600/U-tubes.jpg  
 
-Now, we can use the principle of hydrostatics to measure a pressure difference between two reservoirs.   The gravitational force is balanced by the pressure force and so by a simple force balance, the pressure can be deduced by knowing the column height.
+In the above image, Pa is atmospheric pressure and Pt is the input pressure. We can see that Pt is greater than Pa. Now, we can use the principle of hydrostatics to measure a pressure difference between two reservoirs.   The gravitational force is balanced by the pressure force and so by a simple force balance, the pressure can be deduced by knowing the column height.
 
 ## Tools and Materials
 You have several tools and materials at your disposal to complete the lab. This includes but is not necessarily limited to:  
