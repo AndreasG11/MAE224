@@ -68,7 +68,7 @@ If we replace the authorization token and name of the Photon correctly, we will 
 
 ![](https://github.com/mkfu/MAE224/blob/master/images/ex1result.png)
 
-##Lets break down what the code means
+##Let's break down what the code means
 The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the authorization token and the name of the Photon.
 ```matlab
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
