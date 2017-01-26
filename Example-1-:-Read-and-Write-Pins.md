@@ -92,7 +92,7 @@ data = zeros(1,N);
 data2 = zeros(1,N);
 time = zeros(1,N);
 ```
-The next few lines do several things
+The next few lines do several things:
 ```matlab
 if g.getConnection
     tic
