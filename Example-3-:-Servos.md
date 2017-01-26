@@ -52,13 +52,6 @@ if g.getConnection
 end
 %Detach the servo
 g.detachServo()
-%% Read PWM Frequency
-%Set the write frequency of the analog pins
-g.setFreq(3400)
-%Write to A5
-g.analogWrite('A5',100)
-g.analogRead('A1')
-g.getTone('A1')
 ```
 
 The first few lines should look exactly like example 1. Remember that we need to replace the authorization token and name of the Photon correctly. The end result is that the servo should rotate
