@@ -29,7 +29,7 @@ core =  'class1'; %YOUR PHOTON ID OR NAME HERE
 
 %Instantiates a new Photon object
 g = Photon(core,atoken);
-g.getConnectedDevices()'
+g.getConnectedDevices()
 
 %% Create Empty arrays
 N = 20;
@@ -81,7 +81,7 @@ Replace the strings in the above code with your Particle account authorization t
 
 We can check that everything is working by trying a function call
 ```matlab
-g.getConnectedDevices()'
+g.getConnectedDevices()
 ```
 which will print out a list of all of the connected devices related to your account.  
 
