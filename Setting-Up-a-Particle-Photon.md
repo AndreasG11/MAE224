@@ -38,7 +38,7 @@ Now we will write a quick program. The first will blink the onboard LED of your 
 
 15.	Moving back to the Particle editing webpage, click on the “Code” button, which looks like: < >
 
-16.	Create a new app, which you can name something like “Get the LED out.” Be sure to hit enter. Copy and paste the following code into the editing window:
+16.	Create a new app, which you can name something like “Get the LED out.” Be sure to hit enter. 
 
 17.	Copy and paste the following code into the editing window: 
     ```c
