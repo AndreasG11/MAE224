@@ -60,7 +60,7 @@ The conclusion is always a bit tricky to nail down. In its essence it is a summa
 This is your last chance to discuss the major findings of the lab and reflect on what you have learned and what you see as logical next steps. Additionally, it is a good place to pontificate ideas for how to improve the experiment. In short, having just made lots of arguments and analysis in the discussion, the conclusion is the final place to persuade the reader of your arguments and analysis.  
 
 #General Suggestions  
-##Signification Figures  
+##Significant Figures  
 In general it is important to know and acknowledge sig-figs. While we will not take off points for misuse or abuse of sig-figs, it will make your TA cry.  
 ##Plots  
 When possible plot comparable data on the same plot. Additionally, in fluids, it is usually prudent to non-dimensionalize the data in an intelligent manner. Use your Buckingham Pi skills so that you can relate as much of your data to the fewest relevant parameters. A perfect example of this is from Lab 2 where you compare the friction factor to the Reynolds number. Another, perhaps less obvious example, is from Lab 3. Here it would be prudent to plot the boundary layer as a comparison between the velocity normalized by freestream velocity and the vertical distance by the boundary layer thickness (or perhaps the similarity variables).  
