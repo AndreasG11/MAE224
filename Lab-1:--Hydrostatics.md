@@ -8,7 +8,7 @@ The pressure in a fluid system varies with depth.  This is why scuba divers get 
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab1_1.png" width="100">  
 </p>  
 
-This relationship allows us to relate pressure of the fluid at one position in a control volume to the pressure at another position.  This principle is why mmHg is a unit of pressure measurement: we can construct a device which can accurately measure pressure from a column of mercury.  Such a device is known as a barometer, and it looks like this:  
+Note that the reason for the negative sign is due to the selection of the coordinate system; in this case, the positive z direction is up. This relationship allows us to relate pressure of the fluid at one position in a control volume to the pressure at another position.  This principle is why mmHg is a unit of pressure measurement: we can construct a device which can accurately measure pressure from a column of mercury.  Such a device is known as a barometer, and it looks like this:  
 
 <p align="center">
 <img src="http://2012books.lardbucket.org/books/principles-of-general-chemistry-v1.0/section_14/8cec964659fd2bb7ec4dc6c2c78eb4f9.jpg" width="400">  
