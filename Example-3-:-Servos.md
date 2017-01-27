@@ -1,6 +1,6 @@
 Download the [Source](https://github.com/mkfu/MAE224/tree/master/Source%20Files) files if you have not already.
 
-In this tutorial, we will use the lessons from Example 1 to learn how to turn a servo and (independently) read the frequency of a PWM signal fed into a pin.
+In this tutorial, we will learn how to turn a servo.
 
 #MATLAB
 ##Servo
