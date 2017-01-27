@@ -3,6 +3,8 @@ Current To-Do List is here: [MAE 224 Lab To-Do List](https://github.com/d008/MAE
 # Introduction
 MAE 224 is the Integrated Science Lab. This Wiki and associated github cover the Fluids portion of the 224 Lab. All lab manuals and documentation can be found here.
 
+_If you are just starting the lab course, begin with Lab 1, Part 1 (below and [here](https://github.com/d008/MAE224/wiki/Lab-1,-Part-1:-Lab-Equipment-Basics))._
+
 ##Prequisites
 
 This lab is designed for those with little to no programming experience. The primary language we will use is Matlab and by the end of this course you should have gained the basic skills of acquiring, processing, and plotting/saving data using Matlab functions.  
