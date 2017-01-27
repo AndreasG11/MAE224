@@ -6,11 +6,11 @@ Lab 1 is broken down into two parts:
 
 This course begins by quickly leading you through the basics of the equipment used in the lab and some simple measurements. You are expected to be familiar with the concepts of voltage, current, resistance, and Ohm's law; although these will be reviewed briefly in this guide.
 
-At certain points in the lab your lab group will be required to demonstrate the successful completion of an activity to either the TA or Mike. **These points will be indicated in boldface type** and must be completed before moving on to the next section of the lab manual
+At certain points in **all of the labs** your group will be required to demonstrate the successful completion of an activity to either the TA or Mike. **_These points will be indicated in italicized boldface type_** and **must** be completed before moving on to the next section of the lab manual.
 
 ## Laboratory Tools and Equipment
 
-The first step of this lab is to set up your Particle Photon. Follow the tutorial [here](https://github.com/d008/MAE224/wiki/Setting-Up-a-Particle-Photon). **Make sure to verify with the TA that your LED is blinking!**
+The first step of this lab is to set up your Particle Photon. Follow the tutorial [here](https://github.com/d008/MAE224/wiki/Setting-Up-a-Particle-Photon). **_Make sure to verify with the TA that your LED is blinking!_**
 
 Now, with your Particle Photon unplugged and powered off, insert it into the breadboard as shown below.
 
@@ -88,7 +88,7 @@ The Particle Photon is a surprisingly useful little tool, and you will find it c
 
 
 ## Read a PWM with the Oscilloscope and Particle Photon
-Follow this example: [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs). Make sure to show your TA the output from the Photon on the oscilloscope at the end! 
+Follow this example: [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs). **_Make sure to show your TA the output from the Photon on the oscilloscope at the end!_** 
 
 When you have completed the above and feel comfortable with all the lab equipment, you have finished the first week of required lab material. If not, please ask for assistance and experiment outputting various signals with your Particle Photon the TA's and Mike are here to help!
 
