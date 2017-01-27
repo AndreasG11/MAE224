@@ -103,7 +103,7 @@ In this experiment, the quality of the data contributes to your grade so make su
 
 -  Try to construct the Moody diagram by starting with a high Re and going to low Re (without stopping the pump) and then going from low Re to high Re. To get the extra-credit, you will have to present both measurements, discuss the difference (if observed) and explain when this difference is expected to be significant.  
 
--  Successfully reduce drag in a novel, meaningful and verifiable way. If you succeed, please see let your TA know so they can help you write a journal article.  
+-  Successfully reduce drag in a novel, meaningful and verifiable way. If you succeed, please let your TA know so they can help you write a journal article.  
 
 #Guidelines for the report  
 Your report is expected to include:  
