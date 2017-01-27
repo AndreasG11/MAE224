@@ -113,8 +113,8 @@ Your report is expected to include:
 ###Introduction:   
 - Discuss the scientific concept of the lab 
 - Effectively present the objectives and purpose of the lab  
-- Reynolds number is one of the most important parameters in fluids mechanics. Explain the physical significance of this number and give some examples of high and low Reynolds number flows around you.  
-- Commercial airplanes fly at Reynolds numbers one the order of several million. Think about how you can construct an experiment to get such high Reynolds number without building a facility the size of a commercial airplane.  
+- The Reynolds number is one of the most important parameters in fluids mechanics. Explain the physical significance of this number and give some examples of high and low Reynolds number flows around you.  
+- Commercial airplanes fly at Reynolds numbers on the order of several million. Think about how you can construct an experiment to get such high Reynolds numbers without building a facility the size of a commercial airplane.  
 
 ###Experimental procedure
 - Give enough details of the procedure and the scientific concept behind them  
