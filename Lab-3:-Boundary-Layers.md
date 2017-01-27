@@ -77,7 +77,7 @@ NOTE: An input of 60 corresponds to a fully retracted actuator. An input of 115 
 5.     Write a simple Matlab script to give you a live, continuously updating plot of measured velocity versus time. Check that you see velocity decrease as you move closer to the wall and that the velocity approaches a constant value (which is close to the wind speed measured by the anemometer) far enough from the wall. Use this script to debug your setup!  
 6.	Write another Matlab code to measure velocity as a function of distance from the wall, traversing through wall distances. This should be in the format of a "for" loop where each iteration measures the velocity at a new wall distance. You should take several measurements at each location and average the values to reduce error.
 
-**NOTE** Make sure to wait an enough time between measurements for the pressure to stabilize, several seconds using `pause()` is recommended. Once you have enough points, you can have the actuator move the pitot tube to its next position. (You can use your live plot to see how long you should wait.)  
+**NOTE**: Make sure to wait enough time between measurements for the pressure to stabilize, several seconds using `pause()` is recommended. Once you have enough points, you can have the actuator move the pitot tube to its next position. (You can use your live plot to see how long you should wait.)  
 
 #Week 2
 ##Take your measurements  
