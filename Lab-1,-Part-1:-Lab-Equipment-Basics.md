@@ -21,6 +21,7 @@ Now, with your Particle Photon unplugged and powered off, insert it into the bre
 The breadboard or prototyping board will allow you to easily try out new circuits. Some important things to note:
 
 1. The two columns on each side of the board are for the power supply rails (a 3.3 or 5.0V connection, for example) and the column pins are connected only in the vertical direction. Use these rails by jumping over (with a section of wire) the 3.3V or GND output from the Photon to the corresponding rail you wish to power. Be very careful to get these connections right!
+
 2. The lettered rows in the middle of the board are connected horizontally in two groups. Pins a-e are connected and pins f-j are connected. Directly in the middle is a small valley to remind you that pins a-e and f-j are not connected to each other. This allows you to branch off from each side of the Photon independently (useful if you don't always want pin A1 going to D1 for example).
 
 You are now prepared to do the first example on how to read/write with your Photon: [Example 1: Read and Write Pins](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins). **Once you have completed the tutorial, show your Matlab plot to the TA before continuing.**
@@ -74,13 +75,13 @@ The power supplies we use in the lab have 3 outputs. Channels 1 and 2 have adjus
 You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, and V+. Ground is the building ground, and you can shunt or jumper either V- or V+ with ground to force one side of the power supply low. This is handy if, for example, your circuit requires a supply which is -15V to 0V (you would jumper V+ to ground).
 
 **Some things to remember BEFORE connecting the Power Supply**
-(1) With supply off, turn all dials all the way counter-clockwise
-(2) Typically we will jumper V- to ground in the lab so do this with some wire or the shunt (metal connector).
-(2) Disconnect all circuits, turn on power supply, and then turn current knob until the mode just switches to C.V.
-(3) Set desired output voltage and check with multi-meter before connecting anything.
-(4) Turn supply OFF.
-(5) Connect circuit, ground cable first.
-(6) Turn on supply and you are good to go.
+1 With supply off, turn all dials all the way counter-clockwise
+2 Typically we will jumper V- to ground in the lab so do this with some wire or the shunt (metal connector).
+3 Disconnect all circuits, turn on power supply, and then turn current knob until the mode just switches to C.V.
+4 Set desired output voltage and check with multi-meter before connecting anything.
+5 Turn supply OFF.
+6 Connect circuit, ground cable first.
+7 Turn on supply and you are good to go.
 
 Using the image above, connect wires to your Photon. Turn on your power supply, slowly increase the current until the C.V. (constant voltage) light becomes green, then turn the voltage knob so that the output is +1.0 Volts. Now with what you learned in  [Example 1](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins), read the voltage of the power supply into Matlab to verify the power supply display.
 
