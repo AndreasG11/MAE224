@@ -25,19 +25,7 @@ The breadboard or prototyping board will allow you to easily try out new circuit
 
 You are now prepared to do the first example on how to read/write with your Photon: [Example 1: Read and Write Pins](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins). **Once you have completed the tutorial, show your Matlab plot to the TA before continuing.**
 
-Now on to some of the other electronic equipment in the lab, first is the Direct Current (D.C.) power supply:
-
-<p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/images/Power_Supply.png?raw=true" width="800">  
-</p>
-
-The power supplies we use in the lab have 3 outputs. Channels 1 and 2 have adjustable voltage outputs and current limits, channel 3 is fixed at 5 volts (it is the small connectors at the bottom right). Two modes are available, constant voltage (C.V.) and constant current (C.C.), with the limits of these two modes being set by the two dials. In C.V. mode, the supply will give out as much current as the connected circuit will accept (up to the current limit point) to maintain the output voltage. C.C. mode is similar, however the supply now adjusts the voltage (up to the voltage limit point) to maintain a constant current. The mode being used is indicated by the LEDs below each channel. 
-
-You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, and V+. Ground is the building ground, and you can shunt or jumper either V- or V+ with ground to force one side of the power supply low. This is handy if, for example, your circuit requires a supply which is -15V to 0V (you would jumper V+ to ground).
-
-Using the image above, connect wires to your Photon. Turn on your power supply, slowly increase the current until the CV (constant voltage) light becomes green, then set the turn in the voltage knob so that the output is +1.0 Volts. Now with what you learned in  [Example 1](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins), read the voltage of the power supply into Matlab to verify the power supply display.
-
-The Particle Photon is a surprisingly useful little tool, and you will find it can replicate the functions of almost all the electronic tools we will talk about in the next few paragraphs. This also means you can use the lab tools to check if your Photon (and Matlab code!) is working as expected. In future labs, you will be asked to verify the Photon's readings using these devices, so be prepared!
+Now on to some of the other electronic equipment in the lab, first Digital Multi-Meter:
 
 ### Digital Multi-Meters
 
@@ -58,7 +46,7 @@ This unit has more functionality than the Fluke 73, as you might have guessed. A
 
 ### Oscilloscope
 
-Finally we come to what could be considered the most useful tool available to you, the Techtronix Oscilloscope. An oscilloscope is perhaps the only tool which allows you to "see" electricity, more specifically electric signals in the time domain. 
+Next we come to what could be considered the most useful tool available to you, the Techtronix Oscilloscope. An oscilloscope is perhaps the only tool which allows you to "see" electricity, more specifically electric signals in the time domain. 
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/images/oscilloscope.png?raw=true" width="800">  
@@ -71,6 +59,33 @@ There are a variety of measurements that can be made with the oscilloscope, incl
 </p>
 
 On the rightmost side is the measurement display (you can access this menu by pressing the "measurement" button) a variety of options are available for each channel. Note that there are 4 windows available for measurement display on this screen. Along the bottom of the screen is the information regarding the X and Y axis divisions. For instance, Channel 1 is reading a square wave and the division between each horizontal dashed line is 5 Volts. 
+
+
+### D.C. Power Supply
+
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/images/Power_Supply.png?raw=true" width="800">  
+</p>
+
+The power supplies we use in the lab have 3 outputs. Channels 1 and 2 have adjustable voltage outputs and current limits, channel 3 is fixed at 5 volts (it is the small connectors at the bottom right). Two modes are available, constant voltage (C.V.) and constant current (C.C.), with the limits of these two modes being set by the two dials. In C.V. mode, the supply will give out as much current as the connected circuit will accept (up to the current limit point) to maintain the output voltage. C.C. mode is similar, however the supply now adjusts the voltage (up to the voltage limit point) to maintain a constant current. The mode being used is indicated by the LEDs below each channel. 
+
+**It is VERY important to note that you can easily fry the Photon and other lab equipment with the DC Power Supply. We recommend always using a Digital Multi-Meter to check the output before connecting to your circuit! Ask if you need assistance**
+
+You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, and V+. Ground is the building ground, and you can shunt or jumper either V- or V+ with ground to force one side of the power supply low. This is handy if, for example, your circuit requires a supply which is -15V to 0V (you would jumper V+ to ground).
+
+**Some things to remember BEFORE connecting the Power Supply**
+(1) With supply off, turn all dials all the way counter-clockwise
+(2) Typically we will jumper V- to ground in the lab so do this with some wire or the shunt (metal connector).
+(2) Disconnect all circuits, turn on power supply, and then turn current knob until the mode just switches to C.V.
+(3) Set desired output voltage and check with multi-meter before connecting anything.
+(4) Turn supply OFF.
+(5) Connect circuit, ground cable first.
+(6) Turn on supply and you are good to go.
+
+Using the image above, connect wires to your Photon. Turn on your power supply, slowly increase the current until the C.V. (constant voltage) light becomes green, then turn the voltage knob so that the output is +1.0 Volts. Now with what you learned in  [Example 1](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins), read the voltage of the power supply into Matlab to verify the power supply display.
+
+The Particle Photon is a surprisingly useful little tool, and you will find it can replicate the functions of almost all the electronic tools we will talk about in the next few paragraphs. This also means you can use the lab tools to check if your Photon (and Matlab code!) is working as expected. In future labs, you will be asked to verify the Photon's readings using these devices, so be prepared!
+
 
 ## Read a PWM with the Oscilloscope and Particle Photon
 Follow this example: [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs). Make sure to show your TA the output from the Photon on the oscilloscope at the end! 
