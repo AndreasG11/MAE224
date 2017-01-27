@@ -59,8 +59,6 @@ To connect the pressure sensor to the Particle Photon:
 
 3.	Connect the pressure sensor pins to the corresponding pins on the Particle Photon (be careful not to switch the pins for +3.3 V and ground).  
 
-N.B. Some of you aspiring fluid mechanicians might notice that the sensors provided are supposed to work on 5V. Fear Not! The sensor will still be sensitive to the changes in pressure, but you will probably develop a new calibration curve.  
-
 ##Test your setup with the fluid
 By pressurizing the system, you are changing the manometer height, and you should be able to relate some measured height of the fluid column to the pressure it is applying to the transducer. By taking the appropriate data, you will be able to construct a calibration curve relating the pressure applied to the sensor to the voltage output.
 
