@@ -19,7 +19,7 @@ The Printed Circuit Board (PCB) for this lab has a few other connections you may
 
 - _Total Flow Rate_ (Liters/min) = (frequency + 3) / 8.1
 
-- _Laminar Flow Rate_ (L/min) = frequency / 26
+- _Laminar Flow Rate_ (Liters/min) = frequency / 26
 
 Your programming goal is to combine all of this into a Matlab script which will allow you to control the pump, record the flow rate and pressure (either manually or with a transducer) and then write those values to a file. You will need to calibrate the PWM signal going to the pump so that you know the flow rate for a given duty cycle. Check the [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) if you need a refresher. 
 
