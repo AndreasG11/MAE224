@@ -16,7 +16,7 @@ Signal | White | SIG
 <img src="https://github.com/mkfu/MAE224/blob/master/images/example2circuit.png" width="600">  
 </p>   
 
-Paste the following Matlab code into a new script. Make sure that the folder containing Photon.m is contained within your file path.
+Paste the following Matlab code into a new script. Note that you should have added Photon.m to your Matlab path in an earlier tutorial.
 
 Matlab code:
 
@@ -40,16 +40,16 @@ g.attachServo('D0');
 
 %Check if the device is connected
 if g.getConnection()
-%Rotate a half rotation clockwise
-    for i = 10:10:180
-        g.move(i);
-        pause(1)
-    end
-%Rotate a half rotation counter-clockwise    
-    for i = 180:-10:10
-        g.move(i);
-        pause(1)
-    end
+%Fully extend servo:
+    curpos = g.move(180);
+    pause(10); %Wait 105 seconds
+    disp(['Servo sent to position: ' num2str(curpos)])
+    pause(5); %Wait 5 seconds
+%Retract Servo:
+    curpos = g.move(45);
+    pause(10);
+    disp(['Servo sent to position: ' num2str(curpos)])
+    pause(10);
 end
 %Detach the servo
 g.detachServo()
@@ -61,16 +61,16 @@ The first few lines should look exactly like example 1. Remember that we need to
 The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the authorization token and the name of the Photon.
 ```matlab
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
-core =  'class1'; %YOUR PHOTON ID OR NAME HERE
+photon =  'class1'; %YOUR PHOTON ID OR NAME HERE
 
-g = Photon(core,atoken);
+g = Photon(photon,atoken);
 ```
 
 Replace the strings in the above code with your Particle account authorization token and photon name.  Lastly, we will make a new object and pass those arguments via the constructor.
 
 We can check that everything is working by trying a function call
 ```matlab
-g.getConnectedDevices()'
+g.getConnectedDevices()
 ```
 which will print out a list of all of the connected devices related to your account.  
 
@@ -79,28 +79,33 @@ Next, we will tell the Photon that we want to attach a servo to a given pin, nam
 ```matlab
 g.attachServo('D0');
 ```
-Note that at this moment, while the Physical photon can support many, many servos simultaneously, the Photon class which you are utilizing can only support attaching a single Photon. Moving the servo is as simple as using the move command. Here, we simply have the servo rotate clockwise 180 degrees and then counter-clockwise 180 degress. In this instance the servo takes a value from ~10 - 180. This applies to some linear actuators as well. This is more a function of the servo library which is utilized on the Photon side more than anything else.  
+Note that at this moment, while the Physical photon can support many, many servos simultaneously, the Matlab Photon.m class which you are utilizing can only support attaching a single servo at a time. Moving the servo is as simple as using the move command. Here, we simply have the servo move to position from position 40 to 180 and then back again. For the linear actuators we use in the lab, the available range is approximately 40 to 180, with each tick corresponding to roughly 1 mm, but you may wish to calibrate this value. Although in lab you will only be using the linear actuators, this command is perfectly valid for any servo, including axial rotation (which typically take a value from 0 to 180).
+
+Note that if you set the linear actuator to a value outside the range of 40-180, the actuator will not move.
 
 We first check to make sure that the Photon is connected to the internet.
 ```matlab
 if g.getConnection
 ```
 
-We rotate 180 degrees clockwise
+We first fully extend the servo:
 ```matlab
-    for i = 10:10:180
-        g.move(i);
-        pause(1)
-    end
+%Fully extend servo:
+    curpos = g.move(180);
+    pause(10); %Wait 105 seconds
+    disp(['Servo sent to position: ' num2str(curpos)])
+    pause(5); %Wait 5 seconds
 ```
-and then 180 degrees counter-clockwise
+and then retract it back
 
 ```matlab
-    for i = 180:-10:10
-        g.move(i);
-        pause(1)
-    end
+%Retract Servo:
+    curpos = g.move(45);
+    pause(10);
+    disp(['Servo sent to position: ' num2str(curpos)])
+    pause(10);
 ```
+Note that the `move()` command returns the servo position that you requested, you can save this into a variable if you like (as we did above with `curpos`).
 
 Finally, we detach the servo with the `detachServo()` functions
 ```matlab
