@@ -18,12 +18,12 @@ You can make a serial connection to the unit through the USB cable. The followin
 6.	Click ok, which will close the popup window.
 
 7.	Click the “Connect” button at the top of the program.  You should see a connection timer begin at the bottom of the program.
-**_If everything has worked up to now, you will be able to communicate with your unit through the serial terminal!_**
+**If everything has worked up to now, you will be able to communicate with your unit through the serial terminal!**
 
 8.	Press the “i” key (i as in India) on your keyboard to obtain the Particle Photon ID. Write this down; you will connect your lab team’s Particle account to it so you can access the unit wirelessly. It should be a hex string that looks like: 42ff60063478505467883424. 
 
 9.	Close the Connection to the computer and click the RESET button on your Particle Photon. Make sure Particle breathes cyan.
-**_At this point, you will need to get an account set up to tie to the Particle Photon. This will allow your lab group to control your unit from anywhere when it’s connected online!_**
+**At this point, you will need to get an account set up to tie to the Particle Photon. This will allow your lab group to control your unit from anywhere when it’s connected online!**
 
 10.	Open up a browser and navigate to https://build.particle.io/build
 
@@ -71,9 +71,9 @@ Now we will write a quick program. The first will blink the onboard LED of your 
 
 # Programming the Photon via Matlab
 
-During the course of the lab you will _**not**_ be programming the particle photon directly. Instead, your friendly neighborhood TAs have created a class file which works with Matlab to control the Photon via your web connection. For this to work, you must upload some code to your Particle Photon (which you should have just set up).
+During the course of the lab you will **not** be programming the particle photon directly. Instead, your friendly neighborhood TAs have created a class file which works with Matlab to control the Photon via your web connection. For this to work, you must upload some code to your Particle Photon (which you should have just set up).
 
-1.    Go back to the code window in your browser at https://build.particle.io/build (the one with the <> symbol) and click on "Create a New App". Delete all the pre-packaged code in the right-most window.
+1.    Go back to the code window in your browser at https://build.particle.io/build (the one with the <> symbol) and click on "Create a New App". Delete the pre-packaged code in the right-most window.
 
 2.    In a second browser window/tab open the following link [Photon Lab Code](https://github.com/d008/MAE224/blob/master/Source%20Files/Particle/PhotonCode.ino)
 
@@ -113,7 +113,7 @@ That's it! Now all you need is an open Matlab session, and have your Photon's na
     end
 ```
 
-Now run this code in the Matlab command window and you should see your particle photon LED blink once then turn off. Have your TA (preferably Cody) verify this behavior before completing this portion of the lab.
+Now run this code in the Matlab command window and you should see your particle photon LED blink once then turn off. **_Have your TA (preferably Cody) verify this behavior before completing this portion of the lab._**
 
 
 
