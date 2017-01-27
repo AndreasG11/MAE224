@@ -25,14 +25,14 @@ Your programming goal is to combine all of this into a Matlab script which will 
 
 #How to measure pressure drop  
 
-To propel a flow in a pipe there needs to be a pressure gradient. You will see later in class that this pressure gradient is constant and thus the pressure varies linearly along the pipe axis. The pressure “drop” is just the change in pressure from one point to another. There are a set of five open water columns that you can use to calculate the pressure drop. Think back to lab 1 and hydrostatics to relate these water columns to pressure.  
+To propel a flow in a pipe there needs to be a pressure gradient. You will see later in class that this pressure gradient is constant and thus the pressure varies linearly along the pipe axis. The pressure “drop” is just the change in pressure from one point to another. There is a set of five open water columns that you can use to calculate the pressure drop. Think back to lab 1 and hydrostatics to relate these water columns to pressure.  
 
 Alternatively (this is optional), connect the first and last pressure taps on a given pipe to the two openings on your pressure sensor to measure the differential pressure. Additionally, you can use the fact that the outlet of the pipe is exposed to atmospheric pressure, think how this information can make your life easier in measuring pressure drop.
 
 # Quick intro to Pipe Flows  
 Before we get into the details of the data collection, here is a quick overview on pipe flow (since the lab is now slightly ahead of the lectures). 
 
-Pipe flow can be analyzed through the Navier-Stokes equations. The details of this analysis are a bit beyond what is required of you, but what is important is to understand that pipe flow is a balance of the internal pressure gradient and viscous forces (shear stress). Your goal is to relate the pressure drop in a pipe to the flow rate through it. There are two different regimes of fully developed pipe flow: laminar, seen in figure 1(a), and and turbulent, seen in figure 1(b).
+Pipe flow can be analyzed through the Navier-Stokes equations. The details of this analysis are a bit beyond what is required of you, but what is important is to understand that pipe flow is a balance of the internal pressure gradient and viscous forces (shear stress). Your goal is to relate the pressure drop in a pipe to the flow rate through it. There are two different regimes of fully developed pipe flow: laminar, seen in figure 1(a), and turbulent, seen in figure 1(b).
 
 <p align="center">
 <img src="http://me.queensu.ca/People/Sellens/images/Profiles.jpg" width="500">  
@@ -48,7 +48,7 @@ A simple analysis of the Navier Stokes equation for flow within the pipe readily
 </p>
 If we assume that our flow is fully developed (for our experiment, this means we are sufficiently far away from the entrance of the pipe), we can readily analyze this equation.  Since the pressure gradient is constant, the velocity profile can analytically be found to be parabolic (see figure 1(a)). This is one of the few analytical results in fluid mechanics but unfortunately does not occur very often in the real world. Real world applications, like oil pipelines, or water pipes, typically require high flow rates which facilitate the growth of instabilities in the flow making the flow turbulent.  
 ##Turbulent Pipe Flow  
-Turbulence adds random (chaotic like) fluctuations to the flow field, and we lose the nice parabolic velocity profile seen in figure 1(a). In a turbulent flow, the velocity profile is fuller (figure 1(b)) and there is a higher viscous stress at the wall. This in turn works to cause a greater pressure drop in turbulent flow, since there is a balance between pressure drop and shear stress. There is no nice analytical expression for turbulent pipe flow like there is for laminar flow, so we are required to conduct experiments to understand this type of flow.  
+Turbulence adds random (chaotic-like) fluctuations to the flow field, and we lose the nice parabolic velocity profile seen in figure 1(a). In a turbulent flow, the velocity profile is fuller (figure 1(b)) and there is a higher viscous stress at the wall. This in turn works to cause a greater pressure drop in turbulent flow, since there is a balance between pressure drop and shear stress. There is no nice analytical expression for turbulent pipe flow like there is for laminar flow, so we are required to conduct experiments to understand this type of flow.  
 
 #Moody Diagram  
 Instead of analyzing the equations of motion for the different flow regimes, you will build what is called a “Moody diagram.” This is an empirical relation between the frictional forces in the pipe and the Reynolds number of the pipe flow.   
@@ -58,7 +58,7 @@ Instead of analyzing the equations of motion for the different flow regimes, you
 </p>  
 Source: <https://upload.wikimedia.org/wikipedia/commons/8/80/Moody_diagram.jpg>
 
-The setup you’re working with involves two pipes with different inner diameters (0.195” and 0.625”) producing laminar and turbulent flows. Whether the flow is turbulent or laminar can be determined by looking at your pressure data (or by calculating the Reynolds number). The Reynolds number, Re, is a dimensionless quantity defined as the ratio of inertia forces to viscous forces and is given by:
+The setup you’re working with involves two pipes with different inner diameters (0.195” and 0.625”) producing laminar and turbulent flows. Whether the flow is turbulent or laminar can be determined by looking at your pressure data (or by calculating the Reynolds number). The Reynolds number, Re, is a dimensionless quantity defined as the ratio of inertial forces to viscous forces and is given by:
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab2_2.png" width="100">  
@@ -67,7 +67,7 @@ The setup you’re working with involves two pipes with different inner diameter
 - U = Flow Velocity
 - d = Pipe Diameter
 - <img src="https://github.com/d008/MAE224/blob/master/equations/rho.png" width="10">   = Fluid Density
-- <img src="https://github.com/d008/MAE224/blob/master/equations/mu.png" width="10"> = Dynamics Viscosity  
+- <img src="https://github.com/d008/MAE224/blob/master/equations/mu.png" width="10"> = Dynamic Viscosity  
 
 In terms of the flow rate, the Reynolds number can be expressed by:
 
@@ -78,8 +78,8 @@ In terms of the flow rate, the Reynolds number can be expressed by:
 - Q = Volumetric Flow Rate
 - A = Pipe Cross-sectional Area  
 
-The flow in a pipe is regarded as laminar when Re < 2300. Above 2300 it can transition to turbulence. Typically there is a range of Reynolds number where the flow is neither laminar nor turbulent, but transitional. 
-A Moody diagram is a graph in non-dimensional form that relates the “head loss” (pressure drop) in a pipe to Reynolds number (or flow rate). As was explained in section 3, the pressure drop in the pipe is balanced by the frictional forces in the pipe. **Therefore, to construct your Moody diagram, you will need to know the flow rate and the pressure drop.** The Moody diagram is typically a plot of the friction factor versus Reynolds number. The friction factor can be related to the pressure drop by:  
+The flow in a pipe is regarded as laminar when Re < 2300. Above 2300 it can transition to turbulent. Typically there is a range of Reynolds numbers where the flow is neither laminar nor turbulent, but transitional. 
+A Moody diagram is a graph in non-dimensional form that relates the “head loss” (pressure drop) in a pipe to Reynolds number (or flow rate). As was explained in the "Quick Intro To Pipe Flows" section, the pressure drop in the pipe is balanced by the frictional forces in the pipe. **Therefore, to construct your Moody diagram, you will need to know the flow rate and the pressure drop.** The Moody diagram is typically a plot of the friction factor versus Reynolds number. The friction factor can be related to the pressure drop by:  
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab2%204.png" width="100">  
@@ -94,9 +94,9 @@ Turbulent and laminar flows show different curves on a Moody diagram. The turbul
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab%202%205.png">  
 </p> 
 
-Remember that you only know the flow rate at two locations and make sure you are using the correct one! Think of how you can isolate each pipe and get the right flow rate.   
+Remember that you only know the flow rate at two locations- make sure you are using the correct one! Think of how you can isolate each pipe and get the correct flow rate.   
 
-In this experiment, the quality of the data contributes to your grade so make sure you take enough data points and also make sure you’re waiting enough time for the setup to stabilize when you change the flow rate (this may take upwards of 40 seconds).  
+In this experiment, the quality of the data contributes to your grade so make sure you take enough data points and make sure you’re waiting enough time for the setup to stabilize when you change the flow rate (this may take upwards of 40 seconds).  
 
 #Extra Credit 
 -  Think of alternative ways by which you can estimate the flow rate in the small pipe and try to implement them in order to verify the relation for laminar flow.   
