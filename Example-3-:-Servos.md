@@ -74,7 +74,7 @@ g.getConnectedDevices()
 ```
 which will print out a list of all of the connected devices related to your account.  
 
-Next, we will tell the Photon that we want to attach a servo to a given pin, namely the pin where we attached the signal wire (D0). We use the following line.
+Next, we will tell the Photon that we want to attach a servo to a given pin, namely the pin where we attached the signal wire (D0). We use the following line. Note that the `attachServo()` command returns the numeric value of the pin you attached to (i.e. pin D0 returns 0). It is also important for servos that you only use pins which are PWM capable, check the [pinout diagram](https://github.com/d008/MAE224/wiki/Particle-Photon-Pinout-Diagram).
 
 ```matlab
 g.attachServo('D0');
