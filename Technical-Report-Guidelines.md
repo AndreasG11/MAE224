@@ -31,19 +31,50 @@ Hopefully this section is self explanatory. This should be populated with plots,
 This is by far the most important section. This section should cover the bulk of the analysis and data processing. Now that you have presented the data, it is time to make sense of it. Below are a few important sections which you should be sure to include, but are by no means limited to.
 
 ##Error analysis  
-The discussion is the perfect place to include a rigorous error analysis. This includes both quantitative and qualitative error. Be sure to list the largest and dominant sources of error using the equations covered in lab lecture to quantify their effects. These values can then be included in your error bars in the Results section  
+The discussion is the perfect place to include a rigorous error analysis. This includes both quantitative and qualitative error. Be sure to list the largest and dominant sources of error using the equations covered in lab lecture to quantify their effects. These values can then be included in your error bars in the Results section. We are primarily interested in finding out the sensitivity of our experiments to certain parameters. In an abstract sense, we can think of our measurement as an approximation of the actual value we hope to measure. In the following is a short derivation of the uncertainty or error analysis. We start with a Taylor expansion of a single measurement and assume it is centered about the mean value (note that `...` means there are other, higher order terms we have neglected).
 
 <p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/equations/tech_rep_error1.png">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/error%201.png">  
 </p>
 
-We are primarily interested in finding out the sensitivity of our experiments to certain parameters. In an abstract sense, we can think of our measurement as an approximation of the actual value we hope to measure. We can approximate our value with a Taylor series as: 
+We then note that the sample variance (i.e. what we want) can be re-written with our definition of the Taylor expansion, above:
 
 <p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/equations/tech_rep_error2.png" >  
+<img src="https://github.com/d008/MAE224/blob/master/equations/error%201%20variance.png">  
 </p>
 
-While we might want to measure the true value ![](https://github.com/d008/MAE224/blob/master/equations/tech_rep_error3.png), we actually measured ![](https://github.com/d008/MAE224/blob/master/equations/tech_rep_error4.png). In this linearized system, the variance and error in our measurements will generate some offset from the actual or true value we wanted to measure. We simply quantify this distance by taking the root mean square of all components which contribute to this error. This analysis is nontrivial when analytic relations between parameters is unknown or not straightforward. Simple estimation of the error can tell you whether or not your measurements are reasonable.
+Then noting that the the variance of our variables is simply
+
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/variance%20of%20variables.png">  
+</p>
+
+We then sub in to our sample variance to get the following equation for the standard deviation of the sample
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/error%201%20final.png">  
+</p>
+
+But what if our sample depends on multiple variables? The classic example of this is measuring resistance using Ohm's law where R = V/I so that R = g(V,I). Here we must expand on the example above by using a Taylor series for multiple variables:
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/error%202%20variables.png">  
+</p>
+
+We need an equation for the variance of a function of two variables, which is simply
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/variance%20of%20function.png">  
+</p>
+
+And now we make a substitution
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/variance%20of%20function%20with%20sub.png">  
+</p>
+
+Then finally we simplify by neglecting higher order terms and substituting in the equation for the variance of variables (as before) to get:
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/error%202%20final.png">  
+</p>
+
+This is a general form of the uncertainty estimate for a sample with two-variable dependence. Note that we have had to neglect terms of higher order, including co-variances among the variables. This means that all variables are independent and is an implicit assumption in this method. You can add additional terms to the above equation if additional variables are involved.
 
 So what is the goal with all of this error analysis? We would like to find if our experiments match the theoretical predictions or expected values. If they do, then you are in good shape. If they do not, then you are most likely not measuring what you think you are measuring or your models are incorrect. This is why error analysis is so important. If the error bars between your model and your experiment do not overlap, one of them is wrong. 
 
