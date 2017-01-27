@@ -1,6 +1,6 @@
 Download the [Source](https://github.com/mkfu/MAE224/tree/master/Source%20Files) files if you have not already.
 
-In this tutorial, we will learn how to turn a servo.
+In this tutorial, we will learn how to control a servo.
 
 #MATLAB
 ##Servo
