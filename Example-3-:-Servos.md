@@ -55,7 +55,7 @@ end
 g.detachServo()
 ```
 
-The first few lines should look exactly like example 1. Remember that we need to replace the authorization token and name of the Photon correctly. The end result is that the servo should rotate
+The first few lines should look exactly like example 1. Remember that we need to replace the authorization token and name of the Photon correctly. The end result is that the servo should extend then retract.
 
 ##Lets break down what the code means
 The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the authorization token and the name of the Photon.
