@@ -75,13 +75,14 @@ The power supplies we use in the lab have 3 outputs. Channels 1 and 2 have adjus
 You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, and V+. Ground is the building ground, and you can shunt or jumper either V- or V+ with ground to force one side of the power supply low. This is handy if, for example, your circuit requires a supply which is -15V to 0V (you would jumper V+ to ground).
 
 **Some things to remember BEFORE connecting the Power Supply**
-1 With supply off, turn all dials all the way counter-clockwise
-2 Typically we will jumper V- to ground in the lab so do this with some wire or the shunt (metal connector).
-3 Disconnect all circuits, turn on power supply, and then turn current knob until the mode just switches to C.V.
-4 Set desired output voltage and check with multi-meter before connecting anything.
-5 Turn supply OFF.
-6 Connect circuit, ground cable first.
-7 Turn on supply and you are good to go.
+
+1. With supply off, turn all dials all the way counter-clockwise
+2. Typically we will jumper V- to ground in the lab so do this with some wire or the shunt (metal connector).
+3. Disconnect all circuits, turn on power supply, and then turn current knob until the mode just switches to C.V.
+4. Set desired output voltage and check with multi-meter before connecting anything.
+5. Turn supply OFF.
+6. Connect circuit, ground cable first.
+7. Turn on supply and you are good to go.
 
 Using the image above, connect wires to your Photon. Turn on your power supply, slowly increase the current until the C.V. (constant voltage) light becomes green, then turn the voltage knob so that the output is +1.0 Volts. Now with what you learned in  [Example 1](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins), read the voltage of the power supply into Matlab to verify the power supply display.
 
