@@ -52,6 +52,7 @@ The wall is the law in this town.
 
 ##[Lab 4 - Lift and Drag](https://github.com/mkfu/MAE224/wiki/Lab-4:-Lift-and-Drag)
 What goes up will stay up, if it has enough lift.
+    [Introduction to Airfoils and Qblade](https://github.com/d008/MAE224/wiki/Introduction-to-Airfoils-and-Qblade)
 
 ***
 #Wind Turbine Project
