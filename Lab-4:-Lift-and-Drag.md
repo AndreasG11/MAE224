@@ -30,7 +30,7 @@ Lift is typically expressed in terms of the “lift coefficient”. This is a no
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab4%201.png">  
 </p>
 
-Where L is the total lift force,![](https://github.com/d008/MAE224/blob/master/equations/rho.png) is the density, U is the freestream velocity, c is the chord length, and s is the span of the airfoil. The lift coefficient is related to but separate from the "section lift coefficient"
+Where L is the total lift force, ![](https://github.com/d008/MAE224/blob/master/equations/rho.png) is the density, U is the freestream velocity, c is the chord length, and s is the span of the airfoil. The lift coefficient is related to but separate from the "section lift coefficient"
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab4%202.png">  
