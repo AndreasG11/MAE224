@@ -4,7 +4,7 @@ The objective of this lab is to understand the lift and drag on 2D objects of di
 ##Terminology
 Figure 1 - Airfoil 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil1.png" width="800">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil1.png" width="700">  
 </p> 
 
 
@@ -21,7 +21,7 @@ The aerodynamic force on an airfoil is the result of a redirecting fluid momentu
 Streamlines deflected over the top of the airfoil experience a higher velocity than streamlines under the bottom of the airfoil. From Bernoulli’s equation, we know that this velocity difference will manifest itself as a pressure difference between the top and bottom surfaces. Integrating the net pressure forces along the airfoil surface is one way to calculate the lift and drag force on the airfoil. The shape of the airfoil and the angle of attack determine the amount of lift and drag.  
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil2.png" width="800">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil2.png" width="600">  
 </p> Figure 2: Lift and drag force on an airfoil  
 
 Lift is typically expressed in terms of the “lift coefficient”. This is a non-dimensional parameter, similar to the friction factor in last week’s lab. The “lift coefficient” is defined as:  
@@ -71,7 +71,7 @@ To calculate the lift and drag coefficient to study airfoils, one is interested 
 This lab will occur in three different parts, and groups will rotate between the different activities at different times to ensure that everyone gets a crack at the wind tunnel (oh yeah!).  The three components are a simulation of the airfoil in the tunnel, measurements of the airfoil in the wind tunnel, and measurements of a cylinder in the wind tunnel.  You will be comparing the three different components to see the effects of shape on a pressure distribution and the difference between a real experiment and a simulation.  
 
 ##Airfoil Simulations: 
-The first component of the lab is to simulate the airfoil you’ll be using in Qblade.  You will find a Qblade tutorial on Blackboard to assist you with modeling and determining aspects of the airfoil.  You should follow the tutorial to determine the lift and drag coefficients for the configuration used in the lab, specifically the NACA 0018 airfoil.  Make sure that you include plots of pressure coefficient ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png) as well as ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) vs. ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) in your lab report.  
+The first component of the lab is to simulate the airfoil you’ll be using in Qblade.  You will find an introduction to modeling airfoils with Qblade here: [Introduction to Airfoils and Qblade](https://github.com/d008/MAE224/wiki/Introduction-to-Airfoils-and-Qblade). Note that Qblade returns the section lift coefficient, ![](https://github.com/d008/MAE224/blob/master/equations/section_lift.png), which will need to be converted to the lift coefficient for comparison to experiments. You should follow the tutorial to determine the lift and drag coefficients for the configuration used in the lab, specifically the NACA 0018 airfoil.  Make sure that you include plots of pressure coefficient ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png) as well as ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) vs. ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) in your lab report.  
 
 ###Questions
 Questions:  
