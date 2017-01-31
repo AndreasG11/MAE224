@@ -69,15 +69,21 @@ _In order to check that your code is moving the actuator as desired and safely, 
  
 To prepare for taking measurements, complete the following steps:
 
-1.	Test that you can move your actuator with your Matlab codes *BEFORE* going into the tunnel.   
+1.	Test that you can move your actuator with your Matlab codes *BEFORE* going into the tunnel. **_You must show the TA or Mike your setup before proceeding to use the tunnel!_**  
 2.	Find the input value for the actuator that corresponds to your “0 point” at which the pitot tube just touches (or almost touches) the wall without bending. Be careful as you do this! A suggested range is from 60 to 115.  
 NOTE: An input of 60 corresponds to a fully retracted actuator. An input of 115 corresponds to an actuator that fully extends to the wall. The setup is such that the actuator cannot fully retract, so don’t set the input below 60. Since the flow is symmetric, you just need to go from the bottom wall to the middle height of the channel. The input will be somewhere between these two values.   
 3.	Calibrate the distance corresponding to one tick of the actuator based on linear interpolation. The value should be around 1 mm/tick.  
-4.	Remember that the Photon only outputs voltages from the `analogRead()` command. You will need to convert this using the calibration equations **INSERT CHARTS OR LINK HERE** to actual pressures. You can then use the Bernoulli equation to convert the pressure into the velocity. 
+4.	Remember that the Photon only outputs voltages from the `analogRead()` command. You will need to convert this using the calibration equations shown below to actual pressures. You can then use the Bernoulli equation to convert the pressure into the velocity. 
 5.     Write a simple Matlab script to give you a live, continuously updating plot of measured velocity versus time. Check that you see velocity decrease as you move closer to the wall and that the velocity approaches a constant value (which is close to the wind speed measured by the anemometer) far enough from the wall. Use this script to debug your setup!  
 6.	Write another Matlab code to measure velocity as a function of distance from the wall, traversing through wall distances. This should be in the format of a "for" loop where each iteration measures the velocity at a new wall distance. You should take several measurements at each location and average the values to reduce error.
 
 **NOTE**: Make sure to wait enough time between measurements for the pressure to stabilize, several seconds using `pause()` is recommended. Once you have enough points, you can have the actuator move the pitot tube to its next position. (You can use your live plot to see how long you should wait.)  
+
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/HSCDLNN010MDAA3%20Lab%203%20Pitot%20Tube%20Sensor.png" width="600">  
+</p> 
+
+[Link to pressure transducer data sheet is here](https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/Honeywell%20HSC%20Pressure%20Sensors.pdf)
 
 #Week 2
 ##Take your measurements  
