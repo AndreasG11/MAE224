@@ -57,7 +57,7 @@ What goes up will stay up, if it has enough lift.
 ***
 #Wind Turbine Project
 
-##[Simulating In QBlade](https://github.com/mkfu/MAE224/wiki/Simulating-Wind-Turbine-Rotors-using-Qblade)
+##[Simulating Wind Turbine Rotors with QBlade](https://github.com/mkfu/MAE224/wiki/Simulating-Wind-Turbine-Rotors-using-Qblade)
 Can it be done?
 
 ##[Exporting Blades to Creo](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Creo-Export-Tutorial)
