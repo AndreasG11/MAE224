@@ -37,7 +37,7 @@
 - ~~Update manual for use with Matlab (same goes for all labs)~~
 - ~~Add Matlab code for data writing~~
 - **_Ordering new pressure transducers which are suitable for ~15 "H20 (0.54 PSI, 3.8 kPa, 37 milliBar, yay pressure units!)_**
-- Upload calibration curves for all pressure transducers and link in lab manual.
+- ~~ Upload calibration curves for all pressure transducers and link in lab manual.~~
 - Functions in Matlab class file for reading pressure transducers, output is in Pascals (specific to each transducer _I dont really like this idea_).
 
 ## Lab 2: Pipe Flow
@@ -58,7 +58,7 @@
 
 ## Lab3: Boundary Layers
 
-- Do we have enough pressure transducers of the right range?
+- ~~Do we have enough pressure transducers of the right range?~~ Yes I think so, we are using 10milliBar ones.
     o According to old lab reports the BL tunnel goes up to about 15-16 m/s. So using a U=20m/s gives a max dynamic pressure of 240 Pa or 2.4 mBar. We have (7) 1kPa transducers that should do the trick (HSCXXX010MD), should order a couple more just to be safe.
  
 - ~~Add a pre-test with TA/Mike approval before going into wind tunnel~~
@@ -87,7 +87,7 @@
 
 - Clean up measurement station
 
-- Update manual
+- ~~Update manual~~
 
 ## What Mike has covered during Introduction to Thermodynamics Lab
 
