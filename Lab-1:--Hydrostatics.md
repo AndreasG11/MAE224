@@ -12,14 +12,18 @@ Note that the reason for the negative sign is due to the selection of the coordi
 
 <p align="center">
 <img src="http://2012books.lardbucket.org/books/principles-of-general-chemistry-v1.0/section_14/8cec964659fd2bb7ec4dc6c2c78eb4f9.jpg" width="400">  
-</p>Source: http://2012books.lardbucket.org/books/principles-of-general-chemistry-v1.0/s14-02-gas-pressure.html  
+</p>
+
+Source: http://2012books.lardbucket.org/books/principles-of-general-chemistry-v1.0/s14-02-gas-pressure.html  
 
 
 This device is used to measure atmospheric pressure through the hydrostatic principle.  Essentially, the weight of the mercury in the tube must balance the “weight” of the atmosphere, or the pressure.  Today, we will be constructing something similar called a manometer, which can be used to measure the difference between a pressurized region and the atmosphere.  This is often done via a U-tube (not YouTube) manometer, which looks like this:
 
 <p align="center">
 <img src="https://2.bp.blogspot.com/-TDRlZhhKwFk/U4ryRq532PI/AAAAAAAAAh4/AWs0TZNXncY/s1600/U-tubes.jpg" width="400">  
-</p>Source: https://2.bp.blogspot.com/-TDRlZhhKwFk/U4ryRq532PI/AAAAAAAAAh4/AWs0TZNXncY/s1600/U-tubes.jpg  
+</p>
+
+Source: https://2.bp.blogspot.com/-TDRlZhhKwFk/U4ryRq532PI/AAAAAAAAAh4/AWs0TZNXncY/s1600/U-tubes.jpg  
 
 In the above image, Pa is atmospheric pressure and Pt is the input pressure. We can see that Pt is greater than Pa. Now, we can use the principle of hydrostatics to measure a pressure difference between two reservoirs.   The gravitational force is balanced by the pressure force and so by a simple force balance, the pressure can be deduced by knowing the column height.
 
@@ -55,9 +59,14 @@ To connect the pressure sensor to the Particle Photon:
 
 1.	Plug the pressure sensor into your breadboard.  
 
-2.	Look at the data sheet for the pressure sensor and find out what each pin of the pressure sensor should connect to (data sheet is on Blackboard).  **Data sheet link here!** 
+2.	Look at the data sheet below for the pressure sensor and find out the connections for each pin of the sensor.
 
 3.	Connect the pressure sensor pins to the corresponding pins on the Particle Photon (be careful not to switch the pins for +3.3 V and ground).  
+
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/HSCDLNN001PDAA3%20Lab%201%20P2%20Sensor.png" width="700">  
+</p>
+
 
 ##Test your setup with the fluid
 By pressurizing the system, you are changing the manometer height, and you should be able to relate some measured height of the fluid column to the pressure it is applying to the transducer. By taking the appropriate data, you will be able to construct a calibration curve relating the pressure applied to the sensor to the voltage output.
