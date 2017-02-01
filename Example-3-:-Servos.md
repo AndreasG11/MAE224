@@ -10,7 +10,7 @@ For this example we need to connect a servo to the Photon. A standard servo has 
  --- | --- | ---   
  Red | +5V | VIN   
  Black | Ground | GND 
-Signal | White | SIG  
+White | Signal | SIG  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/example2circuit.png" width="600">  
