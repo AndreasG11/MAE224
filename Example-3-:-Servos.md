@@ -42,7 +42,7 @@ g.attachServo('D0');
 if g.getConnection()
 %Fully extend servo:
     curpos = g.move(180);
-    pause(10); %Wait 105 seconds
+    pause(10); %Wait 10 seconds
     disp(['Servo sent to position: ' num2str(curpos)])
     pause(5); %Wait 5 seconds
 %Retract Servo:
