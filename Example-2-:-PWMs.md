@@ -14,7 +14,7 @@ The digital output is shown in black. Notice how for each signal, the amount of 
 PWM itself is very powerful, in fact you can also use it to re-create time-varying analog signals (such as a sine wave). All we need is to be able to control the duty cycle as a function of time. We will not be doing this with the particle photon during the lab, but it is possible with the right programming. 
 
 ##PWM Example
-Here you will be outputting a PWM signal with your Particle Photon and reading it with both the oscilloscope and the Photon itself. Use a blank breadboard and jumper pins A4 and A5 (or whichever two pins you use for input/output of the signals)
+Here you will be outputting a PWM signal with your Particle Photon and reading it with both the oscilloscope and the Photon itself. Use a blank breadboard and jumper pins A4 and A5 (or whichever two pins you use for input/output of the signals).
 
 ```matlab
 % INPUTS %
