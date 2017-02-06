@@ -113,7 +113,7 @@ That's it! Now all you need is an open Matlab session, and have your Photon's na
     end
 ```
 
-Now run this code in the Matlab command window and you should see your particle photon LED blink once then turn off. **_Have your TA (preferably Cody) verify this behavior before completing this portion of the lab._**
+Replace 'myphoton' with your Photon name. Replace 'abc123' with your access token. **_Note_**: this is NOT your Photon IDE. To find out your access token, return to the Photon website. On the bottom left, you should see a gear. Click this, and you should be able to find your access token. Now run this code in the Matlab command window and you should see your particle photon LED blink once then turn off. **_Have your TA (preferably Cody) verify this behavior before completing this portion of the lab._**
 
 
 
