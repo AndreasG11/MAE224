@@ -92,7 +92,7 @@ The Particle Photon is a surprisingly useful little tool, and you will find it c
 ## Read a PWM with the Oscilloscope and Particle Photon
 Follow this example: [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs). **_Make sure to show your TA the output from the Photon on the oscilloscope at the end!_** 
 
-When you have completed the above and feel comfortable with all the lab equipment, you have finished the first week of required lab material. If not, please ask for assistance and experiment outputting various signals with your Particle Photon the TA's and Mike are here to help!
+When you have completed the above and feel comfortable with all the lab equipment, you have finished the first week of required lab material. If not, please ask for assistance and experiment outputting various signals with your Particle Photon- the TA's and Mike are here to help!
 
 
 
