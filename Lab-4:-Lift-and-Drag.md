@@ -160,24 +160,24 @@ Your report is expected to include:
 - A short paragraph summarizing your work, including the task and the results.   
 
 ###Introduction:   
-- Discuss the scientific concept of the lab  
-- Effectively present the objectives and purpose of the lab  
+- Discuss the scientific concept of the lab.  
+- Effectively present the objectives and purpose of the lab.  
 
 ###Experimental procedure  
-- Generally describe the procedure, including a basic sketch  
+- Generally describe the procedure, including a basic sketch.  
 
 ### Results  
-- Pressure distributions for the cylinder and airfoil  
-o	How did you calculate Lift and Drag?
-- Lift and drag coefficient plots for both experiment and simulation
+- Pressure distributions for the cylinder and airfoil.  
+o	How did you calculate lift and drag?
+- Lift and drag coefficient plots for both experiment and simulation.
 
 ##Discussion
-- Compare results from experiment and simulation for airfoil  
--	Compare cylinder to theoretical prediction  
--	Discuss flow separations for airfoil  
--	Answer discussion questions  
--	Error analysis  
+- Compare results from experiment and simulation for airfoil.  
+-	Compare cylinder to theoretical prediction.  
+-	Discuss flow separations for airfoil.  
+-	Answer discussion questions.  
+-	Error analysis.  
 
 ###Conclusion  
-- Summarize your **findings** (don’t just state what you did!)  
+- Summarize your **findings** (don’t just state what you did!).  
 
