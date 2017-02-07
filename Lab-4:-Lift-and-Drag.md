@@ -41,16 +41,16 @@ Where L is the total lift force, ![](https://github.com/d008/MAE224/blob/master/
 
 which is given for an infinite (or 2-D) airfoil. If we assume that our 3-D, real life airfoil acts like a 2-D airfoil then ![](https://github.com/d008/MAE224/blob/master/equations/lab4%203.png). Without delving too far into the theory, a 3-D airfoil is influenced by having a finite span where tip vortices form and cause the velocity distribution along the wing to deviate from the 2-D case. **Be careful which lift coefficient you are using, most simulations output the section lift coefficient since the solver is set up for 2-D airfoils!**
 
-For a given airfoil and flow conditions, a typical plot of lift coefficient versus angle of attack can be seen in Figure 3. For thin profiles at low angles of attack, the section lift coefficient predicted by potential flow theory is approximately ![](https://github.com/d008/MAE224/blob/master/equations/lab4%204.png). The slope of ![](https://github.com/d008/MAE224/blob/master/equations/2pi.png) is a very good approximation. The major difference between potential flow theory and real life flows is the effect of viscosity, characterized by Reynolds number, which you know from the second lab. As can be seen, lift increases with angle of attack until a maximum point beyond which a dramatic decrease is observed due to a phenomenon known as stall (or separation). Physically, stall is flow separation caused by the inability of the flow to withstand the adverse pressure gradient along the top of the airfoil (see Figure 3).  
+For a given airfoil and flow conditions, a typical plot of lift coefficient versus angle of attack can be seen in Figure 3. For thin profiles at low angles of attack, the section lift coefficient predicted by potential flow theory is approximately ![](https://github.com/d008/MAE224/blob/master/equations/lab4%204.png). The slope of ![](https://github.com/d008/MAE224/blob/master/equations/2pi.png) is a very good approximation. The major difference between potential flow theory and real life flows is the effect of viscosity, characterized by the Reynolds number, which you know from the second lab. As can be seen, lift increases with angle of attack until a maximum point beyond which a dramatic decrease is observed due to a phenomenon known as stall (or separation). Physically, stall is flow separation caused by the inability of the flow to withstand the adverse pressure gradient along the top of the airfoil (see Figure 3).  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil3.png" width="200"> 
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil4.png" width="200">
 </p> 
 
-Figure 3: Lift coefficient versus angle of attack and the flow separation. Note the top right has zero angle of attack, and the bottom right is a stalled airfoil.  
+Figure 3: Lift coefficient versus angle of attack and the flow separation. Note that the top right airfoil has zero angle of attack, and the bottom right is a stalled airfoil.  
 
-In addition to the lift (which often is the reason we use an airfoil), we need to worry about the drag force. The drag on an airfoil can be decomposed into two main sources – viscous and pressure: 
+In addition to the lift force (which often is the reason we use an airfoil), we need to worry about the drag force. The drag on an airfoil can be decomposed into two main sources – viscous shear and pressure: 
 
 * Viscous drag comes from “fluid friction” between the fluid and the surfaces due to the effect of viscosity (no-slip at the wall). This friction is associated with the development of boundary layers, and depends on the Reynolds number.   
 
