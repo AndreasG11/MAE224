@@ -70,7 +70,7 @@ On the rightmost side is the measurement display (you can access this menu by pr
 
 The power supplies we use in the lab have 3 outputs. Channels 1 and 2 have adjustable voltage outputs and current limits, channel 3 is fixed at 5 volts (it is the small connectors at the bottom right). Two modes are available, constant voltage (C.V.) and constant current (C.C.), with the limits of these two modes being set by the two dials. In C.V. mode, the supply will give out as much current as the connected circuit will accept (up to the current limit point) to maintain the output voltage. C.C. mode is similar, however the supply now adjusts the voltage (up to the voltage limit point) to maintain a constant current. The mode being used is indicated by the LEDs below each channel. 
 
-**It is VERY important to note that you can easily fry the Photon and other lab equipment with the DC Power Supply. We recommend always using a Digital Multi-Meter to check the output before connecting to your circuit! Ask if you need assistance**
+**It is VERY important to note that you can easily fry the Photon and other lab equipment with the DC Power Supply. We recommend always using a Digital Multi-Meter to check the output before connecting to your circuit! Ask if you need assistance.**
 
 You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, and V+. Ground is the building ground, and you can shunt or jumper either V- or V+ with ground to force one side of the power supply low. This is handy if, for example, your circuit requires a supply which is -15V to 0V (you would jumper V+ to ground).
 
