@@ -81,7 +81,7 @@ During the course of the lab you will **not** be programming the particle photon
 
 4.    Name your code something clever, like Lab_Code, then save and flash it to your Particle Photon.
 
-5.    Now that your Photon is running its new code, you must also download the Matlab class file into your computer's Matlab directory. Typically the Matlab default directory is My Documents/Matlab (on PCs), so you can use that folder location for the following step or use a new folder and then adding it to the current Matlab path (using the Set Path command in the Matlab GUI).
+5.    Now that your Photon is running its new code, you must also download the Matlab class file into your computer's Matlab directory. Typically the Matlab default directory is My Documents/Matlab (on PCs), so you can use that folder location for the following step or use a new folder and then add it to the current Matlab path (using the Set Path command in the Matlab GUI).
 
 6.    Download the Matlab class file here [Photon.m](https://github.com/d008/MAE224/blob/master/Source%20Files/MATLAB%20v1/Photon.m) to the folder location in step (5).
 
