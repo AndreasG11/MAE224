@@ -5,7 +5,7 @@ The objective of this lab is to understand the lift and drag on 2D objects of di
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil1.png" width="700">  
-Figure 1 - Airfoil 
+Figure 1 - Airfoil.
 </p> 
 
 
@@ -24,7 +24,7 @@ Streamlines deflected over the top of the airfoil experience a higher velocity t
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil2.png" width="600">  
 
-Figure 2: Lift and drag forces on an airfoil 
+Figure 2: Lift and drag forces on an airfoil.
 </p>  
 
 Lift is typically expressed in terms of the “lift coefficient”. This is a non-dimensional parameter, similar to the friction factor in last week’s lab. The “lift coefficient” is defined as:  
@@ -92,7 +92,7 @@ Questions:
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoilexp.png" width="600">  
-</p> Figure 5: Airfoil in the Wind Tunnel  
+</p> Figure 5: Airfoil in the wind tunnel.  
 
 
 You will note that an airfoil has been mounted into a large wind tunnel, which forms the second portion of this lab.  The airfoil is hollow and contains 30 pressure taps along the center of the body completely encircling it.  Using these pressure taps, you can determine the coefficient of lift and drag around the body.  To measure the surface pressure you will need to use the Matlab function `mrsairfoil`. This function returns two variables which you can access using the following:
@@ -127,7 +127,7 @@ For the airfoil, you should take data sets for, at minimum, three different wind
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/cylinderexp.png" width="600">  
-</p> Figure 6: Cylinder in the Wind Tunnel  
+</p> Figure 6: Cylinder in the wind tunnel. 
 
 The third task of this lab is to measure the pressure distribution around a cylinder.  In another wind tunnel, there is a medium-sized cylinder with holes evenly distributed along both sides.  The holes are connected to pressure sensors.  Similar to the airfoil tests, you can determine drag coefficient for the cylinder using the pressure distribution around the cylinder.  You should take measurements at two different speeds.  Additionally, you should take sets of measurements with and without the tripwire set up in the tunnel. The Matlab code to access the cylinder pressure data is similar to the airfoil:
 
