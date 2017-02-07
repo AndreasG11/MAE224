@@ -76,7 +76,7 @@ You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, an
 
 **Some things to remember BEFORE connecting the Power Supply:**
 
-1. With supply off, turn all dials all the way counter-clockwise
+1. With supply OFF, turn all dials all the way counter-clockwise
 2. Typically we will jumper V- to ground in the lab so do this with some wire or the shunt (metal connector).
 3. Disconnect all circuits, turn on power supply, and then turn current knob until the mode just switches to C.V.
 4. Set desired output voltage and check with multi-meter before connecting anything.
