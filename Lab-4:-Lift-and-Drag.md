@@ -23,7 +23,6 @@ Streamlines deflected over the top of the airfoil experience a higher velocity t
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil2.png" width="600">  
-
 Figure 2: Lift and drag forces on an airfoil.
 </p>  
 
