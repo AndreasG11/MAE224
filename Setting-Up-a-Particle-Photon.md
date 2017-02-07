@@ -11,7 +11,7 @@ You can make a serial connection to the unit through the USB cable. The followin
 
 3.	To communicate with the unit, you will need to open a serial port. Hold down the SETUP button until the light flashes blue. This means it is able to connect through the serial port. Open the CoolTerm folder on your desktop and start the program.
 
-4.	Click on the “Options” button on the top of the program. In the popup window, click the “Re-Scan Serial Ports” button. The drop down window labeled “Port:” should have at least one selectable option. Select the port your unit is on (likely COM19 or something similar, you can find it in the device manager from control panel in windows. NEVER COM 1). Alternatively, you can use download and use particle-cli. Ask Cody about it if you are curious.
+4.	Click on the “Options” button on the top of the program. In the popup window, click the “Re-Scan Serial Ports” button. The drop down window labeled “Port:” should have at least one selectable option. Select the port your unit is on (likely COM19 or something similar, you can find it in the device manager from control panel in windows. NEVER COM 1). Alternatively, you can download and use particle-cli. Ask Cody about it if you are curious.
 
 5.	Set the Baudrate to 9600, data bits to 8, parity to none, stop bits to 1. 
 
