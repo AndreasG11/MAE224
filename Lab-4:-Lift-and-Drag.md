@@ -16,7 +16,7 @@ Figure 1 - Airfoil
 -	The **thickness** is the maximum distance between the upper and lower surfaces. The **thickness ratio** is the ratio of the maximum thickness to the chord length.  
 
 ##Theory
-The aerodynamic force on an airfoil is the result of a redirecting fluid momentum. For example, a typical airfoil in flow (Figure 2) will exert a force, redirecting the incoming flow downward. Consequently, the flow will exert an equal and opposite force on the airfoil which we can decompose into tangential and perpendicular components relative to the incoming flow. The tangential component of the aerodynamic force is called Drag, and the tangential is called Lift.   
+The aerodynamic force on an airfoil is the result of redirecting fluid momentum. For example, a typical airfoil in flow (Figure 2) will exert a force, redirecting the incoming flow downward. Consequently, the flow will exert an equal and opposite force on the airfoil which we can decompose into tangential and perpendicular components relative to the incoming flow. The tangential component of the aerodynamic force is called Drag, and the tangential is called Lift.   
 
 Streamlines deflected over the top of the airfoil experience a higher velocity than streamlines under the bottom of the airfoil. From Bernoulli’s equation, we know that this velocity difference will manifest itself as a pressure difference between the top and bottom surfaces. Integrating the net pressure forces along the airfoil surface is one way to calculate the lift and drag force on the airfoil. The shape of the airfoil and the angle of attack determine the amount of lift and drag.  
 
