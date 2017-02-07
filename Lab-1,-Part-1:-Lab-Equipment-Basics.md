@@ -36,7 +36,7 @@ The next two tools are known as Digital Multi-Meters (DMMs) and are the swiss-ar
 <img src="https://github.com/d008/MAE224/blob/master/images/Fluke_73.png?raw=true" width="800">  
 </p>
 
-We will mainly be reading D.C. voltages and currents in this lab. The meter is also capable of reading the average and root-mean-square Alternating Current (A.C.) voltages (and a few other things). Note that we can easily measure resistance and check the polarity of diodes with this tool as well. With the leads connected to the proper terminals, check the voltage output from your power supply and compare that value with the one you obtained with the Photon.
+We will mainly be reading D.C. voltages and currents in this lab. The meter is also capable of reading the average and root-mean-square Alternating Current (A.C.) voltages (and a few other things). Note that we can easily measure resistance and check the polarity of diodes with this tool as well. With the leads connected to the proper terminals, check the voltage output from your power supply.
 
 The second DMM available to you is the Keithley.
 <p align="center">
