@@ -24,9 +24,9 @@ The breadboard or prototyping board will allow you to easily try out new circuit
 
 2. The lettered rows in the middle of the board are connected horizontally in two groups. Pins a-e are connected and pins f-j are connected. Directly in the middle is a small valley to remind you that pins a-e and f-j are not connected to each other. This allows you to branch off from each side of the Photon independently (useful if you don't always want pin A1 going to D1 for example).
 
-You are now prepared to do the first example on how to read/write with your Photon: [Example 1: Read and Write Pins](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins). **Once you have completed the tutorial, show your Matlab plot to the TA before continuing.**
+You are now prepared to do the first example on how to read/write with your Photon: [Example 1: Read and Write Pins](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins). **_Once you have completed the tutorial, show your Matlab plot to the TA before continuing_.**
 
-Now on to some of the other electronic equipment in the lab, first Digital Multi-Meter:
+Now on to some of the other electronic equipment in the lab, first the Digital Multi-Meter:
 
 ### Digital Multi-Meters
 
