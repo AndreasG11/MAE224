@@ -46,8 +46,7 @@ After setting up your Photon and connecting USB power, use some jumper wire and 
 Here are some to-do's before moving on:
 
 1. Read the signal frequency on the oscilloscope and compare it to the `freq` value set above.
-2. Read the signal frequency with the Keithley (press the Freq. button and adjust the range if needed) and compare to the values in (1).
-2. Change `freq` and measure it with the Photon, oscilloscope, and DMM (re-run the Matlab code).
+2. Change `freq` and measure it with the Photon, and the oscilloscope (re-run the Matlab code).
 3. Change the output voltage `vout`. What happens to the duty cycle? What are the units of the duty cycle?
 
 **_Show your TA the PWM signal on the oscilloscope_** and you are finished with this tutorial.
