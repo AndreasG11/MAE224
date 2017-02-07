@@ -64,7 +64,7 @@ ylabel('Voltage')
 legend('Analog','Digital','location','southeast')
 ```
 
-If we replace the authorization token and name of the Photon correctly, we will get the following result.
+If we replace the access token and name of the Photon correctly, we will get the following result.
 
 ![](https://github.com/mkfu/MAE224/blob/master/images/ex1result.png)
 
