@@ -20,9 +20,10 @@ The aerodynamic force on an airfoil is the result of redirecting fluid momentum.
 
 Streamlines deflected over the top of the airfoil experience a higher velocity than streamlines under the bottom of the airfoil. From Bernoulli’s equation, we know that this velocity difference will manifest itself as a pressure difference between the top and bottom surfaces. Integrating the net pressure forces along the airfoil surface is one way to calculate the lift and drag force on the airfoil. The shape of the airfoil and the angle of attack determine the amount of lift and drag.  
 
+Figure 2: Lift and drag force on an airfoil 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoil2.png" width="600">  
-</p> Figure 2: Lift and drag force on an airfoil  
+</p>  
 
 Lift is typically expressed in terms of the “lift coefficient”. This is a non-dimensional parameter, similar to the friction factor in last week’s lab. The “lift coefficient” is defined as:  
 
