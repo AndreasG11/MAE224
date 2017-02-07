@@ -43,7 +43,7 @@ end
 ```
 After setting up your Photon and connecting USB power, use some jumper wire and clip leads to connect ground and the signal pin to the Oscilloscope (signal always goes to red, black to ground). Get your oscilloscope up and running, then run the above matlab code. You should see a square wave similar to the one in the earlier image.
 
-Here are some to-dos before moving on:
+Here are some to-do's before moving on:
 
 1. Read the signal frequency on the oscilloscope and compare it to the `freq` value set above.
 2. Read the signal frequency with the Kiethley (press the Freq. button and adjust the range if needed) and compare to the values in (1).
