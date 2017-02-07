@@ -69,7 +69,7 @@ If we replace the access token and name of the Photon correctly, we will get the
 ![](https://github.com/mkfu/MAE224/blob/master/images/ex1result.png)
 
 ##Let's break down what the code means
-The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the authorization token and the name of the Photon.
+The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the access token and the name of the Photon.
 ```matlab
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
 core =  'class1'; %YOUR PHOTON ID OR NAME HERE
@@ -77,7 +77,7 @@ core =  'class1'; %YOUR PHOTON ID OR NAME HERE
 g = Photon(core,atoken);
 ```
 
-Replace the strings in the above code with your Particle account authorization token and photon name.  Lastly, we will make a new object and pass those arguments via the constructor.
+Replace the strings in the above code with your Particle account access token and photon name.  Lastly, we will make a new object and pass those arguments via the constructor.
 
 We can check that everything is working by trying a function call
 ```matlab
