@@ -79,7 +79,7 @@ _Arguments_
 *  `String pin` - The name of the pin connected to sample.  
 
 _Returns_  
-* The bit value at that pin. Takes value of 0 for LOW and 1 for HIGH  
+* The bit value at that pin. Takes value of 0 for LOW and 1 for HIGH. 
 
 ***    
 ###digitalWrite
@@ -113,7 +113,7 @@ flash(file=String filepath)
 ```  
 Requires the `requests` module. Compiles and uploads a local file to the Particle Photon.   
 _Arguments_ 
-*  `String filepath` - File path to the file(s) that you want to flash as the Photon sketch  
+*  `String filepath` - File path to the file(s) that you want to flash as the Photon sketch.  
 
 _Returns_  
 * None
@@ -123,12 +123,12 @@ _Returns_
 ```python
 getConnection()
 ```
-Tells whether the Photon is connected to the internet or not  
+Tells whether the Photon is connected to the internet or not.  
 _Arguments_  
 * None  
 
 _Returns_    
-*  Returns `True` if the device associated with the Photon's name is connected the internet and `False` if the device is not.  
+*  Returns `True` if the device associated with the Photon's name is connected to the internet and `False` if the device is not.  
 
 ***  
 ### getDevices
