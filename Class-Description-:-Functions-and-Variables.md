@@ -18,7 +18,7 @@ _Arguments_
 *  `String access_token` - Authorization token retrieved from build.particle.io 
  
 _Returns_
-*  A Photon object that knows how to access the following functions and methods  
+*  A Photon object that knows how to access the following functions and methods. 
     
 ## Functions
 ###analogRead
@@ -30,7 +30,7 @@ _Arguments_
 *  `String pin` - The name of the pin connected to sample.  
 
 _Returns_  
-* A value corresponding to 0-3.33V  
+* A value corresponding to 0-3.33V. 
 
 ***    
 ###analogWrite
