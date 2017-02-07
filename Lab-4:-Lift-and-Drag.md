@@ -95,8 +95,9 @@ Questions:
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoilexp.png" width="600">  
-Figure 5: Airfoil in the wind tunnel.  
 </p>
+
+Figure 5: Airfoil in the wind tunnel.  
 
 You will note that an airfoil has been mounted into a large wind tunnel, which forms the second portion of this lab.  The airfoil is hollow and contains 30 pressure taps along the center of the body completely encircling it.  Using these pressure taps, you can determine the coefficient of lift and drag around the body.  To measure the surface pressure you will need to use the Matlab function `mrsairfoil`. This function returns two variables which you can access using the following:
 
@@ -113,7 +114,7 @@ g = Photon(name,atoken);
 ```
 The output of the matlab function `mrsairfoil` will give you two variables, in the above example we have called these `cpress` and `aoa` but you may name them whatever you like. The variable `cpress` is a matrix with the first column corresponding to pressure taps on the top of the airfoil, with position (1,1) being the tap closest to the leading edge. The second column contains measurements of the pressure taps on the bottom of the airfoil, same deal with ordering. Pressure output is in Pascals (Pa). The other variable, `aoa`, is the angle of attack measured by an accelerometer located inside the airfoil, the corresponding units are degrees. It has a resolution of +/- 1 degree for this setup.
 
-To find the drag and lift coefficients, you will require the forces on the body.  Can you think of a way to determine the forces based on the pressures measured via the taps?  If not, you should definitely ask your TA.  Direct force measurements are also taken via the LabVIEW setup on the adjacent computer and should be recorded for use in your lab report.
+To find the lift and drag coefficients, you will require the forces on the body.  Can you think of a way to determine the forces based on the pressures measured via the taps?  If not, you should definitely ask your TA.  Direct force measurements are also taken via the LabVIEW setup on the adjacent computer and should be recorded for use in your lab report.
 
 For the airfoil, you should take data sets for, at minimum, three different wind speeds and a large number of angles of attack, sufficient to trace out a relatively good plot of lift coefficient vs. angle of attack.  To determine the speed of the tunnel, you will need to use the digital pitot probe read-out on the wind tunnel and calculate the freestream velocity (Note: do **not** go above 20 m/s in the wind tunnel.  This could result in damage to the equipment).  For all runs, you should have successfully collected pressure data, angle of attack as measured by the Photon, and the forces measured by the force balance in the wind tunnel.  You should, in your report, make a comparison between ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png), ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) the curves for the simulation, the direct force measurements, and the determinations made from the pressure taps.  
 
