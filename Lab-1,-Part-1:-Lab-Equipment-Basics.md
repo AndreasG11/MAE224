@@ -84,7 +84,7 @@ You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, an
 6. Connect circuit, ground cable first.
 7. Turn on supply and you are good to go.
 
-Using the image above, connect wires to your Photon. Turn on your power supply, slowly increase the current until the C.V. (constant voltage) light becomes green, then turn the voltage knob so that the output is +1.0 Volts. Now with what you learned in  [Example 1](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins), read the voltage of the power supply into Matlab to verify the power supply display.
+Turn on your power supply, slowly increase the current until the C.V. (constant voltage) light becomes green, then turn the voltage knob so that the output is +1.0 Volts. Turn off the power supply. Using the image above, connect wires to your Photon (always connect ground first!). Now with what you learned in  [Example 1](https://github.com/d008/MAE224/wiki/Example-1-:-Read-and-Write-Pins), read the voltage of the power supply into Matlab to verify the power supply display.
 
 The Particle Photon is a surprisingly useful little tool, and you will find it can replicate the functions of almost all the electronic tools we will talk about in the next few paragraphs. This also means you can use the lab tools to check if your Photon (and Matlab code!) is working as expected. In future labs, you will be asked to verify the Photon's readings using these devices, so be prepared!
 
