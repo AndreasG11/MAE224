@@ -59,7 +59,7 @@ To connect the pressure sensor to the Particle Photon:
 
 1.	Plug the pressure sensor into your breadboard.  
 
-2.	Look at the data sheet below for the pressure sensor and find out the connections for each pin of the sensor. If you would like more info on this sensor you can find the data sheet [here](https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/Honeywell%20HSC%20Pressure%20Sensors.pdf)
+2.	Look at the data sheet below for the pressure sensor and find out the connections for each pin of the sensor. If you would like more info on this sensor you can find the data sheet [here](https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/Honeywell%20HSC%20Pressure%20Sensors.pdf).
 
 3.	Connect the pressure sensor pins to the corresponding pins on the Particle Photon (be careful not to switch the pins for +3.3 V and ground).  
 
