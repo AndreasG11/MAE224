@@ -17,9 +17,9 @@ The pressure drop in the pipe can be recorded manually by a manometer setup, or 
 
 The Printed Circuit Board (PCB) for this lab has a few other connections you may have noticed. These are for the two flow-meters attached to the experiment. The larger brass meter is the _Total Flow Rate_ through the pipe and the smaller plastic meter measures the _Laminar Flow Rate_. Because the flow meter works by measuring the rpm on an internal impeller, the digital output is simply a square wave signal where each step corresponds to some volume of fluid moving past the impeller. In other words, the code will be reading the frequency of the rotor (giving you the time or _rate_ component) and each pulse corresponds to a volume of fluid (typically a few milli-Liters). In order to read the signal you will need to use the `getTone(apin)` command from the class file. This command measures the time between two pulses and returns the frequency (or 1 / dt) of the pulse. You can then convert this frequency to a flow rate using the following:
 
-- _Total Flow Rate_ (Liters/min) = (frequency + 3) / 8.1
+- _Total Flow Rate_ [Liters/min] = (frequency [Hz] + 3) / 8.1
 
-- _Laminar Flow Rate_ (Liters/min) = (frequency + 7.3) / 80.4
+- _Laminar Flow Rate_ [Liters/min] = (frequency [Hz] + 7.3) / 80.4
 
 Your programming goal is to combine all of this into a Matlab script which will allow you to control the pump, record the flow rate and pressure (either manually or with a transducer) and then write those values to a file. You will need to calibrate the PWM signal going to the pump so that you know the flow rate for a given duty cycle. Check the [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) if you need a refresher. 
 
