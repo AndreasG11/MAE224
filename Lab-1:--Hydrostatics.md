@@ -105,7 +105,7 @@ dlmwrite([folder fname],[heights' volts],'-append','delimiter','\t');
 ```
 There is a lot going on here, but the functionality is relatively simple. We first create a cell array of strings for the header (so later we will know what data we saved). The next few lines write the header to the file, and the final call to `dlmwrite()` writes the actual data. Note that you will need to manually enter your height data into the `heights` variable, and don't forget to change the folder location and filename as well!
 
-_Remember_ You can get information on any function in Matlab by typing `help function_name` and hitting enter in the command window.
+_Remember_: You can get information on any function in Matlab by typing `help function_name` and hitting enter in the command window.
 
 ##Ain’t No Mountain High Enough...:
 As you should have noticed by now, there appears to be a relationship between heights and pressures (Ever considered why pressure sometimes is measured in millimeters of Mercury or inches of water? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
