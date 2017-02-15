@@ -67,6 +67,7 @@ To connect the pressure sensor to the Particle Photon:
 <img src="https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/HSCDLNN001PDAA3%20Lab%201%20P2%20Sensor.png" width="700">  
 </p>
 
+4. **Important** Your goal in this lab is to create your own calibration for the pressure sensor. You can compare your calibration to the one in the data sheet, but you must use the derivation found earlier to get the relationship between height and pressure.
 
 ##Test your setup with the fluid
 By pressurizing the system, you are changing the manometer height, and you should be able to relate some measured height of the fluid column to the pressure it is applying to the transducer. By taking the appropriate data, you will be able to construct a calibration curve relating the pressure applied to the sensor to the voltage output.
