@@ -108,7 +108,7 @@ There is a lot going on here, but the functionality is relatively simple. We fir
 _Remember_: You can get information on any function in Matlab by typing `help function_name` and hitting enter in the command window.
 
 ##Ain’t No Mountain High Enough...:
-As you should have noticed by now, there appears to be a relationship between heights and pressures (Ever considered why pressure sometimes is measured in millimeters of Mercury or inches of water? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
+As you should have noticed by now, there appears to be a relationship between heights and pressures (ever considered why pressure sometimes is measured in millimeters of mercury or inches of water? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
 
 ##Other questions for write-up:  
 
@@ -119,7 +119,7 @@ As you should have noticed by now, there appears to be a relationship between he
 3.	What is the shape of the calibration curve (can you show that this truly is the shape)?  
 
 #Guidelines for the report
-Your report is expected to include (remember maximum 5 pages):
+Your report is expected to include (remember, maximum 5 pages):
 ###Abstract  
 - A short paragraph summarizing your work, including the task and the results. 
    
@@ -128,7 +128,7 @@ Your report is expected to include (remember maximum 5 pages):
 - Effectively present the objectives and purpose of the lab and any equation or concept you need. 
  
 ###Experimental Procedure  
-- Provide some details about the experiment and methodology and why you chose your particular setup  
+- Provide some details about the experiment and methodology and why you chose your particular setup.  
 
 ###Results
 - Provide plots and pictures to illustrate your results. You are free to use whatever plotting program you wish, but your TA's recommend using Matlab. 
@@ -138,10 +138,10 @@ Your report is expected to include (remember maximum 5 pages):
 - Make sure the data points are large enough to see clearly.
 
 ###Discussion
--  Outline sources of error and perhaps answer any of the questions brought up in the lab manual
+-  Outline sources of error and perhaps answer any of the questions brought up in the lab manual.
 
 ###Conclusion  
-- Summarize findings 
+- Summarize findings. 
 
 
 
