@@ -43,7 +43,7 @@ You have several tools and materials at your disposal to complete the lab. This 
 
 ##Build a manometer
 The goal of this lab is to calibrate the pressure sensor given to you using the manometer and the Particle Photon. To do this, you will need to have control over the applied pressure while recording the data with your Photon. 
-At this point, you should derive an expression relating the pressure to the column height. Follow, these steps in your derivation:  
+At this point, you should derive an expression relating the pressure to the column height. Follow these steps in your derivation:  
 
 1.    In a manometer, if one end is open to the air, the pressure difference is the difference between the atmospheric pressure at the open end, P0, and the pressure established by the hand pump at the closed end, P1.  
 
