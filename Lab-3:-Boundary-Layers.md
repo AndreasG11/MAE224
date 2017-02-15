@@ -63,7 +63,7 @@ For the linear actuator, there are three wires. The red and black ones should be
 Now try to challenge yourself. You need to write out all your codes. 
 
 **For Matlab:**  
-You will use the class of Matlab commands provided to move the servo-mounted pitot tube to a location in the tunnel and then record the output of the pressure transducer. The servo can move from values of 40 to 180, **but should only be set to values from 60 to 115 when in the wind tunnel**. If you go out of the range, you will damage the actuator. Larger value means that the actuator moves closer to the bottom wall.  
+You will use the class of Matlab commands provided to move the servo-mounted pitot tube to a location in the tunnel and then record the output of the pressure transducer. The servo can move from values of 40 to 180, **but should only be set to values from 60 to 115 when in the wind tunnel**. If you go out of the range, you will damage the actuator. A larger value means that the actuator moves closer to the bottom wall. Before proceeding, please do [Example 3].  
 
 _In order to check that your code is moving the actuator as desired and safely, we'll have webcams set up so that one or two members of your group can be at the wind tunnel and talk to the remainder of the group back at the lab computer._  
  
