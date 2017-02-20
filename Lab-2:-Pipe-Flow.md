@@ -5,15 +5,13 @@ In this experiment you will use two flow meters, an electric pump and an optiona
 To run the experiment, you will need the ability to set the pump to a known flow rate and then record the pressure drop in the pipe. 
 The Particle Photon cannot output the correct voltage or current needed to drive the pump, but it can output a PWM (pulse width modulation) signal! Therefore we will be using a transistor setup known as a MOSFET which will allow you to use an external power source to power the motor, but utilize the Particle Photon to control the motor output.  For those of you who like analogies, using a transistor is like controlling the flow of a firehose with a squirt gun.  The Particle Photon outputs a small square wave which tells the transistor to let a large amount of current flow through the motor.  The real working is a bit more complicated than that and involves quite a bit more applied physics knowledge, band gap theory, and understanding of NPN and PNP transistors, all of which Mike knows a lot about if you are interested in learning more. You can also look at this handy resource [Wikipedia](https://en.wikipedia.org/wiki/MOSFET) or if you are brave [Caltech APh9](http://nanofab.caltech.edu/images/stories/classes/aph9/lecture11.pdf).  All you need to know is that we can now control the motor with a Particle Photon.  Below is an image of the motor control board with details of each part.  
 
-__Note from Mark: This circuit diagram will be updated soon!__
-
-The MOSFET has three pins which correspond to gate (g), drain (d) and source (s) when looking at this component from the front.  The gate is controlled via the IDX-609 chip which is what is known as a driver chip, it converts the square-wave signal from the Photon to a higher voltage need to drive the MOSFET efficiently. There are some other, ancillary components as well which assist in providing the necessary power to the pump.
+The MOSFET has three pins which correspond to gate (g), drain (d) and source (s) when looking at this component from the front.  The gate is controlled via the IDX-609 chip which is what is known as a driver chip, it converts the square-wave signal from the Photon to a higher voltage need to drive the MOSFET efficiently. There are some other, ancillary components as well which assist in providing the necessary power to the pump. You will need to plug in your Particle Photon (with the USB connector facing left as shown below) and then connect USB power. 
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Motor%20Diagram.png?raw=true" width="800">  
+<img src="https://github.com/d008/MAE224/blob/master/images/Lab2_New_Circuit.jpg" width="800">  
 </p>
 
-The pressure drop in the pipe can be recorded manually by a manometer setup, or by using the pressure transducer and the code that you wrote in the previous lab. It’s a good idea to start using the manometer just because we took all the trouble to make it and it works really well, but as an addendum to the lab you can double check the pressure with the transducer that you just calibrated! To do this you will need to place the pressure transducer on a separate breadboard and connect the power/signal/ground pins to the Particle Photon.
+The pressure drop in the pipe can be recorded manually using the manometer tubes, you will need the value of dP/dx in order to make your Moody diagrams later in the lab. 
 
 The Printed Circuit Board (PCB) for this lab has a few other connections you may have noticed. These are for the two flow-meters attached to the experiment. The larger brass meter is the _Total Flow Rate_ through the pipe and the smaller plastic meter measures the _Laminar Flow Rate_. Because the flow meter works by measuring the rpm on an internal impeller, the digital output is simply a square wave signal where each step corresponds to some volume of fluid moving past the impeller. In other words, the code will be reading the frequency of the rotor (giving you the time or _rate_ component) and each pulse corresponds to a volume of fluid (typically a few milli-Liters). In order to read the signal you will need to use the `getTone(apin)` command from the class file. This command measures the time between two pulses and returns the frequency (or 1 / dt) of the pulse. You can then convert this frequency to a flow rate using the following:
 
@@ -21,7 +19,13 @@ The Printed Circuit Board (PCB) for this lab has a few other connections you may
 
 - _Laminar Flow Rate_ [Liters/min] = (frequency [Hz] + 7.3) / 80.4
 
-Your programming goal is to combine all of this into a Matlab script which will allow you to control the pump, record the flow rate and pressure (either manually or with a transducer) and then write those values to a file. You will need to calibrate the PWM signal going to the pump so that you know the flow rate for a given duty cycle. Check the [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) if you need a refresher. 
+Your programming goal is to combine all of this into a Matlab script which will allow you to control the pump, record the flow rate and pressure (either manually or with a transducer) and then write those values to a file. You will need to calibrate the PWM signal going to the pump so that you know the flow rate for a given duty cycle. Check the [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) if you need a refresher. There are only 3 connections to the Photon you will need to make to control the experiment:
+
+1. Pump PWM Output from the Particle Photon (top pin on the 6 pin strip to the right of the Photon) to control the power that is sent to the pump.
+2. Total flow meter (read the frequency of this pin to get the total flow rate).
+3. Laminar flow meter (small white one, read the frequency of this pin to get the laminar flow rate).
+
+Note that power and ground for all the sensors has been taken care of for you in advance on the circuit board.
 
 #How to measure pressure drop  
 
