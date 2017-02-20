@@ -14,7 +14,7 @@ Fortunately for you, we include much of the information you need for this sectio
 
 ##Objective and Purpose of the Lab
 **How do we explain this phenomenon based on what we already know? Do you have a hypothesis of what is occurring?**
-Now that you have explained the purpose of the lab, it is time to introduce the objective of the lab and the purpose. What are we trying to find out and why?
+Now that you have explained the purpose of the lab, it is time to introduce the objective of the lab. What are we trying to find out and why?
 
 In other words, this is where you introduce the scientific question at hand. You have introduced lots of knowledge and information and this is the section where you propose what you are trying to demonstrate or explore. Often times we will pose this question in the lab manual.
 
