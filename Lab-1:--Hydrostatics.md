@@ -119,6 +119,7 @@ As you should have noticed by now, there appears to be a relationship between he
 3.	What is the shape of the calibration curve (can you show that this truly is the shape)?  
 
 #Guidelines for the report
+All Lab manuals are to be shared with or emailed to mae224lab(at)gmail.com
 Your report is expected to include (remember, maximum 5 pages):
 ###Abstract  
 - A short paragraph summarizing your work, including the task and the results. 
