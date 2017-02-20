@@ -11,6 +11,8 @@ The MOSFET has three pins which correspond to gate (g), drain (d) and source (s)
 <img src="https://github.com/d008/MAE224/blob/master/images/Lab2_New_Circuit.jpg" width="800">  
 </p>
 
+12 Volts from the bench-top power supplies must be fed into the two, upper left connections (note that this circuit will draw upwards of 2 amps to power the pump). The pump itself must be connected to the screw terminals on the upper right (black is ground, brown is V+). **__Ask Mike or the TA to check your circuit before turning on the power supply.__**
+
 The pressure drop in the pipe can be recorded manually using the manometer tubes, you will need the value of dP/dx in order to make your Moody diagrams later in the lab. 
 
 The Printed Circuit Board (PCB) for this lab has a few other connections you may have noticed. These are for the two flow-meters attached to the experiment. The larger brass meter is the _Total Flow Rate_ through the pipe and the smaller plastic meter measures the _Laminar Flow Rate_. Because the flow meter works by measuring the rpm on an internal impeller, the digital output is simply a square wave signal where each step corresponds to some volume of fluid moving past the impeller. In other words, the code will be reading the frequency of the rotor (giving you the time or _rate_ component) and each pulse corresponds to a volume of fluid (typically a few milli-Liters). In order to read the signal you will need to use the `getTone(apin)` command from the class file. This command measures the time between two pulses and returns the frequency (or 1 / dt) of the pulse. You can then convert this frequency to a flow rate using the following:
