@@ -1,5 +1,7 @@
 Do you remember the scientific method? A technical report is simply a written log of each step in the method and is the fundamental method scientists and engineers use to communicate with each other. This document will serve as a simple outline for writing such a report. We will give some general guidelines about what each section is meant to do as well as how to properly divide up each section. Along the way we will give you tips about how to incorporate the report into one cohesive whole document.
 
+All Lab manuals are to be shared with or emailed to mae224lab(at)gmail.com
+
 #Abstract
 The abstract should serve as a brief summary of the lab. Think of this section as the most elemental summary you can give of your activities in the lab. It should be a single paragraph that allows anyone to read it and get the general gist of the lab start to finish. Busy scientists have precious little time, so they often read the abstract to determine whether the paper is worth reading in full or not. The TA should be able to understand the 1) the main point of the lab 2) main setup of the lab and 3) main conclusions of the lab all from the abstract.  
 
