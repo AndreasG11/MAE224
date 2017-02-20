@@ -110,6 +110,7 @@ In this experiment, the quality of the data contributes to your grade so make su
 -  Successfully reduce drag in a novel, meaningful and verifiable way. If you succeed, please let your TA know so they can help you write a journal article.  
 
 #Guidelines for the report  
+All Lab manuals are to be shared with or emailed to mae224lab(at)gmail.com
 Your report is expected to include:  
 ###Abstract:  
 - A short paragraph summarizing your work, including the task and the results.   
