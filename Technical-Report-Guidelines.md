@@ -20,7 +20,7 @@ Now that you have explained the purpose of the lab, it is time to introduce the 
 
 In other words, this is where you introduce the scientific question at hand. You have introduced lots of knowledge and information and this is the section where you propose what you are trying to demonstrate or explore. Often times we will pose this question in the lab manual.
 
-##Experimental Procedure 
+#Experimental Procedure 
 **Develop testable predictions for the hypotheses that reduce error and bias.**
 This section should be informative but brief. It is important for you to briefly describe the hardware which you utilized but it is not necessary to list every detail as your lab reports are already brief as it is and we provided you with significant hardware. This section is best served by a diagram of the setup and a description of the procedure used to ensure that your data is correct and repeatable. 
 
