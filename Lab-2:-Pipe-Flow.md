@@ -70,10 +70,10 @@ The setup you’re working with involves two pipes with different inner diameter
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab2_2.png" width="100">  
 </p>  
 
-- U = Flow Velocity
-- d = Pipe Diameter
-- <img src="https://github.com/d008/MAE224/blob/master/equations/rho.png" width="10">   = Fluid Density
-- <img src="https://github.com/d008/MAE224/blob/master/equations/mu.png" width="10"> = Dynamic Viscosity  
+- U = Flow Velocity [m/s]
+- d = Pipe Diameter [m]
+- <img src="https://github.com/d008/MAE224/blob/master/equations/rho.png" width="10">   = Fluid Density [kg/m^3]
+- <img src="https://github.com/d008/MAE224/blob/master/equations/mu.png" width="10"> = Dynamic Viscosity [Pa s]  
 
 In terms of the flow rate, the Reynolds number can be expressed by:
 
