@@ -2,10 +2,10 @@ Do you remember the scientific method? A technical report is simply a written lo
 
 All Lab manuals are to be shared with or emailed to mae224lab(at)gmail.com
 
-#Abstract
+#Abstract (10%)
 The abstract should serve as a brief summary of the lab. Think of this section as the most elemental summary you can give of your activities in the lab. It should be a single paragraph that allows anyone to read it and get the general gist of the lab start to finish. Busy scientists have precious little time, so they often read the abstract to determine whether the paper is worth reading in full or not. The TA should be able to understand the 1) the main point of the lab 2) main setup of the lab and 3) main conclusions of the lab all from the abstract.  
 
-#Introduction
+#Introduction (15%)
 **What are we observing and why does this phenomenon occur?**
 The introduction is the first foray into the scientific subject. This section serves two main purposes.
 
@@ -20,15 +20,15 @@ Now that you have explained the purpose of the lab, it is time to introduce the 
 
 In other words, this is where you introduce the scientific question at hand. You have introduced lots of knowledge and information and this is the section where you propose what you are trying to demonstrate or explore. Often times we will pose this question in the lab manual.
 
-#Experimental Procedure 
+#Experimental Procedure (10%)
 **Develop testable predictions for the hypotheses that reduce error and bias.**
 This section should be informative but brief. It is important for you to briefly describe the hardware which you utilized but it is not necessary to list every detail as your lab reports are already brief as it is and we provided you with significant hardware. This section is best served by a diagram of the setup and a description of the procedure used to ensure that your data is correct and repeatable. 
 
-#Results 
+#Results (15%)
 **What did we find with the experiment?** 
 Hopefully this section is self explanatory. This should be populated with plots, charts, graphs with appropriate axes, labels and legends. Tables can be appropriate as well, but note that the data should be presented in the most succinct way as possible. In fluids, it is common to present the data in nondimensional form (think lab 2).  If possible nondimensionalize the raw data based on your representative physical and flow parameters. This will help other readers better understand the physics involved in your experiment in a more general way that is less specific to your individual setup. We also would like to see error bars where applicable, your reader should be aware of the uncertainty in any measurement you take. Additionally, if you can include a plot of what the expected answer is or what a theoretical/ numerical comparison would be, it would be highly advisable to include that as well. An ideal plot would have the results which you have collected with the appropriate error bars attached plotted around the expected analytic, theoretical, or numerical results.  
 
-#Discussion
+#Discussion (35%)
 **How does what we found compare with what we expected/hypothesized?**  
 This is by far the most important section. This section should cover the bulk of the analysis and data processing. Now that you have presented the data, it is time to make sense of it. Below are a few important sections which you should be sure to include, but are by no means limited to.
 
@@ -87,7 +87,7 @@ Now that you have constructed logical error bounds for your data, you need to kn
 ##Relation to scientific concepts  
 Now that you have constructed the error estimates for the data and you have compared the experimental results to the expected results, you should make sure to tie everything back to the scientific concepts at hand. Do the results make sense? Are your results consistent with the physics you expect? What physical mechanisms are acting to make the results adhere or diverge from your hypotheses? Your TA's and Marcus are a great resource for this section. This is truly where you can demonstrate mastery of the subject matter. Here you have to apply the physics and mathematics given in the introduction to explain and make sense of the data which you have collected.   
 
-#Conclusions
+#Conclusions (15%)
 **What did we find and does it confirm/refute our hypotheses?**  
 The conclusion is always a bit tricky to nail down. In its essence it is a summary of the lab, but in a very different way than the abstract. While the abstract is a birds eye view of the lab in order to give all of the major details from start to finish, the conclusion is where you get to focus on the messages that you want the reader to take away. Everyone has a different style for the conclusions, but commonly it is the best place to reiterate the main points you are trying to convey.  
 
