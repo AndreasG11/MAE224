@@ -131,7 +131,7 @@ Your report is expected to include:
 - Detailed findings.  
 - Moody diagram plot for laminar and turbulent flows.  
 
-##Discussion (35%)
+###Discussion (35%)
 -	Analysis of the results.
 -	Compare with Moody diagram in textbooks.
 -	Do your findings correspond? Why or why not?
