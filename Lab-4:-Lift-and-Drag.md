@@ -156,28 +156,28 @@ Here `cpress` is again a matrix, with the first column corresponding to the top 
 ##Suggested Lab Write Up  
 Your report is expected to include:  
 
-###Abstract:  
+###Abstract (10%)  
 - A short paragraph summarizing your work, including the task and the results.   
 
-###Introduction:   
+###Introduction (15%)   
 - Discuss the scientific concept of the lab.  
 - Effectively present the objectives and purpose of the lab.  
 
-###Experimental procedure  
+###Experimental procedure (10%) 
 - Generally describe the procedure, including a basic sketch.  
 
-### Results  
+### Results (15%) 
 - Pressure distributions for the cylinder and airfoil.  
 o	How did you calculate lift and drag?
 - Lift and drag coefficient plots for both experiment and simulation.
 
-##Discussion
+##Discussion (35%)
 - Compare results from experiment and simulation for airfoil.  
 -	Compare cylinder to theoretical prediction.  
 -	Discuss flow separations for airfoil.  
 -	Answer discussion questions.  
 -	Error analysis.  
 
-###Conclusion  
+###Conclusion (15%) 
 - Summarize your **findings** (don’t just state what you did!).  
 
