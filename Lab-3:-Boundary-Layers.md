@@ -121,10 +121,10 @@ o	What do you expect the boundary layer to look like in the channel?
 o	Why were we able to apply Bernoulli’s equation in the channel flow?  
 - Explain why (and how) you made each of your measurements  
 
-### Results (15%) 
+###Results (15%) 
 - Clearly (and logically) present your boundary layer data  
 
-##Discussion (35%)
+###Discussion (35%)
 - Explain if your results were what you expected  
 - Can you think of other ways that velocity can be measured at a point in a flow?  
 - What are the sources of error, and how do they contribute to making the measurements either higher, or lower, than expected?  
