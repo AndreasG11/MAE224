@@ -171,7 +171,7 @@ Your report is expected to include:
 o	How did you calculate lift and drag?
 - Lift and drag coefficient plots for both experiment and simulation.
 
-##Discussion (35%)
+###Discussion (35%)
 - Compare results from experiment and simulation for airfoil.  
 -	Compare cylinder to theoretical prediction.  
 -	Discuss flow separations for airfoil.  
