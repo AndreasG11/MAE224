@@ -107,29 +107,29 @@ Put your measurements in this form and plot u/U as a function of ![](https://git
 
 ##Suggested Lab Write Up  
 Your report is expected to include:  
-###Abstract:  
+###Abstract (10%)  
 - A short paragraph summarizing your work, including the task and the results.   
 
-###Introduction:   
+###Introduction (15%)   
 - Clearly state lab objective  
 - Physics of boundary layers  
 o	Why do they exist?  
 o	What do you expect the boundary layer to look like in the channel?  
 
-###Experimental procedure  
+###Experimental procedure (10%) 
 - Physics of pitot tubes  
 o	Why were we able to apply Bernoulli’s equation in the channel flow?  
 - Explain why (and how) you made each of your measurements  
 
-### Results  
+### Results (15%) 
 - Clearly (and logically) present your boundary layer data  
 
-##Discussion
+##Discussion (35%)
 - Explain if your results were what you expected  
 - Can you think of other ways that velocity can be measured at a point in a flow?  
 - What are the sources of error, and how do they contribute to making the measurements either higher, or lower, than expected?  
 
-###Conclusion  
+###Conclusions (15%)  
 - Summarize your **findings** (don’t just state what you did!)  
 
 
