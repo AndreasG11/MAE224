@@ -114,4 +114,4 @@ g.detachServo()
 
 You should now be able to modify this code and use it to control servo motors attached to your Photon. Note that some servos have limitations on their range of motion, make sure to not go outside this range or you will damage the servo!
 
-**Demonstrate to your TA that you can extend and retract the servo. **
+**Demonstrate to your TA that you can extend and retract the servo.**
