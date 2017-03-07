@@ -35,7 +35,7 @@ Using Bernoulli’s equation, and thinking about the boundary conditions at poin
 
 Given the definitions we have provided, what is P1 and what is P2?
 
-Check with your TA to make sure your equations are correct before proceeding. 
+**_Check with your TA to make sure your equations are correct before proceeding._** 
 
 ###Boundary Layers  
 In order to satisfy the no-slip condition at solid boundaries in flows at high Reynolds numbers, a thin boundary layer forms in which the velocity changes from 0 at the wall to the free-stream value U at some distance away. The boundary layer thickness ![](https://github.com/d008/MAE224/blob/master/equations/delta.png) is typically defined as the distance from the wall at which the velocity reaches the free-stream value, U. For laminar flow over a flat plate, one can show that the boundary layer thickness ![](https://github.com/d008/MAE224/blob/master/equations/delta.png) grows as ![](https://github.com/d008/MAE224/blob/master/equations/sqrtx.png). Use dimensional analysis together with the fact that ![](https://github.com/d008/MAE224/blob/master/equations/deltasimx.png) to figure out the functional form for ![](https://github.com/d008/MAE224/blob/master/equations/delta.png). That is, consider the dimensions of the other important variables (U and ![](https://github.com/d008/MAE224/blob/master/equations/nu.png)) to see how they can fit together with ![](https://github.com/d008/MAE224/blob/master/equations/sqrtx.png) to form a length scale. This will be correct up to a numerical prefactor, which turns out to be about 4.91.
@@ -46,7 +46,7 @@ In order to satisfy the no-slip condition at solid boundaries in flows at high R
 
 Divide both sides of your equation by x. Do you notice anything familiar about the right hand side? (Hint: what's your favorite dimensionless parameter?)
 
-Check with a TA to make sure you arrive at the correct equations before proceeding.
+**_Check with a TA to make sure you arrive at the correct equations before proceeding._**
 
 Finally, let's plug in some numbers to see what to expect. For air flowing past a flat plate at 10 m/s, how thick should the boundary layer be 50 cm from the leading edge? 
 
