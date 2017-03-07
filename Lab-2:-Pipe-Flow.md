@@ -50,7 +50,7 @@ Source: <http://me.queensu.ca/People/Sellens/PowerLaw.html>
 A simple analysis of the Navier-Stokes equations for flow within the pipe readily yields the above assertion that the viscous drag from the wall is balanced by the imposed pressure gradient:  
 
 <p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_1.png" width="100">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_1.png" width="300">  
 </p>
 Note that cylindrical coordinates are usually used to derive the analytical function between pressure gradient and velocity in pipe flows. If we assume that our flow is fully developed (for our experiment, this means we are sufficiently far away from the entrance of the pipe), we can readily analyze this equation.  Since the pressure gradient is constant, the velocity profile can analytically be found to be parabolic (see figure 1(a)). This is one of the few analytical results in fluid mechanics but unfortunately does not occur very often in the real world. Real world applications, like oil pipelines, or water pipes, typically require high flow rates which facilitate the growth of instabilities in the flow making the flow turbulent.  
 ##Turbulent Pipe Flow  
