@@ -74,12 +74,14 @@ g.getConnectedDevices()
 ```
 which will print out a list of all of the connected devices related to your account.  
 
-Next, we will tell the Photon that we want to attach a servo to a given pin, namely the pin where we attached the signal wire (D0). We use the following line. Note that the `attachServo()` command returns the numeric value of the pin you attached to (i.e. pin D0 returns 0). It is also important for servos that you only use pins which are PWM capable, check the [pinout diagram](https://github.com/d008/MAE224/wiki/Particle-Photon-Pinout-Diagram).
+Next, we will tell the Photon that we want to attach a servo to a given pin, namely the pin where we attached the signal wire (D0). We use the following line.
 
 ```matlab
 g.attachServo('D0');
 ```
-Note that at this moment, while the Physical photon can support many, many servos simultaneously, the Matlab Photon.m class which you are utilizing can only support attaching a single servo at a time. Moving the servo is as simple as using the move command. Here, we simply have the servo move to position from position 40 to 180 and then back again. For the linear actuators we use in the lab, the available range is approximately 40 to 180, with each tick corresponding to roughly 1 mm, but you may wish to calibrate this value. Although in lab you will only be using the linear actuators, this command is perfectly valid for any servo, including axial rotation (which typically take a value from 0 to 180).
+Note that the `attachServo()` command returns the numeric value of the pin you attached to (i.e. pin D0 returns 0). It is also important for servos that you only use pins which are PWM capable, check the [pinout diagram](https://github.com/d008/MAE224/wiki/Particle-Photon-Pinout-Diagram).
+
+At this moment, while the Physical photon can support many, many servos simultaneously, the Matlab Photon.m class which you are utilizing can only support attaching a single servo at a time. Moving the servo is as simple as using the move command. Here, we simply have the servo move to position from position 40 to 180 and then back again. For the linear actuators we use in the lab, the available range is approximately 40 to 180, with each tick corresponding to roughly 1 mm, but you may wish to calibrate this value (you will do so in Lab 3). Although in lab you will only be using the linear actuators, this command is perfectly valid for any servo, including axial rotation (which typically takes a value from 0 to 180).
 
 Note that if you set the linear actuator to a value outside the range of 40-180, the actuator will not move.
 
