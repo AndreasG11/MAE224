@@ -58,7 +58,7 @@ Go next door to the wind tunnel lab and see the anemometer in action. The rate o
 ##Control the experiment with the Particle  
 In this experiment, each group will control an individual linear actuator connected to a pitot tube in a wind tunnel next door. The actuator allows you to set the distance between the pitot tube and the wall, and a differential pressure sensor is connected between the pitot tube and a separate static pressure tube. What kind of pressure are you measuring then?
 
-For the linear actuator, there are three wires. The red and black ones should be connected to the power supply and GND of the Particle Photon, and the white one is for the signal input and should be connected to an analog pin you define in your Particle Photon codes.
+For the linear actuator, there are three wires. The red and black ones should be connected to the power supply and GND of the Particle Photon, and the white one is for the signal input and should be connected to a pin that has PWM capabilities, that you define in your Particle Photon codes.
 
 Now try to challenge yourself. You need to write out all your codes. 
 
