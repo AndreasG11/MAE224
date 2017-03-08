@@ -83,7 +83,7 @@ NOTE: An input of 60 corresponds to a fully retracted actuator. An input of 115 
 <img src="https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/HSCDRRN001NDAA3%20Lab%203%20Low%20Range%20Pitot%20Tube%20Sensor.png" width="600">  
 </p> 
 
-[Link to pressure transducer data sheet is here](https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/Honeywell%20HSC%20Pressure%20Sensors.pdf)
+[Link to pressure transducer data sheet is here.](https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/Honeywell%20HSC%20Pressure%20Sensors.pdf)
 
 #Week 2
 ##Take your measurements  
