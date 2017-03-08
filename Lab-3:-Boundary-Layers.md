@@ -31,7 +31,7 @@ Since we can apply Bernoulli’s equation in the flow, let’s think about the t
 
 This brings us back to the word small. The opening in the pitot tube is so small that air doesn’t enter it, which means that the flow sees the pitot tube as a bluff body (the zoomed-in figure). 
 
-Using Bernoulli’s equation, and thinking about the boundary conditions at point 2 on the pitot probe: derive an expression for P2-P1  in the channel flow.  
+Using Bernoulli’s equation and thinking about the boundary conditions at point 2 on the pitot probe, derive an expression for P2-P1  in the channel flow.  
 
 Given the definitions we have provided, what is P1 and what is P2?
 
