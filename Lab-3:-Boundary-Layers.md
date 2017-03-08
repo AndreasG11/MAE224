@@ -89,7 +89,7 @@ NOTE: An input of 60 corresponds to a fully retracted actuator. An input of 115 
 ##Take your measurements  
 Run your Matlab code to traverse the cross section. You can choose the way you like to record the data, such as saving data to a csv file while plotting the velocity profile.  
 
-There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x = 594 (mm) and the second position of the probe is around x = 1495 (mm).  
+There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x = 594 mm and the second position of the probe is around x = 1495 mm.  
 
 You need to put your actuator at these two positions and generate plots with 3 wind tunnel velocities for each. Use the knob on the side of the wind tunnel, setting it to 10, 7, and 4, and make sure you coordinate with other groups that are trying to take data.  
 
@@ -101,7 +101,7 @@ How does the measured boundary layer thickness change with wind tunnel velocity?
 Can you perceive a difference in the shape of your boundary layer profile between the different wind tunnel velocities? Should you be able to? Why or why don’t you see a difference?  
 
 ##Extra Credit  
-The laminar boundary layer solution is self-similar (or a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), which in this case is ![](https://github.com/d008/MAE224/blob/master/equations/lab3%204.png) The similarity solution is then ![](https://github.com/d008/MAE224/blob/master/equations/lab3%205.png).  
+The laminar boundary layer solution is self-similar (or has a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), which in this case is ![](https://github.com/d008/MAE224/blob/master/equations/lab3%204.png) The similarity solution is then ![](https://github.com/d008/MAE224/blob/master/equations/lab3%205.png).  
 
 Put your measurements in this form and plot u/U as a function of ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? How well do they agree with the numerical solution? Explain why you may see differences.  
 
