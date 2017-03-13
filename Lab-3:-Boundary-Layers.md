@@ -125,7 +125,7 @@ o	Why were we able to apply Bernoulli’s equation in the channel flow?
 - Clearly (and logically) present your boundary layer data.  
 
 ###Discussion (35%)
-- Explain if your results were what you expected.  
+- **Explain** if your results were what you expected- don't just state what trends you saw. Why did these observed trends occur?  
 - Can you think of other ways that velocity can be measured at a point in a flow?  
 - What are the sources of error, and how do they contribute to making the measurements either higher, or lower, than expected?  
 
