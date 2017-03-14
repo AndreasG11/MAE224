@@ -2,8 +2,8 @@ Download the [Source](https://github.com/mkfu/MAE224/tree/master/Source%20Files)
 
 In this tutorial, we will learn how to control a servo.
 
-#MATLAB
-##Servo
+# MATLAB
+## Servo
 For this example we need to connect a servo to the Photon. A standard servo has 3 wires that need to be connected. Typically, these wires are red, black, and white.  These colors correspond to  
 
  **Wire Color** | Electrical | Pin   
@@ -57,7 +57,7 @@ g.detachServo()
 
 The first few lines should look exactly like example 1. Remember that we need to replace the authorization token and name of the Photon correctly. The end result is that the servo should extend then retract.
 
-##Let's break down what the code means
+## Let's break down what the code means
 The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the authorization token and the name of the Photon.
 ```matlab
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
