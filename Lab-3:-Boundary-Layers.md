@@ -4,8 +4,8 @@ The objective is to plot the boundary layer thickness as a function of wind tunn
 
 To do this, you will first obtain plots of velocity vs. distance from the wall in the channel. The boundary layer should be clearly visible!
 
-#Week 1  
-##Concepts  
+# Week 1: Concepts  
+ 
 You are already familiar with measuring pressure in a flow. We often talk about three types of pressures in a flow:   
 
 1.	Static pressure, ps: This is the pressure at an undisturbed point in the flow. In lab 2, you used pressure taps to find the static pressure drop along a pipe.  
@@ -37,7 +37,7 @@ Given the definitions we have provided, what is P1 and what is P2?
 
 **_Check with your TA to make sure your equations are correct before proceeding._** 
 
-###Boundary Layers  
+## Boundary Layers  
 In order to satisfy the no-slip condition at solid boundaries in flows at high Reynolds numbers, a thin boundary layer forms in which the velocity changes from 0 at the wall to the free-stream value U at some distance away. The boundary layer thickness ![](https://github.com/d008/MAE224/blob/master/equations/delta.png) is typically defined as the distance from the wall at which the velocity reaches the free-stream value, U. For laminar flow over a flat plate, one can show that the boundary layer thickness ![](https://github.com/d008/MAE224/blob/master/equations/delta.png) grows as ![](https://github.com/d008/MAE224/blob/master/equations/sqrtx.png). Use dimensional analysis together with the fact that ![](https://github.com/d008/MAE224/blob/master/equations/deltasimx.png) to figure out the functional form for ![](https://github.com/d008/MAE224/blob/master/equations/delta.png). That is, consider the dimensions of the other important variables (U and ![](https://github.com/d008/MAE224/blob/master/equations/nu.png)) to see how they can fit together with ![](https://github.com/d008/MAE224/blob/master/equations/sqrtx.png) to form a length scale. This will be correct up to a numerical prefactor, which turns out to be about 4.91.
 
 <p align="center">
@@ -52,10 +52,10 @@ Finally, let's plug in some numbers to see what to expect. For air flowing past 
 
 Boundary layers eventually become turbulent far enough down a plate, typically at ![](https://github.com/d008/MAE224/blob/master/equations/lab3%202.png), where ![](https://github.com/d008/MAE224/blob/master/equations/lab3%203.png) is the Reynolds number based on distance x. What is the value of ![](https://github.com/d008/MAE224/blob/master/equations/Rex.png) in the previous example? At roughly what distance x do we expect the boundary layer to become turbulent?  
 
-##Check out the anemometer in the tunnel  
+## Check out the anemometer in the tunnel  
 Go next door to the wind tunnel lab and see the anemometer in action. The rate of spin of the cups is proportional to the velocity in the tunnel. The instrument was calibrated to output the velocity reading you see. We will use this value as a sanity check when we are looking at the pitot tube readings.   
 
-##Control the experiment with the Particle  
+## Control the experiment with the Particle  
 In this experiment, each group will control an individual linear actuator connected to a pitot tube in a wind tunnel next door. The actuator allows you to set the distance between the pitot tube and the wall, and a differential pressure sensor is connected between the pitot tube and a separate static pressure tube. What kind of pressure are you measuring then?
 
 For the linear actuator, there are three wires. The red and black ones should be connected to the power supply and GND of the Particle Photon, and the white one is for the signal input and should be connected to a pin that has PWM capabilities, that you define in your Particle Photon codes.
@@ -85,8 +85,8 @@ NOTE: An input of 60 corresponds to a fully retracted actuator. An input of 115 
 
 [Link to pressure transducer data sheet is here.](https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/Honeywell%20HSC%20Pressure%20Sensors.pdf)
 
-#Week 2
-##Take your measurements  
+# Week 2: Take Your Measurements!
+ 
 Run your Matlab code to traverse the cross section. You can choose the way you like to record the data, such as saving data to a csv file while plotting the velocity profile.  
 
 There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x = 594 mm and the second position of the probe is around x = 1495 mm.  
@@ -95,41 +95,41 @@ You need to put your actuator at these two positions and generate plots with 3 w
 
 Estimate the boundary layer thickness for each velocity using your plots.  
 
-##Questions  
+## Questions  
 How does the measured boundary layer thickness change with wind tunnel velocity? From a physical perspective, does this make sense?  
 
 Can you perceive a difference in the shape of your boundary layer profile between the different wind tunnel velocities? Should you be able to? Why or why don’t you see a difference?  
 
-##Extra Credit  
+## Extra Credit  
 The laminar boundary layer solution is self-similar (or has a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), which in this case is ![](https://github.com/d008/MAE224/blob/master/equations/lab3%204.png) . The similarity solution is then ![](https://github.com/d008/MAE224/blob/master/equations/lab3%205.png).  
 
 Put your measurements in this form and plot u/U as a function of ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? How well do they agree with the numerical solution? Explain why you may see differences.  
 
-##Suggested Lab Write Up  
+## Suggested Lab Write Up  
 Your report is expected to include:  
-###Abstract (10%)  
+### Abstract (10%)  
 - A short paragraph summarizing your work, including the task and the results.   
 
-###Introduction (15%)   
+### Introduction (15%)   
 - Clearly state lab objective.  
 - Physics of boundary layers.  
 o	Why do they exist?  
 o	What do you expect the boundary layer to look like in the channel?  
 
-###Experimental procedure (10%) 
+### Experimental procedure (10%) 
 - Physics of pitot tubes.  
 o	Why were we able to apply Bernoulli’s equation in the channel flow?  
 - Explain why (and how) you made each of your measurements.  
 
-###Results (15%) 
+### Results (15%) 
 - Clearly (and logically) present your boundary layer data.  
 
-###Discussion (35%)
+### Discussion (35%)
 - **Explain** if your results were what you expected- don't just state what trends you saw. Why did these observed trends occur?  
 - Can you think of other ways that velocity can be measured at a point in a flow?  
 - What are the sources of error, and how do they contribute to making the measurements either higher, or lower, than expected?  
 
-###Conclusions (15%)  
+### Conclusions (15%)  
 - Summarize your **findings** (don’t just state what you did!).  
 
 
