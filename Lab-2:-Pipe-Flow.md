@@ -1,6 +1,6 @@
 The objective of this lab is to investigate laminar and turbulent flow, and the difference between them, in a pipe flow by creating a Moody diagram.   
 In this experiment you will have to relate the pressure drop in the pipe to the Reynolds number.  
-#Control the Experiment with Particle Photon  
+# Control the Experiment with Particle Photon  
 In this experiment you will use two flow meters, an electric pump and an optional pressure transducer. With your Matlab-programmed Particle Photon, and circuitry knowledge you can control and measure all of these things from the comfort of your own computer. 
 To run the experiment, you will need the ability to set the pump to a known flow rate and then record the pressure drop in the pipe. 
 The Particle Photon cannot output the correct voltage or current needed to drive the pump, but it can output a PWM (pulse width modulation) signal! Therefore we will be using a transistor setup known as a MOSFET which will allow you to use an external power source to power the motor, but utilize the Particle Photon to control the motor output.  For those of you who like analogies, using a transistor is like controlling the flow of a firehose with a squirt gun.  The Particle Photon outputs a small square wave which tells the transistor to let a large amount of current flow through the motor.  The real working is a bit more complicated than that and involves quite a bit more applied physics knowledge, band gap theory, and understanding of NPN and PNP transistors, all of which Mike knows a lot about if you are interested in learning more. You can also look at this handy resource [Wikipedia](https://en.wikipedia.org/wiki/MOSFET) or if you are brave [Caltech APh9](http://nanofab.caltech.edu/images/stories/classes/aph9/lecture11.pdf).  All you need to know is that we can now control the motor with a Particle Photon.  Below is an image of the motor control board with details of each part.  
@@ -29,7 +29,7 @@ Your programming goal is to combine all of this into a Matlab script which will 
 
 Note that power and ground for all the sensors has been taken care of for you in advance on the circuit board.
 
-#How to measure pressure drop  
+# How to measure pressure drop  
 
 To propel a flow in a pipe there needs to be a pressure gradient. You will see later in class that this pressure gradient is constant and thus the pressure varies linearly along the pipe axis. The pressure “drop” is just the change in pressure from one point to another. There is a set of five open water columns that you can use to calculate the pressure drop. Think back to lab 1 and hydrostatics to relate these water columns to pressure.  
 
@@ -46,17 +46,18 @@ Pipe flow can be analyzed through the Navier-Stokes equations. The details of th
 Figure 1 - (a) laminar velocity profile and (b) turbulent velocity profile. 
 Source: <http://me.queensu.ca/People/Sellens/PowerLaw.html>  
 
-#Laminar Pipe Flow
+# Laminar Pipe Flow
 A simple analysis of the Navier-Stokes equations for flow within the pipe readily yields the above assertion that the viscous drag from the wall is balanced by the imposed pressure gradient:  
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab2_1.png" width="200">  
 </p>
-Note that cylindrical coordinates are usually used to derive the analytical function between pressure gradient and velocity in pipe flows. If we assume that our flow is fully developed (for our experiment, this means we are sufficiently far away from the entrance of the pipe), we can readily analyze this equation.  Since the pressure gradient is constant, the velocity profile can analytically be found to be parabolic (see figure 1(a)). This is one of the few analytical results in fluid mechanics but unfortunately does not occur very often in the real world. Real world applications, like oil pipelines, or water pipes, typically require high flow rates which facilitate the growth of instabilities in the flow making the flow turbulent.  
-##Turbulent Pipe Flow  
+Note that cylindrical coordinates are usually used to derive the analytical function between pressure gradient and velocity in pipe flows. If we assume that our flow is fully developed (for our experiment, this means we are sufficiently far away from the entrance of the pipe), we can readily analyze this equation.  Since the pressure gradient is constant, the velocity profile can analytically be found to be parabolic (see figure 1(a)). This is one of the few analytical results in fluid mechanics but unfortunately does not occur very often in the real world. Real world applications, like oil pipelines, or water pipes, typically require high flow rates which facilitate the growth of instabilities in the flow making the flow turbulent. 
+ 
+## Turbulent Pipe Flow  
 Turbulence adds random (chaotic-like) fluctuations to the flow field, and we lose the nice parabolic velocity profile seen in figure 1(a). In a turbulent flow, the velocity profile is fuller (figure 1(b)) and there is a higher viscous stress at the wall. This in turn works to cause a greater pressure drop in turbulent flow, since there is a balance between pressure drop and shear stress. There is no nice analytical expression for turbulent pipe flow like there is for laminar flow, so we are required to conduct experiments to understand this type of flow.  
 
-#Moody Diagram  
+# Moody Diagram  
 Instead of analyzing the equations of motion for the different flow regimes, you will build what is called a “Moody diagram.” This is an empirical relation between the frictional forces in the pipe and the Reynolds number of the pipe flow.   
 
 <p align="center">
