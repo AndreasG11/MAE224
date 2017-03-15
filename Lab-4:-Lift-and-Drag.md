@@ -153,7 +153,7 @@ Here `cpress` is again a matrix, with the first column corresponding to the top 
 1.  Does the pressure along the upper and lower surface of the cylinder match?  Should it?  
 2.  Compare the results between the cases which utilize the tripwire.  Do the results look different?  What is physical phenomena that underlies this?  
 
-##Suggested Lab Write Up  
+## Lab Write-Up  
 Your report is expected to include:  
 
 ###Abstract (10%)  
