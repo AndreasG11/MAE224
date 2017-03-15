@@ -123,6 +123,7 @@ o	Why were we able to apply Bernoulli’s equation in the channel flow?
 
 ### Results (15%) 
 - Clearly (and logically) present your boundary layer data.  
+- Detailed findings.
 
 ### Discussion (35%)
 - **Explain** if your results were what you expected- don't just state what trends you saw. Why did these observed trends occur?  
