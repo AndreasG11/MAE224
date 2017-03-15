@@ -137,6 +137,7 @@ Your report is expected to include (remember, maximum 5 pages):
 - Use appropriate font sizes for the labels (it should match your report font size).
 - Include legends if necessary.
 - Make sure the data points are large enough to see clearly.
+- Detailed findings.
 
 ###Discussion (35%)
 -  Outline sources of error and perhaps answer any of the questions brought up in the lab manual.
