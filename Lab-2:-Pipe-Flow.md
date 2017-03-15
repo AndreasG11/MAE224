@@ -112,19 +112,19 @@ In this experiment, the quality of the data contributes to your grade so make su
 
 -  Successfully reduce drag in a novel, meaningful and verifiable way. If you succeed, please let your TA know so they can help you write a journal article.  
 
-#Guidelines for the report  
+# Guidelines for the report  
 All lab manuals are to be shared with or emailed to mae224lab(at)gmail.com
 Your report is expected to include:  
-###Abstract (10%)  
+### Abstract (10%)  
 - A short paragraph summarizing your work, including the task and the results.   
 
-###Introduction (15%)  
+### Introduction (15%)  
 - Discuss the scientific concept of the lab. 
 - Effectively present the objectives and purpose of the lab.  
 - The Reynolds number is one of the most important parameters in fluids mechanics. Explain the physical significance of this number and give some examples of high and low Reynolds number flows around you.  
 - Commercial airplanes fly at Reynolds numbers on the order of several million. Think about how you can construct an experiment to get such high Reynolds numbers without building a facility the size of a commercial airplane.  
 
-###Experimental procedure (10%)
+### Experimental procedure (10%)
 - Give enough details of the procedure and the scientific concept behind them.  
 
 ### Results (15%) 
@@ -132,14 +132,14 @@ Your report is expected to include:
 - Detailed findings.  
 - Moody diagram plot for laminar and turbulent flows.  
 
-###Discussion (35%)
+### Discussion (35%)
 -	Analysis of the results.
 -	Compare with Moody diagram in textbooks.
 -	Do your findings correspond? Why or why not?
 -	Provide sufficient explanation of the findings and relate to concepts presented in the introduction.
 -	Error analysis.
 
-###Conclusions (15%)  
+### Conclusions (15%)  
 - Summarize findings.  
 
 
