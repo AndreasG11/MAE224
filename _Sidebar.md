@@ -15,7 +15,7 @@
 - [Lab 2 - Pipe flow](https://github.com/mkfu/MAE224/wiki/Lab-2:-Pipe-Flow)  
 - [Lab 3 - Boundary Layer](https://github.com/mkfu/MAE224/wiki/Lab-3:-Boundary-Layers)    
 - [Lab 4 - Lift & Drag](https://github.com/mkfu/MAE224/wiki/Lab-4:-Lift-and-Drag)  
-    o [Intro. to Airfoils and Qblade](https://github.com/d008/MAE224/wiki/Introduction-to-Airfoils-and-Qblade)
+    o [Introduction to Airfoils and Qblade](https://github.com/d008/MAE224/wiki/Introduction-to-Airfoils-and-Qblade)
 
 ## Wind Turbine Project
 - [Simulating In QBlade](https://github.com/mkfu/MAE224/wiki/Simulating-Wind-Turbine-Rotors-using-Qblade)   
