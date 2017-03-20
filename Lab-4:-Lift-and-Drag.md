@@ -179,7 +179,7 @@ o	How did you calculate lift and drag?
 - Compare results from experiment and simulation for airfoil.  
 -	Compare cylinder to theoretical prediction.  
 -	Discuss flow separations for airfoil.  
--	Answer discussion questions.  
+-	Answer discussion questions for each part of the lab (see above in Lab Manual Procedure).  
 -	Error analysis.  
 
 ### Conclusion (15%) 
