@@ -59,7 +59,7 @@ Leave the other parameters at their default values for now but change Re to some
 <img src="https://github.com/d008/MAE224/blob/master/images/AF%20menu%209.png" width="800">  
 </p>
 
-Now your simulation is almost ready to run. Look to the right at the other parameters you need to choose. Since we have set our Reynolds number, the other parameter we have to vary is the angle of attack, α. You can set the start, end, and increment (Δ) values of α that you want to run as well as specify if you want the solver to include viscous effects and boundary layer approximations, leave these checked. Click Analyze!
+Now your simulation is almost ready to run. Look to the right at the other parameters you need to choose. Since we have set our Reynolds number, the other parameter we have to vary is the angle of attack, α. You can set the start, end, and increment (Δ) values of α that you want to run. Click Analyze!
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/images/AF%20menu%2010.png" width="800">  
