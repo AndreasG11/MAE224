@@ -72,14 +72,14 @@ where D is the drag force. A typical plot of drag coefficient versus angle of at
   
 To calculate the lift and drag coefficients to study airfoils, one is interested in finding the flow pattern and pressure distribution. A method to achieve this is called Joukowski's transformation (fun fact: his name is actually spelled [Zhukovsky](https://en.wikipedia.org/wiki/Nikolay_Yegorovich_Zhukovsky)). This is a mathematical trick (using complex analysis). Basically, it is relatively easy to know the velocity and pressures for a flow around a cylinder in potential flow. Through a mapping function that converts a circular cylinder into a family of airfoil shapes, we can find the velocities and pressures around a certain type of airfoil, and then compute the lift and drag. The computations are difficult to perform by hand, but can be solved quickly on a computer. If you want to learn more, please refer to ([NASA](http://www.grc.nasa.gov/WWW/k-12/airplane/map.html)) .
 
-#Procedure:
+# Procedure:
 This lab will occur in three different parts, and groups will rotate between the different activities at different times to ensure that everyone gets a crack at the wind tunnel (oh yeah!).  The three components are a simulation of the airfoil in the tunnel, measurements of the airfoil in the wind tunnel, and measurements of a cylinder in the wind tunnel.  You will be comparing the three different components to see the effects of shape on a pressure distribution and the difference between a real experiment and a simulation.  
 
-##Airfoil Simulations: 
+## Airfoil Simulations: 
 The first component of the lab is to simulate the airfoil you’ll be using in Qblade.  You will find an introduction to modeling airfoils with Qblade here: [Introduction to Airfoils and Qblade](https://github.com/d008/MAE224/wiki/Introduction-to-Airfoils-and-Qblade). Note that Qblade returns the section lift coefficient, ![](https://github.com/d008/MAE224/blob/master/equations/section_lift.png), which will need to be converted to the lift coefficient for comparison to experiments. You should follow the tutorial to determine the lift and drag coefficients for the configuration used in the lab, specifically the NACA 0018 airfoil.  Make sure that you include plots of pressure coefficient ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png) as well as ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) vs. ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) in your lab report.  
 
-###Questions
-Questions:  
+### Questions
+  
 
 1. Change the Reynolds number of your simulations and compare with your results from above. What happens to the lift and drag curves?     
 
@@ -90,7 +90,7 @@ Questions:
       a.	Generally, what is the effect of camber on an airfoil in terms of the stall point and maximum lift generated?  
       b.	How does the thickness of an airfoil affect its lift and drag?  
 
-##Experiment: Airfoil
+## Experiment: Airfoil
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoilexp.png" width="600">  
@@ -117,7 +117,7 @@ To find the lift and drag coefficients, you will require the forces on the body.
 
 For the airfoil, you should take data sets for, at minimum, three different wind speeds and a large number of angles of attack, sufficient to trace out a relatively good plot of lift coefficient vs. angle of attack.  To determine the speed of the tunnel, you will need to use the digital pitot probe read-out on the wind tunnel and calculate the freestream velocity (Note: do **not** go above 20 m/s in the wind tunnel.  This could result in damage to the equipment).  For all runs, you should have successfully collected pressure data, angle of attack as measured by the Photon, and the forces measured by the force balance in the wind tunnel.  You should, in your report, make a comparison between ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png), ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png), the curves for the simulation, the direct force measurements, and the determinations made from the pressure taps.  
 
-###Questions:
+### Questions:
 1.  For both the experiment and simulation, what happens to the lift at zero angle of attack? Why?
 2.  The lift appears to decrease at a certain angle of attack, why do you think this is the case?
 3.  The drag increases sharply also, why is this? Are these two phenomena related?
@@ -126,7 +126,7 @@ For the airfoil, you should take data sets for, at minimum, three different wind
 6.  Stunt planes are capable of flying upside down. How is this possible?
 7.  How do your experimental results compare with the simulations? Comment on any differences and explain them.
 
-##Experiment: Cylinder  
+## Experiment: Cylinder  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/cylinderexp.png" width="600">  
@@ -148,21 +148,21 @@ cpress = g.mrcylinder;
 ```
 Here `cpress` is again a matrix, with the first column corresponding to the top of the cylinder and the value in position (1,1) is the pressure tap closest to the leading edge. The second column is simply the pressure taps along the cylinder bottom. All values have units of Pascals (Pa).
 
-###Questions:
+### Questions:
 1.  Does the pressure along the upper and lower surface of the cylinder match?  Should it?  
 2.  Compare the results between the cases which utilize the tripwire.  Do the results look different?  What is physical phenomena that underlies this?  
 
 ## Lab Write-Up  
 Your report is expected to include:  
 
-###Abstract (10%)  
+### Abstract (10%)  
 - A short paragraph summarizing your work, including the task and the results.   
 
-###Introduction (15%)   
+### Introduction (15%)   
 - Discuss the scientific concept of the lab.  
 - Effectively present the objectives and purpose of the lab.  
 
-###Experimental procedure (10%) 
+### Experimental procedure (10%) 
 - Generally describe the procedure, including a basic sketch.  
 
 ### Results (15%) 
@@ -171,13 +171,13 @@ o	How did you calculate lift and drag?
 - Lift and drag coefficient plots for both experiment and simulation.
 - Detailed findings.
 
-###Discussion (35%)
+### Discussion (35%)
 - Compare results from experiment and simulation for airfoil.  
 -	Compare cylinder to theoretical prediction.  
 -	Discuss flow separations for airfoil.  
 -	Answer discussion questions.  
 -	Error analysis.  
 
-###Conclusion (15%) 
+### Conclusion (15%) 
 - Summarize your **findings** (don’t just state what you did!).  
 
