@@ -27,7 +27,7 @@ Streamlines deflected over the top of the airfoil experience a higher velocity t
 
 <p align="center"> Figure 2: Lift and drag forces on an airfoil.</p>
 
-Lift is typically expressed in terms of the “lift coefficient”. This is a non-dimensional parameter, similar to the friction factor in last week’s lab. The “lift coefficient” is defined as:  
+Lift is typically expressed in terms of the “lift coefficient”. This is a non-dimensional parameter, similar to the friction factor in Lab 2. The “lift coefficient” is defined as:  
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab4%201.png">  
