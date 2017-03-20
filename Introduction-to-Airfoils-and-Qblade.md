@@ -76,7 +76,7 @@ A final note: Qblade/Xfoil returns all values of Cl and Cd in terms of a 2-D air
 - The lift appears to decrease at a certain angle of attack, why do you think this is the case?
 - The drag increases sharply also, why is this? Are these two phenomena related?
 - Given the above, why is a plot of lift versus drag useful?
-- Where do you suppose most aircraft operated in terms of the angle of attack?
+- Where do you suppose most aircraft operate in terms of the angle of attack?
 
 That’s it for generating lift and drag curves, with a nice tool it’s pretty easy right? To get some more experience, try the following:
 
