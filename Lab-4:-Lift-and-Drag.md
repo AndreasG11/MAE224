@@ -66,8 +66,9 @@ where D is the drag force. A typical plot of drag coefficient versus angle of at
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/ClCd1.png" width="300">  
-Figure 4: Drag coefficient versus angle of attack.
 </p> 
+
+<p align="center> Figure 4: Drag coefficient versus angle of attack. </p>
   
 To calculate the lift and drag coefficients to study airfoils, one is interested in finding the flow pattern and pressure distribution. A method to achieve this is called Joukowski's transformation (fun fact: his name is actually spelled [Zhukovsky](https://en.wikipedia.org/wiki/Nikolay_Yegorovich_Zhukovsky)). This is a mathematical trick (using complex analysis). Basically, it is relatively easy to know the velocity and pressures for a flow around a cylinder in potential flow. Through a mapping function that converts a circular cylinder into a family of airfoil shapes, we can find the velocities and pressures around a certain type of airfoil, and then compute the lift and drag. The computations are difficult to perform by hand, but can be solved quickly on a computer. If you want to learn more, please refer to ([NASA](http://www.grc.nasa.gov/WWW/k-12/airplane/map.html)) .
 
