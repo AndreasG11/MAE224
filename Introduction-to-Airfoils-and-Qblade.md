@@ -70,7 +70,7 @@ The top left plot should show Cl vs Cd, or change in lift versus a change in dra
 
 In order to plot <img src="https://github.com/d008/MAE224/blob/master/equations/Cp.png">, press the "opPoint view" button (located directly below the "New Project" icon on the top left). You should now see your pressure coefficient plotted against the normalized chord position of your airfoil. Adjust the angle of attack by changing the drop-down menu labeled "Operation Points".  
 
-A final note: Qblade/Xfoil returns all values of Cl and Cd in terms of a 2-D airfoil. You will need to convert these to their equivalent 3-D values (<img src="https://github.com/d008/MAE224/blob/master/equations/Cl.png"> and <img src="https://github.com/d008/MAE224/blob/master/equations/Cd.png">) in order to compare them with any experimental values. See the [Lab 4 Manual](https://github.com/d008/MAE224/wiki/Lab-4:-Lift-and-Drag) on how to do this if you are lost.
+A final note: Qblade/Xfoil returns all values of Cl and Cd in terms of a 2-D airfoil. You will compare these to their corresponding 3-D values (<img src="https://github.com/d008/MAE224/blob/master/equations/Cl.png"> and <img src="https://github.com/d008/MAE224/blob/master/equations/Cd.png">) found through experiments. See the [Lab 4 Manual](https://github.com/d008/MAE224/wiki/Lab-4:-Lift-and-Drag) on how to do this if you are lost.
 
 ***
 ## Questions:
