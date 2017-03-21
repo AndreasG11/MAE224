@@ -75,10 +75,8 @@ To calculate the lift and drag coefficients to study airfoils, one is interested
 Finally, the coefficient of pressure is defined the following way:
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Cpress_eqn.png" width="300">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Cpress_eqn.png">  
 </p>
-
-HELLO TESTINGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 
 # Procedure:
 This lab will occur in three different parts, and groups will rotate between the different activities at different times to ensure that everyone gets a crack at the wind tunnel (oh yeah!).  The three components are a simulation of the airfoil in the tunnel, measurements of the airfoil in the wind tunnel, and measurements of a cylinder in the wind tunnel.  You will be comparing the three different components to see the effects of shape on a pressure distribution and the difference between a real experiment and a simulation.  
