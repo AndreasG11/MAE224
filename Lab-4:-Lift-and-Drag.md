@@ -153,9 +153,11 @@ atoken = 'abc123';
 
 g = Photon(name,atoken);
 
-cpress = g.mrcylinder;
+[pt, pb] = g.mrcylinder;
 ```
-Here `cpress` is again a matrix, with the first column corresponding to the top of the cylinder and the value in position (1,1) is the pressure tap closest to the leading edge. The second column is simply the pressure taps along the cylinder bottom. All values have units of Pascals (Pa).
+Here `pt` and `pb` are column vectors of the pressure taps, note that the stagnation pressure tap is #1, and the tap index increases along the top surface (to #11 at the rear). The vector 'pb' begins with tap #12, located on the aft cylinder side and the index increases back towards the front (wrapping around the cylinder). Element #10 of 'pb' is the tap nearest the stagnation point tap on the bottom of the cylinder. 
+
+**We need to add a matlab script which shows unit normals and labels the taps**
 
 ### Questions:
 1.  Does the pressure along the upper and lower surface of the cylinder match?  Should it?  
