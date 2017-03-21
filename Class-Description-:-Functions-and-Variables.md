@@ -287,7 +287,7 @@ _Arguments_
 *  none
 
 _Returns_ 
-*  [pt,pb,aoa] output is the form of two variables, cpress and aoa
+*  [pt,pb,aoa] output is the form of three variables: pt, pb, and aoa
     - pt: top pressure taps, note that element 1 of pt is the stangation pressure tap on the front of the airfoil
     - pb: bottom pressure taps, note that tap numbering wraps around the trailing edge of the airfoil, meaning that element 1 of pb is the bottom tap closest to the trailing edge.
     - aoa: a double-precision variable containing the current angle of attack.
