@@ -148,9 +148,9 @@ The third task of this lab is to measure the pressure distribution around a cyli
 
 ```matlab
 %Name of the photon inside the cylinder
-name = 'mrcylinder'; 
-%Replace abc123 with the access token given to you by the TA for mrcylinder
-atoken = 'abc123'; 
+name = 'MRCYLINDER'; 
+%Access token
+atoken = '58423eff3e51a295b275a62e5d257cd190d16d17'; 
 
 g = Photon(name,atoken);
 
