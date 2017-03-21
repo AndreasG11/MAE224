@@ -1,4 +1,4 @@
-#Photon Class - Python
+# Photon Class - Python
 On this page you will find a description of the Matlab class file used to access the Particle Photon. For examples on how to use this class see:
 
 [Setting Up a Particle Photon](https://github.com/d008/MAE224/wiki/Setting-Up-a-Particle-Photon)
@@ -9,7 +9,7 @@ On this page you will find a description of the Matlab class file used to access
 
 To download the class file follow this link [Photon.m](https://github.com/d008/MAE224/blob/master/Source%20Files/MATLAB%20v1/Photon.m)
 
-##Constructor
+## Constructor
 ```python
 Photon(String name, String access_token)
 ```
@@ -21,7 +21,7 @@ _Returns_
 *  A Photon object that knows how to access the following functions and methods. 
     
 ## Functions
-###analogRead
+### analogRead
 ```python
 analogRead(String pin)
 ```  
@@ -33,7 +33,7 @@ _Returns_
 * A value corresponding to 0-3.33V. 
 
 ***    
-###analogWrite
+### analogWrite
 ```python
 analogWrite(String pin, Int Value)
 ```  
@@ -46,7 +46,7 @@ _Returns_
 * None     
 
 ***  
-###attachServo
+### attachServo
 ```python
 attachServo(String pin)
 ```  
@@ -58,7 +58,7 @@ _Returns_
 * None  
 
 ***  
-###detachServo
+### detachServo
 ```python
 detachServo()
 ```  
@@ -70,7 +70,7 @@ _Returns_
 * None
 
 ***  
-###digitalRead
+### digitalRead
 ```python
 digitalRead(String pin)
 ```  
@@ -82,7 +82,7 @@ _Returns_
 * The bit value at that pin. Takes value of 0 for LOW and 1 for HIGH. 
 
 ***    
-###digitalWrite
+### digitalWrite
 ```python
 digitalWrite(String pin, Int Value)
 ```  
@@ -95,7 +95,7 @@ _Returns_
 * None     
 
 ***  
-###fetch
+### fetch
 ```python
 fetch(String variable)
 ```  
@@ -107,7 +107,7 @@ _Returns_
 *  The value associated with that variable  
 
 ***
-###flash
+### flash
 ```python
 flash(file=String filepath)
 ```  
@@ -119,7 +119,7 @@ _Returns_
 * None
 
 ***  
-###getConnection
+### getConnection
 ```python
 getConnection()
 ```
@@ -143,7 +143,7 @@ _Returns_
 * None  
 
 ***
-###getFunctions
+### getFunctions
 ```python
 getFunctions()
 ```
@@ -155,7 +155,7 @@ _Returns_
 * None  
 
 ***
-###getPin
+### getPin
 ```python
 getPin(String pin)
 ```  
@@ -167,7 +167,7 @@ _Returns_
 * None
 
 ***
-###getPinMode
+### getPinMode
 ```python
 getPinMode(String pin)
 ```  
@@ -179,7 +179,7 @@ _Returns_
 * None  
 
 ***   
-###getTone
+### getTone
 ```python
 getTone(String pin)
 ```  
@@ -191,7 +191,7 @@ _Returns_
 * The frequency of the pulsed signal
 
 ***  
-###getVariables
+### getVariables
 ```python
 getVariables()
 ```  
@@ -203,7 +203,7 @@ _Returns_
 * None  
 
 ***
-###move
+### move
 ```python
 move(Int position)
 ```  
@@ -215,7 +215,7 @@ _Returns_
 * If successful returns the new position.  
 
 ***  
-###push
+### push
 ```python
 push(String functions, String value)
 ```  
@@ -228,7 +228,7 @@ _Returns_
 *  The value returned by the function  
 
 ***  
-###setFreq
+### setFreq
 ```python
 setFreq(Int frequency)
 ```  
@@ -240,7 +240,7 @@ _Returns_
 * 1 if successful, -1 if already designated as an input/output  
 
 ***  
-###setInput
+### setInput
 ```python
 setInput(String pin)
 ```  
@@ -252,7 +252,7 @@ _Returns_
 * 1 if successful, -1 if already designated as an input/output  
 
 ***  
-###setOutput
+### setOutput
 ```python
 setOutput(String pin)
 ```  
@@ -264,7 +264,7 @@ _Returns_
 * 1 if successful, -1 if already designated as an input/output  
 
 ***  
-###mrcylinder
+### mrcylinder
 ```python
 mrcylinder
 ```  
@@ -274,10 +274,10 @@ _Arguments_
 *  none
 
 _Returns_  
-*  cpress: a matrix with column 1 and 2 corresponding to the upper and lower surface of the cylinder, respectively.
+*  [pt,pb]: pt corresponds to the pressure along the top side (suction side) of the airfoil. pb likewise corresponds to the pressure along the bottom surface. Note that element 1 of pt is the stagnation pressure tap on the front of the cylinder, then the count increases towards the rear before wrapping around the back side of the cylinder (meaning the last element in pb is the bottom tap closest to the stagnation pressure tap).
 
 ***  
-###mrsairfoil
+### mrsairfoil
 ```python
 mrsairfoil
 ```  
@@ -287,30 +287,31 @@ _Arguments_
 *  none
 
 _Returns_ 
-*  [cpress,aoa] output is the form of two variables, cpress and aoa
-    - cpress: a matrix with columns 1 and 2 corresponding to the upper and lower surface of the airfoil, respectively.
+*  [pt,pb,aoa] output is the form of two variables, cpress and aoa
+    - pt: top pressure taps, note that element 1 of pt is the stangation pressure tap on the front of the airfoil
+    - pb: bottom pressure taps, note that tap numbering wraps around the trailing edge of the airfoil, meaning that element 1 of pb is the bottom tap closest to the trailing edge.
     - aoa: a double-precision variable containing the current angle of attack.
 
 ## Variables
-###position
+### position
 ```python
 position
 ```  
 Current position of the connected servo
 ***  
-###frequency
+### frequency
 ```python
 frequency
 ```  
 Frequency of the analogWrite and PWM signals
 ***  
-###String
+### String
 ```python
 String
 ```  
 String record of the sampled data from every pin. Numerical positions corresponds to integer value of the pins.  
 ***  
-###String2
+### String2
 ```python
 String2
 ```  
