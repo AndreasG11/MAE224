@@ -110,9 +110,9 @@ You will note that an airfoil has been mounted into a large wind tunnel, which f
 
 ```matlab
 %Name of the photon inside the airfoil
-name = 'mrsairfoil'; 
-%Replace abc123 with the access token given to you by the TA for mrsairfoil
-atoken = 'abc123'; 
+name = 'MRSAIRFOIL'; 
+%Access token
+atoken = '58423eff3e51a295b275a62e5d257cd190d16d17'; 
 
 g = Photon(name,atoken);
 
