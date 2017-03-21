@@ -160,7 +160,7 @@ Here `pt` and `pb` are column vectors of the pressure taps, note that the stagna
 **We need to add a matlab script which shows unit normals and labels the taps**
 
 ### Questions:
-1.  Does the pressure along the upper and lower surface of the cylinder match?  Should it?  
+1.  Does the pressure along the upper and lower surfaces of the cylinder match?  Should it?  
 2.  Compare the results between the cases which utilize the tripwire.  Do the results look different?  What is physical phenomena that underlies this?  
 
 ## Lab Write-Up  
@@ -178,7 +178,7 @@ Your report is expected to include:
 
 ### Results (15%) 
 - Pressure distributions for the cylinder and airfoil.  
-o	How did you calculate lift and drag?
+o	How did you calculate lift and drag from the pressure data?
 - Lift and drag coefficient plots for both experiment and simulation.
 - Detailed findings.
 
