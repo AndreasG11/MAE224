@@ -179,15 +179,15 @@ Your report is expected to include:
 ### Results (15%) 
 - Pressure distributions for the cylinder and airfoil.  
 o	How did you calculate lift and drag from the pressure data?
-- Lift and drag coefficient plots for both experiment and simulation.
+- Lift and drag coefficient plots for both experiments and simulation.
 - Detailed findings.
 
 ### Discussion (35%)
 - Compare results from experiment and simulation for airfoil.  
--	Compare cylinder to theoretical prediction.  
--	Discuss flow separations for airfoil.  
--	Answer discussion questions for each part of the lab (see above in Lab Manual Procedure).  
--	Error analysis.  
+- Compare cylinder to theoretical prediction.  
+- Discuss flow separations for airfoil.  
+- Answer discussion questions for each part of the lab (see above in Lab Manual Procedure).  
+- Error analysis.  
 
 ### Conclusion (15%) 
 - Summarize your **findings** (don’t just state what you did!).  
