@@ -75,7 +75,7 @@ To calculate the lift and drag coefficients to study airfoils, one is interested
 Finally, the coefficient of pressure is defined the following way:
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Cpress_eqn.png">  
+<img src = "https://github.com/d008/MAE224/blob/master/equations/Cpress_eqn.png">  
 </p>
 
 # Procedure:
