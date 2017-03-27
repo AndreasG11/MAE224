@@ -157,7 +157,22 @@ g = Photon(name,atoken);
 ```
 Here `pt` and `pb` are column vectors of the pressure taps, note that the stagnation pressure tap is #1, and the tap index increases along the top surface (to #11 at the rear). The vector `pb` begins with tap #12, located on the aft cylinder side and the index increases back towards the front (wrapping around the cylinder). Element #10 of `pb` is the tap nearest the stagnation point tap on the bottom of the cylinder. 
 
-**We need to add a matlab script which shows unit normals and labels the taps**
+## Matlab Code to help with Pressure Integration
+
+We have added 2 matlab functions to the github source (available [here](https://github.com/d008/MAE224) ) called `airfoil_normals.m` and `cylinder_normals.m` these functions have the following format:
+
+```matlab
+[ xn, yn, u, v ] = airfoil_normals( aoa );
+
+[ xn, yn, u, v ] = cylinder_normals();
+```
+
+`aoa` is the input angle of attack for the airfoil (the cylinder code has no user inputs). Both functions return 4 vectors: `xn` and `yn` are the x and y locations of the pressure taps given from the leading edge of the airfoil and cylinder. `u` and `v` are the surface normals at those locations. Each function also generates a plot of the body with the associated surface normals, note that flow is from left to right (as it should be). You will need the information about the surface normals in order to integrate the pressure distribution along both bodies to resolve lift and drag. Below is an example of the plots produced by both functions.
+
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/images/Lab4%20Matlab%20Example.png" width="500">  
+</p>
+
 
 ### Questions:
 1.  Does the pressure along the upper and lower surfaces of the cylinder match?  Should it?  
