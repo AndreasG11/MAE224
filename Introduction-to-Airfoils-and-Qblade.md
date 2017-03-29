@@ -18,7 +18,7 @@ You are now in the airfoil design tab, this tab lets you create or import airfoi
 <img src="https://github.com/d008/MAE224/blob/master/images/AF%20menu%203.png" width="600">  
 </p>
 
-Next create a 4 digit NACA profile by inputting 2412. This means we want an airfoil with a max camber of 2% (the first 2) located at 40% (the 4), with 12% thickness.
+Next create a 4 digit NACA profile by inputting 2412. This means we want an airfoil with a max camber of 2% (the first 2) located at 40% (the 4), with 12% max thickness.
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/images/AF%20menu%204.png" width="400">  
 </p>
