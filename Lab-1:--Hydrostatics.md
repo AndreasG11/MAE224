@@ -1,4 +1,4 @@
-#Hydrostatics 
+# Hydrostatics 
 **Your mission, should you choose to accept it, involves calibrating a pressure transducer.**
 
 ## Background
@@ -50,8 +50,8 @@ At this point, you should derive an expression relating the pressure to the colu
 2.    By drawing a free body diagram on an appropriate volume of water in the manometer (or you can use the differential equation you learned in class), write the expression that relates the difference in pressure to the liquid height and density.  
 
 In order to build the manometer, connect the cylinders and tubing such that you can pressurize one side with the hand pump and observe the displacement. 
-
-##Connect the pressure sensor to the Particle Photon  
+ 
+## Connect the pressure sensor to the Particle Photon  
 
 Pressure sensors can measure pressure in a multitude of ways - the ones we have use the change in electrical resistivity of silicon due to strain (piezoresistive effect) to detect pressure.
 You will use your Particle Photon to measure the voltage signal from the pressure sensor.
@@ -106,8 +106,8 @@ dlmwrite([folder fname],[heights' volts],'-append','delimiter','\t');
 There is a lot going on here, but the functionality is relatively simple. We first create a cell array of strings for the header (so later we will know what data we saved). The next few lines write the header to the file, and the final call to `dlmwrite()` writes the actual data. Note that you will need to manually enter your height data into the `heights` variable, and don't forget to change the folder location and filename as well!
 
 _Remember_: You can get information on any function in Matlab by typing `help function_name` and hitting enter in the command window.
-
-##Ain’t No Mountain High Enough...:
+ 
+## Ain’t No Mountain High Enough...:
 As you should have noticed by now, there appears to be a relationship between heights and pressures (ever considered why pressure sometimes is measured in millimeters of mercury or inches of water? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
 
 ##Other questions for write-up:  
