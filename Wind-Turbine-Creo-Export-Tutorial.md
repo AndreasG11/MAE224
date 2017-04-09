@@ -62,7 +62,7 @@ Click OK and move on to create the axial plane by selecting the plane tab again.
 
 For the final plane, we essentially want something which is normal to both our other planes + a reference point. Start another plane dialog box and click one of the 2 previously created planes, then change the dialog box to “Normal”. Then CTRL+click the other plane and set it to “Normal” as well. Finally CTRL+click the leading edge point and hit OK.
 
-Now save your part and download the two files on Blackboard called “metric_hub.prt” and “Rotor_Assembly.asm” and put these files in your working directory. MAKE SURE THESE FILES ARE IN YOUR CURRENT WORKING DIRECTORY! Open the “Rotor_Assembly.asm” file and you should see a donut-shaped hub, this is the beginning of your wind turbine! All we have to do is bring in your rotor and quickly pattern it.  
+Now save your part and download the two files on github called “metric_hub.prt” and “Rotor_Assembly.asm” and put these files in your working directory. MAKE SURE THESE FILES ARE IN YOUR CURRENT WORKING DIRECTORY! Open the “Rotor_Assembly.asm” file and you should see a donut-shaped hub, this is the beginning of your wind turbine! All we have to do is bring in your rotor and quickly pattern it.  
  
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Creo9.png" width="800">  
