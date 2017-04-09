@@ -33,8 +33,8 @@ There are a few basic non-dimensional parameters which are typically used in the
 ![](https://github.com/d008/MAE224/blob/master/equations/lab5%202.png)| _Power Coefficient_ | Power the turbine produces divided by the available power in the incoming wind  
 ![](https://github.com/d008/MAE224/blob/master/equations/lab5%203.png) | _Thrust Coefficient_  | Force acting on the turbine hub in the axial direction (same direction as free-stream velocity)    
 ![](https://github.com/d008/MAE224/blob/master/equations/lab5%204.png) | _Tip Speed Ratio_ | Ratio of the blade tip velocity to the free-stream velocity  
-![](https://github.com/d008/MAE224/blob/master/equations/lab5%205.png) | _Reynolds Number Based on Diameter_ | This value does not change with rotational speed  
-![](https://github.com/d008/MAE224/blob/master/equations/lab5%206.png) | _Reynolds number based chord and estimated local velocity_ | This value is the “local” Reynolds number, and changes at each radial station, r, which has a chord, c.  
+![](https://github.com/d008/MAE224/blob/master/equations/lab5%205.png) | _Reynolds Number Based on diameter_ | This value does not change with rotational speed  
+![](https://github.com/d008/MAE224/blob/master/equations/lab5%206.png) | _Reynolds number based on chord and on estimated local velocity_ | This value is the “local” Reynolds number, and changes at each radial station, r, which has a chord, c.  
 ![](https://github.com/d008/MAE224/blob/master/equations/lab5%207.png) | _Betz Limit Power_ | This is the theoretical maximum value of the power coefficient a turbine can produce.  
 
 For your design, you will want to maximize the value of CP for a given rotational rate and inflow velocity, or Tip Speed Ratio. Note that the theoretical maximum value a wind turbine can achieve is the so-called Betz Limit, which can be derived by considering a simple quasi-1-D momentum balance on the turbine rotor and has a value of about 60%. If you find that you can exceed Betz’s limit, you are either the next billionaire or you have mis-calculated something (the stakes are high!). 
