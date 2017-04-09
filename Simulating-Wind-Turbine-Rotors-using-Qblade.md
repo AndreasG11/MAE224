@@ -59,7 +59,7 @@ The first step when creating a wind turbine blade is to take our 2-D airfoil dat
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB1.png" width="1000">
 </p>
 
-The first step is to click on the 360° tab in Qblade. In the first drop-down, select the 2412 airfoil if it is not already selected. Now click New to start the extrapolation procedure. The window should refresh and look similar to the following:
+The first step is to repeat what you've previously done last lab in the QBlade tutorial (unless saved). Click on the 360° tab in Qblade. In the toolbar under Airfoils, make sure NACA 2412 has been selected. Click on "Extrapolate" in the HAWT side bar. The window should refresh and look similar to the following:
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB2.png" width="1000">
@@ -82,7 +82,7 @@ A table will open up on the left side and you will be able to add new rotor sect
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB5.png" width="300">
 </p>  
 
-ou will need to select the 2412 airfoil from the 3rd column, and leave the first two rows alone.
+You will need to select the 2412 airfoil from the 3rd column, and leave the first two rows alone.
 Note the red text at the top informing us we have not made a very physical rotor, and need to change some of the dimensions in the first two columns. Enter the following data:  
 
 Section 3: 0.006, 0.02, 75  
