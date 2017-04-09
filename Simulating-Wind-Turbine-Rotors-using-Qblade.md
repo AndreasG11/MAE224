@@ -67,7 +67,7 @@ The first step is to repeat what you've previously done last lab in the QBlade t
 
 Notice in the top graph is our simulated cl vs α curve, and the fitted curve overlaying it. You can adjust the sliders to the left to try and match the two. Also keep an eye on your cd vs α fit at the bottom, note especially how much of the curve we have to fit. Do you think this could cause any issues with our predictions later?  
 
-After you are satisfied with your fit, click save. Notice the final curve is a composite of the simulated data and the curve fit data. Now move on to the rotor tab by clicking the button next to the 360° one.  
+After you are satisfied with your fit, click save. Notice the final curve is a composite of the simulated data and the curve fit data. Now move on to the rotor tab by clicking the button two down from the 360° one.  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB3.png" width="1000">
