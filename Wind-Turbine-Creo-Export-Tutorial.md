@@ -4,7 +4,7 @@ This tutorial resumes our quest to design and 3-D print a small wind turbine rot
 The first step is to return to our rotor geometry setup tab in Qblade and edit the rotor we want to export. In this case it is the 3-bladed 2412 rotor. Above the rotor section tab, click the “Advanced Blade Design” button. You are going to change the values in the column labeled “Twist Pt (%c)” to all zeros. This does not affect our BEM results, but all of the airfoils will be aligned at the leading edges. This makes 3-D printing waaaaaay easier since we will have a flat front surface to reference. Your window should look like the following:
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Creo1.png" width="800">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Creo1new.png" width="800">  
 </p> 
 
 Now click “Save” at the bottom, and enter a new name if you wish (you will overwrite any simulations if you choose not to rename). Next click “Blade/Rotor” at the very top and select “Export 3D blade geometry in STL or text format”. You will want to save the file as a .stl somewhere you can find it.
