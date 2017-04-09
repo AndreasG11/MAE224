@@ -1,4 +1,4 @@
-#Objective:
+# Objective:
 Design a turbine that can extract energy from the wind in a wind tunnel, following the Rules & Guidelines below.   
 
 The remaining 3 weeks of labs are dedicated to the design and construction of the turbine. There will be a competition day on May 9, where all the lab groups will test their wind energy extractors.   
