@@ -37,9 +37,9 @@ There are a few basic non-dimensional parameters which are typically used in the
 ![](https://github.com/d008/MAE224/blob/master/equations/lab5%206.png) | _Reynolds number based on chord and on estimated local velocity_ | This value is the “local” Reynolds number, and changes at each radial station, r, which has a chord, c.  
 ![](https://github.com/d008/MAE224/blob/master/equations/lab5%207.png) | _Betz Limit Power_ | This is the theoretical maximum value of the power coefficient a turbine can produce.  
 
-For your design, you will want to maximize the value of CP for a given rotational rate and inflow velocity, or Tip Speed Ratio. Note that the theoretical maximum value a wind turbine can achieve is the so-called Betz Limit, which can be derived by considering a simple quasi-1-D momentum balance on the turbine rotor and has a value of about 60%. If you find that you can exceed Betz’s limit, you are either the next billionaire or you have mis-calculated something (the stakes are high!). 
+For your design, you will want to maximize the value of CP for a given rotational rate and inflow velocity, or Tip Speed Ratio. Note that the theoretical maximum value a wind turbine can achieve is the so-called Betz Limit, which can be derived by considering a simple quasi-1-D momentum balance on the turbine rotor and has a value of about 60%. If you find that you can exceed Betz Limit, you are either the next billionaire or you have miscalculated something (the stakes are high!). 
 
-#Wind Turbine Design Rules/Guidelines
+# Wind Turbine Design Rules/Guidelines
 The design of a rotor is itself an iterative procedure, and may take several trials to produce a design which maximizes the amount of power produced and which can be physically manufactured (or in our case 3-D printed). You will be given broad guidelines for designing your turbine, some things to consider are:  
 
 1.	Root Airfoil: Your Friendly Neighborhood TA’s have specified a root geometry (a diamond shape) which will be provided in a Qblade starter file (see blackboard). You must NOT change this root airfoil, doing so will make the CREO import fail and most likely the 3-D print will fail as well. The diamond root airfoil will in no way affect the performance of your design, but rather makes the import/export procedure to CREO easier.  
