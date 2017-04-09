@@ -6,7 +6,7 @@ In lab 5, you will be tasked with designing a wind turbine. This will make use o
 In the most general terms, wind turbine rotors are constructed using various airfoils stacked vertically to create a rotor blade. The type, thickness, chord, twist and radial position of the airfoils are chosen by the designer to optimize the blade shape for a set of input conditions. See Figure 1 for an example rotor blade. 
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/BEM.png" width="800">
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/BEM.png" width="500">
 </p>  
 <p align="center">
 Figure 1: Example wind turbine blade, note that z is the radial direction out from the rotor hub.  
@@ -18,7 +18,7 @@ The induced velocity arises from the vortex system trailing the wind turbine, an
 The method by which we solve for the induced velocity is an iterative procedure known as Blade Element Momentum (or BEM) and combines the forces produced by each individual blade element (or section as in figure 2) and places them on a global momentum balance of the rotor disk. This must be solved iteratively until the solution converges. You will not need to be familiar with the theory behind BEM for the lab, but if you are interested there are many resources available such as the book by Martin O.L. Hansen, “Aerodynamics of Wind Turbines”. Qblade has a BEM solver built in which will take your rotor geometry, along with the cl and cd vs α curves you generated for each airfoil section and return the power output of a turbine (along with many other useful data points). 
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Vectors.png" width="600"> 
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Vectors.png" width="400"> 
 </p>   
 <p align="center">
 Figure 2: Airfoil section velocity triangle  
