@@ -1,4 +1,4 @@
-#Designing Wind Turbine Rotors using Qblade
+# Designing Wind Turbine Rotors using Qblade
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/images/tumblr_inline_ncvqpnnT1k1sfsefv.gif" width="650">
 </p>
