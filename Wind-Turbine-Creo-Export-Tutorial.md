@@ -1,7 +1,7 @@
 # Importing Wind Turbine Rotors to Creo 3.0  
 This tutorial resumes our quest to design and 3-D print a small wind turbine rotor, for this tutorial you will need to have covered the first 2 Qblade tutorials and you will also need access to Creo 3.0 (available in the student lounge and the MAE machine shop).  
 
-The first step is to return to our rotor geometry setup tab in Qblade and edit the rotor we want to export. In this case it is the 3-bladed 2412 rotor. Above the rotor section tab, click the “Advanced Blade Design” button. You are going to change the values in the column labeled “Thread Axis X (% chord)” to all zeros. This does not affect our BEM results, but all of the airfoils will be aligned at the leading edges. This makes 3-D printing waaaaaay easier since we will have a flat front surface to reference. Your window should look like the following:
+The first step is to return to our rotor geometry setup tab in Qblade and edit the rotor we want to export. In this case it is the 3-bladed 2412 rotor. Above the rotor section tab, click the “Advanced Blade Design” button. You are going to change the values in the column labeled “Twist Pt (%c)” to all zeros. This does not affect our BEM results, but all of the airfoils will be aligned at the leading edges. This makes 3-D printing waaaaaay easier since we will have a flat front surface to reference. Your window should look like the following:
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Creo1.png" width="800">  
