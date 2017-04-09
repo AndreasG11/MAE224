@@ -16,7 +16,7 @@ Hit export and we are done with the Qblade part of the tutorial. Now you will ne
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Creo2.png" width="300">  
 </p>  
 
-#Importing STL Blades into Creo 3.0  
+# Importing STL Blades into Creo 3.0  
 Once you have Creo open, select your working directory by clicking the tab of that name in the upper left. Next, click “Open” and change the drop-down menu for Type to All Files (*) in the dialog box. Maneuver to the location of the .stl blade we just created and select it for import.  
 
 <p align="center">
