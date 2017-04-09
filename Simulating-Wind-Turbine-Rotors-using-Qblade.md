@@ -67,13 +67,13 @@ The first step is to repeat what you've previously done last lab in the QBlade t
 
 Notice in the top graph is our simulated cl vs α curve, and the fitted curve overlaying it. You can adjust the sliders to the left to try and match the two. Also keep an eye on your cd vs α fit at the bottom, note especially how much of the curve we have to fit. Do you think this could cause any issues with our predictions later?  
 
-After you are satisfied with your fit, click save. Notice the final curve is a composite of the simulated data and the curve fit data. Now move on to the rotor tab by clicking the button two down from the 360° one.  
+After you are satisfied with your fit, click save. Notice the final curve is a composite of the simulated data and the curve fit data. Now move on to the rotor tab by clicking the button two icons to the right from the 360° one.  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB3.png" width="1000">
 </p>  
 
-Here we will be actually filling out the geometry of our rotor shape. The Qblade_starter file has been created with the diamond shaped hub to assist with importing the rotor into Creo later in this tutorial. Click Edit at the bottom left to add new airfoil sections to the rotor. 
+Here we will be actually filling out the geometry of our rotor shape. The Qblade_starter file has been created with the diamond shaped hub to assist with importing the rotor into Creo later in this tutorial. Click New at the bottom left to add new airfoil sections to the rotor. 
 
 A table will open up on the left side and you will be able to add new rotor sections using the “Insert after section ##” command. Click on section 2 (second row) in the table and then click “Insert after section 2” to put in a new airfoil, then click row 3 that was just created and insert another section after that for a total of 4. Note in the following figure we are going to use our 2412 airfoil from before for all new sections for now. Later you may wish to choose more aerodynamically efficient airfoils, this is up to you. For now keep all sections 2412. 
 
