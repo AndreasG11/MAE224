@@ -112,4 +112,4 @@ Your task is to use the Qblade tool to tweak each of the values of the wind turb
 Lastly, even though BEM is a powerful tool, it is not without inaccuracies. Most of the corrections are based on either experimental data or simplified theoretical model. We are really pushing the limits of BEM by simulating very small rotors, it works best for large rotors with large Reynolds numbers. If you start to experience very strange results, it is best to track down where those changes occurred and see if they physically make sense to you. 
 The next tutorial goes through the export procedure for Creo, you can continue on with our simple 3 bladed rotor, or you may use your own design. The steps are exactly the same, but remember, do NOT change the root geometry (innermost 2 sections), copy it to new rotor designs EXACTLY as it appears in the Qblade_starter file!
 
-Upon completion, please show your TA your final output graphs.
+**Upon completion, please show your TA your final output graphs.**
