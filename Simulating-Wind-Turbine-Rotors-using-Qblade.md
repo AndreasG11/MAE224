@@ -80,7 +80,7 @@ A table will open up on the left side and you will be able to add new rotor sect
 </p>  
 
 You will need to select the 2412 airfoil from the 3rd column, and leave the first two rows alone.
-Note the red text at the top informing us we have not made a very physical rotor, and need to change some of the dimensions in the first two columns. Enter the following data:  
+Enter the following data:  
 
 Section 3: 0.006, 0.02, 75  
 
