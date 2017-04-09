@@ -20,7 +20,9 @@ The method by which we solve for the induced velocity is an iterative procedure 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Vectors.png" width="600"> 
 </p>   
+<p align="center">
 Figure 2: Airfoil section velocity triangle  
+</p>
 
 ## Wind Turbine Design Overview  
 
