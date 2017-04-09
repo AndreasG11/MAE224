@@ -8,8 +8,9 @@ In the most general terms, wind turbine rotors are constructed using various air
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/BEM.png" width="800">
 </p>  
+<p align="center">
 Figure 1: Example wind turbine blade, note that z is the radial direction out from the rotor hub.  
-
+</p>
 
 The innermost section of the blade is known as the root (z = 0 in the figure above), and the tip is the section farthest from the root. Each airfoil section is given a specific chord and twist. Twist is the rotation of the airfoil around the y axis. You can see in the figure above that the sections closer to the root appear to have more twist than the tip sections. When rotor blades are designed, each airfoil is considered as an individual 2-D section and we locally solve for the flow around that airfoil. Figure 2 shows the velocity triangle for an individual airfoil section, note how similar this is to what you saw in Lab 4. In fact we use the exact same airfoil data (![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png) versus ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png)) to solve for the lift and drag forces produced by this airfoil section. The only difference being the rotational velocity due to the rotor movement, ![](https://github.com/d008/MAE224/blob/master/equations/omegar.png), and the induced velocity W. 
 The induced velocity arises from the vortex system trailing the wind turbine, and it produces an axial component opposite the free-stream velocity, ![](https://github.com/d008/MAE224/blob/master/equations/Vnot.png), and a tangential component which increases the rotational velocity seen by the blade. These velocities combine to produce ![](https://github.com/d008/MAE224/blob/master/equations/Vrel.png), or the velocity seen by the blade. The angle of attack is given by ![](https://github.com/d008/MAE224/blob/master/equations/lab5%201.png), where φ is known as the flow angle and θ is the local twist. 
@@ -21,7 +22,7 @@ The method by which we solve for the induced velocity is an iterative procedure 
 </p>   
 Figure 2: Airfoil section velocity triangle  
 
-##Wind Turbine Design Overview  
+## Wind Turbine Design Overview  
 
 There are a few basic non-dimensional parameters which are typically used in the wind industry, you will need these to interpret your results from Qblade.   
 
