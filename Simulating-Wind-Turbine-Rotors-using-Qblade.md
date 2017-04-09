@@ -103,7 +103,7 @@ A new window will pop up where you can enter the parameters for the BEM run. The
 Now three blank graphs will appear, and to the right we must set the range of Tip Speed Ratios we expect to run at (you will need to calculate these for your blade, use the Radius and a guess at the rotation rate to get close). We will go from 0.5 to 3 for now at a wind speed of 20 m/s since that is the wind tunnel velocity we will be using.  
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB8.png" width="300">  
+<img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB8.png" width="1000">  
 </p>  
 
 Our output is CP and CT as a function of TSR in the top two graphs, the bottom graph shows some other variables as a function of radius, double click to change what is displayed on any of the graphs. 
