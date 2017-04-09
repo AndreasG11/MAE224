@@ -51,7 +51,7 @@ Some things which are not mandatory, but you may wish to consider:
 1.	What is the Reynolds number of my blade section (based on chord and ![](https://github.com/d008/MAE224/blob/master/equations/Vrel.png)), and how does this affect my Qblade results?
 2.	Will my turbine be sturdy enough to survive inside the tunnel, and should the design be changed to mitigate the chance my turbine will disintegrate? (The answer should be yes to both.)
 
-#Wind Turbine Design in Qblade
+# Wind Turbine Design in Qblade
 This section picks up where the previous Qblade tutorial left off, by now you should be familiar with creating and simulating the flow around a 2-D airfoil, if not please review the first tutorial.
 The first step when creating a wind turbine blade is to take our 2-D airfoil data and extrapolate the angle of attack range using a curve fit. Why do we need to do this? The answer is essentially twofold, the first reason is that unlike airplane designs, wind turbines occasionally operate in what is known as deep stall, or very high angles of attack. This may occur during high wind conditions or if the rotor is parked. The second reason is that the BEM solver used will occasionally need to iterate over various values of α which are outside the -10 to 20 degrees or so that we actually simulated. Obviously we would prefer to simulate the entire 360 degrees of α, but unfortunately no one has yet developed an accurate enough method to quickly simulate the flow at very high/very low angles of attack.
 
