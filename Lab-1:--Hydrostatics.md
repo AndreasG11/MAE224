@@ -123,14 +123,14 @@ All Lab manuals are to be shared with or emailed to mae224lab(at)gmail.com
 Your report is expected to include (remember, maximum 5 pages):
 ###Abstract (10%) 
 - A short paragraph summarizing your work, including the task and the results. 
-   
+    
 ###Introduction (15%)
 - Discuss the scientific concept of the lab.  
 - Effectively present the objectives and purpose of the lab and any equation or concept you need. 
- 
+  
 ###Experimental Procedure (10%) 
 - Provide some details about the experiment and methodology and why you chose your particular setup.  
-
+ 
 ###Results (15%)
 - Provide plots and pictures to illustrate your results. You are free to use whatever plotting program you wish, but your TA's recommend using Matlab. 
 - Make sure to label all axes.
@@ -138,10 +138,10 @@ Your report is expected to include (remember, maximum 5 pages):
 - Include legends if necessary.
 - Make sure the data points are large enough to see clearly.
 - Detailed findings.
-
+ 
 ###Discussion (35%)
 -  Outline sources of error and perhaps answer any of the questions brought up in the lab manual.
-
+ 
 ###Conclusions (15%)  
 - Summarize findings. 
 
