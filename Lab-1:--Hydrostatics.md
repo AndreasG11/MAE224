@@ -132,7 +132,7 @@ Your report is expected to include (remember, maximum 5 pages):
 - Discuss the scientific concept of the lab.  
 - Effectively present the objectives and purpose of the lab and any equation or concept you need. 
   
-###Experimental Procedure (10%) 
+### Experimental Procedure (10%)  
 
 - Provide some details about the experiment and methodology and why you chose your particular setup.  
  
