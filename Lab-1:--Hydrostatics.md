@@ -109,8 +109,9 @@ _Remember_: You can get information on any function in Matlab by typing `help fu
  
 ## Ain’t No Mountain High Enough...:
 As you should have noticed by now, there appears to be a relationship between heights and pressures (ever considered why pressure sometimes is measured in millimeters of mercury or inches of water? ). Elevate one of the graduated cylinders, say on top of one of the tool boxes.  Is there a clever way to determine the height that you elevated the cylinder (aside from measuring it directly with a ruler)? What happens if you lift the flexible tubing connecting the graduated cylinders above the free surface of the water? Does the manometer still work? Why or why not?  
+ 
+## Other questions for write-up:  
 
-##Other questions for write-up:  
 
 1.	Estimate the uncertainty in your data. What is the biggest source of error?  
 
