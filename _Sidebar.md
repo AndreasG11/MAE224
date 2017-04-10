@@ -18,6 +18,6 @@
     o [Introduction to Airfoils and Qblade](https://github.com/d008/MAE224/wiki/Introduction-to-Airfoils-and-Qblade)
 
 ## Wind Turbine Project
+- [Design Requirements](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Design)
 - [Simulating In QBlade](https://github.com/mkfu/MAE224/wiki/Simulating-Wind-Turbine-Rotors-using-Qblade)   
 - [Exporting Blades to Creo](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Creo-Export-Tutorial)    
-- [Design Requirements](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Design)    
