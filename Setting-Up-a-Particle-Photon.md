@@ -60,8 +60,9 @@ Now we will write a quick program. The first will blink the onboard LED of your 
         delay(1000);               // Wait for 1000mS = 1 second
         digitalWrite(led, LOW);    // Turn OFF the LED pins
         delay(1000);               // Wait for 1 second in off mode
-    }
-```
+    } 
+``` 
+ 
 18.	On the upper left-hand side, click the check mark button to verify/compile the code. There should be a small note on the bottom of the screen that says, “Code verified! Great work.”
 
 19.	Press the lightning bolt button on the top left of the page, which will then “flash” the code to your unit. You should see the LED start blinking magenta to signal that it is uploading. It will likely blink green afterwards to signal that it is re-connecting to the internet, so give it a moment to finish this cycle. If successful, the LED will go back to the slow cyan pulse.
