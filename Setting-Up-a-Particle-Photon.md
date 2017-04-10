@@ -1,6 +1,6 @@
-#Introduction
-
-##Setting up your new Photon
+# Introduction
+ 
+## Setting up your new Photon
 This tutorial is to set up and initialize your Particle Photon unit. You will get the unit connected to the internet and your own lab group account. Then, a test program will be loaded on your unit to verify communication between the online account and the Particle Photon.
 
 You can make a serial connection to the unit through the USB cable. The following steps will open up that connection to allow you to communicate with the unit. (The lab computers should have the drivers on them, and it will take a moment to install.  If there are issues, or you wish to do the update at home, the drivers can be found at https://s3.amazonaws.com/spark-website/Particle.zip).
