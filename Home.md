@@ -55,11 +55,11 @@ What goes up will stay up, if it has enough lift.
 ***
 # Wind Turbine Project
 
+## [Design Requirements](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Design)
+How big is too big?
+
 ## [Simulating Wind Turbine Rotors with QBlade](https://github.com/mkfu/MAE224/wiki/Simulating-Wind-Turbine-Rotors-using-Qblade)
 Can it be done?
 
 ## [Exporting Blades to Creo](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Creo-Export-Tutorial)
 Surely you can't export it to Creo.
-
-## [Design Requirements](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Design)
-How big is too big?
