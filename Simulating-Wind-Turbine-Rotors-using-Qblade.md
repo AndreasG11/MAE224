@@ -52,7 +52,7 @@ Some things which are not mandatory, but you may wish to consider:
 2.	Will my turbine be sturdy enough to survive inside the tunnel, and should the design be changed to mitigate the chance my turbine will disintegrate? (The answer should be yes to both.)
 
 # Wind Turbine Design in Qblade
-First, download Qblade_starterdownload.wpa in the Lab Files. Open this file in QBlade. 
+First, download Qblade_Starternew.wpa in the Lab Files [here](https://github.com/d008/MAE224/tree/master/Wind%20Turbine%20Lab/Tutorial%20Parts). Open this file in QBlade. 
 
 The first step when creating a wind turbine blade is to take our 2-D airfoil data and extrapolate the angle of attack range using a curve fit. Why do we need to do this? The answer is essentially twofold, the first reason is that unlike airplane designs, wind turbines occasionally operate in what is known as deep stall, or very high angles of attack. This may occur during high wind conditions or if the rotor is parked. The second reason is that the BEM solver used will occasionally need to iterate over various values of α which are outside the -10 to 20 degrees or so that we actually simulated. Obviously we would prefer to simulate the entire 360 degrees of α, but unfortunately no one has yet developed an accurate enough method to quickly simulate the flow at very high/very low angles of attack.
 
@@ -84,7 +84,7 @@ Enter the following data:
 
 Section 3: 0.006, 0.02, 75  
 
-Section 4: 0.15, 0.02, 25   
+Section 4: 0.075, 0.02, 25   
 
 Then click save and your rotor should look like the following (tip: click show rotor in the top left):   
 
@@ -100,7 +100,7 @@ Now click the next tab to the right of the rotor design and enter the BEM simula
 
 A new window will pop up where you can enter the parameters for the BEM run. The solver has several options, please change yours to the ones in the figure above. The blade is automatically discretized into N blade elements (first dialog box) and the local flow is solved at each element. Some convergence and iteration tolerances can also be changed if you are experiencing issues with the solution converging, and finally the free-stream density and viscosity must be input. The checkboxes to the left are various corrections which can be applied to the simulation. For instance Prandtl’s tip loss corrects for the fact that our blade has tip vortices which have an effect on ![](https://github.com/d008/MAE224/blob/master/equations/Vrel.png). If you would like more information on the corrections, see the Qblade manual V0.6. We will leave all these parameters to the defaults and hit “Create”.  
 
-Now three blank graphs will appear, and to the right we must set the range of Tip Speed Ratios we expect to run at (you will need to calculate these for your blade, use the Radius and a guess at the rotation rate to get close). We will go from 0.5 to 3 for now at a wind speed of 20 m/s since that is the wind tunnel velocity we will be using.  
+Now three blank graphs will appear, and to the right we must set the range of Tip Speed Ratios we expect to run at (you will need to calculate these for your blade, use the Radius and a guess at the rotation rate to get close). We will go from 0.5 to 3 for now at a wind speed of 15 m/s since that is the wind tunnel velocity we will be using.  
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/QB8.png" width="1000">  
@@ -109,7 +109,7 @@ Now three blank graphs will appear, and to the right we must set the range of Ti
 Our output is CP and CT as a function of TSR in the top two graphs, the bottom graph shows some other variables as a function of radius, double click to change what is displayed on any of the graphs. 
 The first thing we note is that our CP is negative, what happened! Essentially the BEM is telling us that to spin the turbine at the TSRs given we would need to supply power, not a great way to build a wind turbine! You will notice, however, that there is a small portion of the CP curve where we produce a net positive amount of power, but there is room for improvement.
 Your task is to use the Qblade tool to tweak each of the values of the wind turbine to try and bump up your Cp values. We recommend you tweak each parameter separately at first to get an idea for how sensitive the design is to each change.
-Lastly, even though BEM is a powerful tool, it is not without inaccuracies. Most of the corrections are based on either experimental data or simplified theoretical model. We are really pushing the limits of BEM by simulating very small rotors, it works best for large rotors with large Reynolds numbers. If you start to experience very strange results, it is best to track down where those changes occurred and see if they physically make sense to you. 
-The next tutorial goes through the export procedure for Creo, you can continue on with our simple 3 bladed rotor, or you may use your own design. The steps are exactly the same, but remember, do NOT change the root geometry (innermost 2 sections), copy it to new rotor designs EXACTLY as it appears in the Qblade_starter file!
+Lastly, even though BEM is a powerful tool, it is not without inaccuracies. Most of the corrections are based on either experimental data or simplified theoretical models. We are really pushing the limits of BEM by simulating very small rotors, it works best for large rotors with large Reynolds numbers. If you start to experience very strange results, it is best to track down where those changes occurred and see if they physically make sense to you. 
+The next tutorial goes through the export procedure for Creo, you can continue on with our simple 3 bladed rotor, or you may use your own design. The steps are exactly the same, but remember, do NOT change the root geometry (innermost 2 sections), copy it to new rotor designs EXACTLY as it appears in the Qblade_Starternew file!
 
 **Upon completion, please show your TA your final output graphs.**
