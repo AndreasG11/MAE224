@@ -14,6 +14,7 @@ Like last semester, the “best” designs will get a treat: treat and definitio
 -	The 3D printers we are using can be found here   
 -	Must choose one of the 4 Cura print defaults  
 -	The rotation vector must be aligned with the tunnel velocity. (i.e. turning clockwise when looking down the tunnel)  
+-	*Note:* The RPM output that you will measure is the RPM of the motor. 1 RPM of the motor is equal to 3/4 RPM of the turbine. 
 
 # Tools:
 -	Each turbine must attach to the shaft in the wind tunnel   
