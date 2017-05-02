@@ -55,8 +55,8 @@ What goes up will stay up, if it has enough lift.
 ***
 # Wind Turbine Project
 
-## [Design Requirements](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Design)
-How big is too big?
+## [Design Requirements and Final Project Guideliens](https://github.com/mkfu/MAE224/wiki/Wind-Turbine-Design)
+How big is too big? Also, what should be in your report?
 
 ## [Simulating Wind Turbine Rotors with QBlade](https://github.com/mkfu/MAE224/wiki/Simulating-Wind-Turbine-Rotors-using-Qblade)
 Can it be done?
