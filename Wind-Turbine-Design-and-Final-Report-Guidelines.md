@@ -31,3 +31,42 @@ Continue designing and testing your new baby turbine. **Your second design is du
 ## Week 4: May 1-5  
 Characterize your turbines and construct your power curves.  
 **Deliverables DUE MAY 9th:** There are two components to the final lab report: an 8 page group report and a 2 page individual abstract and discussion.
+
+# Final Report Guidelines
+Final Report **due by 5pm on Deans Date (May 16th, 2017)**, both group and individual.
+
+## 8 Page Group Report
+You and your lab partners will collaborate on the 8 page group report and hand in one single .pdf document (via email to the lab email address). Maximum length is 8 pages for the group section. It should include the following:
+
+### Introduction
+- Discuss scientific concept of the final project.
+- Effectivelly present the objectives and purpose of the final project.
+
+### Experimental Setup
+- Give some detail on the measurements you made.
+
+### Design Process
+- Images and specifications (don't go overboard with the dimensions you give us).
+- Calculation of the projected area--measured using CAD, a DSLR camera, or otherwise
+- Why you chose this particular design.
+- Explain the fluid mechanics of your design.
+- What changed and why between your two rotor designs?
+
+### Results
+- Cp vs. TSR plots for all turbines.
+- Qblade prediction of performance.
+
+## 2 Page Individual Report
+Each lab member is required to write a 2 page maximum report, also turned in to the lab email address as a .pdf document. The report should contain the following:
+
+### Abstract
+- Summarize your take on the turbine design process, this should cover the entire lab (group report sections and individual sections).
+
+### Discussion
+- Explain the fluid mechanics and the motivation behind the design.
+- Analyze the testing results.
+- Compare with your predictions. Did they match? If they were different, why?
+- How can the turbine design be improved?
+
+### Conclusions
+- Summarize the findings of the final project (don't just state what you did).
