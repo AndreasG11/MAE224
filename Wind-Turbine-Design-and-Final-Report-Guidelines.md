@@ -30,7 +30,7 @@ Continue designing and experimenting with the turbine setup. **By the end of you
 Continue designing and testing your new baby turbine. **Your second design is due by 10AM the day after your designated lab section**. Again, due to the large number of airfoils and small number of TA's and printers, if you turn your profile in late, you will be bumped to the end of the queue. It will still be printed, but only after the punctual groups and you will have significantly less time to characterize your turbine.
 ## Week 4: May 1-5  
 Characterize your turbines and construct your power curves.  
-**Deliverables DUE MAY 9th:** There are two components to the final lab report: an 8 page group report and a 2 page individual abstract and discussion.
+**Deliverables due May 16th:** There are two components to the final lab report: an 8 page group report and a 2 page individual abstract and discussion.
 
 # Final Report Guidelines
 Final Report **due by 5pm on Deans Date (May 16th, 2017)**, both group and individual.
