@@ -33,7 +33,7 @@ Characterize your turbines and construct your power curves.
 **Deliverables due May 16th:** There are two components to the final lab report: an 8 page group report and a 2 page individual abstract and discussion.
 
 # Final Report Guidelines
-Final Report **due by 5pm on Deans Date (May 16th, 2017)**, both group and individual.
+Final Report **due by 5pm on Dean's Date (May 16th, 2017)**, both group and individual.
 
 ## 8 Page Group Report
 You and your lab partners will collaborate on the 8 page group report and hand in one single .pdf document (via email to the lab email address). Maximum length is 8 pages for the group section. It should include the following:
