@@ -9,7 +9,7 @@ Below are some examples of data taking. You will notice that instead of setting 
 3.    Interact with the data
 
 
-#MATLAB
+# MATLAB
 For this example connect the A3 and A4 analog pins together. Also connect the D7 and D3 pins together.  We are going to use pins A3 and D3 to measure the outputs of A4 and D7, respectively.
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/example1circuit.png" width="300">  
