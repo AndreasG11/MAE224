@@ -68,7 +68,7 @@ If we replace the access token and name of the Photon correctly, we will get the
 
 ![](https://github.com/mkfu/MAE224/blob/master/images/ex1result.png)
 
-##Let's break down what the code means
+## Let's break down what the code means
 The first three lines are the most important. We can instantiate a new Photon object that will have all of the information it needs to interact with our physical Photon. The two pieces of information that we need are the access token and the name of the Photon.
 ```matlab
 atoken = 'abc123'; %YOUR ACCESS TOKEN HERE
@@ -124,7 +124,7 @@ legend('Analog','Digital','location','southeast')
 Once you have generated your Matlab plots, this example is complete.
 
 
-#Python (Not Required)
+# Python (Not Required)
 Similarly, we can make very similar function calls in Python to read and write data. Paste the following text into a new Python script.
 
 ```python
