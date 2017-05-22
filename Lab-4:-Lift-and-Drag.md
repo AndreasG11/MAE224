@@ -13,7 +13,7 @@ Figure 1 - Airfoil.
 -	The **chord line** is an imaginary straight line drawn through the airfoil from its leading edge to its trailing edge.   
 -	The **camber line** is the characteristic curve of the airfoil. It is always halfway between the upper and lower surfaces of the airfoil. The **max camber ratio** is the ratio of the maximum distance between the camber and chord line to the chord length.  
 -	The **angle of attack** or ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) is the angle formed by the chord line and the flow direction.  
--	The **thickness** is the maximum distance between the upper and lower surfaces. The **thickness ratio** is the ratio of the maximum thickness to the chord length.  
+-	The **thickness** is the distance between the upper and lower surfaces. The **thickness ratio** is the ratio of the maximum thickness to the chord length.  
 
 ## Theory
 The aerodynamic force on an airfoil is the result of redirecting fluid momentum. For example, a typical airfoil in flow (Figure 2) will exert a force, redirecting the incoming flow downward. Consequently, the flow will exert an equal and opposite force on the airfoil which we can decompose into tangential and perpendicular components relative to the incoming flow. The tangential component of the aerodynamic force is called _drag_ and the perpendicular component is called _lift_.   
