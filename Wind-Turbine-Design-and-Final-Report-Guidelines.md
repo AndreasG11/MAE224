@@ -47,7 +47,7 @@ You and your lab partners will collaborate on the 8 page group report and hand i
 
 ### Design Process
 - Images and specifications (don't go overboard with the dimensions you give us).
-- Calculation of the projected area--measured using CAD, a DSLR camera, or otherwise
+- Calculation of the swept area--measured using CAD, a DSLR camera, or otherwise
 - Why you chose this particular design.
 - Explain the fluid mechanics of your design.
 - What changed and why between your two rotor designs?
