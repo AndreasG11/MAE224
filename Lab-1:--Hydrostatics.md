@@ -41,7 +41,7 @@ You have several tools and materials at your disposal to complete the lab. This 
 - Fresh Princeton water 
 - Ruler
 
-##Build a manometer
+## Build a manometer
 The goal of this lab is to calibrate the pressure sensor given to you using the manometer and the Particle Photon. To do this, you will need to have control over the applied pressure while recording the data with your Photon. 
 At this point, you should derive an expression relating the pressure to the column height. Follow these steps in your derivation:  
 
@@ -69,7 +69,7 @@ To connect the pressure sensor to the Particle Photon:
 
 4. **Important** Your goal in this lab is to create your own calibration for the pressure sensor. You can compare your calibration to the one in the data sheet, but you must use the derivation found earlier to get the relationship between height and pressure.
 
-##Test your setup with the fluid
+## Test your setup with the fluid
 By pressurizing the system, you are changing the manometer height, and you should be able to relate some measured height of the fluid column to the pressure it is applying to the transducer. By taking the appropriate data, you will be able to construct a calibration curve relating the pressure applied to the sensor to the voltage output.
 
 1.	The calibration curve should give you a pressure if you give it a voltage (p(V)).    
