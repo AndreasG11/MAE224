@@ -60,7 +60,7 @@ Now we will write a quick program. The first will blink the onboard LED of your 
         delay(1000);               // Wait for 1000mS = 1 second
         digitalWrite(led, LOW);    // Turn OFF the LED pins
         delay(1000);               // Wait for 1 second in off mode
-    } ``` 
+    }
  
 18.	On the upper left-hand side, click the check mark button to verify/compile the code. There should be a small note on the bottom of the screen that says, “Code verified! Great work.”
 
