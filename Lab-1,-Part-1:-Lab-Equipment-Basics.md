@@ -36,7 +36,7 @@ The next two tools are known as Digital Multi-Meters (DMMs) and are the swiss-ar
 <img src="https://github.com/d008/MAE224/blob/master/images/Fluke_73.png?raw=true" width="800">  
 </p>
 
-We will mainly be reading D.C. voltages and currents in this lab. The meter is also capable of reading the average and root-mean-square Alternating Current (A.C.) voltages (and a few other things). Note that we can easily measure resistance and check the polarity of diodes with this tool as well. With the leads connected to the proper terminals, check the voltage output from your power supply (see below).
+We will mainly be reading D.C. voltages and currents in this lab. The meter is also capable of reading the average and root-mean-square Alternating Current (A.C.) voltages (and a few other things). Note that we can easily measure resistance and check the polarity of diodes with this tool as well. There are limited multimeters in the lab, so when one is available, check the voltage output from your power supply with the leads connected to the proper terminals (see below).
 
 The second DMM available to you is the Keithley.
 <p align="center">
@@ -70,7 +70,7 @@ On the rightmost side is the measurement display (you can access this menu by pr
 
 The power supplies we use in the lab have 3 outputs. Channels 1 and 2 have adjustable voltage outputs and current limits, channel 3 is fixed at 5 volts (it is the small connectors at the bottom right). Two modes are available, constant voltage (C.V.) and constant current (C.C.), with the limits of these two modes being set by the two dials. In C.V. mode, the supply will give out as much current as the connected circuit will accept (up to the current limit point) to maintain the output voltage. C.C. mode is similar, however the supply now adjusts the voltage (up to the voltage limit point) to maintain a constant current. The mode being used is indicated by the LEDs below each channel. 
 
-**It is VERY important to note that you can easily fry the Photon and other lab equipment with the DC Power Supply. We recommend always using a Digital Multi-Meter to check the output before connecting to your circuit! Ask if you need assistance.**
+**It is VERY important to note that you can easily fry the Photon and other lab equipment with the DC Power Supply. NEVER apply more than 5V to a pin on the photon, and to be safe stay under 3.3V! We recommend always using a Digital Multi-Meter to check the output before connecting to your circuit! Ask if you need assistance.**
 
 You may have also noticed the 3 connections for channels 1 and 2: Ground, V-, and V+. Ground is the building ground, and you can shunt or jumper either V- or V+ with ground to force one side of the power supply low. This is handy if, for example, your circuit requires a supply which is -15V to 0V (you would jumper V+ to ground).
 
