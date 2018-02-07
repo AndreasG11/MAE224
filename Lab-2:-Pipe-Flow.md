@@ -29,6 +29,8 @@ Your programming goal is to combine all of this into a Matlab script which will 
 
 Note that power and ground for all the sensors has been taken care of for you in advance on the circuit board.
 
+Lastly, take note of which pump supply voltages allow the pipe flow system to reach a steady state. The full dynamic range of the PWM output (0-3.3V) does not allow steady state operation of the system! To get the best data possible, explore this range FIRST, then an informed decision can be made for what voltages to use in the experiment.
+
 # How to measure pressure drop  
 
 To propel a flow in a pipe there needs to be a pressure gradient. You will see later in class that this pressure gradient is constant and thus the pressure varies linearly along the pipe axis. The pressure “drop” is just the change in pressure from one point to another. There is a set of five open water columns that you can use to calculate the pressure drop. Think back to lab 1 and hydrostatics to relate these water columns to pressure.  
