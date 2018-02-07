@@ -87,6 +87,7 @@ By pressurizing the system, you are changing the manometer height, and you shoul
 7.    Save your data to a text file using the Matlab command snippet below:
 
 Add this code snippet to the end of your .m file to save data as a delimited text file.
+Note: the use of the following code is not mandatory. Collect data in the way that suits you best.
 ```matlab
 %Enter your folder name%
 folder = 'C:\Users\your_username_here\Documents\';
