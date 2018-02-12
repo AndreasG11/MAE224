@@ -106,6 +106,9 @@ The laminar boundary layer solution is self-similar (or has a similarity solutio
 Put your measurements in this form and plot u/U as a function of ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? How well do they agree with the numerical solution? Explain why you may see differences.  
 
 ## Lab Write-Up  
+
+All Lab manuals are to be emailed to mae224lab@gmail.com as a PDF with group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
+
 Your report is expected to include:  
 ### Abstract (10%)  
 - A short paragraph summarizing your work, including the task and the results.   
