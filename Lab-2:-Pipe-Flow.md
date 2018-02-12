@@ -115,7 +115,10 @@ In this experiment, the quality of the data contributes to your grade so make su
 -  Successfully reduce drag in a novel, meaningful and verifiable way. If you succeed, please let your TA know so they can help you write a journal article.  
 
 # Guidelines for the report  
-All Lab manuals are to be emailed to mae224lab@gmail.com as a PDF with group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
+
+All lab manuals are to be emailed to mae224lab@gmail.com as a PDF. The group portion of the lab should have group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
+
+The individual portion should include your name, your group number, and your lab number. For example: Novoselov_Group51_Lab1.PDF
 
 Your report is expected to include:  
 ### Abstract (10%)  
