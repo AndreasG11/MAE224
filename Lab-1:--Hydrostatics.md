@@ -122,8 +122,8 @@ As you should have noticed by now, there appears to be a relationship between he
  
 # Guidelines for the report
 
-All Lab manuals are to be emailed to mae224lab(at)gmail.com.
-They are required to be sent as a PDF with group member names and group number in the filename.
+All Lab manuals are to be emailed to mae224lab@gmail.com as a PDF with group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
+
 Your report is expected to include (remember, maximum 5 pages):
 
 ### Abstract (10%) 
