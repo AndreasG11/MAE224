@@ -180,7 +180,9 @@ We have added 2 matlab functions to the github source (available [here](https://
 
 ## Lab Write-Up  
 
-All Lab manuals are to be emailed to mae224lab@gmail.com as a PDF with group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
+All lab manuals are to be emailed to mae224lab@gmail.com as a PDF. The group portion of the lab should have group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
+
+The individual portion should include your name, your group number, and your lab number. For example: Novoselov_Group51_Lab1.PDF
 
 Your report is expected to include:  
 
