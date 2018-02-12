@@ -179,6 +179,9 @@ We have added 2 matlab functions to the github source (available [here](https://
 2.  Compare the results between the cases which utilize the tripwire.  Do the results look different?  What is physical phenomena that underlies this?  
 
 ## Lab Write-Up  
+
+All Lab manuals are to be emailed to mae224lab@gmail.com as a PDF with group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
+
 Your report is expected to include:  
 
 ### Abstract (10%)  
