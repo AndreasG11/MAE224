@@ -141,10 +141,12 @@ Your report is expected to include (remember, maximum 5 pages):
   
 ### Experimental Procedure (10%)  
 
-- Provide some details about the experiment and methodology and why you chose your particular setup.  
+- Provide some details about the experiment and methodology and why you chose your particular setup. 
+- This is a great time to show a figure describing your setup. 
  
 ### Results (15%)
 
+- Keep in mind the main goal of this lab, you are looking to create a calibration curve for your sensor.
 - Provide plots and pictures to illustrate your results. You are free to use whatever plotting program you wish, but your TA's recommend using Matlab. 
 - Make sure to label all axes.
 - Use appropriate font sizes for the labels (it should match your report font size).
