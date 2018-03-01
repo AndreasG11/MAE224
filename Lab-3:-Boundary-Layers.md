@@ -20,9 +20,9 @@ In class you learned Bernoulli’s equation,
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab3%201.png">  
 </p>   
-
-**Be sure you understand why we can apply Bernoulli’s equation in our channel flow. **  
-
+ 
+** Be sure you understand why we can apply Bernoulli’s equation in our channel flow. **  
+ 
 Since we can apply Bernoulli’s equation in the flow, let’s think about the two points where we want to apply the equation:  
 
 <p align="center">
