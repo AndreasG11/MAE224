@@ -111,7 +111,7 @@ You will note that an airfoil has been mounted into a large wind tunnel, which f
 %Name of the photon inside the airfoil
 name = 'MRSAIRFOIL'; 
 %Access token
-atoken = 'abc123'; 
+atoken = '58423eff3e51a295b275a62e5d257cd190d16d17'; 
 
 g = Photon(name,atoken);
 
@@ -149,7 +149,7 @@ The third task of this lab is to measure the pressure distribution around a cyli
 %Name of the photon inside the cylinder
 name = 'MRCYLINDER'; 
 %Access token
-atoken = 'abc123'; 
+atoken = '58423eff3e51a295b275a62e5d257cd190d16d17'; 
 
 g = Photon(name,atoken);
 
