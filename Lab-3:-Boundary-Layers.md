@@ -103,7 +103,7 @@ Can you perceive a difference in the shape of your boundary layer profile betwee
 ## Extra Credit  
 The laminar boundary layer solution is self-similar (or has a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), which in this case is ![](https://github.com/d008/MAE224/blob/master/equations/lab3%204.png) . The similarity solution is then ![](https://github.com/d008/MAE224/blob/master/equations/lab3%205.png).  
 
-Put your measurements in this form and plot u/U as a function of ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? How well do they agree with the numerical solution? Explain why you may see differences.  
+Put your measurements in this form and plot u/U as a function of ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? 
 
 ## Lab Write-Up  
 
