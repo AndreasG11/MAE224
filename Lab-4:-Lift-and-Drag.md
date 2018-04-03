@@ -165,8 +165,6 @@ We have added 2 matlab functions to the github source (available [here](https://
 [ xn, yn, u, v ] = airfoil_normals( aoa );
 
 [ xn, yn, u, v ] = cylinder_normals();
-
-daspect([1 1 1]);
 ```
 
 `aoa` is the input angle of attack for the airfoil (the cylinder code has no user inputs). Both functions return 4 vectors: `xn` and `yn` are the x and y locations of the pressure taps given from the leading edge of the airfoil and cylinder. `u` and `v` are the surface normals at those locations. Each function also generates a plot of the body with the associated surface normals, note that flow is from left to right (as it should be). You will need the information about the surface normals in order to integrate the pressure distribution along both bodies to resolve lift and drag. Below is an example of the plots produced by both functions.
