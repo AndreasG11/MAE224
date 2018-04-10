@@ -23,11 +23,12 @@ Like last semester, the “best” designs will get a treat: treat and definitio
 -	To 3D print a part, you must generate the STL file and we (the TA's) will print the piece for you using the printers in the lab   
 
 ## Week 1: April 16-19  
-Your objective this week is to experiment with the preprinted turbines and get an idea of what features you would like to see on your turbine. You will need to learn how to use the setup to construct your power curves. You have also been provided with CREO & QBlade tutorials, as well as some starter files for you to use. 
+Your objective this week is to experiment with the preprinted turbines and get an idea of what features you would like to see on your turbine. You will need to learn how to use the setup to construct your power curves. You have also been provided with CREO & QBlade tutorials, as well as some starter files for you to use. Ideally, you will have a first attempt at a turbine ready to print. **By the end of your lab period, you will need to submit your STL file to your TA for printing so you can have them next week at the latest**.
 ## Week 2: April 23-26  
-Continue designing and experimenting with the turbine setup. **By the end of your lab period, you will need to submit your STL file to your TA for printing so you can have them next week at the latest**.  We will try to have them to you in a few days. Due to the large number of airfoils and small number of TA's and printers, if you turn your profile in late, you will be bumped to the end of the queue. It will still be printed, but only after the punctual groups and you will have significantly less time to characterize your turbine.
+Continue designing and experimenting with the turbine setup. Investigate the power generation of the blades you printed the week before, and figure out how to improve your design for next week. Submit another blade by the end of class.
 ## Week 3: April 30- May 4   
-Characterize your turbines and construct your power curves.  
+Characterize your turbines and construct your power curves. This is your last lab period to test your design. You can either settle on using the current blades, or submit one final design (that will need to be tested on your own time).
+
 **Deliverables due May 15th:** There are two components to the final lab report: an 8 page group report and a 2 page individual abstract and discussion.
 
 # Final Report Guidelines
