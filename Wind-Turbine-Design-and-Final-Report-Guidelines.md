@@ -9,7 +9,7 @@ Like last semester, the “best” designs will get a treat: treat and definitio
 -	Wind tunnel cross section: 2ft by 3ft  
 -	Wind tunnel velocity: 15 m/s (you may test up to 25 m/s but the final competition will be at 15 m/s).  
 -	6 mm diameter on motor shaft (must use given start files for hub)  
--	Limit on swept area: 177 cm^2 (equivalent to a 15 cm diameter circle).    
+-	Maximum blade diameter is 15 cm from center to edge).    
 -	Limit on print time: < 8 hr  
 -	The 3D printers we are using can be found here   
 -	Must choose one of the 4 Cura print defaults  
