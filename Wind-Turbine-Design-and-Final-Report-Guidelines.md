@@ -7,7 +7,7 @@ Like last semester, the “best” designs will get a treat: treat and definitio
 # Rules & Guidelines  
 
 -	Wind tunnel cross section: 2ft by 3ft  
--	Wind tunnel velocity: 15 m/s (you may test up to 25 m/s but the final competition will be at 15 m/s).  
+-	Wind tunnel velocity: 20 m/s  
 -	6 mm diameter on motor shaft (must use given start files for hub)  
 -	Maximum blade diameter is 15 cm from center to edge).    
 -	Limit on print time: < 8 hr  
