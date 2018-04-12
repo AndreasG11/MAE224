@@ -11,7 +11,7 @@ Like last semester, the “best” designs will get a treat: treat and definitio
 -	6 mm diameter on motor shaft (must use given start files for hub)  
 -	Maximum blade diameter is 15 cm from center to edge).    
 -	Limit on print time: < 8 hr  
--	The 3D printers we are using can be found here   
+-	The 3D printers we are using can be found in the fluids lab  
 -	Must choose one of the 4 Cura print defaults  
 -	The rotation vector must be aligned with the tunnel velocity. (i.e. turning clockwise when looking down the tunnel)  
 -	*Note:* The RPM output that you will measure is the RPM of the motor. 1 RPM of the motor is equal to 3/4 RPM of the turbine. Do not forget to convert from the RPM of the motor to the RPM of the turbine when performing your calculations!
