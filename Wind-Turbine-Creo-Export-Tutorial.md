@@ -7,7 +7,7 @@ The first step is to return to our rotor geometry setup tab in Qblade and edit t
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Creo1new.png" width="800">  
 </p> 
 
-Now click “Save” at the bottom, and enter a new name if you wish (you will overwrite any simulations if you choose not to rename). Next click “Blade/Rotor” at the very top and select “Export 3D blade geometry in STL or text format”. You will want to save the file as a .stl somewhere you can find it.
+Now click “Save” at the bottom, and enter a new name if you wish (you will overwrite any simulations if you choose not to rename). Next click “Blade/Rotor” at the very top and select “Export 3D blade geometry in STL or text format”. You will want to save the file as a .stl somewhere you can find it and select the "Customized Export" box.
 
 A dialog box will appear which lets you define the “resolution” of the stl file (stl files are essentially a collection of triangulated points) we will leave these at the default for now.
 Hit export and we are done with the Qblade part of the tutorial. Now you will need to bring the file you just created over to a computer with Creo.
