@@ -209,7 +209,7 @@ o	How did you calculate lift and drag from the pressure data?
 - Compare cylinder to theoretical prediction.  
 - Discuss flow separations for airfoil.  
 - Answer discussion questions for each part of the lab (see above in Lab Manual Procedure).  
-- Error analysis.  
+- Error analysis. Use a value of +- 9.95 Pa as the error in the pressure taps.  
 
 ### Conclusion (15%) 
 - Summarize your **findings** (don’t just state what you did!).  
