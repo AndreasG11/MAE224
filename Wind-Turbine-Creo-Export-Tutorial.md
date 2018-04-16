@@ -143,7 +143,7 @@ Your final design should look like the following, now would be a good time to sa
 </p> 
 
 
-Select the “File” drop down menu in Creo and choose “Save As”. In the bottom drop down box select our old pal the STL (.stl) file type and give your rotor a name DIFFERENT than rotor_assembly so it is easy to keep track of. A dialog box will appear, click the check box next to “Step Size” and input the value to 0. Click apply and you should get something like the following:  
+Select the “File” drop down menu in Creo and choose “Save As”. In the bottom drop down box select our old pal the STL (.stl) file type and give your rotor a name DIFFERENT than rotor_assembly so it is easy to keep track of. Check "customize export" at the bottom right. A dialog box will appear, click the check box next to “Step Size” and input the value to 0. Click apply and you should get something like the following:  
  
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Final%20Project/Creo20.png" width="800">  
