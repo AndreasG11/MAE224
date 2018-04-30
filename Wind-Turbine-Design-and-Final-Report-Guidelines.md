@@ -9,7 +9,7 @@ Like last semester, the “best” designs will get a treat: treat and definitio
 -	Wind tunnel cross section: 2ft by 3ft  
 -	Wind tunnel velocity: 20 m/s  
 -	6 mm diameter on motor shaft (must use given start files for hub)  
--	Maximum turbine diameter is 15 cm.    
+-	Maximum swept turbine diameter is 15 cm.    
 -	Limit on print time: < 8 hr  
 -	The 3D printers we are using can be found in the fluids lab  
 -	Must choose one of the 4 Cura print defaults  
