@@ -62,7 +62,6 @@ Each lab member is required to write a 2 page maximum report, also turned in to 
 - Summarize your take on the turbine design process, this should cover the entire lab (group report sections and individual sections).
 
 ### Discussion
-- Explain the fluid mechanics and the motivation behind the design.
 - Analyze the testing results.
 - Compare with your predictions. Did they match? If they were different, why?
 - How can the turbine design be improved?
