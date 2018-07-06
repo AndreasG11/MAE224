@@ -58,7 +58,7 @@ Then noting that the the variance of our variables is simply
 We then sub in to our sample variance to get the following equation for the standard deviation of the sample
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/error%201%20final.png">  
-</p>
+</p> 
 **What are the units of the above equation? Is this the value you need to calculate error bars?**
 
 But what if our sample depends on multiple variables? The classic example of this is measuring resistance using Ohm's law where R = V/I so that R = g(V,I). Here we must expand on the example above by using a Taylor series for multiple variables:
