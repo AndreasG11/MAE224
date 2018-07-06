@@ -59,7 +59,7 @@ We then sub in to our sample variance to get the following equation for the stan
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/error%201%20final.png">  
 </p>
-_What are the units of the above equation? Is this the value you need to calculate error bars?_
+_ What are the units of the above equation? Is this the value you need to calculate error bars? _
 
 But what if our sample depends on multiple variables? The classic example of this is measuring resistance using Ohm's law where R = V/I so that R = g(V,I). Here we must expand on the example above by using a Taylor series for multiple variables:
 <p align="center">
