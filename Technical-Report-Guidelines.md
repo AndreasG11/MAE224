@@ -4,7 +4,7 @@ Do you remember the scientific method? A technical report is simply a written lo
 
 All lab manuals are to be emailed to mae224lab@gmail.com as a PDF. The group portion of the lab should have group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
 
-The individual portion should include your name, your group number, and your lab number. For example: Novoselov_Group51_Lab1.PDF
+The individual portion should include your name, your group number, and your lab number. For example: Meehan_Group51_Lab1.PDF
 
 # Abstract (10%)
 The abstract should serve as a brief summary of the lab. Think of this section as the most elemental summary you can give of your activities in the lab. It should be a single paragraph that allows anyone to read it and get the general gist of the lab start to finish. Busy scientists have precious little time, so they often read the abstract to determine whether the paper is worth reading in full or not. The TA should be able to understand the 1) the main point of the lab 2) main setup of the lab and 3) main conclusions of the lab all from the abstract.  
@@ -90,7 +90,7 @@ So what is the goal with all of this error analysis? We would like to find if ou
 Now that you have constructed logical error bounds for your data, you need to know whether your accuracy is sufficient to encapsulate the behavior which you expect. Often times there is an answer which you expect to get. You should make sure to include these values and explain where they come from. Often times the data you expect to get comes from other experiments or physical models, perhaps even numerical simulations. It is important to compare in a quantitative and qualitative manner your results to the expected results. Do they follow the same trends? How far off are they from each other? Does your data capture the same physics?  
 
 ## Relation to scientific concepts  
-Now that you have constructed the error estimates for the data and you have compared the experimental results to the expected results, you should make sure to tie everything back to the scientific concepts at hand. Do the results make sense? Are your results consistent with the physics you expect? What physical mechanisms are acting to make the results adhere or diverge from your hypotheses? Your TA's and Marcus are a great resource for this section. This is truly where you can demonstrate mastery of the subject matter. Here you have to apply the physics and mathematics given in the introduction to explain and make sense of the data which you have collected.   
+Now that you have constructed the error estimates for the data and you have compared the experimental results to the expected results, you should make sure to tie everything back to the scientific concepts at hand. Do the results make sense? Are your results consistent with the physics you expect? What physical mechanisms are acting to make the results adhere or diverge from your hypotheses? Your TAs and Marcus are a great resource for this section. This is truly where you can demonstrate mastery of the subject matter. Here you have to apply the physics and mathematics given in the introduction to explain and make sense of the data which you have collected.   
 
 # Conclusions (15%)
 **What did we find and does it confirm/refute our hypotheses?**  
