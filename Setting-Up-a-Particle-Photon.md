@@ -7,11 +7,11 @@ You can make a serial connection to the unit through the USB cable. The followin
 
 1.	Start by saving (“save as” on the desktop) and unzip the CoolTerm program to the desktop (we did this for you! (Lucky you)) Windows: http://freeware.the-meiers.org/CoolTermWin.zip ; Mac: http://freeware.the-meiers.org/CoolTermMac.zip
 
-2.	Plug your Particle Photon unit into the computer through the USB cable.  The large LED should flash green then breath cyan (Trust us, it happens).  This means it is connected to puwireless. If it does not make this color, contact Alex. He’ll know what to do.
+2.	Plug your Particle Photon unit into the computer through the USB cable.  The large LED should flash green then breath cyan (Trust us, it happens).  This means it is connected to puwireless. If it does not make this color, contact the TAs. They’ll know what to do.
 
 3.	To communicate with the unit, you will need to open a serial port. Hold down the SETUP button until the light flashes blue. This means it is able to connect through the serial port. Open the CoolTerm folder on your desktop and start the program.
 
-4.	Click on the “Options” button on the top of the program. In the popup window, click the “Re-Scan Serial Ports” button. The drop down window labeled “Port:” should have at least one selectable option. Select the port your unit is on (likely COM19 or something similar, you can find it in the device manager from control panel in windows. NEVER COM 1). Alternatively, you can download and use particle-cli. Ask Alex about it if you are curious.
+4.	Click on the “Options” button on the top of the program. In the popup window, click the “Re-Scan Serial Ports” button. The drop down window labeled “Port:” should have at least one selectable option. Select the port your unit is on (likely COM19 or something similar, you can find it in the device manager from control panel in windows. NEVER COM 1). Alternatively, you can download and use particle-cli. Ask Kris about it if you are curious.
 
 5.	Set the Baudrate to 9600, data bits to 8, parity to none, stop bits to 1. 
 
@@ -68,7 +68,7 @@ Now we will write a quick program. The first will blink the onboard LED of your 
 
 20.	If you see the onboard LED (connected to pin D7), blinking blue, you WIN! 
 
-21.	Go find a TA, preferably Alex, to verify that you completed this simple task.
+21.	Go find a TA to verify that you completed this simple task.
 
 # Programming the Photon via Matlab
 
