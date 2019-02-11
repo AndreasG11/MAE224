@@ -96,7 +96,7 @@ fname = 'lab1_p2_hydrostatics.txt';
 %Manually enter your recorded height for each pressure measurement%
 height = 0.2;
 
-if isfile(strcat(folder,fname))
+if exist(strcat(folder,fname),'file')==2
 else
 hdr = {'Heights (m)','Pressure Transducer (V)'}; %Labels for the columns (check units)
 fmt = '%s\t %s\r\n'; %Create a formatting string for the file header 
