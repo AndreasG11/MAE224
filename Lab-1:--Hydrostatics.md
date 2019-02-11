@@ -96,13 +96,16 @@ fname = 'lab1_p2_hydrostatics.txt';
 %Manually enter your recorded height for each pressure measurement%
 height = 0.2;
 
+if isfile(strcat(folder,fname))
+else
 hdr = {'Heights (m)','Pressure Transducer (V)'}; %Labels for the columns (check units)
 fmt = '%s\t %s\r\n'; %Create a formatting string for the file header 
 fid = fopen([folder fname],'w'); %Open the file to write the header
 fprintf(fid,fmt,hdr{:}); %Write the header
 fclose(fid);
+end
 %Append the actual data to your new file%
-dlmwrite([folder fname],[heights' volts],'-append','delimiter','\t'); 
+dlmwrite([folder fname],[height volts],'-append','delimiter','\t'); 
 ```
 There is a lot going on here, but the functionality is relatively simple. We first create a cell array of strings for the header (so later we will know what data we saved). The next few lines write the header to the file, and the final call to `dlmwrite()` writes the actual data to a new line at the end of the file. Note that you will need to manually enter your height data into the `height` variable each time you collect a data set, and don't forget to change the folder location and filename as well!
 
