@@ -93,8 +93,8 @@ Note: the use of the following code is not mandatory. Collect data in the way th
 folder = 'C:\Users\your_username_here\Documents\';
 %Enter a unique and descriptive filename%
 fname = 'lab1_p2_hydrostatics.txt'; 
-%Manually enter your recorded heights for each pressure measurement%
-heights = [0 0.02 0.05 0.08 0.1 0.12 0.14 0.16 0.18 0.20];
+%Manually enter your recorded height for each pressure measurement%
+height = 0.2;
 
 hdr = {'Heights (m)','Pressure Transducer (V)'}; %Labels for the columns (check units)
 fmt = '%s\t %s\r\n'; %Create a formatting string for the file header 
@@ -104,7 +104,7 @@ fclose(fid);
 %Append the actual data to your new file%
 dlmwrite([folder fname],[heights' volts],'-append','delimiter','\t'); 
 ```
-There is a lot going on here, but the functionality is relatively simple. We first create a cell array of strings for the header (so later we will know what data we saved). The next few lines write the header to the file, and the final call to `dlmwrite()` writes the actual data. Note that you will need to manually enter your height data into the `heights` variable, and don't forget to change the folder location and filename as well!
+There is a lot going on here, but the functionality is relatively simple. We first create a cell array of strings for the header (so later we will know what data we saved). The next few lines write the header to the file, and the final call to `dlmwrite()` writes the actual data to a new line at the end of the file. Note that you will need to manually enter your height data into the `height` variable each time you collect a data set, and don't forget to change the folder location and filename as well!
 
 _Remember_: You can get information on any function in Matlab by typing `help function_name` and hitting enter in the command window.
  
