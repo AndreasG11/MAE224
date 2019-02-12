@@ -131,7 +131,7 @@ All lab manuals are to be emailed to mae224lab@gmail.com as a PDF. The group por
 
 The individual portion should include your name, your group number, and the lab number. For example: Meehan_Group51_Lab1.PDF
 
-Review the [Technical Report Guidelines](https://github.com/d008/MAE224/wiki/Technical-Report-Guidelines) for how to format the report. Your report is expected to include (remember, maximum 5 pages):
+Review the [Technical Report Guidelines](https://github.com/d008/MAE224/wiki/Technical-Report-Guidelines) for detailed instructions on how to format the report. Your report is expected to include (remember, maximum 5 pages):
 
 ### Abstract (10%) 
 
