@@ -11,7 +11,7 @@ The MOSFET has three pins which correspond to gate (g), drain (d) and source (s)
 <img src="https://github.com/d008/MAE224/blob/master/images/Lab2_New_Circuit.jpg" width="800">  
 </p>
 
-12 Volts from the bench-top power supplies must be fed into the two, upper left connections (note that this circuit will draw upwards of 2 amps to power the pump). The pump itself must be connected to the screw terminals on the upper right (black is ground, brown is V+). **_Ask Mike or a TA (preferably Alex) to check your circuit before turning on the power supply._**
+12 Volts from the bench-top power supplies must be fed into the two, upper left connections (note that this circuit will draw upwards of 2 amps to power the pump). The pump itself must be connected to the screw terminals on the upper right (black is ground, brown is V+). **_Ask Mike or a TA to check your circuit before turning on the power supply._**
 
 The pressure drop in the pipe can be recorded manually using the manometer tubes, you will need the value of dP/dx in order to make your Moody diagrams later in the lab. 
 
