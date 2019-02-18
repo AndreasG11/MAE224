@@ -80,7 +80,7 @@ By pressurizing the system, you are changing the manometer height, and you shoul
 
 4.    Using Matlab, and the `analogRead()` command, capture at least 10 data points and record the corresponding heights.
 
-5.    Plot pressure versus the difference in heights between the water columns in Matlab.
+5.    Plot pressure versus the difference in heights between the water columns. Use MATLAB if you can.
 
 6.	What kind of curve-fit makes the most sense?  
 
