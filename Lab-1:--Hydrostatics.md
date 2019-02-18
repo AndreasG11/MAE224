@@ -78,7 +78,7 @@ By pressurizing the system, you are changing the manometer height, and you shoul
 
 3.    Look at how pressure changes in time (live) as you pressurize it. Explain this behavior (can you figure out a way to reduce unwanted behavior?).
 
-4.    Using Matlab, and the `analogRead()` command, capture at least 10 data points and record the corresponding heights.
+4.    Using Matlab, and the `analogRead()` command, capture **at least** 10 data points at each height and record the corresponding heights.
 
 5.    Plot pressure versus the difference in heights between the water columns. Use MATLAB if you can.
 
