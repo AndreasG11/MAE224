@@ -1,6 +1,6 @@
 Do you remember the scientific method? A technical report is simply a written log of each step in the method and is the fundamental method scientists and engineers use to communicate with each other. This document will serve as a simple outline for writing such a report. We will give some general guidelines about what each section is meant to do as well as how to properly divide up each section. Along the way we will give you tips about how to incorporate the report into one cohesive whole document.
 
-**Remember, you will be submitting a group report and an individual report. The group report will contain the abstract, introduction, experimental procedure, and results, and must be a maximum of 5 pages. The individual report will contain the discussion and conclusion, and should reference the results from the group section. This report must be a maximum of 1 page.**
+**Remember, you will be submitting a group report and an individual report. The group report will contain the abstract, introduction, experimental procedure, and results, and must be a maximum of 5 pages. The individual report will contain the discussion and conclusion, and should reference the results from the group section. This report must be a maximum of 2 pages.**
 
 All lab manuals are to be emailed to mae224lab@gmail.com as a PDF. The group portion of the lab should have group member last names, group number, and lab number in the filename. For example: Novoselov_Meehan_Huang_Group51_Lab1.PDF
 
