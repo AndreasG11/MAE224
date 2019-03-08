@@ -111,7 +111,7 @@ You will note that an airfoil has been mounted into a large wind tunnel, which f
 %Name of the photon inside the airfoil
 name = 'MRSAIRFOIL'; 
 %Access token
-atoken = '58423eff3e51a295b275a62e5d257cd190d16d17'; 
+atoken = 'e9cf36b5a026caed895292f11d0d2cb7e201fd12'; 
 
 g = Photon(name,atoken);
 
