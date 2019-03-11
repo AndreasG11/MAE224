@@ -41,12 +41,12 @@ g.attachServo('D0');
 %Check if the device is connected
 if g.getConnection()
 %Fully extend servo:
-    curpos = g.move(115);
+    curpos = g.move(115); % Maximum is 180
     pause(10); %Wait 10 seconds
     disp(['Servo sent to position: ' num2str(curpos)])
     pause(5); %Wait 5 seconds
 %Retract Servo:
-    curpos = g.move(60);
+    curpos = g.move(60); % Minimum is 45
     pause(10);
     disp(['Servo sent to position: ' num2str(curpos)])
     pause(10);
