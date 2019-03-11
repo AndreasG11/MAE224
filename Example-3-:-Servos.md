@@ -41,12 +41,12 @@ g.attachServo('D0');
 %Check if the device is connected
 if g.getConnection()
 %Fully extend servo:
-    curpos = g.move(115); % Maximum is 180
+    curpos = g.move(100); % Maximum is 180, not recommended to set it to this value 
     pause(10); %Wait 10 seconds
     disp(['Servo sent to position: ' num2str(curpos)])
     pause(5); %Wait 5 seconds
 %Retract Servo:
-    curpos = g.move(60); % Minimum is 45
+    curpos = g.move(60); % Minimum is 45, not recommended to set it to this value 
     pause(10);
     disp(['Servo sent to position: ' num2str(curpos)])
     pause(10);
@@ -93,7 +93,7 @@ if g.getConnection
 We first fully extend the servo:
 ```matlab
 %Fully extend servo:
-    curpos = g.move(180);
+    curpos = g.move(100);
     pause(10); %Wait 10 seconds
     disp(['Servo sent to position: ' num2str(curpos)])
     pause(5); %Wait 5 seconds
@@ -102,7 +102,7 @@ and then retract it back
 
 ```matlab
 %Retract Servo:
-    curpos = g.move(45);
+    curpos = g.move(60);
     pause(10);
     disp(['Servo sent to position: ' num2str(curpos)])
     pause(10);
