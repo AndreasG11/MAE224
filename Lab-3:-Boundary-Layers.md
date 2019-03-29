@@ -87,7 +87,7 @@ NOTE: An input of 60 corresponds to a fully retracted actuator. An input of 115 
  
 Run your Matlab code to traverse the cross section. You can choose the way you like to record the data, such as saving data to a csv file while plotting the velocity profile.  
 
-There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x = 5.94 mm and the second position of the probe is around x = 14.95 mm.  
+There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x = 594 mm and the second position of the probe is around x = 1495 mm.  
 
 You need to put your actuator at these two positions and generate plots with 3 wind tunnel velocities for each. Use the knob on the side of the wind tunnel, setting it to 10, 7, and 4, and make sure you coordinate with other groups that are trying to take data.  
 
