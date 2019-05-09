@@ -55,7 +55,7 @@ You and your lab partners will collaborate on the 8 page group report and hand i
 - Cp vs. TSR plots for all turbines.
 - Qblade prediction of performance.
 
-## 2 Page Individual Report
+## 3 Page Individual Report
 Each lab member is required to write a 2 page maximum report, also turned in to the lab email address as a .pdf document. The report should contain the following:
 
 ### Abstract
