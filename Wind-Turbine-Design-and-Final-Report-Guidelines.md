@@ -56,7 +56,7 @@ You and your lab partners will collaborate on the 8 page group report and hand i
 - Qblade prediction of performance.
 
 ## 3 Page Individual Report
-Each lab member is required to write a 2 page maximum report, also turned in to the lab email address as a .pdf document. The report should contain the following:
+Each lab member is required to write a 3 page maximum report, also turned in to the lab email address as a .pdf document. The report should contain the following:
 
 ### Abstract
 - Summarize your take on the turbine design process, this should cover the entire lab (group report sections and individual sections).
