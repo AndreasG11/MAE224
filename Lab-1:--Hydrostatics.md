@@ -159,7 +159,7 @@ Review the [Technical Report Guidelines](https://github.com/d008/MAE224/wiki/Tec
  
 ### Discussion (35%)
 
--  Outline sources of error and perhaps answer any of the questions brought up in the lab manual.
+-  Outline sources of error and answer any of the questions brought up in the lab manual.
  
 ### Conclusions (15%)  
 
