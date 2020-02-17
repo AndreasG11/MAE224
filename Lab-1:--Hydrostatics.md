@@ -82,7 +82,7 @@ By pressurizing the system, you are changing the manometer height, and you shoul
 
 5.    Repeat for 10 different heights.
 
-6.    Plot pressure versus the difference in heights between the water columns. Use MATLAB if you can.
+6.    Plot pressure versus the difference in heights between the water columns. Use MATLAB if you can. Show your TA this plot.
 
 7.    What kind of curve-fit makes the most sense?  
 
