@@ -26,7 +26,7 @@ The Printed Circuit Board (PCB) for this lab has a few other connections you may
 
 - _Laminar Flow Rate_ [Liters/min] = (frequency [Hz] + 7.3) / 80.4
 
-Your programming goal is to combine all of this into a Matlab script which will allow you to control the pump, record the flow rate and pressure (either manually or with a transducer) and then write those values to a file. You will need to calibrate the PWM signal going to the pump so that you know the flow rate for a given duty cycle. Check the [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) if you need a refresher. **_The goal here is to calibrate the voltage input to the total flow rate._** There are only 3 connections to the Photon you will need to make to control the experiment:
+Your programming goal is to combine all of this into a Matlab script which will allow you to control the pump, record the flow rate and pressure, and then write those values to a file. You will need to calibrate the PWM signal going to the pump so that you know the flow rate for a given duty cycle. Check the [Example 2: PWMs](https://github.com/d008/MAE224/wiki/Example-2-:-PWMs) if you need a refresher. **_The goal here is to calibrate the voltage input to the total flow rate._** There are only 3 connections to the Photon you will need to make to control the experiment:
 
 1. Pump PWM Output from the Particle Photon (top pin on the 6 pin strip to the right of the Photon) to control the power that is sent to the pump.
 2. Total flow meter (read the frequency of this pin to get the total flow rate).
