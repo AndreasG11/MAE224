@@ -1,8 +1,13 @@
 The objective of this lab is to investigate laminar and turbulent flow, and the difference between them, in a pipe flow by creating a Moody diagram.   
+
 In this experiment you will have to relate the pressure drop in the pipe to the Reynolds number.  
+
 # Control the Experiment with Particle Photon  
+
 In this experiment you will use two flow meters, an electric pump and an optional pressure transducer. With your Matlab-programmed Particle Photon, and circuitry knowledge you can control and measure all of these things from the comfort of your own computer. 
+
 To run the experiment, you will need the ability to set the pump to a known flow rate and then record the pressure drop in the pipe. 
+
 The Particle Photon cannot output the correct voltage or current needed to drive the pump, but it can output a PWM (pulse width modulation) signal! Therefore we will be using a transistor setup known as a MOSFET which will allow you to use an external power source to power the motor, but utilize the Particle Photon to control the motor output.  For those of you who like analogies, using a transistor is like controlling the flow of a firehose with a squirt gun.  The Particle Photon outputs a small square wave which tells the transistor to let a large amount of current flow through the motor.  The real working is a bit more complicated than that and involves quite a bit more applied physics knowledge, band gap theory, and understanding of NPN and PNP transistors, all of which Mike knows a lot about if you are interested in learning more. You can also look at this handy resource [Wikipedia](https://en.wikipedia.org/wiki/MOSFET) or if you are brave [Caltech APh9](http://nanofab.caltech.edu/images/stories/classes/aph9/lecture11.pdf).  All you need to know is that we can now control the motor with a Particle Photon.  Below is an image of the motor control board with details of each part.  
 
 The MOSFET has three pins which correspond to gate (g), drain (d) and source (s) when looking at this component from the front.  The gate is controlled via the IDX-609 chip which is what is known as a driver chip, it converts the square-wave signal from the Photon to a higher voltage needed to drive the MOSFET efficiently. There are some other, ancillary components as well which assist in providing the necessary power to the pump. You will need to plug in your Particle Photon (with the USB connector facing left as shown below) and then connect USB power. 
@@ -35,7 +40,7 @@ Lastly, take note of which pump supply voltages allow the pipe flow system to re
 
 To propel a flow in a pipe there needs to be a pressure gradient. You will see later in class that this pressure gradient is constant and thus the pressure varies linearly along the pipe axis. The pressure “drop” is just the change in pressure from one point to another. There is a set of five open water columns that you can use to calculate the pressure drop. Think back to lab 1 and hydrostatics to relate these water columns to pressure.  
 
-Alternatively (this is optional), connect the first and last pressure taps on a given pipe to the two openings on your pressure sensor to measure the differential pressure. Additionally, you can use the fact that the outlet of the pipe is exposed to atmospheric pressure, think how this information can make your life easier in measuring pressure drop.
+Additionally, you can use the fact that the outlet of the pipe is exposed to atmospheric pressure, think how this information can make your life easier in measuring pressure drop.
 
 # Quick intro to Pipe Flows  
 Before we get into the details of the data collection, here is a quick overview on pipe flow (since the lab is now slightly ahead of the lectures). 
@@ -48,7 +53,7 @@ Pipe flow can be analyzed through the Navier-Stokes equations. The details of th
 Figure 1 - (a) laminar velocity profile and (b) turbulent velocity profile. 
 Source: <http://me.queensu.ca/People/Sellens/PowerLaw.html>  
 
-# Laminar Pipe Flow
+## Laminar Pipe Flow
 A simple analysis of the Navier-Stokes equations for flow within the pipe readily yields the above assertion that the viscous drag from the wall is balanced by the imposed pressure gradient:  
 
 <p align="center">
@@ -107,7 +112,8 @@ Remember that you only know the flow rate at two locations- make sure you are us
 
 In this experiment, the quality of the data contributes to your grade so make sure you take enough data points and make sure you’re waiting enough time for the setup to stabilize when you change the flow rate (this may take upwards of 40 seconds).  
 
-#Extra Credit 
+
+## Extra Credit 
 -  Think of alternative ways by which you can estimate the flow rate in the small pipe and try to implement them in order to verify the relation for laminar flow.   
 
 -  Try to construct the Moody diagram by starting with a high Re and going to low Re (without stopping the pump) and then going from low Re to high Re. To get the extra-credit, you will have to present both measurements, discuss the difference if observed and explain when this difference is expected to be significant.  
