@@ -64,7 +64,7 @@ Note that cylindrical coordinates are usually used to derive the analytical func
 ## Turbulent Pipe Flow  
 Turbulence adds random (chaotic-like) fluctuations to the flow field, and we lose the nice parabolic velocity profile seen in figure 1(a). In a turbulent flow, the velocity profile is fuller (figure 1(b)) and there is a higher viscous stress at the wall. This in turn works to cause a greater pressure drop in turbulent flow, since there is a balance between pressure drop and shear stress. There is no nice analytical expression for turbulent pipe flow like there is for laminar flow, so we are required to conduct experiments to understand this type of flow.  
 
-# Moody Diagram  
+# Creating the Moody Diagram  
 Instead of analyzing the equations of motion for the different flow regimes, you will build what is called a “Moody diagram.” This is an empirical relation between the frictional forces in the pipe and the Reynolds number of the pipe flow.   
 
 <p align="center">
@@ -93,22 +93,25 @@ In terms of the flow rate, the Reynolds number can be expressed by:
 - A = Pipe Cross-sectional Area  
 
 The flow in a pipe is regarded as laminar when Re < 2300. Above 2300 it can transition to turbulent. Typically there is a range of Reynolds numbers where the flow is neither laminar nor turbulent, but transitional. 
-A Moody diagram is a graph in non-dimensional form that relates the “head loss” (pressure drop) in a pipe to Reynolds number (or flow rate). As was explained in the "Quick Intro To Pipe Flows" section, the pressure drop in the pipe is balanced by the frictional forces in the pipe. **Therefore, to construct your Moody diagram, you will need to know the flow rate and the pressure drop.** The Moody diagram is typically a plot of the friction factor versus Reynolds number. The friction factor can be related to the pressure drop by:  
+A Moody diagram is a graph in non-dimensional form that relates the “head loss” (pressure drop) in a pipe to Reynolds number (or flow rate). As was explained in the "Quick Intro To Pipe Flows" section, the pressure drop in the pipe is balanced by the frictional forces in the pipe. **Therefore, to construct your Moody diagram, you will need to know the flow rate and the pressure drop per unit length.** The Moody diagram is a plot of the friction factor _f_ versus Reynolds number, where the friction factor can be related to the pressure drop by:  
 
 <p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/equations/lab2%204.png" width="100">  
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_dpdz_f.PNG">  
 </p>  
 
-- l = distance between pressure taps  
-- f = Darcy friction factor  
+Turbulent and laminar flows show different curves for _f_ as a function of _Re_ on a Moody diagram. The turbulent curve depends on the pipe roughness, and a good approximation for _f_ from S. E. Haaland is: 
 
-Turbulent and laminar flows show different curves on a Moody diagram. The turbulent curve is sensitive to the properties of the pipe, mainly roughness, while the laminar plot admits a simple analytical solution of the governing equations given by:  
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_f_Haaland.PNG">  
+</p>  
+
+The laminar plot admits a simple analytical solution of the governing equations given by:
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab%202%205.png">  
 </p> 
 
-Remember that you only know the flow rate at two locations- make sure you are using the correct one! Think of how you can isolate each pipe and get the correct flow rate.   
+Remember that you only know the flow rate at two locations- make sure you are using the correct one! Think of how you can isolate each pipe and get the correct flow rate. How can you use the manometers to calculate the pressure gradient?
 
 In this experiment, the quality of the data contributes to your grade so make sure you take enough data points and make sure you’re waiting enough time for the setup to stabilize when you change the flow rate (this may take upwards of 40 seconds).  
 
