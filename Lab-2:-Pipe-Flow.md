@@ -1,6 +1,4 @@
-The objective of this lab is to investigate laminar and turbulent flow, and the difference between them, in a pipe flow by creating a Moody diagram.   
-
-In this experiment you will have to relate the pressure drop in the pipe to the Reynolds number.  
+The objective of this lab is to investigate laminar and turbulent flow, and the difference between them, in a pipe flow by creating a Moody diagram. You will do this by relating the pressure drop in pipes to the Reynolds number of the flow through the pipes.  
 
 # Control the Experiment with Particle Photon  
 
@@ -72,27 +70,28 @@ Instead of analyzing the equations of motion for the different flow regimes, you
 </p>  
 Source: <https://upload.wikimedia.org/wikipedia/commons/8/80/Moody_diagram.jpg>
 
-The setup you’re working with involves two pipes with different inner diameters (0.195” and 0.625”) producing laminar and turbulent flows. Whether the flow is turbulent or laminar can be determined by looking at your pressure data (or by calculating the Reynolds number). The Reynolds number, Re, is a dimensionless quantity defined as the ratio of inertial forces to viscous forces and is given by:
+The setup you’re working with involves two pipes with different inner diameters (0.195” and 0.625”) producing laminar and turbulent flows. Whether the flow is turbulent or laminar can be determined by looking at your pressure data (or by calculating the Reynolds number). The Reynolds number, Re, is a dimensionless quantity that characterizes a flow by giving the ratio of inertial forces to viscous forces in the flow:
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab2_2.png" width="100">  
 </p>  
 
-- U = Flow Velocity [m/s]
-- d = Pipe Diameter [m]
-- <img src="https://github.com/d008/MAE224/blob/master/equations/rho.png" width="10">   = Fluid Density [kg/m^3]
-- <img src="https://github.com/d008/MAE224/blob/master/equations/mu.png" width="10"> = Dynamic Viscosity [Pa*s]  
+- _U_ = the typical flow velocity
+- _d_ = the length scale of the flow
+- <img src="https://github.com/d008/MAE224/blob/master/equations/rho.png" width="10">   = fluid density [kg/m^3]
+- <img src="https://github.com/d008/MAE224/blob/master/equations/mu.png" width="10"> = dynamic viscosity [Pa*s]  
 
-In terms of the flow rate, the Reynolds number can be expressed by:
+The Reynolds number can be used to characterize any type of flow. In the context of pipe flows, we take the _U_ to be the mean velocity in the pipe and _d_ to be the pipe diameter. If we were analyzing flow around an airplane, we would probably make _U_ the airplane's speed and _d_ its length. In terms of the flow rate, the Reynolds number for pipe flow can be expressed by:
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/equations/lab2%203.png" width="100">  
 </p>  
 
-- Q = Volumetric Flow Rate
-- A = Pipe Cross-sectional Area  
+- _Q_ = Volumetric Flow Rate
+- _A_ = Pipe Cross-sectional Area  
 
-The flow in a pipe is regarded as laminar when Re < 2300. Above 2300 it can transition to turbulent. Typically there is a range of Reynolds numbers where the flow is neither laminar nor turbulent, but transitional. 
+The flow in a pipe is regarded as laminar when Re < 2300. Look back to the equation for Re: this means that when viscosity (in the denominator) is large enough, the friction in the flow is able to suppress the instabilities that would lead to turbulence. Above 2300 it can transition to turbulent. Typically there is a range of Reynolds numbers where the flow is neither laminar nor turbulent, but transitional. 
+
 A Moody diagram is a graph in non-dimensional form that relates the “head loss” (pressure drop) in a pipe to Reynolds number (or flow rate). As was explained in the "Quick Intro To Pipe Flows" section, the pressure drop in the pipe is balanced by the frictional forces in the pipe. **Therefore, to construct your Moody diagram, you will need to know the flow rate and the pressure drop per unit length.** The Moody diagram is a plot of the friction factor _f_ versus Reynolds number, where the friction factor can be related to the pressure drop by:  
 
 <p align="center">
@@ -145,19 +144,15 @@ Your report is expected to include:
 - Give enough details of the procedure and the scientific concept behind them.  
 
 ### Results (15%) 
-- Flow Rate vs. Voltage calibration curves.
+- Flow rate vs. voltage calibration curves.
 - Detailed findings.  
 - Moody diagram plot for laminar and turbulent flows.  
 
 ### Discussion (35%)
 -	Analysis of the results.
--	Compare with Moody diagram in textbooks.
--	Do your findings correspond? Why or why not?
+-	Compare with results found in the literature--you have equations for _f_ in laminar and turbulent flows you could use. Are your findings similar? Why or why not?
 -	Provide sufficient explanation of the findings and relate to concepts presented in the introduction.
 -	Error analysis.
 
 ### Conclusions (15%)  
 - Summarize findings.  
-
-
-
