@@ -32,9 +32,9 @@ Your programming goal is to combine all of this into a Matlab script which will 
 
 Note that power and ground for all the sensors has been taken care of for you in advance on the circuit board.
 
-Lastly, take note of which pump supply voltages allow the pipe flow system to reach a steady state. Using the `pause()` command can help here. The full dynamic range of the PWM output (0-3.3V) does not allow steady state operation of the system! To get the best data possible, explore this range FIRST, then an informed decision can be made for what voltages to use in the experiment.
+Lastly, take note of which pump supply voltages allow the pipe flow system to reach a steady state. The full dynamic range of the PWM output (0-3.3V) does not allow steady state operation of the system! To get the best data possible, explore this range FIRST, then an informed decision can be made for what voltages to use in the experiment.
 
-In creating your calibration curve, make sure to make **at least 10** measurements of the flowrate for each voltage you set. This will enable you to report the mean value and standard deviation in your calibration plot.
+In creating your calibration curve, make sure to wait until the system has reached steady-state after setting a PMW voltage. Using the `pause()` command can help here. Then, take **at least 10** measurements of the flowrate for each voltage you set. This will enable you to report the mean value and standard deviation in your calibration plot.
 
 # How to measure pressure drop  
 
