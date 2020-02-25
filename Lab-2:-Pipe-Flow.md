@@ -114,7 +114,7 @@ The laminar plot admits a simple analytical solution of the governing equations 
 
 Remember that you only know the flow rate at two locations- make sure you are using the correct one! Think of how you can isolate each pipe and get the correct flow rate. How can you use the manometers to calculate the pressure gradient?
 
-In this experiment, the quality of the data contributes to your grade so make sure you take enough data points and make sure you’re waiting enough time for the setup to stabilize when you change the flow rate (this may take upwards of 40 seconds).  
+In this experiment, make sure you take enough data points to calculate a meaningful value, and make sure you’re waiting enough time for the setup to stabilize when you change the flow rate (this may take upwards of 40 seconds).  
 
 
 ## Extra Credit 
