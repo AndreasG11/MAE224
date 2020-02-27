@@ -157,4 +157,8 @@ Your report is expected to include:
 -	Error analysis.
 
 ### Conclusions (15%)  
-- Summarize findings.  
+- Summarize findings.
+
+## Using Matlab for data analysis
+
+The data processing and plotting for this and future labs should be done using Matlab. One tip is to use [`polyfit`](https://www.mathworks.com/help/matlab/ref/polyfit.html) to extract the pressure gradient from your pressure vs. position datapoints. You can ask your AIs for help with coding issues that come up.
