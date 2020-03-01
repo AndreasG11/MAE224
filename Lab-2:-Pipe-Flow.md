@@ -162,3 +162,38 @@ Your report is expected to include:
 ## Using Matlab for data analysis
 
 The data processing and plotting for this and future labs should be done using Matlab. One tip is to use [`polyfit`](https://www.mathworks.com/help/matlab/ref/polyfit.html) to extract the pressure gradient from your pressure vs. position datapoints. You can ask your AIs for help with coding issues that come up.
+
+## Error analysis guidelines
+
+There are many potential sources of error in this experiment, but some are more prominent than others. For this error analysis, we will relate errors in our measurements--using the reported accuracy of the flow meters and estimated uncertainty in our height measurements--to uncertainties in our final results (the values we report of _f_ and _Re_).
+
+### Flow rates
+
+For measuring the flow rates _Q_, we can assume the systematic error of the pumps is greater than the statistical error in our measurements. The reported accuracy of the total flow meter is _δQ/Q_ = 10%, and the reported accuracy of the laminar flow meter is _δQ/Q_ = 3%.
+
+### Pressure gradient
+
+In measuring the pressure drop, let's assume that biggest source of error is the error you make in measuring the height of a water column, _δh_, which can be related to a corresponding error in pressure _δp_. An estimate for the pressure gradient measurement uncertainty is then _δp/L_, where _L_ is the length over which you are computing the gradient.
+
+### Combining error sources to get the uncertainty in _f_ and _Re_
+
+You now have estimates for the error in the flow rate _Q_ and the pressure gradient dP/dz which you use to construct the Moody diagram. The next step is to convert these error estimates into uncertainties in _f_ and _Re_ (which could be added as horizontal and vertical error bars to a Moody diagram, or just compared to the values of _f_ and _Re_ shown on the Moody diagram).
+
+We calculate _f_ using
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_f.PNG">  
+</p> 
+
+so the calculation is affected by uncertainties in dP/dz and _U_ (how can you convert an uncertainty in _Q_ to an uncertainty in _U_?). The uncertainty in _f_ can be calculated using the equation
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_sigmaf.PNG">  
+</p>
+
+where σ<sub>dP/dz</sub> represents the uncertainty in dP/dz and σ<sub>U</sub> represents the uncertainty in _U_. A more straightforward quantity is the _relative_ uncertainty in _f_, which is found by dividing the uncertainty by _f_,
+<p align="center">
+<img src="https://github.com/d008/MAE224/blob/master/equations/lab2_sigmafoverf.PNG">  
+</p>
+
+To evaluate this formula, you will need to evaluate the partial derivatives of _f_ with respect to the two variables we are uncertain about. 
+
+The error in our calculation of _Re_ can be computed in a similar way, but it will be simpler because _Re_ only depends on one variable we are uncertain about (_U_, but not dP/dz).
