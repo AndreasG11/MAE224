@@ -139,7 +139,8 @@ Your report is expected to include:
 ### Introduction (15%)  
 - Discuss the scientific concept of the lab. 
 - Effectively present the objectives and purpose of the lab.  
-- The Reynolds number is one of the most important parameters in fluids mechanics. Explain the physical significance of this number and give some examples of high and low Reynolds number flows around you.  
+- The Reynolds number is one of the most important dimensionless parameters in fluids mechanics. Explain the physical significance of this number and give some examples of high and low Reynolds number flows around you. 
+- The friction factor _f_ is also a dimensionless parameter. Why are we reporting our results in terms of _f_ and _Re_ instead of pressure drops and flow rates?
 - Commercial airplanes fly at Reynolds numbers on the order of several million. Think about how you can construct an experiment to get such high Reynolds numbers without building a facility the size of a commercial airplane.  
 
 ### Experimental procedure (10%)
