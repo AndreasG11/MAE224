@@ -84,24 +84,27 @@ NOTE: An input of 60 corresponds to a fully retracted actuator. An input of 115 
 [Link to pressure transducer data sheet is here.](https://github.com/d008/MAE224/blob/master/Lab%20Equipment%20and%20Etc/Honeywell%20HSC%20Pressure%20Sensors.pdf)
 
 # Week 2: Take Your Measurements!
- 
-Run your Matlab code to traverse the cross section. You can choose the way you like to record the data, such as saving data to a csv file while plotting the velocity profile.  
 
-There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x = 594 mm and the second position of the probe is around x = 1495 mm.  
 
-You need to put your actuator at these two positions and generate plots with 3 wind tunnel velocities for each. Use the knob on the side of the wind tunnel, setting it to 10, 7, and 4, and make sure you coordinate with other groups that are trying to take data.  
+There are two positions at different distances from the inlet. Taking the inlet of the glass tunnel as x=0, the first position of the probe is around x = 594 mm and the second position of the probe is around x = 1495 mm. You need to put your actuator at these two positions and generate plots with 3 wind tunnel velocities for each. Use the knob on the side of the wind tunnel, setting it to 10, 7, and 4, and make sure you coordinate with other groups that are trying to take data.  
 
-Estimate the boundary layer thickness for each velocity using your plots.  
+To acquire data, run your Matlab code to traverse the cross section. Your code should output the results in a separate text file for each combination of flow speed and location (so you end up with six total data files).
+
+Calculate the boundary layer thickness for each velocity profile.  
 
 ## Questions  
-How does the measured boundary layer thickness change with wind tunnel velocity? From a physical perspective, does this make sense?  
 
-Can you perceive a difference in the shape of your boundary layer profile between the different wind tunnel velocities? Should you be able to? Why or why don’t you see a difference?  
+Based on the velocity profiles you measure and the values of _Re(x)_ at which you take the data, what type of flow characterizes the boundary layer?
+
+How does the measured boundary layer thickness change with position and free-stream velocity? From a physical perspective, does this make sense? 
+
+Why doesn't the measured velocity go to zero at the closest position to the wall at which you take a measurement? Hint: consider the size of the sensor you use to make the measurement.
 
 ## Extra Credit  
-The laminar boundary layer solution is self-similar (or has a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), which in this case is ![](https://github.com/d008/MAE224/blob/master/equations/lab3%204.png) . The similarity solution is then ![](https://github.com/d008/MAE224/blob/master/equations/lab3%205.png).  
 
-Put your measurements in this form and plot u/U as a function of ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? 
+* The laminar boundary layer solution is self-similar (or has a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), which in this case is ![](https://github.com/d008/MAE224/blob/master/equations/lab3%204.png) . The similarity solution is then ![](https://github.com/d008/MAE224/blob/master/equations/lab3%205.png). Put your measurements in this form and plot u/U as a function of ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? Do you expect them to collapse?
+
+* Once the wind tunnel is in steady-state, the total volumetric flow rate _Q_ shouldn't vary with position along the wind tunnel _x_. Assuming symmetry between the top and bottom half of the channel, check whether this is the case in your data by numerically integrating your velocity profiles.
 
 ## Lab Write-Up  
 
@@ -123,20 +126,18 @@ o	What do you expect the boundary layer to look like in the channel?
 
 ### Experimental procedure (10%) 
 - Physics of pitot tubes.  
-o	Why were we able to apply Bernoulli’s equation in the channel flow?  
-- Explain why (and how) you made each of your measurements.  
+o	Why were we able to apply Bernoulli’s equation to the Pitot tube?
+- Explain why and how you made each of your measurements, and explain the data processing you employed to arrive at your final results.
 
 ### Results (15%) 
-- Clearly (and logically) present your boundary layer data.  
+- Clearly (and concisely) present your boundary layer data. In your velocity profiles, include error bars corresponding to the standard deviation of the measured velocities. Also, plot the boundary layer thicknesses.
 - Detailed findings.
 
 ### Discussion (35%)
 - **Explain** if your results were what you expected- don't just state what trends you saw. Why did these observed trends occur?  
 - Answer all previous questions.
-- Can you think of other ways that velocity can be measured at a point in a flow?  
-- What are the sources of error, and how do they contribute to making the measurements either higher, or lower, than expected?  
+- What other techniques could someone have employed to measure the velocity in a similar flow? 
+- What are the sources of error, and how do they contribute to making the measurements either higher, or lower, than expected? Refer to the [Error Analysis Guidelines from Lab 2](https://github.com/d008/MAE224/wiki/Lab-2:-Pipe-Flow#error-analysis-guidelines) to perform a similar error analysis in which you propagate uncertainties in your measurements to uncertainties in your final results.
 
 ### Conclusions (15%)  
 - Summarize your **findings** (don’t just state what you did!).  
-
-
