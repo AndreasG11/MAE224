@@ -97,6 +97,8 @@ How does the measured boundary layer thickness change with position and free-str
 
 Why doesn't the measured velocity go to zero at the closest position to the wall at which you take a measurement? Hint: consider the size of the sensor you use to make the measurement.
 
+What explains the variability you see in the velocity measurements you take at a single point? Is it all due to errors in the measurement equipment?
+
 ## Extra Credit  
 
 * The laminar boundary layer solution is self-similar (or has a similarity solution) which means that the flow “looks the same” at all lengths and times. This means we can express the velocity in terms of a single similarity variable ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), which in this case is ![](https://github.com/d008/MAE224/blob/master/equations/lab3%204.png) . The similarity solution is then ![](https://github.com/d008/MAE224/blob/master/equations/lab3%205.png). Put your measurements in this form and plot u/U as a function of ![](https://github.com/d008/MAE224/blob/master/equations/eta.png), with all 3 data sets on the same plot. How well do your data sets collapse with each other? Do you expect them to collapse?
@@ -134,7 +136,7 @@ o	Why were we able to apply Bernoulli’s equation to the Pitot tube?
 - **Explain** if your results were what you expected- don't just state what trends you saw. Why did these observed trends occur?  
 - Answer all previous questions.
 - What other techniques could someone have employed to measure the velocity in a similar flow? 
-- What are the sources of error, and how do they contribute to making the measurements either higher, or lower, than expected? Refer to the [Error Analysis Guidelines from Lab 2](https://github.com/d008/MAE224/wiki/Lab-2:-Pipe-Flow#error-analysis-guidelines) to perform a similar error analysis in which you propagate uncertainties in your measurements to uncertainties in your final results.
+- Follow the [Error Analysis Guidelines from Lab 2](https://github.com/d008/MAE224/wiki/Lab-2:-Pipe-Flow#error-analysis-guidelines) to perform a similar error analysis in which you propagate uncertainty in your measurements--the reported accuracy of the pressure transducer--to uncertainties in your velocities. Comment on the differences between this source of uncertainty and the variability in velocities you measure at a single location/flow rate.
 
 ### Conclusions (15%)  
 - Summarize your **findings** (don’t just state what you did!).  
