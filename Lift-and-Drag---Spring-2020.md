@@ -1,4 +1,4 @@
-The objective of this lab is to understand lift and drag on 2D objects of different shapes.  Using the given objects, you will have to determine lift and drag characteristics using pressure measurements around the body as well as force measurements.  During the course of this lab, you will explore the lift and drag characteristics of an airfoil through experiment and simulation, as well as that of a cylinder.  You will need to understand the pressure distribution around these objects and how it relates to the generated lift.
+The objective of this lab is to understand lift and drag on an airfoil. You will be provided with force sensor measurements and surface pressure measurements. You will have to use this data to determine the lift and drag characteristics. You will need to understand the pressure distribution around the airfoil and how it relates to the generated lift.
 
 # Background
 ## Terminology
