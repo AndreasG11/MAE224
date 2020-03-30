@@ -112,12 +112,7 @@ We have added a matlab function to blackboard called `airfoil_normals.m`. This f
 [ xn, yn, u, v ] = airfoil_normals( aoa );
 ```
 
-`aoa` is the input angle of attack for the airfoil. The function returns 4 vectors: `xn` and `yn` are the x and y locations of the pressure taps given from the leading edge of the airfoil and cylinder. `u` and `v` are the surface normals at those locations. Each function also generates a plot of the body with the associated surface normals, note that flow is from left to right (as it should be). You will need the information about the surface normals in order to integrate the pressure distribution along the airfoil to resolve lift and drag. Below is an example of the plots produced by both functions.
-
-<p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/images/Lab4%20Matlab%20Example.png" width="500">  
-</p> 
-
+`aoa` is the input angle of attack for the airfoil. The function returns 4 vectors: `xn` and `yn` are the x and y locations of the pressure taps given from the leading edge of the airfoil and cylinder. `u` and `v` are the surface normals at those locations. Each function also generates a plot of the body with the associated surface normals, note that flow is from left to right (as it should be). You will need the information about the surface normals in order to integrate the pressure distribution along the airfoil to resolve lift and drag.
 ## Lab Write-Up  
 
 **Remember, you will be submitting a group report and an individual report. The group report will contain the abstract, introduction, experimental procedure, and results, and must be a maximum of 5 pages. The individual report will contain the discussion and conclusion, and should reference the results from the group section. This report must be a maximum of 2 pages.**
