@@ -93,8 +93,11 @@ The data you are provided with consists of three text files, each corresponding 
 
 To find the lift and drag coefficients, you will need to know the forces on the body. Can you think of a way to determine the forces based on the pressures measured via the taps?  If not, you should definitely ask your TA.  Once you have calculated the lift and drag coefficients using the pressure measurements, calculate the lift and drag coefficients using the force sensor measurements, and compare the two methods.
 
+For each velocity, make a plot showing the lift and drag coefficients as a function of angle of attack from pressure transducers and from force sensors. Specify the Reynolds number of each plot. Include error bars.
 
-You should, in your report, make a comparison between ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png), ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png), the curves for the simulation, the direct force measurements, and the determinations made from the pressure taps.
+Make one plot showing only the lift and drag coefficients from the pressure transducers for all three velocities.
+
+You should, in your report, make a comparison between ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png), ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png), the direct force measurements, and the determinations made from the pressure taps.
 
 ### Questions:
 1.  What happens to the lift at zero angle of attack? Why?
