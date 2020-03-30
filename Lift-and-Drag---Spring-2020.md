@@ -9,7 +9,7 @@ Figure 1 - Airfoil.
 </p> 
 
 -	The **leading edge** of an airfoil is the portion that meets the air first.   
--	The **trailing edge** is the back of the airfoil.  
+-	The **trailing edge** is the sharp edge at the back of the airfoil.  
 -	The **chord line** is an imaginary straight line drawn through the airfoil from its leading edge to its trailing edge.   
 -	The **camber line** is the characteristic curve of the airfoil. It is always halfway between the upper and lower surfaces of the airfoil. The **max camber ratio** is the ratio of the maximum distance between the camber and chord line to the chord length.  
 -	The **angle of attack** or ![](https://github.com/d008/MAE224/blob/master/equations/alpha.png) is the angle formed by the chord line and the flow direction.  
