@@ -80,7 +80,7 @@ Finally, the coefficient of pressure is defined the following way:
 ## Experiment
 
 <p align="center">
-<img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoilexp.png" width="600">  
+<img src="https://github.com/mkfu/MAE224/images/airfoil_setup.jpg" width="600">  
 </p>
 
 <p align="center">
