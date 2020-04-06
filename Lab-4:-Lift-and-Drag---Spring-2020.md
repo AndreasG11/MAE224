@@ -131,12 +131,9 @@ Your report is expected to include:
 
 ### Introduction (15%)   
 - Discuss the scientific concept of the lab.  
-- Effectively present the objectives and purpose of the lab.  
+- Effectively present the objectives and purpose of the lab.
 
-### Experimental procedure (10%) 
-- Generally describe the procedure, based on the information given above.  
-
-### Results (15%) 
+### Results (25%) 
 - Pressure distributions for the airfoil.  
 o	How did you calculate lift and drag from the pressure data?
 - Lift and drag coefficient plots.
