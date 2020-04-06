@@ -89,13 +89,22 @@ Figure 5: Airfoil in the wind tunnel.
 
 The airfoil was mounted into a wind tunnel, similar to the picture shown above. However, the data you will be using was obtained in a pressurised wind tunnel. Therefore, you cannot assume that density is constant across all data. The chord of the airfoil is 0.17 m, and the span is 0.255 m. The airfoil is hollow and contains 32 pressure taps along the center of the body completely encircling it.  Using these pressure taps, you can determine the coefficients of lift and drag around the body.  
 
-The data you are provided with consists of three text files, each corresponding to a different velocity. The columns in the text file are angle of attack, velocity, density, lift from force sensor, drag from force sensor, and the pressures from all pressure taps. The first pressure tap is at the trailing edge. The order then moves along the top of the airfoil to the leading edge, and then along the bottom of the airfoil towards the trailing edge. Pressure output is in Pascals (Pa). Force output is in Newtons.
+The data you are provided with consists of three text files, each corresponding to a different velocity. The columns in the text file are angle of attack, velocity, density, lift from force sensor, drag from force sensor, and the pressures from all pressure taps. The first pressure tap is at the trailing edge. The order then moves along the bottom of the airfoil to the leading edge, and then along the top of the airfoil towards the trailing edge. Thus, the top side is taps [17:32,1] and the bottom side is taps [1:17]. Pressure output is in Pascals (Pa). Force output is in Newtons.
 
-To find the lift and drag coefficients, you will need to know the forces on the body. Can you think of a way to determine the forces based on the pressures measured via the taps?  If not, you should definitely ask your TA.  Once you have calculated the lift and drag coefficients using the pressure measurements, calculate the lift and drag coefficients using the force sensor measurements, and compare the two methods.
+Calculate the Reynolds number of each data set.
 
-For each velocity, make a plot showing the lift and drag coefficients as a function of angle of attack from pressure transducers and from force sensors. Specify the Reynolds number of each plot. Include error bars.
+Choose one Reynolds number and plot the pressure distribution of the top surface and the bottom surface at zero angle of attack. Is this what you would expect? When plotting pressure distributions, make sure your signs are correct.
+
+Choose one Reynolds number and plot the pressure distribution on the top of the airfoil at the angle right before stall, and the angle right after stall. Compare them.
+
+To find the lift and drag coefficients, you will need to know the forces on the body. Can you think of a way to determine the forces based on the pressures measured via the taps?  If not, you should definitely ask your TA or refer to the lab lecture slides.  Once you have calculated the lift and drag coefficients using the pressure measurements, calculate the lift and drag coefficients using the force sensor measurements, and compare the two methods.
+
+For each velocity, make a plot showing the lift and drag coefficients as a function of angle of attack from pressure transducers and from force sensors. Specify the Reynolds number of each plot. Include error bars. Is this what you expected? Are they measuring the exact same things? What accounts for the difference between the drag from pressure and the drag from the force sensor?
 
 Make one plot showing only the lift and drag coefficients from the pressure transducers for all three velocities.
+
+Error analysis:
+What is the standard deviation in the velocity? In the density? Use these as your errors in velocity and density. Use a value of +- 25 Pa as the error in the pressure taps, and +- 2.5 N in the force sensor. Assume all other measurements have no error. Show error bars on lift and drag coefficients from pressure and force sensors in the three plots in which you compared the pressure sensors to the force sensors. Don't include error bars in the plot in which you compare the three Reynolds numbers.
 
 You should, in your report, make a comparison between ![](https://github.com/d008/MAE224/blob/master/equations/Cp.png), ![](https://github.com/d008/MAE224/blob/master/equations/Cl.png) and ![](https://github.com/d008/MAE224/blob/master/equations/Cd.png), the direct force measurements, and the determinations made from the pressure taps.
 
@@ -106,6 +115,7 @@ You should, in your report, make a comparison between ![](https://github.com/d00
 4.  Given the above, why is a plot of the lift and drag coefficients useful?
 5.  Where do you suppose most aircraft operate in terms of angle of attack?
 6.  Stunt planes are capable of flying upside down. How is this possible?
+7.  Why is the pressure coefficient never higher than 1?
 
 ## Matlab Code to help with Pressure Integration
 
@@ -143,7 +153,7 @@ o	How did you calculate lift and drag from the pressure data?
 - Compare results from experiment.  
 - Discuss flow separations for airfoil.  
 - Answer discussion questions for each part of the lab (see above in Lab Manual Procedure).  
-- Error analysis. Use a value of +- 25 Pa as the error in the pressure taps, and +- 2.5 N in the force sensor. Assume all other measurements have no error.
+- Error analysis.
 
 ### Conclusion (15%) 
 - Summarize your **findings** (don’t just state what you did!).  
