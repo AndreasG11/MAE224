@@ -103,6 +103,8 @@ For each velocity, make a plot showing the lift and drag coefficients as a funct
 
 Make one plot showing only the lift and drag coefficients from the pressure transducers for all three velocities.
 
+Theory tells us that the slope of the lift curve in the attached region should be 2*pi, so that the function of the slope is cL = 2 * pi * alpha. Choose a Reynolds number and fit a line to the data points in the attached region. What is the slope? Why is it not 2 * pi? What do the endplates have to do with this? (Hint: downwash!)
+
 Error analysis:
 What is the standard deviation in the velocity? In the density? Use these as your errors in velocity and density. Use a value of +- 25 Pa as the error in the pressure taps, and +- 2.5 N in the force sensor. Assume all other measurements have no error. Show error bars on lift and drag coefficients from pressure and force sensors in the three plots in which you compared the pressure sensors to the force sensors. Don't include error bars in the plot in which you compare the three Reynolds numbers.
 
