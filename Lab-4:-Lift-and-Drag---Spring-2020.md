@@ -87,13 +87,13 @@ Finally, the coefficient of pressure is defined the following way:
 Figure 5: Airfoil in the wind tunnel.  
 </p>
 
-The airfoil was mounted into a wind tunnel, similar to the picture shown above. However, the data you will be using was obtained in a pressurised wind tunnel. Therefore, you cannot assume that density is constant across all data. The chord of the airfoil is 0.17 m, and the span is 0.255 m. The airfoil is hollow and contains 32 pressure taps along the center of the body completely encircling it. Using these pressure taps, you can determine the coefficients of lift and drag around the body. Since you did not take this data yourself, you should include a citation like this: Brunner C E, Kiefer J, Hansen M O L, and Hultmark M. Unpublished data, 2020.
+The airfoil was mounted into a wind tunnel like the picture shown above. The data you will be using was obtained in a pressurised wind tunnel. Therefore, you cannot assume that the density is constant across all data. Instead, the density at each measurement point is provided in the data. The chord of the airfoil is 0.17 m, and the span is 0.255 m. The airfoil is hollow and contains 32 pressure taps along the center of the body completely encircling it. Using these pressure taps, you can determine the coefficients of lift and drag around the body. Since you did not take this data yourself, you should include a citation like this in your lab report: Brunner C E, Kiefer J, Hansen M O L, and Hultmark M. Unpublished data, 2020.
 
-The data you are provided with consists of three text files, each corresponding to a different velocity. The columns in the text file are angle of attack, velocity, density, lift from force sensor, drag from force sensor, and the pressures from all pressure taps. The first pressure tap is at the trailing edge. The order then moves along the bottom of the airfoil to the leading edge, and then along the top of the airfoil towards the trailing edge. Thus, the top side is taps [17:32,1] and the bottom side is taps [1:17]. Pressure output is in Pascals (Pa). Force output is in Newtons.
+The data you are provided with consists of three text files, each corresponding to a different Reynolds number. The columns in the text file are angle of attack, velocity, density, lift from force sensor, drag from force sensor, and the pressures from all pressure taps. The first pressure tap is at the trailing edge. The order then moves along the bottom of the airfoil to the leading edge, and then along the top of the airfoil towards the trailing edge. Thus, the top side is taps [17:32,1] and the bottom side is taps [1:17]. Pressure output is in Pascals (Pa). Force output is in Newtons.
 
 Calculate the Reynolds number of each data set.
 
-Choose one Reynolds number and plot the pressure distribution of the top surface and the bottom surface at zero angle of attack. Is this what you would expect? When plotting pressure distributions, make sure your signs are correct.
+Choose one Reynolds number and plot the pressure distribution of the top surface and the bottom surface at zero angle of attack (c_p vs. position along chord). Is this what you would expect? When plotting pressure distributions, make sure your signs are correct.
 
 Choose one Reynolds number and plot the pressure distribution on the top of the airfoil at the angle right before stall, and the angle right after stall. Compare them.
 
@@ -103,7 +103,7 @@ For each velocity, make a plot showing the lift and drag coefficients as a funct
 
 Make one plot showing only the lift and drag coefficients from the pressure transducers for all three velocities.
 
-Theory tells us that the slope of the lift curve in the attached region should be 2*pi, so that the function of the slope is cL = 2 * pi * alpha. Choose a Reynolds number and fit a line to the data points in the attached region. What is the slope? Why is it not 2 * pi? What do the endplates have to do with this? (Hint: downwash!)
+Theory tells us that the slope of the lift curve in the attached region should be 2*pi, so that the function of the slope is c_L = 2 * pi * alpha. Choose a Reynolds number and fit a line to the data points in the attached flow region. What is the slope? Why is it not 2 * pi? What do the endplates have to do with this? (Hint: downwash!)
 
 Error analysis:
 What is the standard deviation in the velocity? In the density? Use these as your errors in velocity and density. Use a value of +- 25 Pa as the error in the pressure taps, and +- 2.5 N in the force sensor. Assume all other measurements have no error. Show error bars on lift and drag coefficients from pressure and force sensors in the three plots in which you compared the pressure sensors to the force sensors. Don't include error bars in the plot in which you compare the three Reynolds numbers.
