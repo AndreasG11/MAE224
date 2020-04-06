@@ -77,7 +77,7 @@ Finally, the coefficient of pressure is defined the following way:
 <img src = "https://github.com/d008/MAE224/blob/master/equations/Cpress_eqn.png">  
 </p>
 
-## Experiment: Airfoil
+## Experiment
 
 <p align="center">
 <img src="https://github.com/mkfu/MAE224/blob/master/images/Airfoilexp.png" width="600">  
@@ -87,7 +87,7 @@ Finally, the coefficient of pressure is defined the following way:
 Figure 5: Airfoil in the wind tunnel.  
 </p>
 
-The airfoil was mounted into a wind tunnel, similar to the picture shown above. However, the data you will be using was obtained in a pressurised wind tunnel. Therefore, you cannot assume that density is constant across all data. The chord of the airfoil is 0.17 m, and the span is 0.255 m. The airfoil is hollow and contains 32 pressure taps along the center of the body completely encircling it.  Using these pressure taps, you can determine the coefficients of lift and drag around the body.  
+The airfoil was mounted into a wind tunnel, similar to the picture shown above. However, the data you will be using was obtained in a pressurised wind tunnel. Therefore, you cannot assume that density is constant across all data. The chord of the airfoil is 0.17 m, and the span is 0.255 m. The airfoil is hollow and contains 32 pressure taps along the center of the body completely encircling it. Using these pressure taps, you can determine the coefficients of lift and drag around the body. Since you did not take this data yourself, you should include a citation like this: Brunner C E, Kiefer J, Hansen M O L, and Hultmark M. Unpublished data, 2020.
 
 The data you are provided with consists of three text files, each corresponding to a different velocity. The columns in the text file are angle of attack, velocity, density, lift from force sensor, drag from force sensor, and the pressures from all pressure taps. The first pressure tap is at the trailing edge. The order then moves along the bottom of the airfoil to the leading edge, and then along the top of the airfoil towards the trailing edge. Thus, the top side is taps [17:32,1] and the bottom side is taps [1:17]. Pressure output is in Pascals (Pa). Force output is in Newtons.
 
@@ -117,7 +117,7 @@ You should, in your report, make a comparison between ![](https://github.com/d00
 4.  Given the above, why is a plot of the lift and drag coefficients useful?
 5.  Where do you suppose most aircraft operate in terms of angle of attack?
 6.  Stunt planes are capable of flying upside down. How is this possible?
-7.  Why is the pressure coefficient never higher than 1?
+7.  Why is the pressure coefficient never higher than 1 (although it can be much lower than -1)?
 
 ## Matlab Code to help with Pressure Integration
 
