@@ -39,10 +39,10 @@ There are many good ways to research the different types of airfoils you can cre
 Back to Qblade, now let’s simulate the flow around this airfoil. Go to the next red airfoil tab at the top.
 
 <p align="center">
-<img src="https://github.com/d008/MAE224/blob/master/images/AF%20menu%207.png" width="800">  
+<img src="https://github.com/d008/MAE224/blob/master/images/xfoil_v09.PNG" width="800">  
 </p>
 
-This is where your simulations are stored (from the Xfoil tool mentioned earlier), since we have not run any simulations there are –No Polar in Database (yet). To get started click the Define Xfoil Polar button to the right.
+This is where your simulations are stored (from the Xfoil tool mentioned earlier), since we have not run any simulations there are –No Polar in Database (yet). To get started click the New Polar button to the right.
 
 <p align="center">
 <img src="https://github.com/d008/MAE224/blob/master/images/AF%20menu%208.png" width="500">  
