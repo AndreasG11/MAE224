@@ -16,7 +16,7 @@ pMin = -6894.76;
 g = Photon(name, atoken, port);
 
 % Enter true if you are using a serial connection and false if you are using a cloud connection. If you having issues, just put false.
-isUsingSerial = false;
+isUsingSerial = true;
 
 if isUsingSerial
     g.disconnect;
