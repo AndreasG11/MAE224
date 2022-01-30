@@ -35,6 +35,7 @@ for i = 1:20
 
     pressureApp = transferFunction(vIn, vOut(i), pMin, pMax);
     Pressure(i) = pressureApp;
+    pause(0.1)
 end
 
 
