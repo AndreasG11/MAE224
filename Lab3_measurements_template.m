@@ -23,7 +23,7 @@ vels_mes = zeros(1,20);
 V_mes = zeros(1,20);
 V_std = zeros(1,20);
 
-rho = 1000; % kg/m^3
+rho = 1.225; % kg/m^3
 
 % use these to hold the 20 measurments at each position that we will then
 % average
@@ -41,7 +41,7 @@ start_tick=XXX % put zero point you found
 end_tick=80
 step = floor((start_tick-end_tick) / 10)
 range = flip(end_tick:step:start_tick) % flip so we start at the zero point and then work from the wall to the freestream
-dists = 0 + slope*(-range + 117)
+dists = 0 + slope*(-range + start_tick)
 
 % here, you want to use a for loop to change the servo position through the
 % range we just defined
