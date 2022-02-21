@@ -1,8 +1,8 @@
+% need to define dists before running this script!
 
 datafile='Data_x1_flowV20.mat';
 load(datafile);
 
-dists = 0 + (-range + 117)
 
 figure
 
