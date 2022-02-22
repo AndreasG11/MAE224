@@ -17,11 +17,13 @@ vIn = 3.3;
 pMax = 248.84;
 pMin = -248.84;
 
-pres_meas = zeros(1,20);
-pres_std = zeros(1,20);
-vels_mes = zeros(1,20);
-V_mes = zeros(1,20);
-V_std = zeros(1,20);
+% arrays to store the std and mean of the measurements at each of the
+% different heights
+pres_meas = zeros(1,10);
+pres_std = zeros(1,10);
+vels_mes = zeros(1,10);
+V_mes = zeros(1,10); % store mean voltages here
+V_std = zeros(1,10);% store standar deviation of the voltages here
 
 rho = 1.225; % kg/m^3
 
@@ -39,9 +41,12 @@ slope = XXX
 
 start_tick=XXX % put zero point you found
 end_tick=80
-step = floor((start_tick-end_tick) / 10)
-range = flip(end_tick:step:start_tick) % flip so we start at the zero point and then work from the wall to the freestream
+range = floor(linspace(end_tick,start_tick, 10));
+range = flip(range) % flip so we start at the zero point and then work from the wall to the freestream
 dists = 0 + slope*(-range + start_tick)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+g.attachServo('D0');
+if g.getConnection()
 
 % here, you want to use a for loop to change the servo position through the
 % range we just defined
@@ -60,33 +65,32 @@ dists = 0 + slope*(-range + start_tick)
 %   sensor!)
 %   take average of the data and store it in an array
 % end
-
-g.attachServo('D0');
-if g.getConnection()
-
+    
+    
 end
 %Detach the servo
 g.detachServo()
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% avg out the pressures voltages etc
-x_tunnel_loc = 1
-v_flow_tunnel = 20 %km/hr
+% These are just to name the files that your data are saved to
+x_tunnel_loc = 1 % location along the wind tunnel, there will be 2 you take measurements at
+v_flow_tunnel = 1 % the wind speed for this current measurement
 
 % convert the pressure measured into velocity using Bernoulli Equation
 
-vels_mes = XXX
+vels_mes = XXX % this will be some expression that involves pressure and constants
 
 % save data
 % as matlab variables
-fname=sprintf('Data_x%d_flowV%d.mat',x_tunnel_loc,v_flow_tunnel);
-save(fname,'V_mes','V_std','pres_meas','pres_std','vels_mes')
+fname=sprintf('Data_x%d_flowV%f.mat',x_tunnel_loc,v_flow_tunnel);
+save(fname,'V_mes','V_std','pres_meas','pres_std','vels_mes','dists')
 
 % or as a text file
 
-fileID = fopen(sprintf('Data_x%d_flowV%d.txt',x_tunnel_loc,v_flow_tunnel),'w');
-fprintf(fileID,'V_avg(V)\tV_std(V)\tP_avg(V)\tP_std(V)\tvel_avg(m/s)\n');
+fileID = fopen(sprintf('Data_x%d_flowV%f.txt',x_tunnel_loc,v_flow_tunnel),'w');
+fprintf(fileID,'V_avg(V)\tV_std(V)\tP_avg(V)\tP_std(V)\tvel_avg(m/s)\tpitot_height\n');
 for i = 1:length(V_mes)
-  fprintf(fileID,'%f\t%f\t%f\t%f\t%f\n', V_mes(i),V_std(i),pres_meas(i),pres_std(i),vels_mes(i));
+  fprintf(fileID,'%f\t%f\t%f\t%f\t%f\n', V_mes(i),V_std(i),pres_meas(i),pres_std(i),vels_mes(i),dists(i));
 end
 fclose(fileID);
 
